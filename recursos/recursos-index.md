@@ -40,6 +40,13 @@ Se puede mover una tarea de una lista a otra haciendo simplemente drag-and-drop.
 
 Después tiene más chiches ... que pueden ir descubriendo ¡y comentando!.
 
+Les dejamos links a algunas páginas del [blog de Trello](https://blog.trello.com/) que pueden ser útiles.
+- [How To Use Trello Like A Pro](https://blog.trello.com/how-to-use-trello-like-a-pro).
+- [How To Use Trello Like A Pro: Part 2](https://blog.trello.com/using-trello-like-a-pro-part-2).
+- [Using Multiple Trello Boards for a Super-Flexible Workflow](https://blog.trello.com/using-multiple-boards-for-a-super-flexible-workflow).  
+Acá menciona cómo manejarse con distintos tableros, que es lo que sugerimos a continuación.
+
+
 ### Cómo manejarse con Trello
 
 > Para crear cosas, tienen el botón "+" arriba a la derecha.
