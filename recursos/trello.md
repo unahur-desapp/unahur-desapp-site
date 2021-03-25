@@ -5,7 +5,7 @@ layout: default
 # Cómo manejarse con Trello - detalles
 
 ## Tableros 
-Como dijimos en [la página de recursos](../recursos), Les sugerimos que trabajen con **tres tableros**.
+Como dijimos en [la página de recursos](./recursos-index), Les sugerimos que trabajen con **tres tableros**.
 - Uno para el sprint actual.
 - Uno para que quede registro de lo que se fue cerrando en cada sprint anterior.
 - Uno para las tareas a futuro.
