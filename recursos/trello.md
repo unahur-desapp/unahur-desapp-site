@@ -73,6 +73,9 @@ En algún momento del proceso, empezar a seleccionar las tareas para el sprint a
 Acá tenemos que dimensionar "cuánto entra" en un sprint. Para eso, es importante _considerar lo que fuimos aprendiendo en los sprints anteriores_, en cuánto/qué le pifiamos al planificar.  
 En este punto, mirar el tablero de sprint actual, y revisar las tareas que quedaron del anterior, para no zarparnos con lo que definimos para el sprint.  
 
+> **Recordar**  
+_Junto con esto_ hay que completar [la ficha de principio de sprint](https://docs.google.com/document/d/19Ghm0d92Ur7GU5TC7PJJTEzz6suKjtMgPQkwh62Deg0).
+
 Cuando estemos, la lista de "tareas para el sprint actual" se mueve al tablero de "este sprint", y pasamos a trabajar en este tablero ... que debería estar bastante limpio (porque lo limpiamos al final del sprint anterior).  
 Estas tareas van a la lista de "planificado para este sprint".
 
@@ -94,6 +97,10 @@ Las tareas se mueven "hacia la izquierda" en el tablero de "este sprint".
 
 
 ### Al final del sprint
+> **Recordar**  
+_antes_ de arrancar, llenar la [ficha de fin de sprint](https://docs.google.com/document/d/1NAKfgXVUJa0fN4u3FcdQ4xhzzqh4h4ySt8RWc1XBslg).  
+
+
 Primero "limpiamos": lo que esté a revisar/integrar, lo revisamos, y pasa a "hecho" o vuelve para atrás, igual que durante el sprint.
 
 Después hacemos la retrospectiva: de lo que habíamos planificado ¿hicimos todo, casi todo, más o menos, más bien casi nada? ¿Qué pasó, cómo hacemos para que la próxima nos salga mejor?   

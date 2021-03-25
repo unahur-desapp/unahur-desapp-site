@@ -21,7 +21,21 @@ Próximamente ... .
 
 ## Documentos
 
-Próximamente ... en particular, los de inicio y fin de sprint.
+### Fichas de principio y fin de sprint
+Al principio y al final de cada script, hay que llenar una pequeña ficha. Van links a documentos de Google Drive. 
+Lo más sencillo (creo) es crear una carpeta de Google Drive en la cuenta de une de uds, compartírsela a les otres, e ir metiendo ahí las fichas. Obvio, le/s docente/s tienen que tener permiso de leer y comentar en esa carpeta.
+
+Los siguientes son templates para las fichas. Si se manejan con Google Drive, en cada sprint se pueden hacer una copia, y renombrarla a "Ficha (principio/fin) de sprint (nro-de-sprint)".
+-  Template para [principio de sprint](https://docs.google.com/document/d/19Ghm0d92Ur7GU5TC7PJJTEzz6suKjtMgPQkwh62Deg0).  
+Este se llena en conjunto con las tareas sobre Trello.  
+Este es un [ejemplo](https://docs.google.com/document/d/1fJz5hZ2XOA3LlRKvQTNQqhPwnOXCzLNhA9Z2Qt9QlUU) de ficha de principio de sprint completa.
+
+-  Template para [fin de sprint](https://docs.google.com/document/d/1NAKfgXVUJa0fN4u3FcdQ4xhzzqh4h4ySt8RWc1XBslg).  
+Este se llena **antes** del proceso de fin de sprint sobre Trello.  
+Este es un [ejemplo](https://docs.google.com/document/d/15Arb3osd64DrW53Whpd3AUPaH4rD7T87se_1IDo95hM/edit?usp=sharing) de ficha de fin de sprint completa.
+
+> **Nota**  
+Las tareas que hay que hacer sobre el Trello al principio y al final de cada sprint, se detallan en la [página con detalles del uso sugerido de Trello](./trello).
 
 
 ## Trello

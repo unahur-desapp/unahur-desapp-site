@@ -34,6 +34,9 @@ El corte de un sprint a otro coincide con el día y hora del encuentro semanal. 
 
 La definición y evaluación de cada sprint forma parte de la evaluación de la materia.
 
+> **Nota**  
+En la página de [recursos](./recursos/recursos-index), están las fichas de principio y fin de string que hay que llenar, junto con ejemplos.  
+En los [detalles sobre uso del Trello](./recursos/trello), se detalla cómo proceder al principio y al final de cada sprint respecto de las tareas definidas.
 
 ## Para llevar la organización del desarrollo
 Se propone usar [Trello](https://trello.com/), una herramienta de manejo de tareas liviana y sencilla, basada en listas de tareas.
