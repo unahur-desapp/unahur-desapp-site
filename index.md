@@ -12,7 +12,7 @@ El sitio va a ir creciendo durante el año.
 [Acá](./pautas-para-la-cursada)
 
 ## Recursos
-[Acá](./recursos)
+[Acá](./recursos/recursos-index)
 
 ## Actividades
 [Acá](./actividades)

@@ -53,7 +53,7 @@ Les sugerimos que trabajen con **tres tableros**.
 
 Con un poquito de ingenio, no es difícil mover tareas de un tablero a otro. Por eso no es problema tener varios tableros.
 
-Qué listas incluir en cada tablero, cómo ir moviendo las tareas entre las listas: ver la [página con detalles del uso sugerido de Trello](../recursos/trello).
+Qué listas incluir en cada tablero, cómo ir moviendo las tareas entre las listas: ver la [página con detalles del uso sugerido de Trello](./trello).
 
 
 
