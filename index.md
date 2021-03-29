@@ -17,3 +17,5 @@ El sitio va a ir creciendo durante el año.
 ## Actividades
 [Acá](./actividades)
 
+## Más info
+[Acá](./mas-info)
