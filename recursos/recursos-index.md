@@ -16,7 +16,25 @@ Es [este](https://github.com/unahur-desapp/react-recoil-app-seed).
 
 ## Repos de ejemplo
 
-Próximamente ... .
+Para cada ejemplo, qué hacer
+1. me lo clono
+1. `npm install`
+1. `npm start`
+
+¿Y si quiero experimentar y que quede lo que hago en un repo? Pues me hago un fork sobre un usuario u orga de GitHub, al fork lo puedo pushear y compartir.
+
+### De la casa
+Por ahora hay uno solo  
+[Ejemplo de React con varios componentes, props y estado](https://github.com/unahur-desapp/react-ejemplo-1).
+
+
+### Otras fuentes
+Recuerden que sobre React también pueden ver [el material de la materia Construcción de Interfaces de Usuario](https://unahur.github.io/ciu/#/18-react/1.1-principios).  
+
+Hay varios repos de esa materia que se pueden ver [en este link](https://bitbucket.org/evitalinuxera/workspace/projects/UC).  
+**Atenti** - para llegar al link hay que loguearse con un usuario de BitBucket.  
+Peeeeero es el mismo usuario del Trello, así que ya tienen .... porque ya se crearon un usuario de Trello, obviamente. Por las dudas, mírense la sección de Trello más abajo en esta misma página.
+
 
 
 ## Documentos
