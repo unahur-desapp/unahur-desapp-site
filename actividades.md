@@ -13,8 +13,8 @@ He aquí [el video](https://drive.google.com/file/d/1cUTDRfaw6aD7rbt3z8GpmbJN4gf
 
 **Un paseo inicial por React**  
 Fecha: martes 06/04 a las 18.00.  
-Expositor: Carlos Lombardi.
-
+Expositor: Carlos Lombardi.  
+Link: [https://meet.google.com/vmx-motw-qyy](https://meet.google.com/vmx-motw-qyy).
 
 ## Deberían ocurrir
 - Un poquito más de React.
