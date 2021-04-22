@@ -108,3 +108,7 @@ Si voy a hacer una tarea larga que tarde mucho, corro el riesgo de que dev esté
 
 7.
 Local y remoto
+
+
+8.
+Pull requests = merge requests
