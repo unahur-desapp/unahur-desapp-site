@@ -1,0 +1,233 @@
+React - primer micro charla
+
+1. 
+Cómo empieza el cuento: queremos pasar de páginas Web estáticas a aplicaciones Web.
+
+Ejemplo de sitio estático: http://www.proyecto-ciaa.com.ar/index.html.
+Vemos el código fuente:
+- respecto de la *presentación*, hay bastante uso de CSS. Esa magia la hace el browser sin necesidad de programar, se define el CSS y listo.
+- respecto del *comportamiento* se limita a saltar a otras páginas, el "HT" de HTML.
+  Podemos ver la actividad en network, lo primero que hace es traerse un html.
+
+Ejemplo de sitio dinámico: https://reactrouter.com/
+Al saltar del menú a "web", sólo se trae cuatro .js.
+Y no hay nada de red al saltar en las opciones core/web/native.
+Y el código fuente ... no tá.
+
+
+2.
+Para meterle comportamiento a una página Web, necesitamos inyectar dentro del mismo HTML, código que *se pueda ejecutar en el browser*.
+Para esto se inventó JS.
+
+Primer ejemplo: D:\carlos\prog\javascript\initial-examples\repo-gbelgr-2018\javascript-dom-basics\browser\cambiaColor.html.
+Estudiamos el código, qué se está haciendo acá
+- se define una función JS en un elemento script
+- en esta función se accede a un elemento del DOM y se le hace cosquillas.
+- se llama a la función desde un onClick.
+
+
+3.
+Con esto podemos tener *toda* la interactividad que querramos.
+Peeeero el código se nos puede hacer áspero.
+
+Ver D:\carlos\prog\javascript\initial-examples\repo-gbelgr-2018\classes-in-js\browser\monsters-objetos-3.html.
+En particular, la función elegirBanda y lo que desencadena.
+
+
+4.
+Ante esta situación, hay dos caminos
+a. Definir buenas funciones y abstracciones para hacer menos engorroso el código JS.
+b. Definir una abstracción de nivel superior, que maneje la lógica de renderización, dejándote codear y diseñar.
+
+La industria fue por la b.. Hay tres tecnologías que están punteando en este camino: React, Vue y Angular.
+Acá usamos React. Vale usar otra ... a costo de perder el soporte.
+
+
+5.
+Abrimos el repo para mirar qué tiene.
+Este se creó con CRA ... aclaración que sólo sirve para crear, después es un repo como cualquier otro.
+El template para la materia también se creó con CRA. O sea, si usan ese (o este) como base, no se necesitan instalar (creo) CRA.
+
+En principio, lo que nos interesa está en /src, arranquemos por App.js.
+
+Esto es un componente React: una función que devuelve un "HTML mágico", nombre científico JSX.
+- primera cosa: no va class (palabra reservada de JS), hay que poner className.
+- aclarar lo de los sabores función o clase.
+
+Atenti: el div de arriba es necesario porque el JSX que devolvemos tiene que tener *un* tag principal, no varios. 
+Si se *necesita* que sean varios, se puede devolver una lista. Pero ... una capita más de div no se le niega a nadie ...
+
+
+6.
+¿Qué diferencias hay entre HTML y JSX? Varias.
+Una se ve acá, Phrases es otro componente que ya veremos.
+
+Para jugar, podemos crear Titulo ... está hecho en App2.
+
+Otra característica simpática es que se pueden importar stylesheets de CSS como código.
+(abrir App.css, buscar el estilo definido para upperParagraph).
+
+Entonces, cómo armo mi app Web: definiendo componentes que se usan entre ellos metiéndolos x nombre en los JSX.
+Esta es la base de React: un composite de componentes visuales que renderizan como HTML.
+
+
+7.
+Otra cosa que se puede hacer es meter código JS dentro del JSX. Para eso se mete entre llaves.
+Probar sacando el título como una const.
+Se puede meter cualquier código JS, y no sólo en los contenidos. P.ej. saquemos el "upper" del nombre de la clase a una const y usemos template strings.
+
+
+8.
+Lo siguiente es ver cómo se pueden pasar parámetros de un componente a otro. 
+Se pasan como atributos HTML, se reciben en un objeto como parámetro de la función.
+A estos parámetros se los conoce como "props".
+
+Para probar, vamos a App2 y pasamos el título como prop ... está hecho en App3.
+
+
+9.
+Ahora un componente más pulenta: vamos a Phrases. Upa. 
+En realidad, hay una factorización en varios componentes, Phrases es el principal.
+
+El código del Phrases, además de lo que devuelve, tiene unas cuantas cosas. 
+Por ahora concentrémonos en lo que devuelve, después vemos el resto.
+
+Este componente muestra la lista de frases. ¿De dónde las saca? Ya lo veremos.
+Lo importante ahora es que las puedo acceder como phrases. Y que hay un colorTheme que rota entre rojo y verde.
+Las phrases y el colorTheme configuran el *estado* del componente. Sí, parecido al estado interno de un objeto. Después vemos qué es esa magia del useState.
+
+
+10.
+Phrases usa PhraseList, le pasa los dos valores como props.
+En PhraseList vemos la forma típica de renderizar una lista: usando un map.
+Discutir por qué map y no forEach.
+
+Acá un truco: cuando definís una lista, React es muy enfático en pedir que cada elemento tenga un atributo key. Acá como key intrínseca no tengo, uso el índice en el array. Por eso está el map con dos argumentos.
+
+
+11.
+Coraje: vamos con el useState.
+
+Al pasar de componentes clase a componentes función, se agregaron los llamados hooks.
+Uno de los más usados es useState.
+Cada useState define un atributo, los nombres que ponés son el valor y el setter; React define una función con ese nombre, que lleva un parámetro.
+Lo que se pone como argumento del useState es el valor inicial.
+
+Arranquemos con el colorTheme.
+Cuando pulso los botones de camibo de color (azul, rojo o verde), tiene que cambiar el valor de este atributo, o sea, invocarse a setColorTheme.
+Vamos al de azul que es el más fácil. En el onClick llama a setColorTheme.
+
+Y acá viene la **magia de React**: 
+al cambiar el valor de un atributo de state, React reacciona (cuack) y re-renderiza el componente.
+Por eso cambia sin que tenga que hacer nada.
+
+Ver que cambió solito el texto arriba de la lista: estamos en color blue.
+
+Comentario: cómo le di estilo particular al botón. 
+Diferencia entre los nombres de atributo en un .css y en un JS.
+Por qué van a ver ejemplos con doble llave
+    style={{marginBottom: "20px"; color: "blue"}}
+
+
+---------------------------------------------------------------
+Práctica
+---------------------------------------------------------------
+
+Esto va a ser menos de React que de HTML/CSS/JS, React es el punto donde se juntan estos tres, entonces los tengo que saber manejar.
+
+1. 
+Pongamos una frase que diga "Actualmente hay <n> frases listadas", justo abajo de las frases.
+- ponemos "hola" para ubicarnos en tiempo y espacio.
+- ponemos solamente el número -> sección de código JS dentro del JSX
+- ponemos la frase entera
+- la separamos un poco, para eso tenemos simple-list-item en App.css.
+- Más juegos: agrandamos un poco el tipo de letra, le cambiamos el color.
+  Para esto definimos una clase "simple-text" en el App.css, la aplicamos.
+- Le metemos un hover que le ponga un color de fondo.
+
+2.
+Abajo de todo queremos meter la misma frase.
+Podemos copiarnos el div ... o podemos crear un custom component.
+
+3.
+Ahora queremos meter un botón que pase los textos a negrita. 
+Estrategia: definir una clase bold-text y aplicarla cuando se aprieta el botón. Esto ya escribirlo, obvio que no va a compilar 
+Entonces necesitamos un estado: me tengo que acordar si tengo que poner las frases en negrita o no.
+Implementamos
+- agregamos el estado
+- agregamos el botón, notar que tenemos ya una clase simpleButton.
+- ¡anda!
+
+---------------------------------------------------------------
+
+
+12.
+También cambió el color de las frases.
+Para esto se le pasa el colorTheme a PhraseList. 
+Obvio, cuando se re-renderiza un componente, eso se arrastra en el composite de componentes que arma React.
+Notar que el valor que en Phrases es state, en PhraseList es prop. Este es otro patrón muy común en React.
+
+Entre paréntesis, un pequeño truco: lo que le estamos cambiando es el nombre de una clase en los elementos de la lista, ver el uso de JS dentro del JSX en PhraseList.
+Cuando vuelve a renderizar, se calcula el nombre de la clase de acuerdo al valor de la prop en ese momento. Se puede ver en la consola. Acá también se ve que el HTML que genera es bastante comprensible. Igual hay unos React Dev Tools ... que yo (ejem) *debería* instalarme. Ustedes que son jóvenes, chusméenlos y cuéntenme.
+
+
+13.
+Con los botones de rojo y verde hay que dar una vueltita de rosca más, porque el atributo está en Phrases, y se modifica dentro de PhraseColorSelector.
+Para manejar esto, pasamos **el setter** como prop. Esto de pasar funciones como props es de lo más común en React.
+
+Miremos el PhraseColorSelector.
+Uh, para las opciones usa PhraseColorOption ... le tiene que pasar la misma función que recibió. Esto de ir pasando props entre componentes también es común en React, volveremos sobre esto (mucho) más adelante.
+
+Finalmente, en PhraseColorOption está el onClick que llama a la función que le llegó ... o sea al setter del useState de Phrases.
+Como se está seteando algo que está en el state de Phrases, se re-renderiza Phrases, y de ahí para abajo en el composite.
+
+
+14.
+Vamos a las frases. Esto podría venir de un backend o de un servicio externo. O sea, nos vienen asincrónicos.
+
+Para las llamadas a backend definimos funciones en una carpeta aparte a la que se suele llamar services. Por ahora tendremos fake services, cuando tengamos backend la idea es que se toca *solamente* en services.
+
+A ver qué tenemos: en principio una función getAllPhrases. Nótese el Promise.resolve para simular asincronismo.
+
+Entonces, cuando entramos al componente tenemos que llamar a la función, y setear nuestro estado con lo que devuelve.
+Para eso usamos nuestro segundo hook: useEffect. Sobre esto dos cosas
+- El embole cuando useEffect llama a algo asincrónico.
+- Qué es la lista del 2do parámetro.
+
+Como el effect cambia un state, eso hace que se renderice de nuevo.
+O sea, nuestro componente se va a renderizar dos veces
+- una con el estado inicial
+- otra con las frases.
+Ideal para poner cartel de "espere un toque". Cómo: ya lo veremos, hay ejemplos en el template.
+
+
+15.
+Finalmente, tenemos el botón que agrega una frase.
+Más allá de los detalles, termina haciendo setPhrases, cambia el state, re-renderiza.
+Wonderful!
+
+De los detalles, uno *mega* importante para armar fake services.
+Si devuelvo siempre la misma lista, React no tiene forma de darse cuenta que cambió (en realidad podría, pero no lo hace).
+De acuerdo al credo funcional de React, hay que devolver siempre una lista distinta. 
+Por eso en getAllPhrases está el spread.
+
+
+
+---------------------------------------------------------------
+Práctica
+---------------------------------------------------------------
+Un botón que quite la última frase.
+
+Flechitas al lado de cada frase que la suban o la bajen.
+
+
+
+---------------------------------------------------------------
+Siguientes temas
+---------------------------------------------------------------
+React router
+Flexbox
+Material UI
+ 
+
+

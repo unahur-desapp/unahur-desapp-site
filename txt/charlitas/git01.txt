@@ -1,0 +1,110 @@
+Git - voy tirando elementos
+
+1. 
+Contexto - un poco de git
+
+Qué problema ataca Git: muchas manos en un plato hacen mucho garabato.
+Este problema es viejo como el gremio, históricamente fuente de muchos errores y retrasos.
+- podemos laburar cada uno por su lado, pero: la integración después duele, y se potencia el riesgo de hacer varias veces lo mismo.
+- piensen en un equipo de ... 8 personas, que no es tanto.
+
+Hubo muchas propuestas y herramientas. La verdad, Git es la primera satisfactoria de uso masivo (hubo otras copadas pero de nicho, p.ej. Envy).
+
+Por eso la industria se volcó rápida y masivamente a Git, y hoy medio que no nos acordamos de cómo era la vida antes de Git.
+No necesariamente es perfecto, en mi opinión personal está un poco sobredimensionado para proyectos chicos ... reflexión sobre la existencia de herramientas de manejo de proyectos que sean copadas para toda escala de proyectos.
+
+Git es un mundo, tiene un montón de características, está concebido para los proyectos más complejos, que son los masivos de open source.
+De hecho, lo inventó Torvalds para Linux.
+Acá vamos a ver un cachito así. En el material que subí al sitio se habla bastante más en profundidad de lo que vamos a hablar acá.
+Como recomendación de la casa, también tienen los tutoriales de Atlassian.
+Y también como recomendación, es mucho muy apreciado tenerla lisa con Git, da laburo.
+
+(parar un segundo a ver si logran apreciar el valor de lo que están recibiendo)
+
+
+2.
+A qué le vamos a apuntar.
+
+De qué se trata Git ya lo saben porque lo usaron (creo) en al menos 4 materias.
+El foco acá es cómo manejar Git, y cómo nos puede ayudar Git, en un proyecto en donde somos tres codeando.
+
+Siendo que son pocos se podríiiiia (tal vez, la verdad ni sé si convendría) pensar en otro esquema. Pero ... el manejo de Git en el contexto de un proyecto largo (de 9 meses, un parto) es una de las cosas que se llevan de la/s materia/s ... y que se evalúa.
+
+Entonces, primero vamos a ver el esquema, y después vamos a hablar un poco de características de Git.
+
+
+3.
+El esquema: feature branch.
+
+Mostrar el dibujo. Así es como queremos que trabajen.
+
+Podemos tomar "feature" como "tarea" o "tarjeta de Trello". De hecho, asociar un branch a una tarjeta/tarea del manejador de proyectos es una práctica habitual.
+
+Qué nos permite esto: cada uno labura por separado, y después se integra sobre la rama develop (o dev). Master no lo tocamos nunca de los jamases x ahora.
+
+Consecuencia: cada uno no ve los cambios que hacen los otros hasta que integra. 
+Ventaja: no nos pisamos.
+Desventaja: si necesito algo que está haciendo el otro, no lo tengo.
+
+
+4.
+Un mínimo de conceptos Git.
+
+¿Saben lo que es un branch?
+Si no, hacer un ejemplo en vivo. Supongo que alguno de los repos que armé para BDSol va a servir.
+Esto hacerlo sobre GitLab -> crear usuarios roque y laura en GitLab.
+Mostrar en vivo cómo saltando de branch cambia lo que veo. No, no se pierde. Y si meto todo en el remoto, está en el server además de en mi compu.
+¿Y "dónde está" el código de los branches? En algún lado, si quieren saber, en la carpeta .git, en un formato que ... pregúntenle a Torvalds.
+
+
+5.
+Procedimiento de trabajo (esto lo puedo ir haciendo)
+
+Cuando arranco: 
+- git checkout dev
+- git pull
+- git checkout <mi-tarea>
+
+laburo, git commit.
+
+cuando termino, puede ser que alguien haya hecho algo algo, o no.
+
+Dentro de las distintas formas de sincronizarse, la que se va a recomendar acá es usar rebase. Por lo tanto
+- git commit
+- git checkout dev
+- git pull
+- git checkout <mi-tarea>
+- git rebase dev
+
+Acá "subí" mi branch arriba de dev (hacer los dibujitos despacito).
+Pruebo, y después
+
+- git checkout dev
+- git merge <mi-tarea>
+- git push.
+
+
+6.
+Otras pautas
+
+¿Puede haber conflictos? Sí. 
+Lo que vamos a hacer, al menos por (un largo) ahora, es evitarlos, trabajando sobre files separados, y eventualmente (y poquito), sobre secciones separadas del mismo archivo.
+
+Incluso podemos p.ej. crear varias rutas con componentes que vayan a un <div></div> y después cada uno desarrolla. Así no tocamos todes el archivo de rutas.
+Si tocamos un mismo archivo, definimos secciones separadas, por líneas con comentarios. O mejor, definimos distintas funciones.
+Y sí, hay que planificar un toque.
+
+Si vamos a hacer algo entre les tres, o lo que hacemos tiene algo en común.
+- primero armamos una estructura. Esto conviene hacerlo estando conectades.
+- si podemos, esto solito lo mandamos a dev. Después cada une hace su parte en branch separado, como vimos. Esto aplica p.ej. a lo que hablamos recién de las rutas.
+- si nos interesa separar esta tarea como una unidad, sacamos los branches para cada une desde el nuevo branch, después integramos a ese branch, y cuando estamos todes contentes, ese branch de "integración parcial" va a dev.
+
+Si estoy haciendo dos cosas que no tienen nada que ver, pues armo dos branches. Como ya vimos, puedo saltar libremente de uno al otro y no pierdo nada.
+Pero **ojo** antes de saltar tengo que commitear.
+(para entender un poco más ... mostrar el dibujo de "los lugares")
+
+Si voy a hacer una tarea larga que tarde mucho, corro el riesgo de que dev esté muy distinto cuando me toque integrar. Cómo lo mitigo: rebase dev cada tanto (*sin* olvidar hacer pull de dev antes de rebasear).
+
+
+7.
+Local y remoto

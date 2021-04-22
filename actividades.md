@@ -35,7 +35,7 @@ Con esto tenemos el conjunto de elementos para arrancar con el desarrollo ... lo
 ### Manejo de branches en GIT
 _Fecha_: martes 04/05 a las 18.00.  
 _Expositor_: Carlos Lombardi.  
-
+_Para ir leyendo_: pueden mirar en la página de [recursos](../recursos/recursos-index).
 
 ## Deberían ocurrir
 - Test de backend.
