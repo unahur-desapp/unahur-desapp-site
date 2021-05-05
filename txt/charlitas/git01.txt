@@ -106,6 +106,12 @@ Puede ser que alguien haya hecho algo algo, o no.
 Dentro de las distintas formas de sincronizarse, la que se va a recomendar acá es usar rebase. 
 Explicar "en dibujitos" qué onda.
 
+(
+  arrancar de acá el martes 11/05
+  el dibujito para cargar en el graficador online está en
+  D:\carlos\educ\desapp\site\images\intermediate-work-in-three-branches-simulation.drawio
+)
+
 Hands-on
 s1. sesión de trabajo de roque, mete un commit. 
 s2. resulta que roque terminó.
