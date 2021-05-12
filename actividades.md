@@ -6,21 +6,14 @@ layout: default
 
 ## Ya definidas
 
-### Cierre de sprint 2 (sólo para la materia)
-**Martes 11/05**  
-17.00 - Grupo 2   
-20.00 - Grupo 1  
-
-### Manejo de branches en GIT - parte 2
-_Fecha_: martes 11/05 a las 18.30.  (atenti - empieza un poco más tarde)  
-_Expositor_: Carlos Lombardi.  
-_Link_: [https://meet.google.com/vmx-motw-qyy](https://meet.google.com/vmx-motw-qyy).  
-_Para ir leyendo_: pueden mirar en la página de [recursos](./recursos/recursos-index).
-
-En esta charla vamos a experimentar con distintos escenarios en un proyecto en el que trabajan varias personas, viendo cómo se va integrando el trabajo de todes en la rama de integración. Después, hablaremos sobre algunos casos puntuales. Si llegamos, experimentaremos con `git merge` y lo compararemos con `git rebase`.
+### Revisión estado Sprint 3 (sólo para la materia)
+**Viernes 21/05**  
+11.00 - Grupo 1  
+14.30 - Grupo 2  
 
 
 ## Deberían ocurrir
+- Autenticación.
 - Test de backend.
 - Tal veeeez test de frontend.
 - Swagger - documentación de backend.
@@ -66,4 +59,11 @@ En esta charla
 - charlamos sobre el esquema de feature branches que proponemos para los proyectos de Desarrollo de Aplicaciones.
 - experimentamos con varios branches, viendo qué posibilidades tiene un developer de manejar sus tareas y poder colaborar en las de les compañeres.
 - hablamos por arriba de la operación llamada `git rebase`.
+
+### Manejo de branches en GIT - parte 2
+_Fecha_: martes 11/05 a las 18.30.  (atenti - empieza un poco más tarde)  
+_Expositor_: Carlos Lombardi.  
+He aquí [el video](https://drive.google.com/file/d/1iyDXBVRm48I-V2XEyLmrLwgqSpp0pNfh/view).  
+
+En esta charla experimentamos con distintos escenarios en un proyecto en el que trabajan varias personas, viendo cómo se va integrando el trabajo de todes en la rama de integración. Después, hablaremos sobre algunos casos puntuales. 
 
