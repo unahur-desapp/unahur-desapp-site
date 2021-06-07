@@ -6,14 +6,13 @@ layout: default
 
 ## Ya definidas
 
-### Revisión estado Sprint 3 (sólo para la materia)
-**Viernes 21/05**  
-11.00 - Grupo 1  
-14.30 - Grupo 2  
+### Autenticación, y tal vez autorización
+Fecha: martes 15/06 a las 18.00.  
+Expositor: Federico Aloi.  
+Link: ...ya viene...
 
 
 ## Deberían ocurrir
-- Autenticación.
 - Test de backend.
 - Tal veeeez test de frontend.
 - Swagger - documentación de backend.
