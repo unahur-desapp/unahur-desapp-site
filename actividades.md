@@ -5,21 +5,11 @@ layout: default
 # Actividades
 
 ## Ya definidas
-
-### Autenticación, y tal vez autorización
-Fecha: martes 15/06 a las 18.00.  
-Expositor: Federico Aloi.  
-Link: ...ya viene...
+Ninguna, por eso dejo abajo lo que pasó el 1er cuatrimestre 2021, y algunas ideas adicionales.
 
 
-## Deberían ocurrir
-- Test de backend.
-- Tal veeeez test de frontend.
-- Swagger - documentación de backend.
-- ¡y se escuchan propuestas!
 
-
-## Lo que ya pasó
+## 1er cuatrimestre 2021 - lo que pasó
 
 
 ### Mockups de UI usando Figma
@@ -36,8 +26,6 @@ He aquí [el video](https://drive.google.com/file/d/1EpMdM1eiD2jewhTR1gbWA53vv8E
 Fecha: martes 13/04 a las 18.00.  
 Expositor: Carlos Lombardi.  
 He aquí [el video](https://drive.google.com/file/d/1b4IiRz3pWqToCo2qpn9_N33lLcxCjPLT).
-
-El martes 20/04 fue **cierre de sprint**, por lo tanto no hubo clases/charlas.
 
 ### React: el regreso
 _Fecha_: martes 27/04 a las 18.00.  
@@ -66,3 +54,14 @@ He aquí [el video](https://drive.google.com/file/d/1iyDXBVRm48I-V2XEyLmrLwgqSpp
 
 En esta charla experimentamos con distintos escenarios en un proyecto en el que trabajan varias personas, viendo cómo se va integrando el trabajo de todes en la rama de integración. Después, hablaremos sobre algunos casos puntuales. 
 
+
+### Autenticación y autorización
+Fecha: martes 15/06 a las 18.00.  
+Expositor: Federico Aloi.  
+
+
+## Otros temas posibles
+- Test de backend.
+- Tal veeeez test de frontend.
+- Swagger - documentación de backend.
+- ¡y se escuchan propuestas!
