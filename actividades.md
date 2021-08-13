@@ -5,8 +5,11 @@ layout: default
 # Actividades
 
 ## Ya definidas
-Ninguna, por eso dejo abajo lo que pasó el 1er cuatrimestre 2021, y algunas ideas adicionales.
 
+### Un paseo inicial por React
+Fecha: martes 17/08 a las 18.00.  
+Expositor: Carlos Lombardi.  
+Por favor, mírense el [video de la misma charla cuando se dio en abril](https://drive.google.com/file/d/1cUTDRfaw6aD7rbt3z8GpmbJN4gfjHqFF/view).
 
 
 ## 1er cuatrimestre 2021 - lo que pasó

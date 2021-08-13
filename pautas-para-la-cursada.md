@@ -98,4 +98,4 @@ Vale trabajar con [Pull Requests](https://yangsu.github.io/pull-request-tutorial
 
 ## Actividades
 Vamos a tener una sesión semanal, para la reunión de fin de sprint cuando corresponda, para revisar la marcha y resolver dudas las otras.  
-Está la intención de ir mechando charlas sobre temas que les vienen bien para el proyecto, eso lo vamos a ir reflejando en [la página de actividades](./actiivdades).
+Está la intención de ir mechando charlas sobre temas que les vienen bien para el proyecto, eso lo vamos a ir reflejando en [la página de actividades](./actividades).
