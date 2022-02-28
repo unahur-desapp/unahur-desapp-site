@@ -4,12 +4,21 @@ layout: default
 
 # Actividades
 
-## Ya definidas
+## Definidas para el futuro
 
-### Un paseo inicial por React
+Eeeehhh ... no hay nuevas actividades definidas por ahora.
+
+## 2do cuatrimestre 2021 - lo que pasó
+
+### React - charla 1
 Fecha: martes 17/08 a las 18.00.  
 Expositor: Carlos Lombardi.  
-Por favor, mírense el [video de la misma charla cuando se dio en abril](https://drive.google.com/file/d/1cUTDRfaw6aD7rbt3z8GpmbJN4gfjHqFF/view).
+He aquí [el video](https://drive.google.com/file/d/1RVSxIwM1c2BwwVvCIEqow7w3s-V5s3CU/view).
+
+### React - charla 2
+Fecha: martes 24/08 a las 18.00.  
+Expositor: Carlos Lombardi.  
+He aquí [el video](https://drive.google.com/file/d/1ad_2EPqutPOxz-N6jdait-KT9n0BQ12Z/view).
 
 
 ## 1er cuatrimestre 2021 - lo que pasó

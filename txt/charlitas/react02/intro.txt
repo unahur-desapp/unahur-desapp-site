@@ -1,0 +1,45 @@
+------------
+Qué es React
+------------
+Una librería que simplifica la construcción de UI interactivas
+
+
+¿Por qué simplifica, qué nos da?
+--------------------------------
+- Notación que combina HTML y código JS/TS muy bien lograda.
+- Componentes que se definen con 0 burocracia y fáciles de reusar.
+- Es la base de un ecosistema de paquetes que soportan varios aspectos presentes en el desarrollo de muchos FE.
+- Posibilidad de aplicar lógica de código en el manejo de CSS.
+- Se encarga de actualizar la visualización cuando cambia algún dato relevante, en forma eficiente ... si tomamos los recaudos necesarios en nuestro código.
+
+
+¿Cómo es la curva de aprendizaje?
+---------------------------------
+Dura, en particular llegar a comprender cómo funciona React, lo que es necesario para poder resolver UIs complejas.
+En este curso intentaremos un acercamiento muy paso-a-paso que permita ir adentrándonos paulatinamente en la lógica de React.
+
+
+Entonces, ¿conviene?
+--------------------
+IMHO absolutamente, destaco dos motivos.
+1. Da mucha libertad para diseñar nuestros componentes, se pueden aplicar las prácticas de buena codificación que traemos de otros contextos.
+2. Una vez que una/e/o comprende la lógica detrás de React, se pueden encontrar soluciones a problemáticas no triviales con poco código.
+3. Da trabajo, hay mucha demanda de desarrolladores React, en particular con buen seniority.
+
+
+--------------------------
+De qué se trata este curso
+--------------------------
+La base del curso consiste en estudiar React, empezando desde cero, cubriendo sus características y herramientas principales.
+Durante el recorrido también tocaremos otras herramientas útiles para la construcción de FE, en particular: JS, algo de CSS (en particular FlexBox), comunicación con una API, y varios paquetes dentro del ecosistema basado en React.
+El contenido referido a otras herramientas está en sesiones separadas, salvo que sean comentarios puntuales. De esta forma, quienes quieran focalizarse en React pueden simplemente saltear estas sesiones "laterales".
+
+El objetivo es brindar un panorama completo del uso de React y otras tecnologías para la construcción de aplicaciones.
+Dicho de otro modo, pretendernos no limitarnos a explicar los distintos conceptos y técnicas, sino también estudiar cómo aprovecharlos en el desarrollo.
+
+
+-----------
+Metodología
+-----------
+Prácticamente toda la exposición va a estar basada en ejemplos.
+Los distintos elementos que se describirán en el curso, aparecerán durante la construcción de aplicaciones Web.

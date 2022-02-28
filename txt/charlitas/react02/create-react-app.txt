@@ -1,0 +1,17 @@
+Una forma conveniente de montar la estructura inicial de una app basada en React es usar Create React App (https://create-react-app.dev/).
+No es necesario (ni recomendable) instalar CRA, se puede usar mediante npx.
+
+Nota al margen
+npx viene con npm, permite ejecutar programas que están registrados como paquetes npm, sin necesidad de instalarlos.
+
+La estructura del proyecto es sencilla
+- una carpeta public con el único archivo HTML estático que vamos a necesitar, y algunos recursos. 
+- una carpeta src donde va a ir el código de nuestra app.
+- en el package.json, dos tareas principales: npm start y npm build. En este curso, vamos a usar casi siempre npm start.
+
+Pero antes de ejecutar nada, vamos a limpiar el proyecto.
+- borramos en public: los dos png y el robots.txt. En manifest.json sacamos las referencias a los logos que borramos.
+- en src dejamos solamente: App.js, index.css, index.js. En el index.js, volamos las referencias a reportWebVitals que lo borramos.
+
+Último paso de limpieza: entramos a App.js y borramos el contenido.
+Antes de borrarlo ... qué raro, esto parece HTML, más que JS. Ahora vamos a esto.

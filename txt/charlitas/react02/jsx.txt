@@ -1,0 +1,43 @@
+(AppAutonomous - App01 - pasarlo como App en App.js)
+Esto parecería el ejemplo más sencillo del mundo. Lo ejecutamos lanzado npm start en la consola ... y esperando.
+A ver ... anda.
+
+En este ejemplo súper sencillo, ya podemos ver varios elementos básicos de React. 
+La función App parece estar escrita en HTML. No es un String ni nada, es una expresión ... que en realidad va a transpilar a JS. Pero es mucho más cómodo escribirla en formato HTML.
+Este formato "seudo-HTML" es el llamado JSX, que es soportado por React. Cualquier (o casi) expresión HTML es aceptada en JSX, igual o con mínimos cambios. Veremos que JSX incorpora varios agregados que son súper útiles.
+
+Cualquier función que devuelva una expresión JSX, es un componente de React. Con eso basta, no hacen falta configuraciones ni anotaciones ni nada. 
+
+Pero ... ¿cómo es que el Hola llega a la ventana del browser?
+- el archivo que se despliega es el public/index.js, que tiene un div con id root.
+- el punto de entrada de React es index.js, ahí se le indica a React que como contenido del div root sea la expresión que devuelve App. O sea el div con un "Hola". 
+Dicho de otra forma, se indica que debe renderizarse el componente App.
+Esto está bueno saberlo ... pero vamos a tocarlo muy raramente. Nuestro código va a estar en los componentes React.
+
+Notemos cómo se indica que debe renderizarse App: escribiéndolo como si fuera un elemento HTML. Si te estás imaginando que esta notación para incluir un componente se puede usar en cualquier lado ... vas bien. Sobre esto vamos a volver en breve. Pero ahora sigamos.
+
+
+(App02)
+Lo dicho, JSX incluye todos los elementos de HTML ... y alguno más. 
+El elemento principal, estos corchetes sin nada adentro, se conoce como Fragment. Por qué lo ponemos: porque lo que devuelve un componente React tiene que ser una expresión con un único elemento principal, si le sacamos el fragment no compila, con un mensaje claro: JS expressions must have one parent element.
+Podemos ver en los dev tools que el Fragment no genera HTML, es sólo para hacer contento a React.
+
+Vemos que el font no es el default de HTML. ¿Dónde está definido este font? En index.css ... que tiene varias clases que podemos usar.
+
+
+(App03)
+En efecto, en esta versión hacemos uso de dos clases de CSS que agregamos al index.css.
+
+Hasta acá no parece gran cosa React, estamos escribiendo HTML estático.
+Si vemos lo que tenemos con ojos de programador, ya aparece algo que nos interpela: los cuatro li igualitos, donde sólo cambia la frase. 
+
+
+(App04)
+Si queremos cambiar la lista por cuatro parágrafos, vemos que tenemos que cambiar cada li por p. Como programadores, hubiéramos querido tocar en un solo lado.
+
+
+(App05)
+Agregando un poco de contenido, ya vemos varias regularidades en el código, que nos hacen tener ganas de definir más componentes, p.ej. uno que muestre la data de un autor, ven que la estructura del HTML es la misma, cambian sólo los datos.
+Además ¿cómo hacemos si se agrega un autor, o como pasa muchas veces, los datos a renderizar hay que pedírselos a un BE?
+
+Para empezar a responder a esta pregunta, vamos a enfocarnos en cómo definir e integrar componentes.

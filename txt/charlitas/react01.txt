@@ -1,4 +1,4 @@
-React - primer micro charla
+ React - primer micro charla
 
 1. 
 Cómo empieza el cuento: queremos pasar de páginas Web estáticas a aplicaciones Web.
@@ -25,6 +25,8 @@ Estudiamos el código, qué se está haciendo acá
 - en esta función se accede a un elemento del DOM y se le hace cosquillas.
 - se llama a la función desde un onClick.
 
+... acá ya podemos pensar la diferencia con React ...
+Con React, no tocamos el DOM, tendríamos un state color, e inyectaríamos en el style del elemento el valor del color.
 
 3.
 Con esto podemos tener *toda* la interactividad que querramos.
@@ -54,12 +56,12 @@ Esto es un componente React: una función que devuelve un "HTML mágico", nombre
 - primera cosa: no va class (palabra reservada de JS), hay que poner className.
 - aclarar lo de los sabores función o clase.
 
-Atenti: el div de arriba es necesario porque el JSX que devolvemos tiene que tener *un* tag principal, no varios. 
-Si se *necesita* que sean varios, se puede devolver una lista. Pero ... una capita más de div no se le niega a nadie ...
+Atenti: el <> de arriba es necesario porque el JSX que devolvemos tiene que tener *un* tag principal, no varios. 
+Si se *necesita* que sean varios, se puede devolver una lista. Pero ... para eso se inventó React.Fragment, que se puede abreviar en <>, que te agrega esa capita sin influir en el HTML que se genera.
 
 
 6.
-¿Qué diferencias hay entre HTML y JSX? Varias.
+¿Qué diferencias hay entre HTML y JSX? Varias (además del Fragment).
 Una se ve acá, Phrases es otro componente que ya veremos.
 
 Para jugar, podemos crear Titulo ... está hecho en App2.
@@ -114,7 +116,10 @@ Cada useState define un atributo, los nombres que ponés son el valor y el sette
 Lo que se pone como argumento del useState es el valor inicial.
 
 Arranquemos con el colorTheme.
-Cuando pulso los botones de camibo de color (azul, rojo o verde), tiene que cambiar el valor de este atributo, o sea, invocarse a setColorTheme.
+Primero veamos dónde se usa el getter 
+- en el cuerpo de Phrases, arriba dice "estamos en color XXXXX"
+- dentro de PhraseList, entender eso (después vemos bien cómo llega).
+Cuando pulso los botones de cambio de color (azul, rojo o verde), tiene que cambiar el valor de este atributo, o sea, invocarse a setColorTheme.
 Vamos al de azul que es el más fácil. En el onClick llama a setColorTheme.
 
 Y acá viene la **magia de React**: 
@@ -126,7 +131,7 @@ Ver que cambió solito el texto arriba de la lista: estamos en color blue.
 Comentario: cómo le di estilo particular al botón. 
 Diferencia entre los nombres de atributo en un .css y en un JS.
 Por qué van a ver ejemplos con doble llave
-    style={{marginBottom: "20px"; color: "blue"}}
+    style={{marginBottom: "20px"; color: "red"}}
 
 
 ---------------------------------------------------------------
@@ -150,7 +155,7 @@ Abajo de todo queremos meter la misma frase.
 Podemos copiarnos el div ... o podemos crear un custom component.
 
 3.
-Ahora queremos meter un botón que pase los textos a negrita. 
+Ahora queremos meter un botón que pase las frases que agregamos recién a negrita. 
 Estrategia: definir una clase bold-text y aplicarla cuando se aprieta el botón. Esto ya escribirlo, obvio que no va a compilar 
 Entonces necesitamos un estado: me tengo que acordar si tengo que poner las frases en negrita o no.
 Implementamos
@@ -167,8 +172,8 @@ Para esto se le pasa el colorTheme a PhraseList.
 Obvio, cuando se re-renderiza un componente, eso se arrastra en el composite de componentes que arma React.
 Notar que el valor que en Phrases es state, en PhraseList es prop. Este es otro patrón muy común en React.
 
-Entre paréntesis, un pequeño truco: lo que le estamos cambiando es el nombre de una clase en los elementos de la lista, ver el uso de JS dentro del JSX en PhraseList.
-Cuando vuelve a renderizar, se calcula el nombre de la clase de acuerdo al valor de la prop en ese momento. Se puede ver en la consola. Acá también se ve que el HTML que genera es bastante comprensible. Igual hay unos React Dev Tools ... que yo (ejem) *debería* instalarme. Ustedes que son jóvenes, chusméenlos y cuéntenme.
+Volvamos a cómo se usa el color en PhraseList, como un nombre de clase que se agrega o no.
+Cuando vuelve a renderizar, se calcula el nombre de la clase de acuerdo al valor de la prop en ese momento. Se puede ver en la consola. Acá también se ve que el HTML que genera es bastante comprensible. Igual hay unos React Dev Tools ... se pueden ver. Ustedes que son jóvenes, chusméenlos y cuéntenme.
 
 
 13.
@@ -181,6 +186,10 @@ Uh, para las opciones usa PhraseColorOption ... le tiene que pasar la misma func
 Finalmente, en PhraseColorOption está el onClick que llama a la función que le llegó ... o sea al setter del useState de Phrases.
 Como se está seteando algo que está en el state de Phrases, se re-renderiza Phrases, y de ahí para abajo en el composite.
 
+
+13.5.
+Pero ... phrases es un const, ¿cómo es que cambia de valor?
+Epa epa epa.
 
 14.
 Vamos a las frases. Esto podría venir de un backend o de un servicio externo. O sea, nos vienen asincrónicos.

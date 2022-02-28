@@ -1,0 +1,50 @@
+(parados en App05)
+Entre paréntesis, se ve linda la diagramación: dos columnas, la de la izquierda justificada hacia la derecha, la de la derecha centrada verticalmente.
+Podemos ver en el código que esto se logró con CSS. En particular, usamos flexbox.
+
+¿Qué es flexbox?
+Una serie de atributos CSS que, creo, simplifica en muchos casos la organización de una página, y en particular mitiga la necesidad de hacer ajustes manuales del estilo "corro este elemento 4px hacia la izquierda para que se encolumne con el de arriba".
+
+Van a encontrar una descripción de flexbox en https://css-tricks.com/snippets/css/a-guide-to-flexbox/, una serie de desafíos para aprender en https://www.outpan.com/app/fd1b175fe8/flexbox-froggy, y un montón de playgrounds, de los que mencionamos https://flexbox.tech/ y https://codepen.io/enxaneta/full/adLPwv.
+
+
+Flex permite organizar el contenido de una página en cajitas que son justamente los flexbox. Cada flexbox puede incluir varios elementos, se puede elegir si disponerlos
+- como una columna, o sea de arriba hacia abajo, o
+- como una fila, o sea de izquierda a derecha.
+
+A su vez, un elemento que se introduce dentro de un flexbox puede ser a la vez otro flexbox, de esa forma se pueden ir ensamblando distintas cajitas.
+
+En esta página tenemos (esto se puede mostrar con los dev tools recorriendo el árbol de elementos)
+- exterior: un flexbox columna con cuatro elementos
+- el primer elemento es un título, ese lo queremos centrado
+- los otros tres son flexbox fila, cada uno tiene dos elementos que ocupan la mitad del espacio cada uno.
+- dentro de cada fila, el elemento de la izquierda es un flexbox columna con dos elementos (nombre y foto), y el de la derecha otro flexbox columna donde los elementos son las frases.
+
+... hagamos un dibujo en papel o con el diagram editor ...
+
+Para definir un flexbox se agregan atributos CSS a un elemento, típicamente un div. 
+- para definir un flexbox display: flex;
+- para indicar si es fila o columna flex-direction.
+- hay otros atributos relacionados con Flex que iremos viendo.
+
+(App05NoFlexbox + indexPruebaFlexbox.css)
+Para ver el efecto de flexbox, tomemos el mismo HTML del último ejemplo, sacando los atributos flex. Se ve así.
+
+Lo primero que vamos a acomodar son los bloques de cada autor, para que título + foto esté a la izquierda, la lista de frases a la derecha. 
+Esos son los div que tienen clase phraseAuthorBlockPrueba. Queremos que sean fila, agregamos
+    display: flex;
+    flex-direction: row;
+Hop, tenemos los tres bloques. Nos falta bastante de alineación. Lo primero es especificar el width de las cajas de phraseAuthorInfoFramePrueba y phraseGroupFramePrueba. Les ponemos 50% a cada una para que vayan parejo.
+
+Lo siguiente es que la lista de frases vaya centrada. Para esto tenemos que entender otro concepto de flexbox, los ejes principal y perpendicular (cross). El eje principal es que se usa para acomodar las cajitas, vertical para row, horizontal para column. El eje cross es el otro, horizontal para row, vertical para column.
+Para acomodar las cajitas en el eje principal usamos justify-content, para el eje cross usamos align-items.
+Veamos el efecto en los ejemplos de https://codepen.io/enxaneta/full/adLPwv, que son justamente rows.
+... justify-content -> eje principal, vertical.
+--- align-items -> eje cross, horizontal.
+
+En este caso, lo que queremos es centrar en el eje horizontal, que es el cross. Por eso va align-items.
+
+Para entender la diferencia, cambiemos los 50% por 30%, y juguemos con el justify-content.
+
+Super recomendado jugar con https://www.outpan.com/app/fd1b175fe8/flexbox-froggy para acostumbrarse.
+
