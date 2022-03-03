@@ -1,0 +1,60 @@
+... resumen de lo que vimos hasta ahora ...
+- Notación JSX.
+- Organización usando componentes, pasar valores a un componente.
+- Híbrido HTML/JS.
+- CSS modules.
+
+Todo esto nos ayuda a organizar el código, y a generar componentes que concentran la lógica, a los que se les pueden pasar distintos sets de datos.
+Pero todavía no tenemos nada de interactividad, el HTML generado es totalmente estático.
+
+
+(AuthorsAndPhrases05a)
+Vamos a agregarle un poco de dinamismo, y ver una herramienta básica que nos brinda React para esto.
+
+El objetivo ... lo mostramos ... hay acciones que puede realizar el usuario, y la app reacciona a las acciones.
+
+Preparemos primero el terreno.
+Ahora necesitamos tener más de una foto por autor, para hacerlo flexible asociemos un array de fotos a cada autor, aunque usemos solamente dos.
+... cambiamos los datos ...
+Ahora el valor que le llega a PhrasesBox se va a llamar imageSrcs en lugar de imageSrc ... cambiar ... 
+Finalmente, en el código de PhrasesBox, alcanza con reemplazar la imagen por una estructura que incluya la imagen y los botones .... copiamos el código ... probamos ... 
+
+Funciona, están los botones, y la aplicación reacciona al onClick ... ver la consola ...
+... del estilo de los botones nos vamos a encargar más adelante ...
+
+Para que cambie la imagen, alcanza en elemento img
+    <img className={classes.image2} src={imageSrcs[1]} alt="" />
+cambiar el "1" por un valor que refleje lo que elige el usario.
+Este es un valor que el componente va a tener que recordar. Deberíamos tener una variable en algún lado ... en rigor tres variables, una por cada vez que usamos PhrasesBox. Si agregamos un cuarto bloque PhrasesBox, habría que agregar una cuarta variable. 
+Dicho de una forma en la línea de cómo ve React este problema, cada instancia (o sea, cada uso) de PhrasesBox tiene que tener un *estado* propio, local a esa instancia del componente. En este caso, en lugar de tener en algún lado un array u objeto con la foto elegida por el usuario para cada PhrasesBox, vamos a tener una variable asociada a cada instancia de este componente.
+
+Para esto, usamos useState, una función que viene con React. 
+Es medio rara la forma de usarla, pero es hasta que uno se acostumbra, y realmente soluciona el problema.
+Usémoslo primero y después hacemos una explicación un poco más detallada.
+
+Para definir una variable selectedImageIndex, ponemos esto al principio de PhrasesBox
+    const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+usando la ayuda contextual para que agregue el import.
+
+Esto nos define una especie de variable selectedImageIndex. Pero no es exactamente una variable, se puede usar como una variable, pero para cambiarle el valor no se puede hacer p.ej.
+    selectedImageIndex = 1;
+es *necesario* usar el setter que viene asociado, o sea
+    setSelectedImageIndex(1);
+
+El parámetro del useState es el valor inicial.
+
+Ahora que tenemos este estado, usémoslo para indicar cuál de las fotos queremos mostrar ... hacerlo, también en el label de foto elegida: -sumándole 1-, se va a ver la primera por el valor inicial ... .
+
+En el onClick de los botones cambiamos el valor, recordemos, usando el setter ... lo hacemos ... .
+
+¡y funciona!
+
+Vemos que los valores de selectedImageIndex son independientes para cada bloque, y que la página se re-renderiza sin que hayamos hecho nada.
+Estamos usando por primera vez la re-renderización automática de React. Esta es a la vez una de las ventajas y uno de los aspectos más complejos de React. En una primera mirada, alcanza con entender que cuando se modifica el valor de un state dentro de un componente, React se da cuenta de que hay que recargar ese componente, y se encarga de actualizar la página.
+En rigor React es más sutil, modifica solamente las partes del componente que están vinculadas al state que cambió ... mostrarlo en el dev tools ... .
+
+
+
+
+
+

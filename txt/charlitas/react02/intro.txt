@@ -37,9 +37,19 @@ El contenido referido a otras herramientas está en sesiones separadas, salvo qu
 El objetivo es brindar un panorama completo del uso de React y otras tecnologías para la construcción de aplicaciones.
 Dicho de otro modo, pretendernos no limitarnos a explicar los distintos conceptos y técnicas, sino también estudiar cómo aprovecharlos en el desarrollo.
 
+Más que describir los detalles de cada tecnología/herramienta que usemos, que eso lo pueden ver en la documentación o en materiales puntuales, la idea es describir para qué las podemos usar, y cómo se integran en la construcción de apps.
 
 -----------
 Metodología
 -----------
 Prácticamente toda la exposición va a estar basada en ejemplos.
 Los distintos elementos que se describirán en el curso, aparecerán durante la construcción de aplicaciones Web.
+
+
+
+--------------------------------
+... discursos a acomodar ...
+
+No sé qué tanto sabe de JS, CSS u otros temas c/u de ustedes. 
+Sí sé que tener un buen manejo, en particular de JS, es vital para construir apps basadas en React (o en cualquier tech JS-based) compactas, legibles y mantenibles. ¡Y para estar más orgulloso del código que uno escribe!
+Por eso vamos a armar varias sesiones laterales, que quieren ser un refuerzo para quienes sientan que les conviene reforzar ciertos temas que no son "de React", pero que sí es útil manejar para construir apps basadas en React.

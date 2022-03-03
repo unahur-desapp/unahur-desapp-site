@@ -1,0 +1,3 @@
+Para hacer los videos más independientes, se puede empezar c/u resumiendo lo que vimos, mostrando el estado del ejemplo antes de arrancar explicándolo un poquito, y tal vez mostrar a dónde queremos llegar. Para que se entienda el contexto sin necesidad de haber visto los videos previos.
+
+En espiral: algunos conceptos aparecen temprano, para darnos el tiempo de elaborarlos a lo largo de la actividad.

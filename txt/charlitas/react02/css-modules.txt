@@ -1,0 +1,43 @@
+... resumen de lo que vimos hasta ahora ...
+- Notación JSX.
+- Organización usando componentes, pasar valores a un componente.
+- Híbrido HTML/JS.
+
+(hacia AuthorsAndPhrases04)
+... asumimos que los estilos definidos en index.css se pueden usar en el componente AuthorsAndPhrases. En el material sobre flexbox, usamos otro archivo .css, el indexPruebaFlexbox.css, la app también reconocía los estilos en ese archivo.
+Esto es correcto, una app React puede usar estilos de todos los archivos .css que se definan, no sé si en /src o en cualquier lado. 
+Para entender cómo hace la app React, hay que pensar en qué es lo que le llega al browser. React transpila todo el código (i.e. traduce el JSX en JS, y en general todo lo que escribimos a una versión básica de JS que corra en versiones antiguas de los browsers) generando un paquetón con un html chiquito y uno JSs ... que pueden ser varios, como veremos mucho más adelante ...
+
+... levantar la app, abrir el bundle.js, buscar "css" ...
+
+Si defino varios archivos css, tengo que tener cuidado en no definir clases con el mismo nombre, porque en lo que termina llegándole al browser se mezcla todo.
+P.ej. si mi app tiene varias páginas, y en todas tengo un título que usa la clase .title, todos se van a ver igual, lo que es al mismo tiempo bueno y limitante. No puedo tener dos .title, y elegir para cada componente cuál usar.
+
+Así como modularizamos el HTML, sería bueno poder modularizar el CSS, que de hecho puede crecer mucho en proyectos de medianos para arriba.
+Hay varias formas de solucionar este problema.
+Ahora vamos a ver una adecuada para arrancar porque viene con React, y además es sencilla. Se mantiene la idea de definir archivos CSS separados.
+En otras propuestas la idea es llevar el manejo del CSS al código, para poder aplicar técnicas de programación al manejo de CSS. Más adelante vamos a estudiar una propuesta que va en esta dirección.
+
+La idea es muy-muy simple: así como en un archivo donde definimos componentes podemos importar otros componentes, y también librerías (ya viene ...) también podemos importar archivos .css.
+Veamos una versión de nuestros componentes que la usan.
+(mostrar AuthorsAndPhrases04)
+Tenemos un archivo AuthorsAndPhrases.module.css (la terminación '.module.css' *si* es obligatoria) ...peguémosle una mirada ...
+En el archivo donde definimos nuestros componentes, importamos el .css como un default import. P.ej. 
+    import classes from './AuthorsAndPhrases.module.css'
+
+Esto nos define un objeto classes ... mirémoslo en la consola de los dev tools... .
+El objeto tiene un atributo para cada clase definida en el .module.css
+- el *nombre* del atributo es el nombre de la clase, tal como la escribimos en el .css. P.ej. phraseAuthorBlock. 
+- el *valor* es un string creado por React, que garantiza que va a ser único *en toda la app*. Este va a ser el nombre de la clase que React va a inyectar en el browser. 
+
+Entonces, alcanza con cambiar
+    <div className="phraseAuthorBlock">
+por
+    <div className={classes.phraseAuthorBlock}>
+
+Veamos cómo queda el elemento en la página ... usa el nombre de clase generado por React. 
+Este es el truco: las clases que se inyectan tienen nombres únicos.
+Por lo tanto, puedo poner en dos archivos .module.css distintos, clases con el mismo nombre, ponele phraseAuthorBlock. Incluso los archivos .module.css se pueden llamar igual. React va a generar dos nombres distintos, p.ej. 
+.AuthorsAndPhrases_phraseAuthorBlock__gbsJZ y .AuthorsAndPhrases_phraseAuthorBlock__zztOP
+Esto me evita tener que inventar nombres nuevos o andar mirando si me quedaron dos nombres de clases iguales. Realmente *muy* práctico.
+

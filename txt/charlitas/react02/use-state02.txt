@@ -1,0 +1,96 @@
+Vamos a agregar una segunda acción: cambiar el color de las frases. 
+Esto nos va a servir para reforzar lo que estudiamos recién sobre useState, y también para ver algunos trucos nuevos.
+
+
+(mostrar AuthorsAndPhrases05ab.js)
+Este es nuestro objetivo. Vamos a empezar con los tres colores, y dejar el "No mostrar" para un poco más adelante.
+
+Empecemos por acomodar la gráfica y agregar los botones. Vamos a agregar una estructura en donde ahora están las frases, y cambiar un estilo 
+(esto es copy-paste) + (classes.phaseAuthorBlock, agregarle un 2)
+Ahora tenemos un grid columna con tres componentes, la fila de botones, la indicación del botón elegido, y la lista de frases.
+Y atenti, ahora los botones y la frase están arriba, y la lista de frases en el medio *del espacio que queda* (se puede ver eligiendo los elementos con el dev tools).
+Para esto usamos algunos atributos nuevos ligados con flexbox, de los que hablaremos en una sesión separada. Sigamos ahora con React.
+
+Separemos el trabajo que nos queda en dos pasos, primero registramos la selección del usuario, en un segundo paso la aplicamos a las frases.
+El primer paso es similar a lo que hicimos para la selección de fotos: agregamos un segundo estado al componente PhrasesBox ... no ponerle valor inicial ... recordamos que useState devuelve una lista con dos elementos, el primero es una seudo-variable que nos permite acceder al valor, el segundo es el setter que tenemos que usar obligatoriamente para cambiar el valor ... para el nombre del setter la convención setXXX no es obligatoria, sí fuertemente recomendada.
+En los onClick de los botones cambiamos el estado ... hacerlo ... .
+Para verificar que lo estamos gestionando bien, lo mostramos en la leyenda ... pasa de ser un texto fijo a una expresión ... .
+
+¿Por qué al principio no se ve un valor? Porque no seteamos un valor inicial ... .
+
+Ahora queremos aplicarle el color a las frases, o sea, agregarles un atributo CSS.
+Podríamos agregar una segunda clase CSS, definir tres clases phrase-crimson etc. e ir agregando la clase correspondiente al color elegido. Eso andaría perfectamente.
+Pero, vamos a hacerlo de otra forma, un poco para ver otra herramienta, un poco para que aparezcan alternativas.
+En lugar de definir una clase, le vamos a inyectar directamente el style a cada elemento. O sea, al div le vamos a agregar un atributo style.
+En React (distinto de HTML), a este atributo hay que pasarle un objeto que es una representación, en JS, de atributos CSS. Para les curioses, para esto se definió una especificación llamada JSS.
+En CSS, el style sería { color= ...color_elegido... }. En React, usamos la sintaxis de objeto { color: ...color elegido ...}.
+Para hacerlo más claro, definamos arriba una variable con el objeto que queremos pasar.
+    var colorStyle = { color: colorForPhrases };
+y le agregamos el style a las frases
+    {phrases.map(phrase => 
+        <div key={phrase} className={`${classes.phrase} ${classes["phrase-div"]}`} style={colorStyle}>
+            {phrase}
+        </div>
+    )}
+
+Oooohhhh ... anda ...
+
+
+Moraleja que es súper-mega-importante:
+Si quiero que mi app React reaccione a un evento (en este caso el click de un botón), no-no-no tengo que pensar en ejecutar algo que lance la renderización. 
+Lo que tengo que hacer es cambiar un estado, y definir qué se tiene que mostrar en base a ese estado. De redibujar *se-encarga-React*, lo hace mejor que nosotros ... insistir con que cambia estrictamente lo necesario ... .
+
+... bajarlo al ejemplo ... en este caso quiero que cambie el color de las frases cuando se pulsa el botón. ¿Qué hago, en el onClick llamo a una función actualizarFrases(nuevoColor)? Noooo.
+Lo que hago es que el color dependa de un state, y modificar el state en el onClick. 
+
+
+Sigamos, nos falta agregar el botón "No mostrar" ... lo agregamos. De paso, limpiamos la indicación del color elegido.
+¿Qué tiene que hacer? Desaparecer las frases.
+Lo que dijimos, lo que vamos a hacer es que las frases se muestren o no dependiendo de un estado, y cambiar el estado en el onClick.
+Podríamos agregar un nuevo estado ... pero usemos el colorForPhrases. Digamos que si le ponemos null, eso quiere decir "no mostrar las frases" ... agregar el onClick ... .
+
+¿Cómo hacemos para que no aparezcan las frases? Les podríamos poner p.ej. display: none. Pero vamos a hacer distinto, para mostrar una técnica muy usada en los componentes React: la renderización condicional.
+En este caso, vamos a hacer que el div con las frases aparezca solamente si colorForPhrases tiene un valor seteado ... lo escribimos de una ... .
+Acá hay usados un par de trucos JS respecto del manejo de condiciones booleanas, que se describe en detalle en otra sesión.
+
+Para que quede igual al objetivo (... mostrar ...) nos falta sólo poner la leyenda "... elegir un color para ver las frases ...". 
+
+Para esto, otro bloque con renderización condicional, con la condición opuesta ...
+- bloque con la condición
+- le metemos un div con la misma clase de una frase, pero sin el style
+- el contenido es estático ... por eso no van las comillas ...
+    {!colorForPhrases && <div className={`${classes.phrase} ${classes["phrase-div"]}`}>
+        ... elegir un color para ver las frases ...
+    </div>}
+... me quedó muy pegado, metámosle un margin-top para despegarlo ... lo hago con style para ver un detalle: en JSS / notación para style en React, los nombres de los atributos son camelCase en lugar de separados-por-guiones.
+Lo mando con const arriba ... ya lo bajaré.
+
+Ahora sí, nos quedó igualito.
+
+Pregunta de repaso: ¿se podría haber hecho con un if? No, porque un if no es una expresión.
+
+
+
+---------------------------------
+Observaciones posteriores
+---------------------------------
+Notemos que hemos logrado dinamismo  con poquito código. El approach no es escribir mucho, es pensar qué efectos quiero, qué eventos los lanzan, y cómo manejar lo que necesito mediante estado. Como me gusta pensarlo, qué cosquillitas le tengo que hacer a React para que renderice como yo quiero. Hay que recordar que el que renderiza es React, nuestro trabajo es decirle qué renderizar.
+
+Volvamos a subrayar que los estados de las distintas instancias de PhrasesBox se mantienen independientes. Este es un *gran* favor que nos hace React.
+
+
+Miremos los botones de cambio de color, tienen style. Pero está distinto, hay una doble llave ... explicar por qué, hacerlo para el mensaje "... elegir un color ...". 
+Se puede hacer en las frases, vale para estilos dinámicos ... ponerlo y sacarlo porque nos va a dar pie para lo que viene ...
+
+
+Hagamos un experimento: cambiemos el var colorStyle por un const.
+¿Qué dicen, debería funcionar o no? En principio une pensaría que no, el valor de colorForPhrases cambia cada vez que tocamos un botón.
+Veamos ... anda.
+Si miramos un poquito más, vemos que colorForPhrases también es una constante.
+¡¡¡¿¿¿Qué onda???!!!
+
+Para JS, PhrasesBox es una función, ¿OK? Atención que se viene una papota.
+Cada vez que se cambia un estado, React *vuelve a ejecutar* la función que define el componente. Los valores para los estados los inyecta, sacándolos de un store que maneja él/React. Si cambió el valor de un prop, le va a llegar por parámetro.
+Después, cambia lo que está renderizado (técnicamente, en el DOM de la página) de acuerdo al valor de retorno de la función.
+Es *de esta forma* que React reacciona, volviendo a ejecutar las funciones con los props actualizados y donde se inyectan los valores de los useState (y otros que iremos viendo).
+Puede ser duro de entender. Pero creo que a medida que vayan entendiendo este mecanismo, van a entender en gran parte el funcionamiento de React, lo que ayuda muchísimo para anticipar y resolver problemas, y para sacarle el jugo.

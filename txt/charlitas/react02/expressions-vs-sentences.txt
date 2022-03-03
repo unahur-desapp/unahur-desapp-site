@@ -1,0 +1,74 @@
+(salir de AuthorsAndPhrases02 con ChapulinPhrases02)
+Volvamos a la iteración sobre las frases, ¿por qué un map funciona y un loop for, o un phrases.forEach, no?
+
+(Repl.it - expression vs sentence)
+Para estudiar específicamente esto, pasemos a un ejemplo en JS puro. El objetivo es "pasar las frases a mayúscula".
+
+El código que vemos resuelve la cuestión usando un for. ¿Qué hace el for? va completando un array que creamos arriba. Esto anda perfectamente.
+Pero ¿podríamos hacer algo como upperCase = for ...?
+No, no tiene sentido, porque el loop for realiza una acción, no da por sí mismo un resultado.
+
+Esto tiene relación con un tema de principios de la programación: una sección de código puede, o bien producir un efecto, o bien dar un resultado.
+Dicho de otra cosa, cuando escribo código, tengo que entender si lo que me interesa es lo que hace o lo que devuelve.
+Por lo general, se intenta que una misma sección de código no haga las dos cosas, o produce un efecto, o da un resultado.
+
+Si yo quiero poner const upperCase = ...algo..., el algo tiene que dar un resultado.
+Por otro lado, el loop for produce un efecto, es así en JS, en Java, y en otros lenguajes. En el ejeemplo, el efecto es ir agregando elementos al array que ya fue creado antes. Si no creamos el array, el loop no funciona.
+Lo que me interesa del loop es lo que hace, ir completando el array.
+
+El método forEach de array es igual.
+    phrases.forEach(phrase => upperCase.push(phrase.toUpperCase()));
+¡ojo! esto *reemplaza* al for loop.
+
+De hecho, si hago las dos cosas, voy a tener un array de 10 elementos.
+
+El método map es distinto, su objetivo es dar un resultado. En la función pongamos sencillamente qué queremos que tenga nuestro nuevo array para el elemento.
+    phrases.map(phrase => phrase.toUpperCase());
+Ven que no hay un push, el método map se encarga de armar y devolver el array. Entonces ahora sí podemos hacer.
+    const upperCase = phrases.map(phrase => phrase.toUpperCase());;
+o directamente
+    console.log(phrases.map(phrase => phrase.toUpperCase()));
+
+Qué devuelve el map: un nuevo array donde para cada elemento del original, pone el resultado de evaluar la función.
+
+Así como está el map, también están filter / find / every / some, y tal vez algún otro. Y otro más potente, que es el reduce, junto con su primo reduceRight.
+
+Es bueno acostumbrarse a usar estos métodos, que devuelven en lugar de hacer. En general, pueden ayudar a generar código más compacto y robusto. En particular para los componentes React, permiten una mayor agilidad al codificar componentes.
+
+
+(AuthorsAndPhrases02 con ChapulinPhrases02)
+Volvamos a nuestro componente. 
+Para usar el for loop, tenemos que hacer algo similar a lo que hicimos en el repl: ir armando un nuevo array con los elementos JSX, e incluir eso en el HTML. 
+
+function ChapulinPhrases02() {
+    const phrases = ["¡No contaban con mi astucia!", "Se aprovechan de mi nobleza",
+        "Síganme los buenos", "Que no panda el cúnico", "Todos mis movimientos están fríamente calculados"];
+
+    const phrasesAsJSX = [];
+
+    for (const phrase of phrases) {
+        phrasesAsJSX.push(<p className="phrase">{phrase}</p>);
+    } 
+
+    return <div className="phraseAuthorBlock">
+        <div className="phraseAuthorInfoFrame">
+            <h2>Chapulín colorado - {phrases.length} frases</h2>
+            <div>
+                <img className="image" src="https://res.cloudinary.com/remezcla/images/f_auto,q_auto/v1639757764/production/El_Chapulin_Colorado_Film/El_Chapulin_Colorado_Film.jpeg?_i=AA" alt="" />
+            </div>
+        </div>
+        <div className="phraseGroupFrame">
+            { phrasesAsJSX }
+        </div>
+    </div>
+}
+
+Anda. Sí, es raro ver algo que parece HTML incluido en una lista JS, pero es correcto. Más adelante volveremos sobre esto en el material sobre React.
+
+La forma con el map, es a la vez más elegante y más compacta.
+
+
+
+
+
+

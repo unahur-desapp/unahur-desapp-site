@@ -1,0 +1,109 @@
+Hasta ahora no hemos aprovechado las características de React, escribimos un documento HTML y le pedimos a React que lo gestione, no más que eso.
+Ahora vamos a trabajar con una herramienta básica de React: la posibilidad de definir e integrar componentes de forma muy sencilla.
+El objetivo va a ser refactorizar la página con la que jugamos en la sección anterior, que ya tiene bastante contenido (además de un poco de formato).
+
+Lo mencionamos a la pasada antes, concentrémonos en esto ahora: cualquier función que devuelva una expresión JSX es un componente React y puede ser usado como tal. Los componentes pueden usarse en la notación JSX como si fueran elementos HTML.
+De hecho, la función App define un componente, y en index.js se utiliza ese componente dentro de una expresión JSX.
+Esta expresión está en un lugar medio raro, como parámetro de ReactDOM.render. ¿Se pueden usar de esta forma los componentes que definamos, dentro del código de otros componentes que también definamos? 
+¡Claro que sí! y es el primer principio que podemos usar para factorizar nuestra app web.
+
+
+(AuthorsAndPhrases01)
+Para arrancar, vamos simplemente a separar todo el bloque con la información de autores y frases en un componente separado. Es un primer paso, mucho no vamos a ganar, es sobre todo para empezar a adquirir la práctica.
+
+... definimos otro archivo ... simplemente se exporta una función ... hay que encerrar con fragment ...
+
+Grabo, no se ve. Claro, tengo que usar el nuevo componente dentro de App.
+Para eso, como dijimos, simplemente lo consideramos como un macro-componente HTML, en vez de poner <hr /> ponemos <AuthorsAndPhrases />, por suerte la IDE autocompleta, lo que es valioso no tanto porque no tuve que escribir todo, sino sobre todo porque se encarga de agregar el import.
+
+Pregunta de curioso: ¿podrá tener parámetros un componente, se le podrán pasar valores? En breve ...
+
+
+(AuthorsAndPhrases02 con ChapulinPhrases01)
+Concentrémonos ahora en AuthorsAndPhrases. Está claro que se compone de tres bloques con la misma estructura. Empecemos simplemente por separar los tres bloques, después vemos cómo lograr una única definición.
+
+Este paso es igual al anterior, separamos las tres de AuthorsAndPhrases y las usamos.
+
+... un detalle ... fíjense que hasta ahora, ni siquiera tenemos que importar nada de react para poder definir un componente. Así de fácil es.
+
+
+(AuthorsAndPhrases02 con ChapulinPhrases02)
+Hasta ahora usamos React para organizar nuestro contenido en componentes, ya es un primer paso.
+Pero, si miramos el código de cada componente, p.ej. ChapulinPhrases, vemos que sigue siendo HTML, no se ve cómo agregarle lógica. ¿Cómo se define p.ej. la función del onClick?.
+Esto es lo que se viene, incorporar código JS a nuestros componentes React. Vamos a ir haciéndolo paulatinamente.
+
+Empecemos indicando que es muy sencillo incluir expresiones JS en el código JSX. Alcanza con escribir la expresión entre llaves, así de fácil. 
+Muy (pero muy) importante: lo que se incluye en el HTML es *el resultado* de la expresión.
+... probamos con <h4>{1+2}</h4> en comparación con <h4>1+2</h4> ...
+... otra pavada: le mandamos toUpperCase al título ... claro, estamos en JS, hay que poner el String entre comillas ... acá notamos que el intellisense del VSCode se da cuenta de que dentro de las llaves va código JS ...
+
+OK, ya jugamos. En concreto vamos a hacer dos cosas: 
+- agregar la cantidad de frases " - n frases"
+- definir el array de frases aparte e incluirlas como expresiones JS. El sentido de esto se va a ver un poco después.
+
+Comentario marginal: qué lindo sería replicar el comportamiento de ver la cantidad de frases, *sin replicar el código*. Hacia allá vamos.
+
+
+(AuthorsAndPhrases02 con ChapulinPhrases03)
+Ahora que separamos la definición de las frases de cómo se muestran, se ve clarísimo que la renderización es super-candidata a aplicar una estructura de repetición. 
+Intentemos un for
+        <div className="phraseGroupFrame">
+            {
+                for (const phrase of phrases) {
+                    <p className="phrase">{phrase}</p>
+                } 
+            }
+        </div>
+Che, no le gusta. ¿Por qué?
+Por lo que dijimos al principio: lo que ponemos entre llaves tiene que ser una *expresión*, o sea, devolver un resultado, y lo que va al HTML es el *resultado* de la expresión.
+
+El for no es una expresión, se ejecuta, pero no da ningún resultado.
+Para estos casos se suele usar el método map de los arrays, que sí devuelve el resultado que queremos, o sea la lista de expresiones JSX.
+
+Esto lo describimos en detalle en una sesión aparte, ahora sigamos con React.
+
+Anda ... pero la consola tira error ... key ...
+
+Comentario final: miremos fijo esta parte
+    { phrases.map(phrase => <p className="phrase" key={phrase}>{phrase}</p>) }
+acá se está armando una función (lambda) que devuelve ... ¡un JSX!
+
+Esto es perfectamente válido, una expresión escrita en notación JSX es una expresión JS, o sea, el lenguaje la trata igual que la expresión 3+4 o "hola".length o new Array(3,5).
+Probar mandando el <h2>...</h2> a una const.
+
+
+(hacia AuthorsAndPhrases3)
+En principio separamos la definición de la lista de frases un poco como excusa para mostrar el map. Pero tiene un efecto muy interesante: separa la info a ser mostrada de la lógica que la muestra.
+
+Demos un pasito más y separemos el título y la URL de la imagen (lo hacemos).
+Ahora tenemos todos los datos arriba, la estructura de cómo mostrarlos abajo. Está clarísimo que la única diferencia entre ChapulinPhrases, TerminatorPhrases y StarWarsPhrases son los datos. 
+
+Y acá traemos la idea de parámetro que conocemos: pasando los datos como parámetros, podemos definir un único componente que usamos 3 veces.
+
+Pensando en JS, podríamos imaginar un componente PhrasesBox con tres parámetros, title, imageSrc y phrases (lo implementamos).
+
+Ahora queremos usar 3 veces este componente, con distintos juegos de datos. Vamos a AuthorsAndPhrases ... ¿cómo le pasamos los valores?
+
+Para entender esto, tenemos que estudiar el mecanismo que React habilita para pasar parámetros a un componente.
+
+Un componente React puede esperar un único parámetro, se lo suele llamar props, no es obligatorio pero mega-recomendado.
+Los valores que se le pasen al componente van a ser atributos de props.
+(cambiamos la implementación de PhrasesBox).
+
+... object destructuring ... le dedicamos una sesión separada ...
+
+Donde usamos el componente con notación JSX (que es como siempre los vamos a usar, a React en principio no le gusta que llamemos a un componente como función), los valores se anotan como atributos del seudo-elemento HTML.
+P.ej. para Chapulín ... .
+
+Para que no nos quede tan largo cada uso de PhraseBox, definimos constantes con los datos, agrupándolos por autor.
+Definimos CHAPULIN_DATA y lo usamos en AuthorsAndPhrases ... anda ...
+(copiar AuthorsAndPhrases03)
+Este es el resultado de hacer lo mismo para los otros dos autores. Llegamos a un componente único que se usa una vez por cada autor.
+
+Nota final:
+Ahora los datos nos quedaron separados de los componentes. Esto hace más fácil adaptar el código si los datos hay que pedírselos a un BE ... esto lo vamos a hacer más adelante.
+
+
+
+
+

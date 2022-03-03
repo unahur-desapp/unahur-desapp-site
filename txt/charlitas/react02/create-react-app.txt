@@ -11,7 +11,7 @@ La estructura del proyecto es sencilla
 
 Pero antes de ejecutar nada, vamos a limpiar el proyecto.
 - borramos en public: los dos png y el robots.txt. En manifest.json sacamos las referencias a los logos que borramos.
-- en src dejamos solamente: App.js, index.css, index.js. En el index.js, volamos las referencias a reportWebVitals que lo borramos.
+- en src dejamos solamente: App.js, index.css, index.js. En el index.js, volamos las referencias a reportWebVitals que lo borramos. En el index.html, hay que borrar algo que no me acuerdo qué es, verificar.
 
 Último paso de limpieza: entramos a App.js y borramos el contenido.
 Antes de borrarlo ... qué raro, esto parece HTML, más que JS. Ahora vamos a esto.

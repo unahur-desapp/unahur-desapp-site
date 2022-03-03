@@ -1,0 +1,22 @@
+El código de nuestro primer componente React con props incluye esta línea
+    const { title, imageSrc, phrases } = props;
+
+Este es un ejemplo del llamado object destructuring en JS. Vamos a repasar brevemente las características principales de esta técnica, para más variantes y detalles se puede consultar la definición en https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment.
+
+La línea de código indicada arriba, asume que props apunta a un objeto que incluye los atributos title, imageSrc y phrases (puede tener otros).
+El efecto de esta línea es asignar las tres constantes, con el valor del atributo del mismo nombre en props.
+Es una forma resumida de hacer lo siguiente
+    const title = props.title;
+    const imageSrc = props.imageSrc;
+    const phrases = props.phrases;
+
+(repl destructuring)
+Veamos un ejemplo ... pepe ...
+Qué pasa si incluimos una const que no tiene atributo en el objeto ... queda undefined ...
+
+Vemos que también se puede hacer destructuring de arrays ... 
+
+Una variante que puede ser útil es el spread. ¡Ojo! el spread a la izquierda del = es distinto al de la derecha, a no confundirse. A la izquierda asigna "el resto" del objeto a un identificador, a la derecha incorpora todos los atributos del objeto/elementos del array en el nuevo objeto/array que se construye.
+
+
+

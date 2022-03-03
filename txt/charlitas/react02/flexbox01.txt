@@ -48,3 +48,7 @@ Para entender la diferencia, cambiemos los 50% por 30%, y juguemos con el justif
 
 Super recomendado jugar con https://www.outpan.com/app/fd1b175fe8/flexbox-froggy para acostumbrarse.
 
+Último paso: mandar las fotos y textos hacia la derecha. Esto es phraseAuthorInfoFramePrueba. Le digo que es un flexbox columna, para poder hacerle el ... align-items o justify-content?
+
+Con esto tuvimos una primera aproximación a flexbox, vamos a ver más atributos, y cómo usarlos para resolver situaciones interesantes, más adelante.
+Por ahora volvemos a React.
