@@ -1,0 +1,59 @@
+(creo que conviene tener andando las dos versiones y mostrar cómo están los flexbox eligiendo los elementos con lso dev tools)
+La diagramación de la pantalla a la que llegamos parece muy parecida a la que había antes de agregar las series de botones, que habíamos organizado en el CSS como una estructura de flexboxes.
+En la nueva versión tuvimos que cambiar bastante el CSS para lograr que en la parte derecha, los textos sigan centrados después de agregar la barra de botones arriba. 
+
+Cada sección con la información sobre un autor (nombre y foto a la izquierda, frases a la derecha) es en ambas versiones un flexbox row, donde cada elemento ocupa el 50%.
+En la versión anterior, para centrar los textos a la derecha, alcanza con poner align-items: center. En la nueva versión eso no funciona, porque queremos que la barra de botones esté arriba, no al medio. Observamos que el panel derecho ahora ocupa todo el ancho, y que los bordes están en el div con las frases.
+
+Para lograr esto, se tuvieron que agregar más flexboxes a la estructura, y usamos algunos valores y atributos que no aparecieron antes. Estudiemos esta diagramación partiendo del bloque con toda la info de un autor, y adentrándonos en cada flexbox definido en su interior.
+Partimos de una versión (AuthorsAndPhrases05bAMedioOrganizar.js) donde no están los agregados sobre el CSS. Vemos que todo el contenido de la derecha, botones y frases, está junto y centrado, es lo que logra el align-items: center.
+
+1. 
+La info sobre un autor (phraseAuthorBlock2) sigue siendo un row con dos elementos que toman el 50% cada uno.
+Cambió el align-items. Por qué: ahora queremos forzar a que la caja de la derecha tome todo el alto del row, en principio esto no sería así porque el contenido es menos alto que el contenido de la parte izquierda.
+Para lograr esto hay que setear
+    align-items: stretch.
+... lo hacemos ... se fue arriba, ¿qué diferencia hay con flex-start? Veamos ... el componente tiene reservado el espacio de abajo. Veamos cómo hacer para aprovecharlo.
+
+2.
+El panel de la derecha (phraseGroupFrame + phraseGroupWithColorChange) ahora es un nuevo flexbox, de tipo columna. Va a tener dos elementos, la barra de botones de cambio de color, y la lista de frases. 
+... lo hacemos ... en la página no cambió nada, pero si vemos la configuración del espacio, el flexbox columna que ocupa todo el alto (por el stretch de la fila que lo contiene) se da cuenta que hay un espacio sobrante ....
+
+3.
+... que se lo tiene que quedar la lista de frases, ahora no lo tiene ni la barra de botones ni la lista de frases.
+El atributo flex-grow se usa exactamente para indicar cuál/es de los elementos de un flex se quedan con el espacio sobrante. En este caso, queremos que se lo quede todo la lista de frases, entonces ponemos
+    flex-grow: 1
+en ese elemento, y nada en la barra de botones.
+... lo hacemos ... otra vez en la página no cambia nada, en el análisis vemos que el espacio sobrante ahora lo tiene la lista de frases ...
+
+4.
+... pero no detecta el espacio vacío. Para eso, hagamos que la lista de frases sea un flexbox columna. Una vez que logramos esto, sólo nos falta centrar ... ¿justify-content o align-items? justify-content, claro.
+
+5.
+Nos falta acomodar los botones. Hagamos que sean un flexbox de fila, ¿cómo queremos que se distribuyan los botones? Para que queden separados parejo
+    justify-content: space-evenly;
+... probar sus primos space-around y space-between. Mandarle un margin-top para que no queden tan arriba.
+
+¡Listo!
+
+Como yapa, un detalle sobre CSS que tal vez no sea muy útil para aplicaciones React, pero sí en otros contextos. Veamos la barra de botones para elegir la foto, sobre la izquierda.
+Usando los dev tools, vemos que los botones tienen un margen inferior, mientras que el texto no lo tiene. Agreguemos otro texto: ahora el primer texto tiene el margen inferior, el segundo no.
+Veamos ahora el código: ni los botones ni los textos tienen seteado un CSS. ¿Quién setea el margen?
+Respuesta: la clase del elemento padre, o sea authorImageSelectorBar. En el CSS encontramos esto
+    .authorImageSelectorBar > :not(:last-child) {
+        margin-bottom: 1rem;
+    }
+Cómo se interpreta esto:
+- el > quiere decir "los elementos hijos de authorImageSelectorBar". Los nietos, bisnietos, etc. no, sólo los hijos.
+- el :not(:last-child) indica que este estilo no debe incluirse en el último hijo.
+
+Hay más seteos de este estilo, alcanza con googlear.
+
+
+Resumen de atributos relacionados con flexbox 
+- display: flex
+- flex-direction: row, column, etc.
+- justify-content: flex-start, flex-end, center, space-evenly (nuevo) / space-around (nuevo?) / space-between (nuevo), etc.
+- align-items: flex-start, flex-end, center, stretch (nuevo), etc.
+- flex-grow: n (Nuevo)
+

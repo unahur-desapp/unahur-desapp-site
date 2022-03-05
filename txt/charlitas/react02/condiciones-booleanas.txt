@@ -1,4 +1,65 @@
-... contexto: 1er ejemplo de renderización condicional, cfr. use-state02.txt.
+Repasemos un detalle que apareció cuando agregamos el botón "No mostrar" junto a los botones de cambio de color de las frases.
+El componente PhrasesBox incluye un estado llamado colorForPhrases. Al pulsar "No mostrar", se cambia el valor de este estado a null.
+    <button onClick={() => setColorForPhrases(null)}>No mostrar</button>
+El botón correspondiente a cada color setea el mismo estado con el nombre del color elegido, p.ej..
+    <button onClick={() => setColorForPhrases("crimson")} style={{ color: "crimson" }}>crimson</button>
 
-... truthy / falsy ...
-... boolean && JSX ...
+El div que contiene las frases se debe mostrar, o sea incluir en el valor de retorno del componente, sólo si se eligió un color, o sea, si colorForPHrases no es null. Para lograr esto, cambiamos
+    <div className={classes.phraseGroupUnderColorChange}>
+        {/* renderización de las frases */}
+    </div>
+por
+    { colorForPhrases && <div className={classes.phraseGroupUnderColorChange}>
+        {/* renderización de las frases */}
+    </div>}
+
+Pero pero pero ... colorForPhrases no es un valor booleano, no es ni true ni false, es un string como "crimson" o null. Y la expresión JSX claramente tampoco es ni true ni false. 
+
+Para entender cómo es que esto anda, tenemos que estudiar dos características de JS.
+
+
+La primera:
+cualquier valor (número, string, objeto, expresión JSX) puede aparecer en expresiones booleanas; JS puede interpretar cualquier valor como un booleano. 
+Hay un conjunto reducido de valores que se interpretan como falso, a estos se los conoce como "falsy values". Cualquier valor que no esté explícitamente en la lista de _falsy_ es _truthy_, o sea, se interpreta como true.
+Los valores falsy son: false (claro), null, undefined, 0, el string vacío, y unos pocos más.  La lista completa se puede consultar p.ej. en https://developer.mozilla.org/en-US/docs/Glossary/Falsy.
+
+En la expresión 
+    (colorForPhrases && <div ...>...</div>)
+- si colorForPhrases tiene seteado un nombre de color es truthy, si se le setea null es falsy
+- la expresión JSX es siempre truthy.
+
+
+La segunda característica de JS que interviene es cómo considera los operadores booleanos &&, || y !.
+En lógica, tenemos las tablas de verdad de cada operador. Para el && sabemos que 
+    V && V = V 
+    V && F = F 
+    F && V = F 
+    F && F = F 
+De esta tabla de verdad podemos obtener dos conclusiones
+1. si el la izquierda es falso, entonces el && es falso.
+2. si el de la izquierda es verdadero, entonces el && toma el mismo valor que la expresión de la derecha.
+
+En JS, como vimos podemos usar los operadores con cualquier expresión JS, no sólo con true o false. 
+El resultado de && no va a ser necesariamente true o false, va a estar basado en los operandos, o sea, los valores a los que se aplica el &&. Digamos que tenemos una expresión 
+    x && y
+Las reglas definidas en JS para obtener el resultado nos indican que
+- si x es falsy, entonces el resultado de x && y es x (que puede ser null, undefined, "", 0, etc.).
+- si x es truthy, entonces el resultado de x && y es y.
+Tal vez, acá armar una tablita
+   x && y  y     "V" - truthy    "F" - falsy
+      x
+ "V" - truthy         y               y
+  "F" - falsy         x               x
+
+Veamos un par de ejemplos
+- null && { nombre: "Julieta", apellido: "Lantieri" }
+- 0 && { nombre: "Julieta", apellido: "Lantieri" }
+- 8 && { nombre: "Julieta", apellido: "Lantieri" }
+- 8 && null
+- 0 && null
+
+Apliquemos lo que acabamos de ver a la expresión 
+    (colorForPhrases && <div ...>...</div>)
+- si colorForPhrases es null, entonces es falsy, y el resultado es null. En el browser no se ve nada porque el valor null no se renderiza en JS.
+- si colorForPhrases tiene asignado un valor, entonces es truthy, y el resultado es la expresión JSX.
+
