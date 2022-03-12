@@ -10,3 +10,15 @@ Cada vez que se cambia un estado, React *vuelve a ejecutar* la función que defi
 Después, cambia lo que está renderizado (técnicamente, en el DOM de la página) de acuerdo al valor de retorno de la función.
 Es *de esta forma* que React reacciona, volviendo a ejecutar las funciones con los props actualizados y donde se inyectan los valores de los useState (y otros que iremos viendo).
 Puede ser duro de entender. Pero creo que a medida que vayan entendiendo este mecanismo, van a entender en gran parte el funcionamiento de React, lo que ayuda muchísimo para anticipar y resolver problemas, y para sacarle el jugo.
+
+
+(mensaje, se puede poner durante los JustPhrase01 a 04)
+Creo que para masterizar React, más importante que conocer muchas herramientas es entender cómo usarlas para lograr los efectos que queremos.
+De hecho, casi todo es useEffect / useState / props. 
+
+
+(en datos-desde-backend-desarrollo)
+*Muy importante*
+React no soporta componentes de ejecución asincrónica. Imagino que es para que no interfiera con la detección y resolución de actualizaciones.
+O sea, la ejecución del componente tiene que ser sincrónica. 
+Somos nosotros como devs, quienes tenemos que manejar la interacción con operaciones asincrónicas, eso no lo va a hacer React por nosotros. Un aliado útil para esto es el hook useEffect.

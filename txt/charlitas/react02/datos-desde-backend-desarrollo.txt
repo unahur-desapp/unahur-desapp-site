@@ -1,0 +1,129 @@
+(hacia JustPhrases02 ... lo mostramos)
+En este primer paso, lo único que vamos a hacer es que la lista de frases se le pida a un BE, en lugar de estar fija en el código.
+
+(services/phrases.js)
+El endpoint para obtener la lista de frases es GET /phrases ... qué es un endpoint ...
+... verlo en insomnia ...
+Está claro que es un server que tengo en otro port de mi compu, pero sería idéntico para un server externo, cambia solamente la URL.
+Para mantener una buena organización del código, las llamadas (esta y otras dos que vamos a usar más adelante) se definen en funciones dentro de una carpeta especial services.
+Desde el código del componente, simplemente llamamos la función que devuelve los datos (o realiza la acción) que queramos.
+
+... en este caso ... lo que tenemos que hacer es usar getAllPhrases ...
+(JustPhrases01 para ir transformándola)
+... a primera vista parece facilísimo: cambiar 
+    const phrases = ALL_PHRASES;
+por 
+    const phrases = getAllPhrases();
+
+Probamos ... no anda, de hecho se rompe la consola.
+Veo el error, phrases.map is not a function. Meto un console.log para ver qué es phrases ... es una promesa.
+Qué pasó: que no estamos teniendo en cuenta que las interacciones mediante pedidos HTTP son asincrónicas ... cómo es la ejecución del componente (de arriba para abajo y no espera a menos que lo pidamos explícitamente)...
+
+OK, vamos con 
+    const phrases = await getAllPhrases();
+y definiendo el componente como asincrónico (si no lo hago asincrónico, el await no compila).
+Ahora en la consola me muestra el valor de phrases ... pero me tira un error que indica que hay una promesa que React no puede manejar.
+Esta promesa es la que devuelve Phrases, porque es asincrónica. 
+
+*Muy importante*
+React no soporta componentes async, o sea de ejecución asincrónica. Imagino que es para que no interfiera con la detección y resolución de actualizaciones.
+O sea, la ejecución del componente tiene que ser sincrónica. 
+Somos nosotros como devs, quienes tenemos que manejar la interacción con operaciones asincrónicas, eso no lo va a hacer React por nosotros. 
+
+P.ej., la interacción por HTTP es claramente asincrónica.
+¿Cómo hacemos para ejecutarla y que Phrases pueda acceder a los datos obtenidos?
+
+... este pasaje no es sencillo, por favor préstenle toda la atención que puedan ... en unos minutos viene la receta, pero es mucho mejor si entienden por qué es necesario aplicarla ...
+
+El truco (parte 1): definimos una función asincrónica adentro de Phrases que haga la operación asincrónica, y la llamamos.
+    let phrases = [];
+    const fetchPhrases = async () => {
+        const obtainedPhrases = await getAllPhrases();
+        console.log("--------------------  se obtuvieron estas frases")
+        console.log(obtainedPhrases);
+        phrases = obtainedPhrases;
+    }
+    fetchPhrases();
+Llama a la función, obtiene las frases, pero no se muestran. Ufa. Cuando se calcula el valor de retorno de la función, todavía no se seteó el valor de phrases.
+
+Tenemos que aceptar un hecho: el componente se va a ejecutar *dos* veces. 
+- En la primera vez, no va a mostrar datos, y vamos a lanzar el pedido de las frases llamando a getAllPhrases().
+- Cuando obtengamos el valor, se va a ejecutar el componente por segunda vez, ahora sí mostrando los datos.
+Por qué: no podemos esperar a que termine de traer la info, porque como recién dijimos, un componente React no puede ser asincrónico, no puede esperar a que termine una operación asincrónica. 
+Ventaja: nos viene fácil para mostrar un "loading ...".
+
+¿Cómo logramos que React ejecute/renderice dos veces el componente? 
+Lanzando un evento que haga que React reaccione re-renderizando. 
+Ya estudiamos y usamos un evento de estos: cambiar el estado. Lo mismo que hicimos para que cambie el color del texto, o en el ejemplo anterior, la foto que se muestra.
+
+O sea, phrases va a ser un state, levantamos la info, hacemos setState.
+    const [phrases, setPhrases] = useState([]);
+    const fetchPhrases = async () => {
+        const obtainedPhrases = await getAllPhrases();
+        console.log("--------------------  se obtuvieron estas frases")
+        console.log(obtainedPhrases);
+        setPhrases(obtainedPhrases);
+    }
+    fetchPhrases();
+
+¡Anda! Peeeero ... entra en bucle, va a buscar las frases indefinidamente.
+Qué pasa ahora: cuando se obtienen las frases, se setea el state. Como vimos, eso provoca que React reaccione re-ejecutando el componente. Al ejecutarlo, vuelve a buscar las frases y vuelve a setear el estado. Y así al infinito.
+
+Queremos que este código se ejecute una única vez, la primera vez que se ejecuta el componente. Y que después no se ejecute más.
+Hay un hook que es perfecto para esta problemática, se llama useEffect.
+
+Usémoslo y después lo comentamos.
+    const [phrases, setPhrases] = useState([]);
+    const fetchPhrases = async () => {
+        const obtainedPhrases = await getAllPhrases();
+        console.log("--------------------  se obtuvieron estas frases")
+        console.log(obtainedPhrases);
+        setPhrases(obtainedPhrases);
+    }
+    useEffect(() => {
+        fetchPhrases();
+    }, []);
+ahora sí, anda, y levanta las frases una vez, no muchas.
+
+El hook useEffect permite indicarle a React que ejecute una acción asociada a un componente, solamente en algunas ocasiones, no cada vez que decide re-renderizar el componente.
+La acción se especifica como una función, para darle la libertad a React para que la ejecute cuando corresponda. El hook tiene un segundo parámetro que es una lista, la lista de dependencias. Por ahora alcanza con saber que si esa lista es vacía, la acción se ejecuta solamente la primera vez que se renderiza el componente. Después estudiaremos casos en que conviene poner cosas en esa lista, por ahora la dejamos vacía. Pero tiene que estar.
+
+... por qué el nombre ... porque produce un efecto, léxico de computación que puede sonarte o no ... 
+
+... comprobemos que el componente se ejecuta 2 veces ...
+    console.log('---------------------- ejecutando Phrases')
+    console.log(phrases)
+
+Cómo es la secuencia
+1. se ejecuta el componente por primera vez, se ejecuta el useEffect, se lanza la consulta al BE. 
+2. eventualmente viene la respuesta del BE, cuando eso sucede se hace setPhrases.
+3. el setPhrases provoca que el componente se ejecute de nuevo. Ahora no se ejecuta el useEffect. El estado ya está seteado, por eso las frases se muestran.
+
+Pasémoslo "en cámara lenta", para ver el efecto de las dos renderizaciones. Para eso, encerremos el fetchPhrases() con un setTimeout. 
+La primera vez el valor de phrases es el que ponemos al definir useState ...
+Aprovechemos esto para poner un "loading"
+    valor inicial null, agregar condición phrases && a bloques condicionales, agregar este bloque
+        {!phrases && <div style={{ marginTop: "2rem" }}>
+            <div className={`${classes.phrase} ${classes["phrase-tall"]}`}>
+                ... cargando frases ...
+            </div>
+        </div>}
+
+
+
+------------------------------------------------
+Cerramos con "la receta" ...
+
+... cuando en un componente hay que renderizar datos que vienen de un BE ... (ir mostrando en el código) ...
+
+1. se define un state para esos datos.
+2. se define una función async que hace el pedido al BE con un await, y después setea el state.
+3. se llama esa función dentro de un useEffect con una lista vacía como 2do parámetro.
+4. se renderiza el valor del state.
+
+Creo que es conveniente no quedarnos con la receta, ir entendiendo la mecánica de React que está atrás. Tal vez esta lección es para verla varias veces.
+
+
+
+
+

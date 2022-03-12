@@ -30,6 +30,22 @@ IMHO absolutamente, destaco dos motivos.
 --------------------------
 De qué se trata este curso
 --------------------------
+(opción 1)
+Este no es un curso de React, este es un curso de desarrollo de aplicaciones Web usando React. 
+
+Sí, vamos a estudiar en detalle las características de React y las herramientas que nos brinda. 
+Entonces, ¿por qué no es un curso de React?
+Porque el material sobre React se va a presentar dentro de un contexto de desarrollo de aplicaciones, vamos a plantear distintas problemáticas y estudiar de qué forma, y usando qué herramientas, React nos puede ayudar a resolverlas.
+Tenemos como objetivo describir, para los conceptos y herramientas principales de React, explicar qué ventajas proporcionan, en qué casos conviene usarlas, y cómo conviene aplicarlas. Nos vamos a focalizar más en eso que en dar repertorios completos de características o herramientas, que se pueden encontrar en la documentación o en multitud de otros sitios.
+
+Por eso p.ej. la interacción con un BE, que en muchos cursos se deja para muy adelante o simplemente se ignora, en este curso va a aparecer lo más al principio que se pueda. 
+La razón: es altísimamente probable que en los proyectos en los que vayan a colaborar, se tenga que interactuar con uno o varios BE, entonces mejor integrar ideas útiles para manejar esta interacción ya desde el principio.
+
+Por otro lado, para poder desarrollar aplicaciones Web basadas en React, hace falta manejar más cosas además de React. El curso asume sólo un conocimiento básico de JS, hay otras cuestiones del lenguaje, de programación en general, y de otras temáticas (API, CSS) que resultan muy útiles en los desarrollos basados en React.
+Por eso incluimos varias lecciones sobre otros temas que no son "de React", pero que son útiles para obtener el máximo provecho a este material.
+
+
+(opción 2)
 La base del curso consiste en estudiar React, empezando desde cero, cubriendo sus características y herramientas principales.
 Durante el recorrido también tocaremos otras herramientas útiles para la construcción de FE, en particular: JS, algo de CSS (en particular FlexBox), comunicación con una API, y varios paquetes dentro del ecosistema basado en React.
 El contenido referido a otras herramientas está en sesiones separadas, salvo que sean comentarios puntuales. De esta forma, quienes quieran focalizarse en React pueden simplemente saltear estas sesiones "laterales".

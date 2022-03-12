@@ -93,4 +93,11 @@ Para JS, PhrasesBox es una función, ¿OK? Atención que se viene una papota.
 Cada vez que se cambia un estado, React *vuelve a ejecutar* la función que define el componente. Los valores para los estados los inyecta, sacándolos de un store que maneja él/React. Si cambió el valor de un prop, le va a llegar por parámetro.
 Después, cambia lo que está renderizado (técnicamente, en el DOM de la página) de acuerdo al valor de retorno de la función.
 Es *de esta forma* que React reacciona, volviendo a ejecutar las funciones con los props actualizados y donde se inyectan los valores de los useState (y otros que iremos viendo).
-Puede ser duro de entender. Pero creo que a medida que vayan entendiendo este mecanismo, van a entender en gran parte el funcionamiento de React, lo que ayuda muchísimo para anticipar y resolver problemas, y para sacarle el jugo.
+
+¿Vuelve a ejecutar *todos* los componentes? No, solamente los que se ven afectados por el cambio del código. P.ej. en este caso si cambiamos algo en un PhraseBox, la función se vuelve a ejecutar 1 vez, no 3. Mandarle un 
+    console.log(`Rendering phrase box for ${title}`)
+en PhrasesBox, señalar que se ejecuta 3 veces al ppio, después una sola vez para el box que se modificó.
+Estas optimizaciones las hace solito React, sin que tengamos que agregar lógica nuestra.
+Obvio que en algunos casos sí conviene ser conscientes de cómo decide React qué re-ejecutar y qué no ... ya iremos a eso.
+
+Este mecanismo puede ser duro de entender. Pero creo que a medida que lo vayan incorporando, van a entender en gran parte el funcionamiento de React, lo que ayuda muchísimo para anticipar y resolver problemas, y para sacarle el jugo a la librería.

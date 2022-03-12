@@ -1,0 +1,54 @@
+Hasta ahora aparecieron varios de los conceptos más relevantes de React.
+- Notación JSX.
+- Organización usando componentes, pasar valores a un componente.
+- Híbrido HTML/JS.
+- CSS modules.
+- estado, useState
+- actualización automática a partir de los cambios de estado, efecto acotado de esta actualización.
+- style, notación JSS
+- renderización condicional
+- re-ejecución de los componentes
+
+Por otro lado, tenemos una limitación fundamental en lo que hicimos hasta ahora. Toda la info que mostramos está fija en la app (OK, salvo las fotos, pero los links son fijos).
+En prácticamente todas las apps para las que probablemente trabajemos, al menos parte de los datos provienen de alguna BD o similar.
+Eso ¿quiere decir que mi app React va a abrir una conexión con una BD y hacerle queries? No, el approach es distinto.
+(... motivaciones ... seguridad, limitación de potencia del browser, distancia entre programa que hace el query y la BD, se recarga la app que se ejecuta en el browser ...)
+Se montan otras apps, cuyo objetivo es suministrar los datos que necesita (y eventualmente registrar los cambios que el usuario lanza desde) nuestra app Web.
+Esto define una arquitectura con un conjunto de apps proveedoras/registradoras de datos, y otro conjunto de apps Web, con comunicación entre los dos grupos de apps. ... BE y FE ... 
+
+Para la comunicación FE-BE se usaron, y se usan, distintas tecnologías. 
+En esta actividad vamos a estudiar una variante muy usada actualmente. 
+- Comunicación via llamadas HTTP que proveen datos en lugar de HTML
+- Datos en las response, en JSON u otro lenguaje de intercambio de info (YAML, XML).
+
+... insistir con que no es la única opción, tal vez en los proyectos en los que colaboren se usen otras ...
+
+(... opción SSR, con versiones antiguas -JSP- y modernas -ilusión de que se ejecuta todo en el browser- ...)
+
+... sidenote ... esto ¿está relacionado con lo que se escucha de "API REST"? Si, la API es la interface que exponen los servicios de BE, REST es una propuesta sobre cómo organizarlos ...
+... meter GraphQL y Apollo server (si entiendo de qué se trata) en el discurso ...
+
+----------------------------------------
+
+(JustPhrases01)
+Para que nos resulte más facil enfocarnos en la interacción con un BE, y con otras técnicas que vamos a repasar o introducir, arrancamos de una versión más sencilla. 
+Se incluyen todas las funcionalidades relacionadas con una lista de frases, sacamos la separación por autores, y las fotos.
+
+(vemos el código)
+Se define una lista con todas las frases, eso es lo que se muestra (señalar el phrases.map). Notar que la lista definida arriba se asignó a una constante ... ahí vamos a actuar para que la lista venga de un BE.
+
+Como organización de la página, tenemos un flexbox column con dos elementos, la barra de botones y la lista de frases.
+Para la barra de botones le cambiamos el justify-content a space-between para que tome todo el ancho ... ver la diferencia ... ver que la 2da clase le gana a la primera,
+cfr. https://stackoverflow.com/questions/12258596/class-overrule-when-two-classes-assigned-to-one-div
+... qué es eso de CSS Specificity ...
+
+El manejo del color es igual que en el ejemplo anterior, se define un state, los botones setean el state, que se usa en un style aplicado a cada frase. También está la opción null, que muestra un mensaje especial.
+
+Le puse un borde a la lista de frases (.phraseList).
+
+
+(mostrar JustPhrases04)
+acá queremos llegar: las frases salen de un BE, se pueden agregar y eliminar.
+En la parte de agregar, vamos a ver cómo usar los elementos que ya conocemos para lograr un control más fino del dinamismo:
+- botones para abrir y cerrar el form para agregar una frase
+- validaciones, manejo de la habilitación del botón "Agregar"

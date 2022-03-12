@@ -1,0 +1,10 @@
+En la versión que usamos de base para implementar la llamada a servicios BE, se coló otra modificación: ahora la barra de selección de fotos pone un botón para cada foto, no se limita a 2 fotos.
+Las fotos son un array, tenemos que mostrar una foto por cada elemento. Como comentamos, la forma más compacta de lograr esto es usando un map.
+Ahora, en este map no interesa el elemento (que es un String con la URL de la imagen) sino el índice o posición del elemento en el array (0,1,2,etc.).
+Para armar un map de esta forma, hay que recordar que la función que se pasa por parámetro al map, filter, forEach y otros, puede tener tres parámetros: el elemento, el índice, y finalmente el array entero.
+Por lo general, con el elemento alcanza. En este caso también nos viene bien el índice:
+    imageSrcs.map((element, ix) => {
+        return <button onClick={() => { setPhotoIndex(ix) }};
+    }
+
+Con esto alcanza para que muestre un botón para cada foto.
