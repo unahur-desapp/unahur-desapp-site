@@ -1,0 +1,38 @@
+(Mostrar JustPhrases04a)
+Cerremos este capitulo con un ejercicio en el que vamos a usar varios de los elementos que venimos estudiando.
+
+El objetivo es el que se ve: que al cargar la página aparezca un botón con un +, que el recuadro aparezca sólo cuando se pulsa el +, y agregar al recuadro, sobre la derecha, un botón - que "colapse" el recuadro.
+
+(partir de JustPhrases07, separando AddPhrase en archivo aparte)
+Pregunta para ubicarnos ¿qué componente tenemos que tocar, Phrases, AddPhrase, o los dos?
+
+Respuesta: podemos hacerlo tocando solamente AddPhrase, digamos que es el mismo componente que puede aparecer "comprimido" o "expandido".
+
+¿Y cómo sabe el componente cómo tiene que aparecer? Acá va un state, isCompressed.
+Todo lo que aparece ahora es condicional, tiene que aparecer si isCompressed es false, si isCompressed es true va el botón con el +.
+Podemos hacer dos bloques de renderización condicional ... pero como la condición abarca todo el componente, también lo podemos resolver con una expresión ternaria ... lo hacemos, ya tenemos el estilo del botón como clase CSS (.plusButton).
+
+... ay qué feo nos quedó pegado, le queremos poner un margen superior ... pero dónde, en la misma clase plusButton no me convence, podría tener ganas de usarlo en otro lado con márgenes distintos ... le agrego una clase más (que ya está).
+... por qué con una sola clase puedo hacer 
+        className={classes.plusButton}
+y si es más de una tengo que hacer string interpolation ...
+        className={`${classes.plusButton} ${classes.plusButtonFrame}`}
+(plantearlo como repaso)
+
+pulso el botón, no pasa nada ... qué hacer en el onClick ... lo hacemos ...
+
+observación: ya estamos naturalizando que para lograr un cambio en lo que se ve, lo que tenemos que hacer es cambiar el estado y confiar en que React reacciona ... vamos por el buen camino ...
+
+le agregamos el botón - con el mismo formato ... pero sin el margen. Justo addPhraseLine es un flexbox row, se va a acomodar solito.
+
+¡Magia!, con qué poquito código pudimos lograr este efecto. Nos falta sólo correr el botón a la derecha dentro del recuadro.
+Vamos a hacerlo de una forma que tal vez no sea la más elegante, pero es rápida. Agregamos un elemento vacío que tome todo el espacio que sobre, para esto usamos el atributo flex-grow que vimos en la segunda sesión sobre flexbox ... lo hacemos ... repasar JSS flexGrow en lugar de flex-grow ... listo .
+
+... comentario: qué diferencia hay entre button y div, el button se lleva mejor con el tab order, mostrarlo cuando el AddPhrase está expandido con el botón - ...
+
+-------------------------------------------------------------------------
+
+Ejerccios mínimos: 
+- que no aparezca el AddPhrase si no estamos mostrando la lista de frases (botón "no mostrar" en la barra de colores)
+- que si comprimo y después vuelvo a expandir el recuadro para agregar una frase, se limpie el texto que estuviera eventualmente ... y no muestre mensaje de error.
+
