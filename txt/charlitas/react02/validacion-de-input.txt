@@ -1,0 +1,84 @@
+(repasar status actual, que coincide con PhrasesWithAddInSameComponent en JustPhrases04)
+En la sesión anterior, vimos cómo manejar un input field. En esta, trabajaremos sobre las validaciones.
+Vamos a hacer esto en dos partes, primero validar cuando se pulsa el botón, después validar mientras se va tipeando.
+
+Digamos que para aceptar una nueva frase, tiene que cumplir dos condiciones: tiene que tener por lo menos 5 caracteres, y tiene que empezar con mayúscula, número, o signo que abre.
+
+Empecemos con los 5 caracteres. Es tan fácil como poner un "if" en el onChange del botón ... si no se cumple la condición, ¿qué hacemos? Arranquemos con un alert.
+    <button onClick={async () => { 
+        if (newPhrase.length < 5) {
+            alert("La frase tiene que tener al menos 5 caracteres.")
+        } else {
+            await addPhrase(newPhrase);
+            await fetchPhrases();
+            setNewPhrase("");
+        }
+    }}>Agregar</button>
+
+... medio feo el alert ... una versión más elegante (creo) es poner lo que se conoce como un "toast", o sea, un mensaje que se presenta por un tiempo limitado, y después desaparece.
+
+Para esto vamos a utilizar un package que forma parte del enorme ecosistema basado en React. De los varios packages disponibles, elegimos react-toastify.
+Aquí ya lo incorporamos (ver package.json). 
+
+Atención una cosa: como pasa con muchos packages, además de instalarlo, hay que configurarlo en el punto de entrada ... hagámoslo en index.js.
+También algunos packages vienen con su .css, y permiten agregar .css para configurar ... ponemos los import.
+    import 'react-toastify/dist/ReactToastify.css';
+    import "./toast.css";
+
+    ...
+    <ToastContainer toastClassName="react_toastify_toast_wrapper" autoClose={1500} hideProgressBar position="top-left" />
+
+OK, ya podemos poner nuestros toasts, reemplacemos el alert por un toast.error.
+
+... video aparte que cuenta los detalles de cómo buscar e incorporar un package, más datos específicos de react-toastify ...
+
+Ya que estamos, pongamos un toast.success si efectivamente se agrega la frase.
+
+-------------------------------------------------------------------------------------
+
+Agreguemos la validación de cómo tiene que empezar. 
+Y aquí una pregunta ... ¿cómo saber si una letra es mayúscula? Hay muchas variantes (esto sólo comentarlo). 
+- si pongo "entre A y Z", deja afuera las acentuadas.
+- si pongo "que sea igual al toUpperCase()", acepta también todo lo que no son letras.
+Buceando, encontré una variante ingeniosa: que *no* sea igual a la minúscula, las únicas que son distintas a las minúsculas son las mayúsculas, y entran las acentuadas.
+
+... lo codeamos ... 
+
+-------------------------------------------------------------------------------------
+
+Demos el segundo paso, validemos mientras se tipea.
+El mensaje ahora va a estar fijo, destinémosle un div abajo de los textos.
+
+... lo ponemos con un texto fijo ...
+    <div className={classes.addPhraseValidation}>
+        "Mensaje de validación del texto"
+    </div>
+
+... pero queremos que quede adentro del recuadro de addPhraseFrame ... esto implica que tenemos que agregar algo de estructura: un flexbox column con dos elementos que se lleva el recuadro, arriba la línea como está ahora, abajo el mensaje de validación. Las clases .css ya están preparadas ... mostrarlas, son addPhraseFrameWithValidation y addPhraseLine ... usarlas, hacer la transformación "a mano", sin copy/paste.
+
+Ahora, el mensaje tiene que aparecer solamente si el valor es incorrecto, y no es siempre el mismo. 
+Uno se tentaría a definir un state, pero en este caso no hace falta, el string a mostrar se puede determinar a partir de newPhrase. Entonces, definámoslo como una const dentro del componente ... lo hacemos y lo mostramos ... para evitar el if, se encadenan expresiones ternarias.
+
+¡Funciona! 
+Un detalle estético: aunque el recuadro se hace efectivamente más finito cuando no hay mensaje, si inspeccionamos los elementos, el div sigue estando.
+Podemos aplicar renderización condicional para que directamente no esté , para eso seteamos null si el valor está OK ... lo probamos, vemos que ahora el div aparece y desaparece ...
+
+... comentario ... vemos cómo se van mezclando en el código los elementos asociados con agregar una frase con el resto, esto me lo hace menos legible ... y ya basataante grande ...
+
+-------------------------------------------------------------------------------------
+
+Ahora si se pulsa "Aceptar", va a repetir el mensaje que ya está abajo. Podemos hacer distinto: directamente deshabilitar el botón ... hacerlo ... .
+... en principio, ahora no hay chance de que se pulse el botón si el valor es incorrecto, entonces podemos borrar las validaciones en el onClick ... debate sobre validaciones ...
+
+-------------------------------------------------------------------------------------
+
+Un detalle más antes de pasar a otro tema: cuando recién entramos, tal vez no es muy gentil ya mostrar un mensaje de error. Pero sí es correcto que el "Agregar" esté deshabilitado. El mensaje tiene que aparecer si el usuario hizo algo en el field.
+
+Este es un escenario común: queremos detectar si el usuario hizo algo en un campo editable. Esta condición se asocia a la palabra "touched", lo que queremos saber es si la usuaria tocó o no el campo. 
+Esto ... hay que acordárselo, si la usuaria pone una letra y después la saca, el valor es vacío, pero ya lo tocó. Para esto sí vamos a agregar un state ... lo hacemos ...
+Entonces el mensaje va a aparecer solamente si el campo ha sido tocado ... agregamos la condición ...
+¿Cuándo lo ponemos en true? Cuando lo toca, en el onChange ... lo hacemos ...
+Uf, queda seteado después de agregar ... hay que limpiarlo ...
+
+... y más complejidad al componente ... vamos a trabajar sobre esto en la siguiente sesión.
+

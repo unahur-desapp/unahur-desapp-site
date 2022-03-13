@@ -1,0 +1,38 @@
+(mostrar JustPhrases04 andando)
+El siguiente paso es borrar una frase ... lo jugamos ...
+
+
+(arrancar de JustPhrases02, ir hacia JustPhrases03)
+Empecemos con la gráfica. Tenemos que cambiar el div que muestra una frase, ahora tiene que mostrar la frase y el botón. 
+... repaso de flexbox ... para esto definimos un flexbox row con space between, el texto se va a pegar contra la izquierda, el botón sobre la derecha. Para que no sea tan sobre la derecha le mandamos un margin-right.
+    <div key={phrase}
+        className={`${classes.phrase} ${classes["phrase-tall"]} ${classes["phrase-with-button"]}`}
+        style={{ color: colorForPhrases }}
+    >
+        <div>{phrase}</div>
+        <div>
+            <button onClick={() => { /* qué hacer */ }}>Eliminar</button>
+        </div>
+    </div>
+
+En el onClick lo que tenemos que hacer es borrar la frase ... obviamente eso es un pedido al BE, que mantiene la lista de frases.
+Esto ya lo tenemos preparado ... mostrar services/phrases.js ... es un endpoint DELETE, se le pasa el texto de la frase y lo borra.
+
+Entonces listo, en el onClick invocamos a deletePhrase y estamos.
+
+Probamos ... la página no cambia. Recargamos ... la frase que borramos no aparece.
+Conclusión: al BE le llegó el pedido (acá se puede mostrar la consola del BE), la frase sí se borró, pero no se volvió a renderizar. ¿Por qué? Porque no cambió nada en el estado del componente, no hicimos ninguna acción que provoque que React reaccione.
+Lo más fácil: sencillamente llamar a fetchPhrases, que va a volver a buscar las frases del BE, y después hace el cambio de estado que hace que React reaccione.
+Acá nos conviene hacer await ... ¿para qué? Para no lanzar la nueva búsqueda hasta estar seguros que el BE registró la eliminación de la frase que se pidió borrar.
+Pero ... ¿se le puede pasar al onClick una función async? Sí, lo que no va a hacer es esperar, la renderización sigue su curso. Peeero cuando vuelva la respuesta del delete, el FE sí va a llamar a fetch, eso no es React, es JS. Dentro del fetch, cuando esté la respuesta del BE va a hacer el setPhrases, y eso dispara la re-renderización del componente, esto sí es React.
+
+Entonces
+    onClick={() => {
+        await deletePhrase(phrase);
+        await fetchPhrases();
+    }}
+
+¡y listo! 
+Observación: en lo que nos tenemos que concentrar es en que el estado quede actualizado, de re-renderizar se encarga React.
+
+

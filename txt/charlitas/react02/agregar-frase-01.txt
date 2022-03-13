@@ -1,0 +1,41 @@
+(mostrar JustPhrases04 andando)
+Siguiente funcionalidad a estudiar: agregar una frase. En esta implementación intervienen varias ideas, vamos a ir trabajándolo de a poco.
+
+(Insomnia)
+Así como tenemos un endpoint DELETE para borrar una frase, también tenemos un POST para agregar una frase ... probarlo desde Insomnia ... se puede incluso probar en Insomnia y después refrescar la app Web ...
+
+(salir desde JustPhrases03, copiar de PhrasesWithAddInSameComponent en JustPhrase04)
+Empecemos agregando el recuadro para agregar una frase, un poco de gráfica. Es un nuevo elemento dentro del flexbox column, después de los botones.
+(sacarle el value y el onChange)
+    {/* add phrase */}
+    <div className={classes.addPhraseFrame}>
+        <span>
+            Nueva frase
+        </span>
+        <input style={{ width: "50%", marginLeft: "2rem", marginRight: "2rem" }} />
+        <button onClick={async () => { console.log("... próximamente, agregar una frase ...")}}>Agregar</button>
+    </div>
+el formato es un flexbox row.
+
+El siguiente tema es manejar el valor del input. React propone dos formas.
+1. uncontrolled: el valor lo maneja HTML, para obtenerlo hay que pedírselo al DOM. 
+2. controlled: el valor lo maneja React
+En este material vamos a trabajar con inputs controlled. Como veremos, esto hace más fácil que podamos tomar acción (en nuestro caso validar) ante cada tecla que pulsa el usuario.
+Para lograr que un input sea controlled, necesitamos hacer dos cosas:
+1. definir un state donde React va a almacear el valor que va tipeando el usuario
+2. en el input, definir un onChange que permita setear este state.
+... lo hacemos ... en el console.log mostramos el valor para que quede claro que lo estamos controlando.
+
+Atenti dos cosas (mostrarlas)
+- no hay que olvidarse del onChange, te das cuenta de que te olvidaste (o no seteaste el state) porque tipeás y no pasa nada
+- si un input es controlado, el valor no puede ser *nunca* undefined, por eso el valor inicial tiene que ser "", hay que setearlo. Entre paréntesis, es muy buena práctica mirar la consola y eliminar los errores/warnings que tira.
+
+... tal vez te estés preguntando cómo manejar un form con 30 atributos, ¿hay que definir 30 states? Hay alternativas, que aparecerán bastante más adelante ...
+
+Para cerrar esta parte, ¡vamos a agregar la frase!
+
+El método en services/phrases.js ya lo tenemos, lo invocamos y ya está ... no se ve nada en la página ... nos falta recargar la lista, lo mismo que nos pasó con el delete ... corregimos.
+
+Antes de agregar más funcionalidad, un detalle: queda más lindo si limpiamos el valor del input cuando se agrega la frase ... lo hacemos mientras lo explicamos ... observación: para los inputs controlados vale lo que dijimos de que en lugar de enfocarnos en las acciones ("limpiar el input"), nos enfocamos en el estado ("limpiamos newPhrase").
+
+

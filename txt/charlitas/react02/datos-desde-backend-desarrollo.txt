@@ -8,6 +8,8 @@ Está claro que es un server que tengo en otro port de mi compu, pero sería id�
 Para mantener una buena organización del código, las llamadas (esta y otras dos que vamos a usar más adelante) se definen en funciones dentro de una carpeta especial services.
 Desde el código del componente, simplemente llamamos la función que devuelve los datos (o realiza la acción) que queramos.
 
+(acá podemos ir armando un slide con las sucesivas opciones que fuimos probando)
+
 ... en este caso ... lo que tenemos que hacer es usar getAllPhrases ...
 (JustPhrases01 para ir transformándola)
 ... a primera vista parece facilísimo: cambiar 
@@ -52,6 +54,7 @@ Tenemos que aceptar un hecho: el componente se va a ejecutar *dos* veces.
 Por qué: no podemos esperar a que termine de traer la info, porque como recién dijimos, un componente React no puede ser asincrónico, no puede esperar a que termine una operación asincrónica. 
 Ventaja: nos viene fácil para mostrar un "loading ...".
 
+El truco (parte 2)
 ¿Cómo logramos que React ejecute/renderice dos veces el componente? 
 Lanzando un evento que haga que React reaccione re-renderizando. 
 Ya estudiamos y usamos un evento de estos: cambiar el estado. Lo mismo que hicimos para que cambie el color del texto, o en el ejemplo anterior, la foto que se muestra.
@@ -69,6 +72,7 @@ O sea, phrases va a ser un state, levantamos la info, hacemos setState.
 ¡Anda! Peeeero ... entra en bucle, va a buscar las frases indefinidamente.
 Qué pasa ahora: cuando se obtienen las frases, se setea el state. Como vimos, eso provoca que React reaccione re-ejecutando el componente. Al ejecutarlo, vuelve a buscar las frases y vuelve a setear el estado. Y así al infinito.
 
+El truco (parte 3 y final)
 Queremos que este código se ejecute una única vez, la primera vez que se ejecuta el componente. Y que después no se ejecute más.
 Hay un hook que es perfecto para esta problemática, se llama useEffect.
 
@@ -121,7 +125,7 @@ Cerramos con "la receta" ...
 3. se llama esa función dentro de un useEffect con una lista vacía como 2do parámetro.
 4. se renderiza el valor del state.
 
-Creo que es conveniente no quedarnos con la receta, ir entendiendo la mecánica de React que está atrás. Tal vez esta lección es para verla varias veces.
+Creo que es conveniente que además de asimilar la receta, se vaya entendiendo la mecánica de React que está atrás. Tal vez esta lección es para verla varias veces.
 
 
 

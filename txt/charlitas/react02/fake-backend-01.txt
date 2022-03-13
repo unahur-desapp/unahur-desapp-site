@@ -1,0 +1,18 @@
+(a continuación de datos-desde-backend-desarrollo)
+
+Pudimos integrar nuestra app Web con un backend ... porque el backend ya existe. 
+¿Cómo podemos hacer si tenemos que integrarnos con un BE que no está desarrollado, sin tener que esperar a que el BE esté para probar?
+
+Miremos el componente Phrases ... el único contacto con el BE es la llamada a la función que hace el pedido HTTP.
+Si reemplazamos estas funciones por otras que brinden el mismo contenido (o hagan la misma operación) sin hacer ninguna llamada, esto no tiene *ningún* impacto en el código de los componentes React que estamos construyendo. Obviamente, las respuestas tienen que tener el mismo formato que las que nos van a venir desde el BE "real".
+
+Para demostrar esta idea, agregamos un archivo que define una función getAllPhrases, mismo nombre que la del servicio que usamos. Esta función devuelve una lista de frases con la misma estructura que el BE, en este caso una sencilla lista de Strings.
+Para usar esta implementación fake, lo *único* que hay que tocar es el import en Phrases.js ... lo hacemos ... anda.
+
+Otra opción es montar nosotros mismos un server Web que tenga la misma API que el "real". Claro que para esto necesitamos soltura con algún server Web. 
+Esta implementación no necesita, en absoluto, interactuar con una DB. Lo que pasa en los BE "de la API para adentro" es absolutamente opaco para el FE, lo único que ve, que puede ver, y que le interesa, es la response que recibe.
+... mostrar el companion-be ... 
+está creado con Express generator, le limpié bastantes cosas que no uso, le agregué CORS. Después sencillamente un router que define los endpoints necesarios, basados en una constante que se va modificando.
+
+
+
