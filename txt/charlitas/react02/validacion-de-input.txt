@@ -1,4 +1,4 @@
-(repasar status actual, que coincide con PhrasesWithAddInSameComponent en JustPhrases04)
+(salir desde JustPhrases04)
 En la sesión anterior, vimos cómo manejar un input field. En esta, trabajaremos sobre las validaciones.
 Vamos a hacer esto en dos partes, primero validar cuando se pulsa el botón, después validar mientras se va tipeando.
 

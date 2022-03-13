@@ -1,0 +1,42 @@
+(salir desde JustPhrases06)
+Si vemos la funcionalidad de agregar una frase, funciona correctamente e incluye varios detalles: validación mientras se tipea con botón deshabilitado, toast cuando se agrega una frase, además se limpia el campo para facilitar el ingreso de una nueva frase.
+
+Miremos ahora el código que soporta esta funcionalidad. Está un poco desordenado, nos quedó un componente que ya creció bastante (está llegando a 100 líneas), y donde se mezcla el código que sirve para mostrar la lista de frases, con el que sirve para agregar una frase.
+
+Se puede considerar a este punto en el desarrollo, como un buen momento para hacer un poco de refactor, que nos deje una base de código más sólida para seguir construyendo funcionalidad más adelante ... comentar la conveniencia de alternar momentos más enfocados en construir funcionalidad, con otros más enfocados en la calidad del código.
+
+En concreto, vamos a definir un componente separado AddPhrase, que se encargue (como lógica) del agregado de una frase, y (en la disposición gráfica) del recuadro correspondiente.
+
+... creamos el componente, movemos 
+- la definición de newPhrase y touched
+- la definición de validationMessage
+- el div del recuadro de agregar frase, que va a ser el valor de retorno del nuevo componente.
+
+Queremos ver qué pasa, nos aparece este mensaje de error
+    src\Phrases.js
+    Line 84:23:  'fetchPhrases' is not defined  no-undef
+
+... entendamos qué pasó ... AddPhrase necesita llamar a una función que está en Phrases ... y la tiene que llamar, porque una acción en AddPhrase implica que tiene que modificarse un estado que maneja Phrases ... volvemos a esto en un ratito.
+
+Por ahora, comentamos la llamada a fetchPhrases y vemos qué pasa ... ahora sí compiló, pero no se muestra el recuadro de agregar frase ... falta aplicar AddPhrase dentro de Phrases, no basta con definirlo ... vemos que funciona perfectamente, salvo que obviamente (porque comentamos el fetchPhrases) la frase agregada no se ve, si refrescamos la vista sí se ve, o sea que agregar se agrega ...
+
+Nos falta volver a habilitar fetchPhrases (ir a ver en el código).
+Esta es una situación común en las app React: una acción sobre un componente "hijo" (en este caso AddPhrase) tiene que provocar un cambio en un componente "padre" (en este caso Phrases).
+La forma típica de resolver estos casos, que van a ver en multitud de referencias en la Web, es que el "padre" al incluir el "hijo", le pasa por prop una función que hace la actualización que hace falta. En este caso, Phrases le pasa a AddPhrase un prop que es una referencia a la función fetchPhrases ... lo hacemos.
+El nombre onAdd hace referencia a lo que se le está pidiendo a AddPhrases que ejecute cuando efectivamente se agrega una frase.
+
+En AddPhrases, ahora tenemos que poner el parámetro props, y simplemente simplemente llamamos a la función que nos llega, dentro del código de AddPhrases se llama props.onAdd.
+
+Repasemos el mecanismo
+1. En Phrases, cuando se usa AddPhrase, se le pasa una prop que es la referencia a la función que queremos que se ejecute cuando se agrega una frase. Acá es importantísimo poner {fetchPhrases} y no {fetchPhrases()}, no queremos ejecutar la función en este momento, se la queremos pasar a AddPhrases para que la ejecute cuando le parezca.
+2. En AddPhrases incluimos el props, nos va a llegar props.onAdd que es una referencia a una función. Para ejecutarla, props.onAdd(), ahora sí van los paréntesis porque en el onClick del botón quiero ejecutar la función que me llegó.
+
+... para quienes se mareen con el hecho de pasar una función, preparamos una sesión separada ...
+
+----------------------------------------------
+
+Perfecto, ahora para cerrar esta parte podemos mover AddPhrases a un archivo aparte. Esto es totalmente opcional, es válido incluir varios componentes en un mismo archivo, lo hago principalmente a título demostrativo ... lo hacemos ... importante: ahora hay que agregar el import en Phrases.
+
+... se nos desinfló el componente Phrases, toda la lógica asociada a agregar una frase quedó junta en AddPhrases en lugar de estar desperdigada en un componente más grande ... objetivos del refactor cumplidos.
+Volvemos a la funcionalidad ... hagamos un chiche gráfico como repaso de varias ideas que aparecieron hasta ahora.
+
