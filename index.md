@@ -11,6 +11,9 @@ El sitio va a ir creciendo durante el año.
 ## Pautas para la cursada
 [Acá](./pautas-para-la-cursada)
 
+## Tareas iniciales
+[Acá](./tareas-iniciales)
+
 ## Recursos
 [Acá](./recursos/recursos-index)
 
@@ -20,5 +23,8 @@ El sitio va a ir creciendo durante el año.
 ## Más info
 [Acá](./mas-info)
 
-## Segundo cuatrimestre 2021
-[Acá](./cuatrimestres/2021s2)
+## Primer cuatrimestre 2022
+[Acá](./cuatrimestres/2022s1)
+
+## Cuatrimestres anteriores
+[Segundo cuatrimestre 2021](./cuatrimestres/2021s2)

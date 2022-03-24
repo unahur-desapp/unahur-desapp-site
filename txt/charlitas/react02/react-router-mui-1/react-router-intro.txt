@@ -1,0 +1,38 @@
+(mostramos App04)
+
+Oooohhh ahora podemos acceder a las dos páginas con las que venimos trabajando (clickeamos en la barra superior) ... notemos un detalle, al clickear en las opciones no solamente cambia el contenido, cambia también la URL. Como si estuviéramos cargando una página distinta.
+De hecho, se puede entrar directamente a cualquiera de las páginas poniendo la URL correspondiente (hacerlo en otro browser para que quede claro que no hay una cuestión de sesión o algo parecido).
+
+Obviamente la app es siempre la misma. Lo que estamos viendo es que la app, siendo una SPA, brinda la ilusión de una navegación por distintas páginas.
+
+Hay un package que es el standard absoluto para poder dar esta ilusión: react-router (mostrar sitio).
+Atenti 1: acá: en este material describimos la versión 6, que tiene algunas diferencias con la 5, que sigue siendo muy usada (mostrar la doc de la 5 y la página de upgrade de 5 a 6).
+Atenti 2: nos vamos a limitar a lo más básico, más adelante agregaremos más material. El objetivo de esta sesión es entender qué nos brinda, cómo integrarlo a nuestra app, y algunos conceptos iniciales. 
+
+(salir de App03)
+Antes de empezar, agreguemos lo necesario en el index.js (comentamos antes que algunas librerías necesitan agregar un elemento en el punto de entrada de la app, así fue con react-toastify, así es tb con react-router).
+
+... agregamos el header con textos fijos ...
+
+... los cambiamos por Link, es simplemente cambiar los div por Link ... destacar que los estamos importando desde react-router-dom ... contar que hay una versión native ...
+
+Notar que estamos definiendo dos rutas, escribirlas.
+
+Lo que falta es que salte, para eso tengo que asociar cada ruta a un componente o más en general una expresión JSX.
+Para definir una ruta, usamos un elemento Route, que indica el path y qué hay que mostrar cuando el usuario accede a ese path.
+A su vez, suele ser conveniente encerrar la definición de rutas con el elemento Routes.
+Describamos las rutas en un componente aparte AppRouter
+- metemos el Routes afuera.
+- definimos las dos rutas.
+- ¿y cuando entra? 3ra ruta "catch-all"
+
+Para usar estas rutas, alcanza incluir AppRouter donde queremos que actúe ... acá ...
+
+---------------------------------------------------------------------
+
+Recapitulemos: conceptos de react-router
+- BrowserRouter que hay que ponerlo en el punto de entrada
+- Route define una ruta, Routes un conjunto de rutas
+- Link permite "saltar" a una ruta
+- Las rutas pueden ocupar sólo parte de la página (en nuestro caso la barra superior está afuera de lo que manejan las rutas)
+

@@ -1,0 +1,12 @@
+npm install @mui/material @emotion/react @emotion/styled @mui/icons-material --save
+
++ cargar fuente Roboto
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+
+
+Button: https://mui.com/components/buttons/
+
+Color palette: https://mui.com/customization/color/#color-palette
