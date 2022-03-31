@@ -30,8 +30,12 @@ Acá hay mucha data y ejemplos.
 [MaterialUI versión 5](https://mui.com/)  
 Acá revuelvan para ver qué componentes y otros recursos pueden servirles.
 
+[Atributo `sx` en MaterialUI versión 5](https://smartdevpreneur.com/material-ui-sx-prop/)  
+Una explicación que me gustó sobre cómo manejar el estilo de los componentes usando el atributo `sx`. También menciona y linkea a otra alternativa.
+
 [MaterialUI versión 4](https://v4.mui.com/)  
 Por si prefieren usar la versión anterior.
+
 
 ### Flexbox
 Es una serie de atributos CSS que pueden ayudar en la organización de las páginas. Van varias referencias.

@@ -1,0 +1,43 @@
+1.
+Mostrar los mockup de Becarias.
+Objetivo: que el debate con les usuaries, al menos en una primera etapa, se vehiculice mediante prototipos gráficos, que los requerimientos se vayan entendiendo en base a la navegación y los datos a presentar/pedir en cada pantalla.
+Lo de los layouts celu/desktop es absolutamente optativo, lo que tiene que estar OK sí o sí es desktop.
+
+Cómo mostrar: desde Login N / Shift-navegación
+
+
+2.
+Disclaimer: empecé a ver Figma esta tarde para contárselos ahora.
+
+Miremos en lo que está hecho: cada pantalla corresponde a un frame. Eso va a convenir, ya veremos por qué.
+
+
+3.
+Armo el frame de Personitas,
+- título
+- una Personita
+- otra Personita
+- el head row
+
+Agrupamos.
+
+Agregamos los botones, otra vez agrupamos.
+
+Y así todo, con santa paciencia.
+
+Hay un millón de trucos y templates y todo, para quienes tengan ganas de averiguar. Figma se usa en el mundo real, creo que bastante.
+
+
+4.
+Armo los frames de crear personita y de otro lado.
+
+
+5.
+Muestro la presentación. Ya con esto tenemos bastante.
+
+
+6.
+Conecto, presento, ahora tenemos navegabilidad y todo.
+
+
+Listo, nada más para decir.
