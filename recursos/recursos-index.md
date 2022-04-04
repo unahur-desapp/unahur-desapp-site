@@ -24,8 +24,14 @@ Para cada ejemplo, qué hacer
 ¿Y si quiero experimentar y que quede lo que hago en un repo? Pues me hago un fork sobre un usuario u orga de GitHub, al fork lo puedo pushear y compartir.
 
 ### De la casa
-Por ahora hay uno solo  
-[Ejemplo de React con varios componentes, props y estado](https://github.com/unahur-desapp/react-ejemplo-1).
+Por ahora tenemos "dos y pico"  
+[Ejemplo 1 de React con varios componentes, props y estado](https://github.com/unahur-desapp/react-ejemplo-1).
+
+[Ejemplo 2 de React con varios componentes, props, estado, rutas, acceso a backend, distintos casos de flexbox, y bastante uso de MUI](https://github.com/unahur-desapp/react-ejemplo-2).  
+Para verlo andando, hay que ejecutar también el nano-backend que se linkea acá abajo.
+
+(este es el "pico")  
+[Un nano-backend que define los endpoints que espera el ejemplo 2 de React - corre en el puerto 3100 por default]( https://gitlab.com/d6300/react-ejemplo-2-companion-be.git).
 
 
 ### Otras fuentes
