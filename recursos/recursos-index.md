@@ -31,7 +31,7 @@ Por ahora tenemos "dos y pico"
 Para verlo andando, hay que ejecutar también el nano-backend que se linkea acá abajo.
 
 (este es el "pico")  
-[Un nano-backend que define los endpoints que espera el ejemplo 2 de React - corre en el puerto 3100 por default]( https://gitlab.com/d6300/react-ejemplo-2-companion-be.git).
+[Un nano-backend que define los endpoints que espera el ejemplo 2 de React - corre en el puerto 3100 por default](https://github.com/unahur-desapp/react-ejemplo-2-companion-be).
 
 
 ### Otras fuentes
