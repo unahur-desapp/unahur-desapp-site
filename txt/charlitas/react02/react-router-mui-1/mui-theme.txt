@@ -1,0 +1,46 @@
+(contexto - estamos pasando de JustPhrases08 a JustPhrasesMui01)
+Seguimos trabajando sobre la definición de los botones.
+
+Vamos ahora a las mayúsculas. Esto es un atributo CSS llamado text-transform (se puede ver en el elemento HTML en los dev tools del browser), los botones de MUI incluyen una clase que lo setea en uppercase.
+Lo que hay que hacer es cambiar el text-transform a none. Se puede hacer con un style ... probemos en uno ... funciona. Pero ufa, hay que setearlo en cada botón por separado.
+
+Acá vamos a una herramienta que bien usada es poderosa: el theme de MUI.
+Un theme es un conjunto de definiciones CSS, de las cuales 
+1. algunas permiten cambiar el comportamiento de los componentes que provee MUI, mientras que 
+2. otras agregan opciones que podemos usar en la definición de componentes.
+
+Lo primero que vamos a hacer con el theme es modificar el comportamiento de los botones, en concreto setearles text-transform: none.
+
+Esto lo vamos a hacer en dos pasos:
+1. definir el theme.
+2. setear lo necesario para que este theme se use en toda nuestra web app.
+
+Para definir un theme, se usa la función createTheme que viene con MUI, se le pasa un objeto con las definiciones que se quieren modificar o agregar.
+En nuestro ejemplo la definición del tema queda así
+    export const customMuiTheme = createTheme({
+        typography: {
+            button: {
+                textTransform: "none",
+            },
+        },
+    });
+
+¿Por qué esta forma del objeto? En rigor, hay que aprender/probar/leer/encontrar qué cosquillita hay que hacerle al theme para lograr el efecto que queremos.
+En la doc se puede arrancar por https://mui.com/material-ui/customization/theming/ . Vemos que los theme tienen varias familias de configuraciones, acá vamos a jugar mayormente con palette y typography.
+Vamos a la página de typography, o sea https://mui.com/material-ui/customization/typography/, buscamos "button", acá está, es una de las 13 "variantes"
+Ya veremos un poco más sobre esto, por ahora alcanza con saber que para renderizar los botones MUI usa la variante tipográfica llamada "button".
+Vamos a agregarle algunos elementos más al theme en lo que viene. 
+
+OK, con esto definimos el theme, ahora lo tenemos que usar. Para ello, vamos a usar una técnica que usan varias librerías: hay que englobar el root (o sea el <App />) con un elemento que provee la librería, a este elemento se le pasa la configuración que se necesite.
+En este caso, el elemento es ThemeProvider, y la configuración es el theme que creamos recién, se lo pasamos mediante el prop theme. O sea:
+        <ThemeProvider theme={customMuiTheme}>
+            <ToastContainer toastClassName="react_toastify_toast_wrapper" autoClose={2500} hideProgressBar position="top-left" />
+            <App />
+        </ThemeProvider>
+Es parecido al ToastContainer, pero en lugar de ponerlo "al lado" de App, lo tenemos que poner "afuera".
+
+Y ... magia, se fueron las mayúsculas de los botones de eliminar, sin que hayamos tocado el componente Phrases. Le podemos sacar el style al botón de "No mostrar", sigue OK.
+
+
+
+

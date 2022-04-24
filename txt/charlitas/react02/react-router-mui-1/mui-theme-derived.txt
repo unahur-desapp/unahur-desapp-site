@@ -1,0 +1,59 @@
+Terminamos esta primera sección sobre MUI con una técnica que puede ser útil para definir nuestros custom themes.
+
+La única diferencia que subsiste con la versión objetivo es el tamaño de las frases, en la versión objetivo están más grandes.
+Ya vimos que los theme definen estilos tipográficos, en nuestro custom theme modificamos el "button" que usan los botones. 
+En la página del default theme (https://mui.com/material-ui/customization/default-theme/) vemos que hay varios estilos, uno de ellos es body1 que se puede usar como una especie de standard.
+
+Hay varias maneras de indicar que para un texto se use un estilo determinado.
+Una es el componente Typography, que toma una prop variant. Probemos con algunas de las variantes que propone MUI ...
+Otra es una especie de "style con vitaminas" (pero con *muchas* vitaminas) llamado sx, ver https://mui.com/system/the-sx-prop/, que se lleva particularmente bien con un componente definido por MUI llamado Box (https://mui.com/material-ui/react-box/#main-content) que es ... como un div pero que se le puede pasar sx, básicamente eso.
+Entre otras cosas, sx entiende un atributo typography, cuyo valor es la variante (body1 / button / etc.).
+Estas dos expresiones son equivalentes
+    <Typography variant="body1">{phrase}</Typography>
+    <Box sx={{ typography: "body1" }}>{phrase}</Box>
+(... probamos con distintos estilos ...)
+
+Una prueba del poder de sx: 
+    <Box sx={{ typography: "body1", "&:hover": { backgroundColor: indigo[50] } }}>{phrase}</Box>
+Esto con style no se puede hacer, para lograr este CSS hay que escribir un .css o apelar a otras herramientas de MUI.
+
+Pero volvamos. En rigor, lo que queremos es definir una nueva variante tipográfica, llamémosla bigText, que sea igual que body1, pero con el fontSize=1.3rem.
+En Phrases está claro lo que hay que hacer:
+    <Box sx={{ typography: "bigText" }}>{phrase}</Box>
+
+
+En el theme se pueden definir nuevas variantes tipográficas, análogo a lo que hicimos antes con la palette.
+    {
+        typography: {
+            button: {
+                textTransform: "none",
+            },
+            bigText: {
+                ... ¿qué poner acá? ...
+            }
+        },
+        palette: { ... etc ... }
+    }
+
+Queremos decir "todas las características de body1 salvo fontSize". Pero para esto tengo que acceder al theme.
+
+*Si estuviéramos dentro de un componente*, podríamos usar el hook useTheme. Pero estamos en un parámetro dentro del llamado a una función.
+El truco es definir *dos* custom themes, uno que sea igual al default, el segundo (que es el que vamos a adoptar en la app) hace referencia al primero.
+
+En código:
+    const basicTheme = createTheme();
+
+    export const customMuiTheme = createTheme({
+        typography: {
+            button: {
+                textTransform: "none",
+            },
+            bigText: {
+                ...basicTheme.typography.body1,
+                fontSize: "1.3rem",
+            }
+        },
+        palette: { ... etc ... }
+    });
+
+y listo. Vaya como ejemplo de truco que se puede hacer manipulando los elementos que brinda MUI.

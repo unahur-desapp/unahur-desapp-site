@@ -1,0 +1,14 @@
+Recordemos los colores elegidos para la nueva variante de palette que agregamos en el custom theme.
+    relaxed: {
+        main: "#eeeeee",
+        dark: "#e0e0e0",
+    }
+
+Los valores salieron de una paleta de colores propuesta por Material Design, ver https://mui.com/material-ui/customization/color/#2014-material-design-color-palettes.
+Como se puede ver en el ejemplo, MUI proporciona una sintaxis para poder referenciar a esta paleta sin necesidad de poner los valores RGB. En el ejemplo nos queda.
+    relaxed: {
+        main: grey[200],
+        dark: grey[300],
+    }
+
+Me resulta interesante la idea de usar una paleta de colores pensada por alguien que entiende del tema.

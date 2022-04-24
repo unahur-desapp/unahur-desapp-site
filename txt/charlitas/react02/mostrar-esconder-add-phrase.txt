@@ -1,4 +1,4 @@
-(Mostrar JustPhrases04a)
+(Mostrar JustPhrases08)
 Cerremos este capitulo con un ejercicio en el que vamos a usar varios de los elementos que venimos estudiando.
 
 El objetivo es el que se ve: que al cargar la página aparezca un botón con un +, que el recuadro aparezca sólo cuando se pulsa el +, y agregar al recuadro, sobre la derecha, un botón - que "colapse" el recuadro.
@@ -25,7 +25,7 @@ observación: ya estamos naturalizando que para lograr un cambio en lo que se ve
 
 le agregamos el botón - con el mismo formato ... pero sin el margen. Justo addPhraseLine es un flexbox row, se va a acomodar solito.
 
-¡Magia!, con qué poquito código pudimos lograr este efecto. Nos falta sólo correr el botón a la derecha dentro del recuadro.
+¡Magia!, con qué poquito código pudimos lograr este efecto. Nos falta sólo correr el botón - a la derecha dentro del recuadro.
 Vamos a hacerlo de una forma que tal vez no sea la más elegante, pero es rápida. Agregamos un elemento vacío que tome todo el espacio que sobre, para esto usamos el atributo flex-grow que vimos en la segunda sesión sobre flexbox ... lo hacemos ... repasar JSS flexGrow en lugar de flex-grow ... listo .
 
 ... comentario: qué diferencia hay entre button y div, el button se lleva mejor con el tab order, mostrarlo cuando el AddPhrase está expandido con el botón - ...

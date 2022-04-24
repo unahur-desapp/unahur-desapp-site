@@ -1,0 +1,38 @@
+(contexto: estamos seteando la gráfica de los botones MUI que estamos usando en nuestra página de frases. En la sesión anterior le sacamos la transformación a mayúscula, cambiando typoghraphy.button en el theme).
+
+Ahora vamos a trabajar con el color de fondo de los botones, para esto vamos a agregarle un seteo al theme, ahora para agregar una variante.
+En la doc de botones MUI, vemos (https://mui.com/material-ui/react-button/#color) que tiene una prop color, pero no le seteás un color, sino una variante de color. MUI tiene varias definidas, entre ellas primary / secondary / error / warning / info (probemos cambiar el color del botón "No mostrar").
+
+Estas definiciones también están en el theme, en la parte de "palette". Las podemos encontrar en la página del default theme, https://mui.com/material-ui/customization/default-theme/.
+Cada definición en la palette tiene 4 colores: main, light, dark, contrastText.
+
+Para los botones usa el main como fondo, y el dark cuando pasás por arriba.
+
+Y atención: en nuestro theme, además de cambiar las definiciones de palette existentes ... ¡podemos agregar nuevas!. Es lo que vamos a hacer, vamos a agregar una opción "relaxed", que es la que vamos a usar en los botones de nuestra página.
+
+El customMuiTheme nos queda así:
+    {
+        typography: {
+            button: {
+                textTransform: "none",
+            },
+        },
+        palette: {
+            relaxed: {
+                main: "#eeeeee",
+                dark: "#e0e0e0",
+            }
+        }
+    }
+
+Cambiamos el custom theme, le seteamos color="relaxed" a los botones, ¡listo!. 
+Yyyyy de chiripa, los botones "eliminar" toman el mismo color que las frases. Esto porque si a un esquema de palette no le pasás el contrastText, toma el que esté definido en el contexto, que por default es negro, y lo estamos cambiando para las filas de la lista de frases (está como style en el dif que encierra frase y botón).
+
+Con las configuraciones de theme que agregamos, ya podemos cambiar los botones de cambio de color de <button> a <Button> (siempre con variant="contained" color="relaxed"), quedan rebonitos.
+Idem el botón de "agregar" en AddPhrase, acá es variant="contained" color="success" size="small", lo del color para agregar alguna variante.
+
+Con esto terminamos la configuración de CSS para los botones ... salvo algunos detalles que veremos más adelante. Vayamos ahora al input field.
+
+
+
+Color palette: https://mui.com/customization/color/#color-palette

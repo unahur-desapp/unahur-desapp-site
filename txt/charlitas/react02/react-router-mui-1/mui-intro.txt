@@ -1,12 +1,63 @@
-npm install @mui/material @emotion/react @emotion/styled @mui/icons-material --save
+Ya tenemos la funcionalidad de manejar frases funcionando. En la implementación de las operaciones sobre frases (agregar y eliminar) trabajamos sobre la lógica: control de lo que se renderiza a partir de cambios en el estado, registro y validación de datos ingresados por el usuario, interacción con el backend.
 
-+ cargar fuente Roboto
+Ahora vamos a arrancar con una nueva sección, en la que vamos a enfocarnos en la gráfica, tanto en lo que se ve (que quede más lindo) como en el código, en particular vamos a conocer alternativas para definir y manejar el estilo CSS, y más en particular las definiciones de flexboxes. Para esto nos vamos a apoyar en un package llamado MUI, que simplifica el uso del standard gráfico llamado Material Design en las aplicaciones React, y también incluye herramientas para simplificar el manejo del CSS.
+Por lo tanto, corremos un poco el foco de React, y lo ponemos en este package que vamos a incorporar.
+
+(mostrar JustPhrasesMui01.js, mejor si se puede hacer en paralelo con JustPhrases08)
+En una primera etapa, queremos llegar a esta versión. Las diferencias visibles están en los botones, que están mucho más bonitos. Incluso el de eliminar incluye un ícono. Son más grandes, están redondeaditos, tienen una sombra elegante. Recorrerlos con tabs, para que se vea la sombrita de color.
+Al abrir el recuadro que permite agregar una frase, vemos que el input field también se ve más bonito, en particular usa el mismo font que el label, y además de mostrar el texto de error le cambia el color a la línea que pone abajo.
+
+Ya con esto vamos a estudiar varias de las características de MUI.
+
+-------------------------------------------------------------------------
+Arranquemos por instalarlo ... acá seguimos los pasos indicados en
+https://mui.com/material-ui/getting-started/installation/
+
+Tenemos que agregar los packages al proyecto:
+    npm install @mui/material @emotion/react @emotion/styled @mui/icons-material --save
+
+MUI usa por defecto para muchos componentes, un font llamado Roboto, que conviene cargar en nuestra app. Para eso, agregamos esto en el head del archivo index.html.
     <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
     />
 
+Antes de arrancar, hagamos una primera lista de ventajas que nos da MUI, para ir apreciándolas a medida que aparecen.
+1. Componentes más bonitos, en el ejemplo los botones y el input field.
+2. Una librería de íconos fácil de usar.
+3. Una alternativa para la definición de flexboxes, que evita el uso de un archivo .CSS. En concreto, MUI provee componentes React que se renderizan como un div que ya tiene seteados los atributos CSS de flexbox.
+4. Además de esto, más variantes y herramientas para el manejo del CSS.
+5. En particular, herramientas específicas que apuntan a implementar páginas que sean responsive.
 
-Button: https://mui.com/components/buttons/
+En el trabajo con los botones van a aparecer todos estos elementos. Vamos entonces.
 
-Color palette: https://mui.com/customization/color/#color-palette
+-------------------------------------------------------------------------
+MUI define un componente Button, con un montón de opciones. Podemos ver https://mui.com/components/buttons/.
+
+Empecemos cambiando <button...> por <Button...>, sólo en el "no mostrar".
+¿Qué hicimos? Cambiar un elemento HTML (el <button>) por un componente que nos brinda MUI (el <Button>).
+Sintácticamente es un componente React, como dijimos recién, uno de los aspectos de MUI es una librería de componentes que se ven bonitos.
+... se ve el cambio, pero claramente no nos gusta. Qué tenemos que cambiar
+- que tenga un fondo gris
+- que no esté en mayúscula
+- el color del texto, que sea negro en lugar de azul.
+
+Vamos al fondo, en la página de la doc al ppio aparecen tres variantes: text, contained y disabled. La más parecida a lo que queremos parece ser contained. Seteamos y ...
+... ok, nos vamos acercando. Hagamos lo mismo con los botones "eliminar", los pasamos a <Button variant="contained"...>
+... verificamos que el onClick funciona igual que antes ...
+
+respecto de los botones de "eliminar", vemos que en la versión a la que queremos llegar, en realidad son más chicos. Para eso tenemos otra property size ...
+... ok, estamos.
+
+... pregunta ... ¿por qué los botones de color no pasaron a mayúscula? Porque son <button>, no <Button> ... los vamos a transformar un poco más adelante ...
+
+Vamos a ponerle el ícono del tachito al botón de eliminar. Buscamos "Buttons with icons and label" en la doc, vemos que podemos usar la prop endIcon. En el ejemplo vemos que los íconos son elementos React ... ¿de dónde salieron?
+De la librería de íconos de MUI 5, ver https://mui.com/material-ui/material-icons/#main-content .
+Para usarlos hay que instalarse un package adicional
+    npm install @mui/icons-material --save
+Este package define un componente React para cada botón. Acá el que queremos es el del tachito, buscamos "delete", se llama DeleteIcon, nos muestra el import y todo.
+Lo incorporamos y ... anda perfecto.
+
+Como se ve en la página que define el componente Button, hay un montón de props que se pueden asignar además de las que usamos. Esto va a pasar con todos los componentes MUI 5 que vayamos incorporando, tienen un montón de opciones de los que trabajaremos sólo con algunas.
+
+Para completar la definición de los botones, vamos a trabajar en alternativas para especificar CSS.

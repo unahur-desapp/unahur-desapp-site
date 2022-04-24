@@ -1,0 +1,23 @@
+Miremos ahora atentamente la versión objetivo, qué pasa cuando hago la pantalla más angosta. 
+
+En algún momento, los botones se achican, vuelvo a ensanchar la pantalla, vuelven a agrandarse.
+
+Miramos con los dev tools, el corte se da a los 900 píxeles de ancho, menos de 900 píxeles botones chiquitos, más de 900 píxeles botones grandes.
+
+Este es un mínimo ejemplo de lo que se conoce como "responsiveness", o sea, que la UI reaccione ante el cambio de ancho. Esto nos sirve para p.ej. adaptar el layout para que se vea bien en celulares o tablets.
+
+CSS proporciona los llamados "media queries" para poder asignar un estilo a un elemento sólo si el dispositivo cumple determinadas condiciones, relacionadas en particular al ancho.
+MUI proporciona una sintaxis simplificada que evita en muchos casos tener que escribir media queries.
+Esta sintaxis se basa en la idea de "breakpoints", ver https://mui.com/material-ui/customization/breakpoints/. Se definen 5 rangos, a los que se denomina xs / sm / md / lg / xl. El valor de 900 px corresponde al corte entre sm y md. Estos valores también están en el theme y se pueden cambiar (repasar el default theme, https://mui.com/material-ui/customization/default-theme/). Por lo tanto, la información relacionada al rango se le pide al theme. En la página vemos que los temas soportan 5 operaciones: up / down / only / not / between.
+
+La info de en qué rango estamos se puede usar de distintas formas. Para el ejemplo de los botones, vamos a hacerlo en forma programática. Lo que queremos es cambiar el size de los botones si estamos por debajo de md (o sea en el rango xs o en el sm). O sea, definir una const isNarrowScreen y especificar los botones de color/no mostrar así  
+    <Button ... size={isNarrowScreen ? "small" : "medium"} ...>...label...</Button>
+
+A su vez, para definir isNarrowScreen vamos a usar dos hooks que vienen con MUI.
+- con useTheme, podemos acceder al tema vigente, que en nuestro caso es el custom theme que le seteamos al ThemeProvider.
+- con useMediaQuery, podemos usar las operaciones relacionadas con los rangos.
+
+Nos queda así
+    const muiTheme = useTheme();
+    const isNarrowScreen = useMediaQuery(muiTheme.breakpoints.down("md"));
+

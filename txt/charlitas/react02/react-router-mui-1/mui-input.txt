@@ -1,0 +1,23 @@
+Para el input field, empecemos cambiando sencillamente (el elemento HTML) <input> por (el componente React que provee MUI) TextField.
+
+... uy nos quedó enorme. En la doc (https://mui.com/material-ui/react-text-field/) vemos al toque que hay tres variantes (lo mismo que pasa con los botones), elegimos "standard' y ... ya nos quedó más tranqui.
+
+En rigor lo único que nos falta es cómo mostramos el error, la versión "full MUI" cambia el subrayado a rojo y pone el texto justo abajo. Estas características "ya vienen" con TextField.
+
+Para cambiar el color del subrayado, usamos la prop error que espera un valor booleano. Es la misma condición que usamos para mostrar el mensaje ... casi. MUI quiere que el valor sea un booleano, no un valor cualquiera que va a convertir a booleano. Por lo tanto va
+    error={touched && !!validationMessage}
+en lugar de 
+    error={touched && validationMessage}
+(esto lo deberíamos haber contado al hablar sobre condiciones booleanas)
+
+Listo. Para el texto usamos la propiedad helperText.
+    helperText={touched && validationMessage}
+el "touched &&" para no mostrar nada hasta que empiece a editar. MUI solito va a poner el texto del mismo color que el error, si error es true. Si no lo pone en un lindo grisecito. Probar con
+    helperText={touched && (validationMessage || "Vas bien")}
+para que se vea.
+
+Obviamente, ahora el div que habíamos puesto condicionalmente para mostrar el error no va, de eso se encarga MUI.
+
+Lo de edición de texto en MUI es un mundo, hay millones de opciones y variantes, se pueden divertir un montón revolviendo en la doc.
+
+
