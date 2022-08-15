@@ -33,7 +33,7 @@ Y también como recomendación, es mucho muy apreciado tenerla lisa con Git, da 
 A qué le vamos a apuntar.
 
 De qué se trata Git ya lo saben porque lo usaron (creo) en al menos 4 materias.
-El foco acá es cómo manejar Git, y cómo nos puede ayudar Git, en un proyecto en donde somos tres codeando.
+El foco acá es cómo manejar Git, y cómo nos puede ayudar Git, en un proyecto en donde somos cuatro/cinco codeando.
 
 Siendo que son pocos se podríiiiia (tal vez, la verdad ni sé si convendría) pensar en otro esquema. Pero ... el manejo de Git en el contexto de un proyecto largo (de 9 meses, un parto) es una de las cosas que se llevan de la/s materia/s ... y que se evalúa.
 
@@ -161,7 +161,7 @@ Y sí, hay que planificar un toque.
 
 Probar con dos tareas que tocan el mismo archivo, uno al ppio el otro al final. Sirve para repasar las recetas.
 
-Si vamos a hacer algo entre les tres, o lo que hacemos tiene algo en común.
+Si vamos a hacer algo entre varies, o lo que hacemos tiene algo en común.
 - primero armamos una estructura. Esto conviene hacerlo estando conectades.
 - si podemos, esto solito lo mandamos a dev. Después cada une hace su parte en branch separado, como vimos. Esto aplica p.ej. a lo que hablamos recién de las rutas.
 - si nos interesa separar esta tarea como una unidad, sacamos los branches para cada une desde el nuevo branch, después integramos a ese branch, y cuando estamos todes contentes, ese branch de "integración parcial" va a dev.
