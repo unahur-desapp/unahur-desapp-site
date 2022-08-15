@@ -1,0 +1,57 @@
+0.
+El vehículo que privilegiamos para la interacción con los stakeholders/usuarios es la prototipación gráfica.
+El foco es expresar lo que les cuentan sobre la app en prototipos de pantallas + navegación.
+
+Entender a qué nos referimos con "navegación", cómo es el flujo de pantallas.
+
+Después para cada pantalla se puede detallar en texto qué es lo que hay que mostrar, qué información hay que pedir, y/o qué operaciones hay que lanzar.
+
+¿Cómo hacer un prototipo gráfico que se le pueda mostrar a un lego?
+Mil variantes. Una es armar HTML+CSS derecho viejo. Peeero puede ser complejo.
+Hay herramientas cuyo objetivo es exactamente este (más eventualmente más cosas). En la materia vamos a proponer una que es muy popular y tiene buen momento, que se llama Figma. Tal vez ya la conocen.
+- anécdota de uso de Figma en la PA italiana.
+
+
+1.
+Cosa linda de Figma: es online.
+
+Seguro que tiene millones de features y chiches. Yo la verdad nunca lo usé, aprendí lo mínimo para poder contarles a ustedes y facilitarles un poco el arranque, y nada más.
+
+Se crean usuarios y un team. Y me incluyen (carlombardi@gmail.com) en el team.
+
+Después crean un file. Y acá estamos.
+
+
+2.
+La navegación es distinta a lo que un coder está acostumbrado: es una hoja grandota y hay que buscar lo que uno quiere. También hay un panel a la izquierda que tiene la estructura. Tal vez haya otros mecanismos de búsqueda que desconozco.
+
+Lo que sería una página lo pueden representar como un "frame". 
+
+Dentro de los frames ponen formas gráficas y textos, y le pueden poner el formato que quieran. Así arman p.ej. títulos, tablas, botones.
+
+Armar un ejemplo de botón. Importante, agrupar fondo y texto, el nombre "Botón" es para el grupo. Mostrar cómo queda en el outline de la izquierda.
+
+Esto es probar y eventualmente googlear, no hay mucha ciencia acá.
+
+
+3.
+Hasta acá podemos armar las pantallas, pero no podemos mostrar una navegación. Podríamos armar un video que la simule. Pero figma nos da una forma sencilla de definir una navegación dentro del documento, por lo tanto queda grabada y la podemos reproducir a voluntad.
+
+Cómo se hace: sencillamente, en las opciones arriba a la derecha elegir "prototype" y hacer los links.
+
+Después probar con el "play" en la barra negra superior, a la derecha.
+
+
+4.
+¡Y esto es todo amigues!
+
+Con esto y no mucho más, creo que pueden armar un lindo material para interacción rápida con stakeholders, y que (no olvidar) va a la carpeta que se les va a pedir para PPS.
+
+Mostrar ejemplo de Becarias ... que no tiene navegación, pero sí muchos elementos.
+
+... a ver cómo se hace un checkbox ... Material Design Icons (que vamos a poder usar en nuestro FE si usan el stack recomendado x la casa)
+De dónde lo saqué: https://www.youtube.com/watch?v=Qm-EkQyxAgY . Fíjense que lo pueden animar y todo (yo vi sólo el 1er minuto).
+
+y así pueden ir chusmeando cada cosa
+
+
