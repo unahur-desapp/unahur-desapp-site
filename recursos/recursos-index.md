@@ -43,32 +43,7 @@ Peeeeero es el mismo usuario del Trello, así que ya tienen .... porque ya se cr
 
 
 ## Sobre Git
-
-### Material para leer
-Dentro de la documentación/material educativo sobre Git, lo que me parece más claro es la [serie de tutoriales de Atlassian](https://www.atlassian.com/es/git/tutorials).  
-De tierno que soy se los dejo en castellano.
-
-También les dejo acá algo que escribí en otro contexto, y tal vez les sirva. Son varias páginas.
-
-**OJO** - no arranca de cero, el material que sigue asume que ya lo básico lo tenés.
-
-[Git - intro](./git/git-intro)
-
-[Los 'lugares' de Git](./git/git-espacios)
-
-[Un repo es una red de commits](./git/git-commits)
-
-["Deshaciendo" o "modificando" cambios - reset, commit --amend, revert](./git/git-reset)
-
-[Repositorios remotos](./git/git-remote)
-
-[Sincronización de branches - merge y rebase](./git/git-synchro-merge-rebase)
-
-[Pull requests](./git/pull-requests)
-
-[Modelos de branches](./git/branch-models)
-
-[Git - algunos extras](./git/git-extras)
+Este material ahora está en una [página aparte](./git/git-index).
 
 
 ## Documentos

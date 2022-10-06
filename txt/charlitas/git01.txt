@@ -37,56 +37,110 @@ El foco acá es cómo manejar Git, y cómo nos puede ayudar Git, en un proyecto 
 
 Siendo que son pocos se podríiiiia (tal vez, la verdad ni sé si convendría) pensar en otro esquema. Pero ... el manejo de Git en el contexto de un proyecto largo (de 9 meses, un parto) es una de las cosas que se llevan de la/s materia/s ... y que se evalúa.
 
-Entonces, primero vamos a ver el esquema, y después vamos a hablar un poco de características de Git.
+Entonces, arrancamos observando el árbol de commits, después vamos a ver el esquema, y más adelante vamos a hablar un poco de características de Git.
 
 
-3.
+3. 
+El árbol de commits.
+Presentamos el ejemplo: (algún clon de) simple-linear-history.
+Tenemos tres archivos: fruta, carne, verdura.
+
+Mostramos el árbol de commits. Agregamos C4 con estas verduras
+lechuga mantecosa
+zapallo cabutia 
+
+A ver cómo se actualizó el árbol. 
+Se puede hacer sólo commit ... por qué no se ve nada ... push.
+Mostrar un toque el detalle que podés obtener del delta de C4 (o de cualquier otro).
+
+¿Por qué digo "árbol" si es un tronco nomás?
+Cada commit tiene un padre (mirémoslo en la página del commit) ... a veces tiene dos, pero por lo general uno - actualizamos el dibujo en el diagram editor.
+Peeeero dos commits podrían tener el mismo padre, y ahí nos abrimos.
+Pero pero ... ¿cómo hacemos? Manejando distintos branches. 
+
+Ahora estamos viendo un solo branch que se llama dev. Notamos que el commit hace dos cosas: crea el commit, y "corre" el branch.
+Se pueden crear todos los branches que se quiera. Y distintas personas pueden crear distintos branches (... a esto le apuntamos ...).
+Ahí vamos.
+
+
+4.
+Branches en Git.
+
+¿Saben lo que es un branch?
+- conceptualmente: una rama de commits.
+- técnicamente: un puntero a un commit, la rama se arma con la secuencia de padres. Tal vez esta es la genialidad más genial de Git.
+
+Hacer un ejemplo en vivo sobre (algún clon de) simple-linear-history, (por las dudas) ver d:\temp\git-clase.
+Vamos con tres usuaries: clombardi / laura-git / roque-git.
+Cada persona va a hacer una tarea
+- clombardi     agregar fruta        
+- laura-git     agregar verdura     lauragit2    elcarlono@gmail.com
+- roque-git     meter pescado       roquegit2    elotrocarlono@gmail.com
+
+cómo quedaría el dibujito después de que cada une mete un commit de acuerdo a lo que vimos.
+- esto hacerlo sobre el editor Web de gráfico.
+
+Cómo manejarlo: tres ventanas de VSCode con un terminal mismo dentro del VSCode.
+
+Script
+s0.
+oooohhh ni Roque ni Laura tienen C4, ¿por qué?
+Cómo lo arreglo: git pull.
+
+s1. 
+cada uno crea un branch (repasemos cómo es), y mete un commit + push (-u, por qué). Esto indicar sobre el editor gráfico que pasa en cada pasito.
+
+Laura crea branch mas-verdura - agrega en verduras.txt - V1
+tomate perita
+berenjena violeta
+
+Carlos crea branch mas-fruta - agrega en fruta.txt - F1
+frutilla de Coronda
+banana Chiquita
+
+Roque crea branch pescado - crea pescado.txt - P1
+brótola blanca
+atún rojo
+(por qué acá no funciona git commit -a)
+
+s2. 
+me paro en clombardi, mando un pull, qué pasó. Se puede hacer el git log --oneline --graph --all, comparar con el dibujo.  
+También se puede ver en la UI Web de GitLab.
+
+s3. siempre en clombardi, me voy parando en los distintos branches. 
+
+Mostrar en vivo cómo saltando de branch cambia lo que veo. No, no se pierde. Y si meto todo en el remoto, está en el server además de en mi compu.
+¿Y "dónde está" el código de los branches? En algún lado, si quieren saber, en la carpeta .git, en un formato que ... pregúntenle a Torvalds.
+
+... acá ya se ven las ramas ... la idea es que cada feature o tarea se implemente en un branch separado. Peeeero en algún momento tenemos que juntar todo, porque en el producto final el código tiene que estar todo junto. 
+De acá vienen distintas opciones para trabajo en grupo, dónde, cómo y cuándo integramos. Nosotros proponemos una que es bastante popular en la industria, así como se las contamos o alguna variante.
+
+
+5.
 El esquema: feature branch.
 
-Mostrar el dibujo. Así es como queremos que trabajen.
+Mostrar el dibujo, que está en 
+  https://unahur-desapp.github.io/unahur-desapp-site/recursos/git/branch-models. 
+Así es como queremos que trabajen.
 
 Podemos tomar "feature" como "tarea" o "tarjeta de Trello". De hecho, asociar un branch a una tarjeta/tarea del manejador de proyectos es una práctica habitual.
 
-Qué nos permite esto: cada uno labura por separado, y después se integra sobre la rama develop (o dev). Master no lo tocamos nunca de los jamases x ahora.
+Qué nos permite esto: cada uno labura por separado, y después se integra sobre la rama develop (o dev). El branch main/master no lo tocamos nunca de los jamases x ahora.
 
 Consecuencia: cada uno no ve los cambios que hacen los otros hasta que integra. 
 Ventaja: no nos pisamos.
 Desventaja: si necesito algo que está haciendo el otro, no lo tengo.
 
 
-4.
-Un mínimo de conceptos Git.
-
-¿Saben lo que es un branch?
-Hacer un ejemplo en vivo sobre simple-linear-history, ver d:\temp\git-clase.
-Tenemos tres archivos: fruta, carne, verdura. Y tres usuaries: clombardi / laura-git / roque-git.
-Cada persona va a hacer una tarea
-- clombardi     agregar fruta        
-- laura-git     agregar verdura     lauragit2
-- roque-git     meter pescado       roquegit2
-
-cómo quedaría el dibujito después de que cada une mete un commit de acuerdo a lo que vimos.
-- esto hacerlo sobre el editor Web de gráfico.
-
-Mostrar en vivo cómo saltando de branch cambia lo que veo. No, no se pierde. Y si meto todo en el remoto, está en el server además de en mi compu.
-¿Y "dónde está" el código de los branches? En algún lado, si quieren saber, en la carpeta .git, en un formato que ... pregúntenle a Torvalds.
-
-Script
-s1. cada uno crea un branch (repasemos cómo es), y mete un commit + push. Esto indicar sobre el editor gráfico que pasa en cada pasito.
-s2. me paro en clombardi, mando un pull, qué pasó. Se puede hacer el git log --oneline --graph --all, comparar con el dibujo.  
-    También se puede ver en la UI Web de GitLab.
-s3. siempre en clombardi, me voy parando en los distintos branches. 
-
-
-5.
+6.
 Procedimiento de trabajo (esto lo puedo ir haciendo)
 
-5.1. cuando empiezo una tarea
+6.1. cuando empiezo una tarea
 - git checkout dev
 - git pull
 - git checkout -b <branch-de-mi-tarea>
 
-5.2. trabajo diario
+6.2. trabajo diario
 Cuando arranco: 
 - git checkout dev
 - git pull
@@ -99,7 +153,7 @@ s1. se simula una sesión de trabajo de Laura en la que mete un commit.
 s2. se simula una sesión de trabajo de clombardi en la que mete dos commits.
 
 
-5.3. Cuando termino una tarea
+6.3. Cuando termino una tarea
 
 Puede ser que alguien haya hecho algo algo, o no.
 
@@ -130,7 +184,7 @@ s7. laura decide que terminó ... pero mientras tanto entró la tarea de roque.
     Acá ver la relevancia del git checkout dev + git pull antes de rebase.
 
 
-5.4. La receta
+6.4. La receta
 
 - git checkout dev
 - git pull
@@ -149,7 +203,11 @@ Lo que sí se tienen que sincronizar, es no hacer la integración a dev varies a
 
 
 
-6.
+7.
+Local y remoto
+
+
+8.
 Otras pautas
 
 ¿Puede haber conflictos? Sí. 
@@ -174,9 +232,5 @@ Pero **ojo** antes de saltar tengo que commitear.
 Si voy a hacer una tarea larga que tarde mucho, corro el riesgo de que dev esté muy distinto cuando me toque integrar. Cómo lo mitigo: rebase dev cada tanto (*sin* olvidar hacer pull de dev antes de rebasear).
 
 
-7.
-Local y remoto
-
-
-8.
+9.
 Pull requests = merge requests

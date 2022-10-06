@@ -5,7 +5,7 @@ layout: default
 ¡Hola!  
 En este sitio vamos a ir volcando información relacionada con la cursada de Desarrollo de Aplicaciones en la UNaHur.
 
-El sitio va a ir creciendo durante el año.
+El sitio va a ir creciendo con el paso del tiempo y los sucesivos dictados.
 
 
 ## Pautas para la cursada
@@ -16,6 +16,9 @@ El sitio va a ir creciendo durante el año.
 
 ## Recursos
 [Acá](./recursos/recursos-index)
+
+## Especial - Git
+[Acá](./git/git-index)
 
 ## Actividades
 [Acá](./actividades)
