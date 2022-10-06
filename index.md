@@ -23,7 +23,10 @@ El sitio va a ir creciendo durante el año.
 ## Más info
 [Acá](./mas-info)
 
-## Primer cuatrimestre 2022
+## Segundo cuatrimestre 2022
+[Acá](./cuatrimestres/2022s2)
+
+## Primer cuatrimestre 2022 - PPS en el 2do cuatrimestre 2022
 [Acá](./cuatrimestres/2022s1)
 
 ## Cuatrimestres anteriores
