@@ -34,6 +34,8 @@ Si usamos `rebase`:
 - `git checkout <branch-de-mi-tarea>`
 - `git rebase dev`
 - ... pruebo que sigue andando ...
+- `git checkout dev`
+- `git merge <branch-de-mi-tarea>`
 - `git push -f`
 
 Si usamos `merge`:
