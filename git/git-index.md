@@ -52,22 +52,22 @@ También les dejo acá algo que escribí en otro contexto, y tal vez les sirva. 
 
 **OJO** - no arranca de cero, el material que sigue asume que ya lo básico lo tenés.
 
-[Git - intro](./recursos/git/git-intro)
+[Git - intro](../recursos/git/git-intro)
 
-[Los 'lugares' de Git](./recursos/git/git-espacios)
+[Los 'lugares' de Git](../recursos/git/git-espacios)
 
-[Un repo es una red de commits](./recursos/git/git-commits)
+[Un repo es una red de commits](../recursos/git/git-commits)
 
-["Deshaciendo" o "modificando" cambios - reset, commit --amend, revert](./recursos/git/git-reset)
+["Deshaciendo" o "modificando" cambios - reset, commit --amend, revert](../recursos/git/git-reset)
 
-[Repositorios remotos](./recursos/git/git-remote)
+[Repositorios remotos](../recursos/git/git-remote)
 
-[Sincronización de branches - merge y rebase](./recursos/git/git-synchro-merge-rebase)
+[Sincronización de branches - merge y rebase](../recursos/git/git-synchro-merge-rebase)
 
-[Pull requests](./recursos/git/pull-requests)
+[Pull requests](../recursos/git/pull-requests)
 
-[Modelos de branches](./recursos/git/branch-models)
+[Modelos de branches](../recursos/git/branch-models)
 
-[Git - algunos extras](./recursos/git/git-extras)
+[Git - algunos extras](../recursos/git/git-extras)
 
 
