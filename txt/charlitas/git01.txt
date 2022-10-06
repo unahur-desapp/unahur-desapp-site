@@ -61,9 +61,9 @@ Un mínimo de conceptos Git.
 Hacer un ejemplo en vivo sobre simple-linear-history, ver d:\temp\git-clase.
 Tenemos tres archivos: fruta, carne, verdura. Y tres usuaries: clombardi / laura-git / roque-git.
 Cada persona va a hacer una tarea
-- clombardi     agregar fruta 
-- laura-git     agregar verdura
-- roque-git     meter pescado
+- clombardi     agregar fruta        
+- laura-git     agregar verdura     lauragit2
+- roque-git     meter pescado       roquegit2
 
 cómo quedaría el dibujito después de que cada une mete un commit de acuerdo a lo que vimos.
 - esto hacerlo sobre el editor Web de gráfico.
