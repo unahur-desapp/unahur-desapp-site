@@ -1,0 +1,52 @@
+Preludio - Flexbox
+App05 en AppAutonomous
+
+Componentes / props
+ver con AuthorsAndPhrases03
+
+Map para renderizar arrays
+también hay un ejemplo en AuthorsAndPhrases03
+
+useState
+AuthorsAndPhrases05a
+
+services
+AuthorsAndPhrases06
+- versiones fake
+- llamada con Axios, qué se obtiene
+- funciones en archivos aparte
+- useEffect, el principio de que React *reacciona*
+
+input 
+JustPhrases04a
+- controlled vs uncontrolled, useRef para versión uncontrolled
+- validaciones
+  - en AddPhraseValidationWhileTyping -> const que cambia de valor a cada render,
+    diferencia con state / effect
+- separar componentes, función de actualización como prop
+- toast
+- flex grow
+- chiches en AddPhraseValidationAfterFirstKeystroke
+  - en particular, no repetir lógica de validación
+
+
+MUI (un toque)
+Presentación - las ventajas
+1. Componentes más bonitos, en el ejemplo los botones y el input field.
+2. Una librería de íconos fácil de usar.
+3. Una alternativa para la definición de flexboxes, que evita el uso de un archivo .CSS. En concreto, MUI provee componentes React que se renderizan como un div que ya tiene seteados los atributos CSS de flexbox.
+4. Además de esto, más variantes y herramientas para el manejo del CSS.
+5. En particular, herramientas específicas que apuntan a implementar páginas que sean responsive.
+
+Para ver un ejemplo, se puede seguir el caminito de transformación de los botones descripto en mui-intro y mui-theme.
+Después para el color de fondo yo iría con el sx, lo de custom color les paso el .txt para que lo miren.
+    sx={{ color, backgroundColor: grey[200], "&:hover": { backgroundColor: grey[300] } }} 
+
+Después se puede simplemente mostrar que "hay para input" y para textos (Typography), sin mucha explicación.
+
+Lo que me interesa es ir a Stack / Grid.
+Eso ya se puede ver en JustPhrasesMui01, y después revisemos los otros flex que hay.
+
+
+React Router
+
