@@ -64,6 +64,11 @@ Miramos el ejemplo: relación bidireccional.
 Cómo manejarlo respecto de la inicialización. Esto lo inventé yo, tal vez no es lo mejor, pero funciona.
 
 Para qué me sirve: veamos los endpoints sobre productos.
+- metí un repository, y acá tenemos la cadena completa: router / controller / repository
+  - dónde meteríamos p.ej. validación de permisos
+  - ¿cómo es que no dice "await" en la función del repository?
+  - mejora: pasar el toJson a repository. Ahora sí hace falta el await.
+- oh lodash
 
 Unifiquemos estos endpoints: /api/productos?compras=todas o /api/productos?compras=ultima
 - mandemos un 400 si compras tiene otro valor
