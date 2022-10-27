@@ -10,7 +10,7 @@ también hay un ejemplo en AuthorsAndPhrases03
 useState
 AuthorsAndPhrases05a
 
-services
+services (esto preguntar en la 2da clase qué vimos y qué no)
 AuthorsAndPhrases06
 - versiones fake
 - llamada con Axios, qué se obtiene
@@ -22,7 +22,7 @@ JustPhrases04a
 - controlled vs uncontrolled, useRef para versión uncontrolled
 - validaciones
   - en AddPhraseValidationWhileTyping -> const que cambia de valor a cada render,
-    diferencia con state / effect
+    diferencia con state / effect. Por qué los fetch data sí tienen que ir dentro de un useEffect.
 - separar componentes, función de actualización como prop
 - toast
 - flex grow
@@ -30,7 +30,7 @@ JustPhrases04a
   - en particular, no repetir lógica de validación
 
 
-MUI (un toque)
+MUI 
 Presentación - las ventajas
 1. Componentes más bonitos, en el ejemplo los botones y el input field.
 2. Una librería de íconos fácil de usar.
@@ -40,13 +40,16 @@ Presentación - las ventajas
 
 Para ver un ejemplo, se puede seguir el caminito de transformación de los botones descripto en mui-intro y mui-theme.
 Después para el color de fondo yo iría con el sx, lo de custom color les paso el .txt para que lo miren.
+    sx={{ color, backgroundColor: "#eeeeee", "&:hover": { backgroundColor: ""#e0e0e0"" } }} 
     sx={{ color, backgroundColor: grey[200], "&:hover": { backgroundColor: grey[300] } }} 
 
 Después se puede simplemente mostrar que "hay para input" y para textos (Typography), sin mucha explicación.
 
-Lo que me interesa es ir a Stack / Grid.
+Lo que me interesa es ir a Stack.
 Eso ya se puede ver en JustPhrasesMui01, y después revisemos los otros flex que hay.
 
 
 React Router
-
+en App.js, volver a App03, mostrar la diferencia con App04.
+De ahí ir por el script react-router-intro, pero mostrando el código ya hecho.
+Después se puede cambiar un Link por un botón para mostrar el navigate.

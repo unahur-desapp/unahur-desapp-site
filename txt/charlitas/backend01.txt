@@ -1,0 +1,70 @@
+Express
+-------
+Qué es - un Web server.
+Y qué es un Web server - lo deberían saber de Redes: atiende pedidos y responde con un paquete, en protocolo HTTP.
+
+Peeero cómo Web, si no lo veo en el browser.
+
+Eso va ligado a qué se espera que responda.
+- HTML (junto con JS/CSS) - para el browser
+- JSON u otros lenguajes de intercambio - BE para ser consumido por otras apps.
+- documentos (onda PDF o imágenes) - también lo puede cubrir un BE.
+
+Un Web server consiste en
+- la definición de qué endpoints (verbo + URL) va a atender, y el formato del request para cada uno.
+- el código que genera la respuesta para cada endpoint.
+
+Vamos al ejemplo - punto de entrada /lib/app.js.
+- mándenle cors.
+- lo demás ... esteeee ... lo heredé.
+
+
+Router - define endpoints
+-------------------------
+... nos lo provee express, para eso está ...
+ver cómo quedan definidas las rutas.
+
+ejemplo de la ruta de comidas, router y controller.
+- ¿cuál es la diferencia con una ruta que es resuelta por una BD?
+- creemos una ruta en comidas.
+  - de paso cañazo, hot reload gracias a nodemon. Revisemos package.json.
+- creemos un nuevo router, digamos ciudades.
+  - vamos por una persistencia trucha.
+  - empecemos por el get
+    - filtro por país
+    - filtro por rango de población
+  - get de una ciudad x nombre como path param
+  - mandar un header de idioma para i18n (esto es un mega-invento mío)
+
+
+Persistencia
+------------
+recordemos lo básico de Sequelize
+- modelos con atributos
+- mensajes para crear y ejecutar sentencias SQL
+  - findByPk
+  - findAll, se le pueden pasar condiciones
+  - build+save o create
+
+/lib/models/index.js - levanta todos los modelos, es una inicialización necesaria.
+
+Vamos con el get de compras, ponele por proveedor.
+
+Y vamos por el post de compras.
+
+
+Relaciones
+----------
+Para qué: permite generar queries con joins.
+
+Miramos el ejemplo: relación bidireccional. 
+- Bensemos cómo se modelaría en la BD.
+- Bueno, Sequelize hace exactamente eso. Y parece que le mete la FK, aunque tengo un comentario que no entiendo.
+
+Cómo manejarlo respecto de la inicialización. Esto lo inventé yo, tal vez no es lo mejor, pero funciona.
+
+Para qué me sirve: veamos los endpoints sobre productos.
+
+Unifiquemos estos endpoints: /api/productos?compras=todas o /api/productos?compras=ultima
+- mandemos un 400 si compras tiene otro valor
+
