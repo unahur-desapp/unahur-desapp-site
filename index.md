@@ -8,6 +8,13 @@ En este sitio vamos a ir volcando información relacionada con la cursada de Des
 El sitio va a ir creciendo con el paso del tiempo y los sucesivos dictados.
 
 
+## Nosotros
+El grupo docente de la materia está formado por
+- Carlos Lombardi, carlombardi@gmail.com .
+- Cristian Schiffino, cristian.schiffino@unahur.edu.ar .
+- Christian Mazzeo, christian.mazzeo@unahur.edu.ar .
+
+
 ## Pautas para la cursada
 [Acá](./pautas-para-la-cursada)
 
