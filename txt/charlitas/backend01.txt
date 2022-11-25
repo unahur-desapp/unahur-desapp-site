@@ -36,9 +36,43 @@ ejemplo de la ruta de comidas, router y controller.
   - get de una ciudad x nombre como path param
   - mandar un header de idioma para i18n (esto es un mega-invento mío)
 
+Atenti importante API REST, conviene seguirlas
+Ver en https://clombardi.github.io/bdsol-capacitacion-desarrollo/etapa-1-index la parte de API REST.
 
-Persistencia
-------------
+
+Persistencia - con Mongo
+------------------------
+Los cuatro pasos: conexión / esquema / modelo / operación.
+
+Algo fácil: alta. En rigor hay varias formas, hasta donde recuerdo las diferencias son sutiles.
+
+Bueno, vamos a buscar.
+- toObject
+- lean, qué gano, qué pierdo
+
+Filtros
+- fáciles: valor exacto, comparaciones de números
+- menos fáciles: $regex
+- and y or
+  - ya que estamos, query params multivalued
+
+Mixed
+- este es un rollo de Mongoose, a Mongo no le importa nada
+- después en el controller podemos agarrar lo que querramos
+  - ¿se puede hacer del lado Mongo? Sí ... si quieren lo vemos juntos
+
+Más filtros
+- me meto adentro del objeto
+  - con un or
+- pero ahora quiero and de or
+
+
+
+
+
+
+Persistencia - con SQL
+----------------------
 recordemos lo básico de Sequelize
 - modelos con atributos
 - mensajes para crear y ejecutar sentencias SQL

@@ -14,9 +14,18 @@ Dar la oportunidad a les estudiantes de realizar la PPS en este estadío de sus 
 
 Cabe tener en cuenta que la Licenciatura termina con una tesina de grado; en esta oportunidad se pueden plantear exigencias acordes a estudiantes que están terminando una carrera de grado.
 
+Otro punto a tener en cuenta es que _el producto más relevante de su cursada es el software desarrollado_. El informe es un producto que de acuerdo al foco de la carrera (que tiene una fuerte orientación al trabajo concreto de desarrollo) tiene una relevancia menor.  
+Por lo tanto, les pedimos a les jurados que evalúen el producto que está siendo descripto por el informe, más que el informe en sí. El informe es la manera que tenemos para comunicarles el trabajo a evaluar, que es el software desarrollado.
+
+
 ## Aspectos particulares
 
 Como parte del dimensionamento al nivel de evolución de les estudiantes al momento de realizar la PPS, pedimos que los jurados tengan en particular consideración las cuestiones que detallamos a continuación.
+
+### Redacción
+Desde el grupo docente no esperamos que los informes se destaquen respecto de la redacción y del manejo del idioma castellano.  
+En el acompañamiento que hacemos, insistimos en que: su redacción no los haga difíciles de entender, no tengan faltas de ortografía, la información esté organizada correctamente, y no haya duplicación o incoherencias.  
+No incluimos, entre otros, el análisis sobre si el estilo utilizado es muy escueto, o la presentación es muy esquemática.
 
 ### Requerimientos no funcionales
 En los primeros tres años de las carreras de Informática, no se incluye ninguna materia en la que se trabaje con los requerimientos no funcionales de un proyecto de software. Estas temáticas son abordadas sobre todo en las materias Arquitectura de Software I y II, propuestas para cuarto y quinto año respectivamente.  
