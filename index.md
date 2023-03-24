@@ -12,7 +12,6 @@ El sitio va a ir creciendo con el paso del tiempo y los sucesivos dictados.
 El grupo docente de la materia está formado por
 - Carlos Lombardi, carlombardi@gmail.com .
 - Cristian Schiffino, cristian.schiffino@unahur.edu.ar .
-- Christian Mazzeo, christian.mazzeo@unahur.edu.ar .
 
 
 ## Pautas para la cursada
