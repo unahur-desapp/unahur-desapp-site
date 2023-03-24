@@ -18,7 +18,7 @@ El grupo docente de la materia está formado por
 [Acá](./pautas-para-la-cursada)
 
 ## Pautas para la carpeta
-En breve ...
+[Acá](./pautas-para-la-carpeta)
 
 ## Tareas iniciales
 [Acá](./tareas-iniciales)
