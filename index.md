@@ -42,5 +42,5 @@ El grupo docente de la materia está formado por
 [Acá](./cuatrimestres/2022s2)
 
 ## Cuatrimestres anteriores
-[Segundo cuatrimestre 2021](./cuatrimestres/2021s2)
+[Segundo cuatrimestre 2021](./cuatrimestres/2021s2)  
 [Primer cuatrimestre 2022 (PPS en el 2do cuatrimestre 2022)](./cuatrimestres/2022s1)
