@@ -10,8 +10,8 @@ El sitio va a ir creciendo con el paso del tiempo y los sucesivos dictados.
 
 ## Nosotros
 El grupo docente de la materia está formado por
-- Carlos Lombardi, carlombardi@gmail.com .
-- Cristian Schiffino, cristian.schiffino@unahur.edu.ar .
+- Carlos Lombardi, carlombardi@gmail.com , usuario Github clombardi , Trello @carloslombardi .
+- Cristian Schiffino, cristian.schiffino@unahur.edu.ar , usuario Github CristianSchiffino , Trello @cristianschiffino1 .
 
 
 ## Pautas para la cursada
