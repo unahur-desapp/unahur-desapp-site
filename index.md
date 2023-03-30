@@ -10,8 +10,11 @@ El sitio va a ir creciendo con el paso del tiempo y los sucesivos dictados.
 
 ## Nosotros
 El grupo docente de la materia está formado por
-- Carlos Lombardi, carlombardi@gmail.com , usuario Github clombardi , Trello @carloslombardi .
-- Cristian Schiffino, cristian.schiffino@unahur.edu.ar , usuario Github CristianSchiffino , Trello @cristianschiffino1 .
+
+| Nombre | Mail | Github | Trello |
+| --- | --- | --- | --- |
+| Carlos Lombardi | carlombardi@gmail.com | clombardi | @carloslombardi |
+| Cristian Schiffino | cristian.schiffino@unahur.edu.ar | CristianSchiffino | @cristianschiffino1 |
 
 
 ## Pautas para la cursada
@@ -42,5 +45,6 @@ El grupo docente de la materia está formado por
 [Acá](./cuatrimestres/2022s2)
 
 ## Cuatrimestres anteriores
-[Segundo cuatrimestre 2021](./cuatrimestres/2021s2)  
 [Primer cuatrimestre 2022 (PPS en el 2do cuatrimestre 2022)](./cuatrimestres/2022s1)
+
+[Segundo cuatrimestre 2021](./cuatrimestres/2021s2)  
