@@ -46,6 +46,10 @@ Peeeeero es el mismo usuario del Trello, así que ya tienen .... porque ya se cr
 Este material ahora está en una [página aparte](./git/git-index).
 
 
+## Gestión de proyectos
+Esta es la [presentación](../adjuntos/unahur-2022-CS_FINAL.pptx) de Cristian Schiffino, de la que solemos hablar a principio de cada cuatrimestre.
+
+
 ## Documentos
 
 ### Fichas de principio y fin de sprint
