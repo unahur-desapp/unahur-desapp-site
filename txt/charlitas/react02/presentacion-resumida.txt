@@ -1,0 +1,128 @@
+Antes que nada: mostrar que se pueden bajar los ejemplos, y un toque la estructura.
+Ahí tienen banda para mirar.
+
+JSX
+
+Arranquemos por AuthorsAndPhrases05a - PhrasesBoxBeforeButtons.
+- OK, el objetivo va a ser que funcionen los botones.
+- Antes ... ¿ven alguna regularidad acá?
+  - definir un componente y usarlo n veces con distintos datos -> PhrasesBox
+    (el título está afuera - si no me creen veámoslo en App.AppRouter)
+    Algo así
+    <>
+      <PhrasesBox title=... images=...>
+      <PhrasesBox>
+      <PhrasesBox>
+    </>
+    (primer *gran* cosa de React: es fácil factorizar componentes y usarlos con 
+     notación seudo-HTML)
+  - ¿cómo le llegan los datos al componente? Dos formas
+    - estado (semi)global onda Redux / MobX / Recoil / contextos / mil etcs.
+      - si están picantes: por qué semi.
+    - props.
+      
+      <div style="..." id="...">hola</div>
+
+    - Idea interesante: separar componentes visuales de componentes lógicos.
+  - Vamos por props. OK, qué props. 
+
+  - OK una prop es una lista de frases. ¿Cómo la renderizamos? -> map
+    - atenti: hace falta key, si no chilla React.
+
+- Ahora sí, primero creemos los botones, con onClick. Listo, andan. 
+- Logremos que cambie la foto (veamos que ya nos llega un array)
+  - En <img className={classes.image2} src={imageSrcs[1]} alt="" />
+    ¿qué tiene que cambiar?
+  - Si cambia, tiene que ser una variable
+    - ¿Qué scope? El componente ... más precisamente, *la instancia* del componente.
+      (se definen como fns pero desde el punto de vista del estado conviene pensarlas como clases).
+    - ¿Qué particularidad? que tiene que re-renderizar.
+  - Esto en React tiene un nombre -> useState.
+  - Más rápido usarlo que contarlo.
+  - Segunda *gran* cosa de React: reacciona. En lugar de pensar en el DOM, se piensa en estados.
+
+Un toque AuthorsAndPhrases05b
+Ahora cambia el color, otra vez, en 
+    <div key={phrase} className={`${classes.phrase} ${classes["phrase-div"]}`} style={{ color: 'crimson' }}>
+        {phrase}
+    </div>
+¿qué queremos que cambie?
+Se podríiiia hacer con clases, vamos a hacerlo con style.
+- Entre paréntesis, ¿por qué doble llave en style?
+- lo hacemos rápidamente arrancando de PhrasesBoxWithButtons
+- ¿cómo agregamos el "no mostrar"? 
+  - truco de setear el estado a null y condiciones booleanas
+  - && en el render, muy práctico. También ayuda el operador ternario.
+
+
+----------------------------------------
+OK, ahora queremos que las frases vengan de un BE. Armamos uno facilito.
+(mostrar en Insomnia)
+
+Recomendamos cada llamada API en una función separada, dentro de una carpeta services.
+
+La llamamos ... vamos a AuthorsAndPhrases06, versión "AuthorsAndPhrasesMalo".
+... por qué no anda ... pensemos despacito ...
+
+Solución: condición con useEffect (sí, se podría hacer con useState, simplemente useEffect es más sencillo)
+- se ejecuta después de renderizar, la típica que renderiza dos veces, es cómodo para poner "loading".
+- oh qué maravilla al haber separado el componente gráfico, ahora mando un map y tengo los autores que quiero.
+
+    const [author, setAuthor] = useState();
+    const [authorData, setAuthorData] = useState();
+
+    useEffect(() => {
+        const fetchAuthorData = async () => {
+            const obtainedData = await getAuthorData(author);
+            setAuthorData(obtainedData);
+        }
+        fetchAuthorData();
+    }, [author]);
+
+
+
+----------------------------------------
+(arrancar desde acá la segunda clase)
+
+... mensajes en general ...
+no se olviden de tener actualizado el Trello, y de asignar tareas a personas
+en el fin de sprint tengan todo integrado en dev y un show preparado, que hay poco tiempo
+gente sin commits grupos 1 / 3 / 4
+
+(https://tactiq.io/r/transcribing)
+....................................
+
+Esto creo que es la base de React: factorizar aprovechando JSX + reacciona a cambios de estado.
+
+Alrededor de estas ideas se crearon un montón de librerías que se llevan bien con React. 
+
+Cuento rápidamente una llamada MaterialUI, que para mí es muy capa para resolver la gráfica.
+
+Veamos JustPhrasesMui01 ... acá hay para hacer salsa.
+
+Arranquemos con el botón - comparemos los botones std con los de MUI. Sí, es agregarle CSS ... lo cómodo es que MUI ya lo pensó, de hecho es un standard gráfico definido por Google.
+- variant -> ver doc (otra cosa buena de MUI, la doc es a mi gusto un toque desordenada, pero muy abundante y llena de ejemplos).
+- color ... le pongo primary / secondary / info ... estos ya vienen. 
+  Peeeeero le puedo poner los míos -> theme 
+  - se define usando createTheme.
+  - se setea en un wrapper ThemeProvider (en el ejemplo está en el punto de entrada, index.js)
+    probar cambiando customMuiTheme por customMuiTheme2.
+  - los que yo más uso son palette y typography, hay otros.
+  - también se pueden cambiar los estilos que vienen.
+- pero pará pará ... ¿qué es eso de gray[200]?
+  Ver https://mui.com/material-ui/customization/color/#2014-material-design-color-palettes
+  Ooootra cosa que ya pensaron.
+
+(lo podemos hacer "en vivo" desde JustPhrasesMui00)
+Miremos un toque ahora el botón de eliminar -> oh tiene un iconito.
+- también "ya viene": endIcon + una librería *enorme* de íconos.
+- además size.
+
+OK OK ya vamos al "+". Antes un detalle responsive ... media queries mega-simplificados.
+- acá usamos que React reacciona ... contarlo ...
+
+Y de acá ir para el lado del input, cómo manejarlo.
+
+
+
+

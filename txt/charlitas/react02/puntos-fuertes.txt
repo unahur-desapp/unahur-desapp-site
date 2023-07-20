@@ -22,3 +22,8 @@ De hecho, casi todo es useEffect / useState / props.
 React no soporta componentes de ejecución asincrónica. Imagino que es para que no interfiera con la detección y resolución de actualizaciones.
 O sea, la ejecución del componente tiene que ser sincrónica. 
 Somos nosotros como devs, quienes tenemos que manejar la interacción con operaciones asincrónicas, eso no lo va a hacer React por nosotros. Un aliado útil para esto es el hook useEffect.
+
+
+(no sé en dónde)
+React se encarga de la organización de los componentes y de la gestión del estado. Para la parte gráfica (incluyendo componentes gráficos y CSS) existen otras librerías, que están diseñadas para llevarse bien con React. 
+Creo conveniente tener esto en cuenta para entender qué buscar, en qué focalizarnos, cuando estudiamos React.

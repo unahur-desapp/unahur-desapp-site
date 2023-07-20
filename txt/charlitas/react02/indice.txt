@@ -1,0 +1,15 @@
+(punteo desordenado - React)
+- react reacciona - useState - useEffect
+- mostrar listas usando map
+- react-router
+- llamadas API  
+  - mockear API: adentro o afuera de la app
+- editar datos
+
+(punteo desordenado - MUI 5)
+- input
+- theme
+- breakpoints
+
+(punteo desordenado - CSS)
+- flex

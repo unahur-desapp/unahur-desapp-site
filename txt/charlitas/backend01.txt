@@ -1,3 +1,9 @@
+linkear 
+- página a status HTTP
+- https://developer.mozilla.org/en-US/docs/Glossary/Falsy
+- ejemplo BE
+
+----------------------------------------
 Express
 -------
 Qué es - un Web server.
@@ -22,9 +28,11 @@ Vamos al ejemplo - punto de entrada /lib/app.js.
 Router - define endpoints
 -------------------------
 ... nos lo provee express, para eso está ...
-ver cómo quedan definidas las rutas.
+ver cómo quedan definidas las rutas, esto en /routes/index.js.
 
 ejemplo de la ruta de comidas, router y controller.
+- ¿cómo probamos, es necesario tener un FE andando?
+  Nop, existen los maravillosos clientes onda Insomnia o Postman.
 - ¿cuál es la diferencia con una ruta que es resuelta por una BD?
 - creemos una ruta en comidas.
   - de paso cañazo, hot reload gracias a nodemon. Revisemos package.json.
@@ -38,6 +46,61 @@ ejemplo de la ruta de comidas, router y controller.
 
 Atenti importante API REST, conviene seguirlas
 Ver en https://clombardi.github.io/bdsol-capacitacion-desarrollo/etapa-1-index la parte de API REST.
+
+
+
+
+Persistencia - con SQL
+----------------------
+recordemos lo básico de Sequelize
+- modelos con atributos 
+  - acá ya enganchamos con migration y seeder, ver los tasks en el Readme del proyecto semilla BE.
+- mensajes para crear y ejecutar sentencias SQL
+  - findByPk 
+  - findAll, se le pueden pasar condiciones
+      where { attr: valor }
+      operadores
+        fecha_inicio_dictado: {
+          [Op.lte]: todayDate
+        }
+      attributes [attr1, attr2, ...]
+  - build+save o create
+
+/lib/models/index.js - levanta todos los modelos, es una inicialización necesaria.
+
+Vamos con el get de productos, ponele por proveedor.
+
+Y vamos por el post de productos.
+
+
+Ahora agregamos compras.
+      proveedor: DataTypes.STRING,
+      fecha: DataTypes.DATEONLY,
+      precio: DataTypes.NUMBER,
+      cantidad: DataTypes.NUMBER,
+
+
+Relaciones
+----------
+Para qué: permite generar queries con joins.
+
+Miramos el ejemplo: relación bidireccional. 
+- Pensemos cómo se modelaría en la BD.
+- Bueno, Sequelize hace exactamente eso. Y parece que le mete la FK, aunque tengo un comentario que no entiendo.
+
+Cómo manejarlo respecto de la inicialización. Esto lo inventé yo, tal vez no es lo mejor, pero funciona.
+
+Para qué me sirve: veamos los endpoints sobre productos.
+- metí un repository, y acá tenemos la cadena completa: router / controller / repository
+  - dónde meteríamos p.ej. validación de permisos
+  - ¿cómo es que no dice "await" en la función del repository?
+  - mejora: pasar el toJson a repository. Ahora sí hace falta el await.
+- oh lodash
+
+Unifiquemos estos endpoints: /api/productos?compras=todas o /api/productos?compras=ultima
+- mandemos un 400 si compras tiene otro valor
+
+
 
 
 Persistencia - con Mongo
@@ -68,42 +131,4 @@ Más filtros
 
 
 
-
-
-
-Persistencia - con SQL
-----------------------
-recordemos lo básico de Sequelize
-- modelos con atributos
-- mensajes para crear y ejecutar sentencias SQL
-  - findByPk
-  - findAll, se le pueden pasar condiciones
-  - build+save o create
-
-/lib/models/index.js - levanta todos los modelos, es una inicialización necesaria.
-
-Vamos con el get de compras, ponele por proveedor.
-
-Y vamos por el post de compras.
-
-
-Relaciones
-----------
-Para qué: permite generar queries con joins.
-
-Miramos el ejemplo: relación bidireccional. 
-- Bensemos cómo se modelaría en la BD.
-- Bueno, Sequelize hace exactamente eso. Y parece que le mete la FK, aunque tengo un comentario que no entiendo.
-
-Cómo manejarlo respecto de la inicialización. Esto lo inventé yo, tal vez no es lo mejor, pero funciona.
-
-Para qué me sirve: veamos los endpoints sobre productos.
-- metí un repository, y acá tenemos la cadena completa: router / controller / repository
-  - dónde meteríamos p.ej. validación de permisos
-  - ¿cómo es que no dice "await" en la función del repository?
-  - mejora: pasar el toJson a repository. Ahora sí hace falta el await.
-- oh lodash
-
-Unifiquemos estos endpoints: /api/productos?compras=todas o /api/productos?compras=ultima
-- mandemos un 400 si compras tiene otro valor
 
