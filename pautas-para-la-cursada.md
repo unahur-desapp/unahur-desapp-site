@@ -7,6 +7,24 @@ layout: default
 Se detallan algunos puntos que viene bien (creo) tener en cuenta.
 
 
+## Antes que nada - condiciones de aprobación
+Para aprobar cualquiera de las dos materias (o sea Desarrollo de Aplicaciones y PPS) tenemos condiciones grupales e individuales.
+
+Las condiciones grupales son
+- entregar en tiempo y forma las fichas de inicio y fin de sprint para cada sprint.
+- realizar las reuniones de cierre de sprint para cada sprint, en las fechas indicadas en el cronograma que se publica en este mismo sitio para cada cuatrimestre. <br/> A partir del sprint 3 para Desarrollo de Aplicaciones, y en todos los sprints en PPS, estas reuniones incluyen la presentación de los avances sobre la aplicación corriendo.
+- mantener el Trello actualizado durante la cursada.
+- realizar la presentación final presencial que debe incluir una demo de la aplicación en vivo, y estar organizada a partir de un PPT o similar.
+- para PPS se suman: un resumen que debe ser aprobado por el Consejo Directivo del Instituto de Ingeniería, y una carpeta que se presenta al jurado. Para los trabajos de PPS se arma un jurado que evalúa carpeta y presentación, y a partir de estos elementos se define la nota entre el jurado y los profesores. <br/> Van a encontrar ejemplos de carpeta en [esta página](./pautas-para-la-carpeta).
+
+Las condiciones individuales son
+- asistencia a todos los cierres de sprint salvo ausencia muy (pero muy) justificada. Esta asistencia puede ser virtual.
+- asistencia a la presentación final, **ojo** esta es presencial para los alumnos (puede ser virtual para profes y/o jurado).
+- **muy importante** <br> participación efectiva en el desarrollo, que se va a evaluar por cantidad y relevancia de los commits hechos por cada integrante en los repositorios de frontend y backend. O sea, quienes no tengan commits o tengan poquitos y/o poco relevantes, no van a aprobar la materia.
+
+
+
+
 ## Qué es lo que hay que construir
 Una aplicación Web, que idealmente que tenga una salida a celular, o al menos cuidar un poco que la UI sea [responsive](https://www.w3schools.com/css/css_rwd_intro.asp).
 
