@@ -20,7 +20,7 @@ Las condiciones grupales son
 Las condiciones individuales son
 - asistencia a todos los cierres de sprint salvo ausencia muy (pero muy) justificada. Esta asistencia puede ser virtual.
 - asistencia a la presentación final, **ojo** esta es presencial para los alumnos (puede ser virtual para profes y/o jurado).
-- **muy importante** <br> participación efectiva en el desarrollo, que se va a evaluar por cantidad y relevancia de los commits hechos por cada integrante en los repositorios de frontend y backend. O sea, quienes no tengan commits o tengan poquitos y/o poco relevantes, no van a aprobar la materia.
+- **muy importante** <br> participación efectiva en el desarrollo, que se va a evaluar por cantidad y relevancia de los commits hechos por cada integrante en los repositorios de frontend y backend. O sea, quienes no tengan commits o tengan poquitos y/o poco relevantes, no van a aprobar la materia. <br/> Si trabajan en grupo (lo cual está perfecto), por favor roten quién hace los commits (un día uno, otro día otro).
 
 
 
