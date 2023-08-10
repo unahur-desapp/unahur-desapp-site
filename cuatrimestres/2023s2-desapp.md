@@ -35,7 +35,7 @@ Este desarrollo tiene de particular que los datos se guardan en una base de docu
 
 Esta es [la carpeta](../adjuntos/pedidos-de-laboratorios-2023s1.pdf){:target="_blank"}.
 
-Los repos de código de frontend y backend los encuentran en https://github.com/orgs/Des-app-2022-C2/repositories.
+Los repos de código de frontend y backend los encuentran en [https://github.com/orgs/Des-app-2022-C2/repositories](https://github.com/orgs/Des-app-2022-C2/repositories).
 
 El objetivo es hacer todo lo necesario para que la aplicación quede operativa en el ámbito de la Universidad.
 
