@@ -10,6 +10,12 @@ Esta cursada va a incluir 4 grupos, con 5 personas en cada grupo.
 
 De acuerdo a la experiencia del año pasado, en la que casi todos quienes cursaron Desarrollo de Aplicaciones siguieron con la PPS en el cuatrimestre siguiente, vamos a suponer que al menos dos de los cuatro grupos van a seguir con PPS.
 
+Planteamos cuatro proyectos, dos están pensados para empezarlos con Desarrollo de Aplicaciones y seguirlos con PPS en el 1er cuatrimestre de 2024, los otros dos paraa cerrarlos en principio en este cuatrimestre, aunque también se pueden plantear continuaciones.
+
+
+## Muy importante - avisamos de entrada
+Los grupos que sigan PPS van a tener que retomar en marzo de 2024 lo que lleguen a hacer este año.  
+Por eso es **súper** importante que dejen todo anotado: los resultados del relevamiento, el detalle de los siguientes pasos, el código claro y documentado, y por qué no con algún test.
 
 ## Cómo arrancar
 Obviamente, lo primero es organizarse en grupos. Inmediatamente después, hay que definir de qué proyecto se encarga cada grupo; sobre esto vamos a hablar en la primer reunión.
@@ -20,9 +26,7 @@ Después, toca arrancar con el desarrollo. Para esto:
 
 
 ## Proyectos
-Planteamos cuatro proyectos, dos están pensados para empezarlos con Desarrollo de Aplicaciones y seguirlos con PPS en el 1er cuatrimestre de 2024, los otros dos paraa cerrarlos en principio en este cuatrimestre, aunque también se pueden plantear continuaciones.
-
-A continuación describimos cada uno de estos trabajos, indicando para cada uno si está pensado para continuarlo en PPS o bien si es para cerrarlo en el cuatrimestre de Desarrollo de Aplicaciones.
+A continuación describimos cada uno de los cuatro trabajos propuestos, indicando para cada uno si está pensado para continuarlo en PPS o bien si es para cerrarlo en el cuatrimestre de Desarrollo de Aplicaciones.
 
 
 ### Pedidos para laboratorio - para continuar en PPS
