@@ -115,3 +115,26 @@ Al repo de backend hay que modificarlo al principio, para conectar con MongoDB e
 - El estudiante/grupo puede cargar notas y adjuntos para cada sección.
 - El docente puede ver las notas y adjuntos que cargó cada estudiante/grupo.
 
+
+## Cronograma 
+
+| Fecha | Es presencial | Actividad |
+| --- | --- | --- |
+| 10/08 | No | Presentación / objetivos / armado de equipos / selección de trabajos. |
+| 17/08 | No | <b>1er Sprint - planning</b> <br/> |
+| 24/08 | No | Metodología agile / Relevamiento / análisis inicial. |
+| 31/08 | No | Figma <br/> Seguimiento |
+| 07/09 | No | <b>1er Sprint - review<b><br/><b>2do Sprint - planning<b> |
+| 14/09 | No | React - parte 1. |
+| 21/09 | No | Seguimiento |
+| 28/09 | No | <b>2do Sprint - review<b><br/><b>3er Sprint - planning<b> |
+| 05/10 | No |  React - parte 2. <br/> Manejo de branches. |
+| 12/10 | No | Seguimiento |
+| 19/10 | No | <b>3er Sprint - review</b><br/><b>4to Sprint - planning</b> <br/> React - parte 2 |
+| 26/10 | No | Seguimiento |
+| 02/11 | No | Backend. |
+| 09/11 | No | <b>4to Sprint - review<b><br/><b>5to Sprint - planning<b> |
+| 16/11 | <span style="font-weight: bold; color: crimson">Sí</span> | <span style="font-weight: bold; color: crimson">Práctica presentación presencial</span> | 
+| 23/11 | No | Seguimiento |
+| 30/11 | No | <b>5to Sprint - review<b> |
+| 07/12 | <span style="font-weight: bold; color: crimson">Sí</span> | <span style="font-weight: bold; color: crimson">Presentación presencial</span> |
