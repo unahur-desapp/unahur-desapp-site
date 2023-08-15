@@ -119,41 +119,41 @@ Al repo de backend hay que modificarlo al principio, para conectar con MongoDB e
 ## Grupos
 
 ### Grupo 1 - va a seguir con PPS
-Magalí Acosta
-Rodrigo Nahuel Chiapparo
-Angel Cutri
-Brenda Micaela Denhoff
-Laura Pereyra
+Magalí Acosta  
+Rodrigo Nahuel Chiapparo  
+Angel Cutri  
+Brenda Micaela Denhoff  
+Laura Pereyra  
 
 **Trabajo asignado**: Entorno de programación de robots
 
 
 ### Grupo 2 - va a seguir con PPS
-Gabriel de Rivas
-Leandro de Rivas
-Claudio Molina
-Cristian Damián Vitola
-Nicolás Ramírez
+Gabriel de Rivas  
+Leandro de Rivas  
+Claudio Molina  
+Cristian Damián Vitola  
+Nicolás Ramírez  
 
 **Trabajo asignado**: Pedidos de materiales para el laboratorio
 
 
 ### Grupo 3
-Enzo Alarcón
-Valentino Chiappanni
-Lucián Coniglio
-Luciano Ezequiel Garegnani
-Tomás Benjamín Vásquez
+Enzo Alarcón  
+Valentino Chiappanni  
+Lucián Coniglio  
+Luciano Ezequiel Garegnani  
+Tomás Benjamín Vásquez  
 
 **Trabajo asignado**: Programación de carteleras
 
 
 ### Grupo 4
-Facundo Ariel Cichero Ríos
-Agustín Fiordalisi
-Pablo Ezequiel Lopes Ferrao
-Ezequiel Pereira
-Gisela Daiana Tamburro
+Facundo Ariel Cichero Ríos  
+Agustín Fiordalisi  
+Pablo Ezequiel Lopes Ferrao  
+Ezequiel Pereira  
+Gisela Daiana Tamburro  
 
 **Trabajo asignado**: Cuaderno de laboratorio orientado a estudiantes
 

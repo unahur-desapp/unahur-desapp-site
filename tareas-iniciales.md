@@ -18,4 +18,7 @@ Crear una carpeta en Google Drive compartida por los integrantes del equipo y lo
 En lo posible, ponerle a la carpeta el mismo nombre que el espacio de trabajo de Trello, gracias de nuevo.
 
 ## Inicializar la estructura de GitHub.
-Crear una organización en Github, donde incluir a todxs lxs integrantes del equipo, y también a los docentes (el usuario Github de cada docente está en la [página inicial](./index.md)).
+Crear una organización en Github, donde incluir a todxs lxs integrantes del equipo, y también a los docentes (el usuario Github de cada docente está en la [página inicial](./index.md)).  
+
+> **Importante**  
+> Los docentes _tenemos que ser owners_ de esta orga, para poder manejar los repos (p.ej. para pasárselos a otros grupos en el futuro).
