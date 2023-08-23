@@ -60,8 +60,9 @@ Crear, dentro de la orga de Github que crearon, los repos de frontend y backend 
 
 ### Entorno de programación de robots - para continuar en PPS
 Se trata de dar los primeros pasos para armar un entorno gráfico para la programación de robots educativos. Los robots están siendo desarrollados por otro grupo dentro del ámbito de la Universidad, ahora para darle las instrucciones tienen una botonera, se apunta a poder programarlos desde una app Web.  
-Para tener una idea de entorno de programación gráfica para educación, pueden chusmear [Pilas Bloques](https://pilasbloques.program.ar/), un producto muy lindo hecho en Argentina.  
-Para tener una idea de los robots, encontré [este video de Youtube](https://www.youtube.com/watch?v=6cs-LPd8j0s).
+Para tener una idea de los robots, encontré [este video de Youtube](https://www.youtube.com/watch?v=6cs-LPd8j0s). La gente que lleva adelante el desarrollo del robot nos indicó [este video público](https://drive.google.com/file/d/1xKwIUHoya_uqAoti1-yHai5fBhHguw-i/view).
+
+Para tener una idea de entorno de programación gráfica para educación, pueden chusmear [Pilas Bloques](https://pilasbloques.program.ar/), un producto muy lindo hecho en Argentina. Pero por las primeras conversaciones que tuvimos con la gente que lleva adelante el desarrollo del robot, lo que se pretende es distinto.
 
 En este proyecto vamos a centrarnos, al menos en principio, en la interfaz gráfica; no vamos a apuntar a transmitir los programas definidos a los robots.
 
@@ -172,8 +173,8 @@ Gisela Daiana Tamburro
 | 28/09 | No | <b>2do Sprint - review<b><br/><b>3er Sprint - planning<b> |
 | 05/10 | No |  React - parte 2. <br/> Manejo de branches. |
 | 12/10 | No | Seguimiento |
-| 19/10 | No | <b>3er Sprint - review</b><br/><b>4to Sprint - planning</b> <br/> React - parte 2 |
-| 26/10 | No | Seguimiento |
+| 19/10 | No | <b>3er Sprint - review</b><br/><b>4to Sprint - planning</b> |
+****| 26/10 | No | Seguimiento |
 | 02/11 | No | Backend. |
 | 09/11 | No | <b>4to Sprint - review<b><br/><b>5to Sprint - planning<b> |
 | 16/11 | <span style="font-weight: bold; color: crimson">Sí</span> | <span style="font-weight: bold; color: crimson">Práctica presentación presencial</span> | 
