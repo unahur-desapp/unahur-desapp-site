@@ -64,7 +64,7 @@ Después se puede simplemente mostrar que "hay para input" y para textos (Typogr
 
 Lo que me interesa es ir a Stack.
 Eso ya se puede ver en JustPhrasesMui01, y después revisemos los otros flex que hay.
-
+Lo voy escribiendo en mui-flexboxes.
 
 React Router
 en App.js, volver a App03, mostrar la diferencia con App04.

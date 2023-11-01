@@ -1,0 +1,10 @@
+Miramos el CSS, en particular allPhrasesFrame.
+Miramos dónde está usado.
+
+Observación: para entender que este div define un flexbox de columna, tengo que mirar la hoja de estilos. OK más flexible, pero más oscuro.
+
+MUI da una alternativa -> Stack y Grid. Stack alcanza para la mayor parte de los casos.
+
+Y vamos que venimos.
+
+Observamos que la hoja de estilos va quedando más flaquita. MUI también ofrece opciones para que desaparezca del todo ... que no me acuerdo, ufa.
