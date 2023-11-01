@@ -1,33 +1,50 @@
 Preludio - Flexbox
 App05 en AppAutonomous
+Primero mostrarlo andando, después ir chequeando las clases CSS.
 
 Componentes / props
 ver con AuthorsAndPhrases03
+(el componente PhrasesBox define lo que se muestra para cada personaje, permite reutilización)
 
 Map para renderizar arrays
 también hay un ejemplo en AuthorsAndPhrases03
 
 useState
 AuthorsAndPhrases05a
+se puede mostrar a dónde vamos para que se entienda.
 
-services (esto preguntar en la 2da clase qué vimos y qué no)
+services y useEffect
 AuthorsAndPhrases06
 - versiones fake
 - llamada con Axios, qué se obtiene
+  mostrar la opción network en los devtools del browser
 - funciones en archivos aparte
 - useEffect, el principio de que React *reacciona*
+  acá ver el AuthorsAndPhrasesMalo para que se entienda la diferencia entre usar y no usar useEffect.
+- side note: composición de componentes permite distribuir el estado ... esto no siempre ...
+- otra side note: botones de colores
+  - más estado ... pero en cada instancia de PhrasesBox!!
+  - más sutileza en la composición de flexboxes
+
 
 input 
 JustPhrases04a
+AddPhraseFirstVersion 
+- dónde me guardo el valor -> en un state.
+- revisar el onClick despacito.
+- ¿y el otro state? Para el botón.
+  Resaltar la renderización condicional.
+- add in - toast
+AddPhraseUncontrolled
 - controlled vs uncontrolled, useRef para versión uncontrolled
+AddPhraseValidationWhileTyping
 - validaciones
-  - en AddPhraseValidationWhileTyping -> const que cambia de valor a cada render,
-    diferencia con state / effect. Por qué los fetch data sí tienen que ir dentro de un useEffect.
-- separar componentes, función de actualización como prop
-- toast
-- flex grow
-- chiches en AddPhraseValidationAfterFirstKeystroke
-  - en particular, no repetir lógica de validación
+  - const que cambia de valor a cada render, diferencia con state / effect. 
+- add in - flex grow
+- separar componentes, pasar función de actualización (en el ejemplo setNewPhrase) como prop
+  esto hacerlo en vivo
+AddPhraseValidationAfterFirstKeystroke
+- chiches, en particular no repetir lógica de validación
 
 
 MUI 
