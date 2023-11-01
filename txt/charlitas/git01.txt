@@ -42,7 +42,7 @@ Entonces, arrancamos observando el árbol de commits, después vamos a ver el es
 
 3. 
 El árbol de commits.
-Presentamos el ejemplo: (algún clon de) simple-linear-history.
+Presentamos el ejemplo: (algún clon de) initial-situation.
 Tenemos tres archivos: fruta, carne, verdura.
 
 Mostramos el árbol de commits. Agregamos C4 con estas verduras
@@ -70,7 +70,7 @@ Branches en Git.
 - conceptualmente: una rama de commits.
 - técnicamente: un puntero a un commit, la rama se arma con la secuencia de padres. Tal vez esta es la genialidad más genial de Git.
 
-Hacer un ejemplo en vivo sobre (algún clon de) simple-linear-history, (por las dudas) ver d:\temp\git-clase.
+Hacer un ejemplo en vivo sobre (algún clon de) initial-situation, (por las dudas) ver d:\temp\git-clase.
 Vamos con tres usuaries: clombardi / laura-git / roque-git.
 Cada persona va a hacer una tarea
 - clombardi     agregar fruta        

@@ -55,3 +55,20 @@ De dónde lo saqué: https://www.youtube.com/watch?v=Qm-EkQyxAgY . Fíjense que 
 y así pueden ir chusmeando cada cosa
 
 
+
+-------------------------------------------------
+1. Para comunicarse con usuaries / stakeholders: 
+   prototipos gráficos.
+
+2. Herramienta para construir prototipos gráficos: Figma.
+
+3. Crear usuarios y teams en Figma
+   - agregar docentes x email si quieren compartir.
+
+4. Se agregan frames, cada frame es una página de nuestra app.
+
+5. Se arman los elementos combinando básicamente textos, rectángulos y líneas.
+
+6. Se puede simular una navegación sencilla usando la parte de "prototype".
+
+7. Se pueden importar componentes gráficos de Material UI (parte del pack que recomendamos para implementar FE) mediante el Material 3 Design Kit para Figma.
