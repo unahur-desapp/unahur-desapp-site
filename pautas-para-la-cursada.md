@@ -18,9 +18,9 @@ Las condiciones grupales son
 - para PPS se suman: un resumen que debe ser aprobado por el Consejo Directivo del Instituto de Ingeniería, y una carpeta que se presenta al jurado. Para los trabajos de PPS se arma un jurado que evalúa carpeta y presentación, y a partir de estos elementos se define la nota entre el jurado y los profesores. <br/> Van a encontrar ejemplos de carpeta en [esta página](./pautas-para-la-carpeta).
 
 Las condiciones individuales son
-- asistencia a todos los cierres de sprint salvo ausencia muy (pero muy) justificada. Esta asistencia puede ser virtual.
-- asistencia a la presentación final, **ojo** esta es presencial para los alumnos (puede ser virtual para profes y/o jurado).
-- **muy importante** <br> participación efectiva en el desarrollo, que se va a evaluar por cantidad y relevancia de los commits hechos por cada integrante en los repositorios de frontend y backend. O sea, quienes no tengan commits o tengan poquitos y/o poco relevantes, no van a aprobar la materia. <br/> Si trabajan en grupo (lo cual está perfecto), por favor roten quién hace los commits (un día uno, otro día otro).
+- asistencia a todos los cierres de sprint y participación (o sea, en los cierres de sprint todos tienen que hablar), salvo ausencia muy (pero muy) justificada. Esta asistencia puede ser virtual. Quien no tiene una participación activa en una actividad, es como si no hubiera asistido.
+- asistencia a la presentación final, **ojo** esta es presencial para los alumnos (puede ser virtual para profes y/o jurado). En la presentación final también tienen que hablar todos.
+- **muy importante** <br> participación efectiva en el desarrollo, que se va a evaluar por cantidad y relevancia de los commits hechos por cada integrante en los repositorios de frontend y backend. O sea, quienes no tengan commits o tengan poquitos y/o poco relevantes, no van a aprobar la materia. <br/> Si trabajan en grupo (lo cual está perfecto), por favor roten quién hace los commits (un día uno, otro día otro). A este respecto es válido, si un commit lo hicieron entre varios, que en el comentario pongan "hecho en conjunto con X, Y y Z", aparte del que registra el commit claro.
 
 
 
