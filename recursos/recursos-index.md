@@ -7,7 +7,7 @@ layout: default
 ## Repos de base
 
 **Front-end**:  
-Es [este](https://github.com/unahur-desapp/react-recoil-app-seed).
+Es [este](https://github.com/unahur-desapp/react-seed-2024).
 
 **Back-end**:  
 - Para JavaScript, es [este](https://github.com/unahur-desapp/nodejs-api-seed). Está preparado para SQL, si se quiere usar Mongo hablar con su docente.
@@ -32,6 +32,10 @@ Para verlo andando, hay que ejecutar también el nano-backend que se linkea acá
 
 (este es el "pico")  
 [Un nano-backend que define los endpoints que espera el ejemplo 2 de React - corre en el puerto 3100 por default](https://github.com/unahur-desapp/react-ejemplo-2-companion-be).
+
+> **Atención**  
+> Los repos de ejemplo de React tienen una base más antigua que el repo de base que linkeamos arriba. Estos repos están para demostrar algunas características de React, Material UI y React Router que no están usadas en el repo de base.
+> Para crear un proyecto nuevo, sugerimos usar como base ... el repo de base, que para eso está.  
 
 
 ### Otras fuentes
