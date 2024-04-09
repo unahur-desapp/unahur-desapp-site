@@ -259,3 +259,5 @@ Sistema de sugerencias de cursada y acompañamiento
 | 04/07 | No | Seguimiento |
 | 11/07 | No | <b>5to Sprint - review<b> |
 | 18/07 | <span style="font-weight: bold; color: crimson">Sí</span> | <span style="font-weight: bold; color: crimson">Presentación final presencial</span> |
+
+En las clases con tema y seguimiento, apuntamos en dar el tema de 18.00 a 19.45, y dejar espacio para seguimiento a partir de las 20.00, paralelizando entre los docentes para cubrir más grupos.
