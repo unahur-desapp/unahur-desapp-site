@@ -15,7 +15,7 @@ Hay herramientas cuyo objetivo es exactamente este (más eventualmente más cosa
 1.
 Cosa linda de Figma: es online.
 
-Seguro que tiene millones de features y chiches. Yo la verdad nunca lo usé, aprendí lo mínimo para poder contarles a ustedes y facilitarles un poco el arranque, y nada más.
+Seguro que tiene millones de features y chiches. Yo la verdad nunca lo usé más que para ver lo que me iba pidiendo un diseñador, aprendí lo mínimo para poder contarles a ustedes y facilitarles un poco el arranque, y nada más.
 
 Se crean usuarios y un team. Y me incluyen (carlombardi@gmail.com) en el team.
 

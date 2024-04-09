@@ -1,0 +1,23 @@
+Obligatorio
+- las condiciones de aprobación grupales e individuales.
+- sprints, asistencia a los cierres de sprint.
+- aplicación con FE y BE que se comunican mediante una API.
+- repos Git en GitHub, con nosotros como owners de la orga.
+- documentos en Google Drive, con nosotros con permisos de lectura y escritura de la carpeta.
+
+Muy sugerido
+- Usar Trello.
+- Basarse en JS o TS, al menos el FE.
+- Branches master y develop/dev + branches de tarea.
+
+Sugerido
+- Apoyarse en diseño de pantallas y de flujo de navegación para bajar a tierra los requerimientos.
+
+Para tener soporte.
+- FE sobre React.
+- BE sobre Express o Next.
+
+Para arrancar
+- priorizar entre los trabajos propuestos, y/o proponer uno ustedes.
+- tareas iniciales, las generales, más las particulares del trabajo asignado.
+

@@ -114,12 +114,51 @@ Instalar mongoose en el proyecto de BE. Buscar la documentación al respecto en 
 Integrar en el proyecto de BE los modelos de BD que hay que respetar, y generar data inicial. Coordinar esto con el stakeholder.
 
 
-### Intercambio de avisos
+### Intercambio de avisos para una comunidad
+Se trata de crear una aplicación que facilite la publicación de avisos dentro de una comunidad, p.ej. la de lxs estudiantes de informática de la UNaHur.
+
+Para una versión base, se plantean las siguientes funcionalidades.
+
+1. crear un usuario y verificarlo.
+2. elegir temas que me interesan.
+3. ver los avisos publicados.
+4. recibir notificaciones (browser o app mobile).
+5. hacer una pregunta sobre un aviso.
+6. publicar un aviso asociado a una categoria. un aviso una categoria. puedo agregar palabras clave.
+7. responder una consulta sobre un aviso.
+8. dar de baja un aviso.
+
+A partir de la versión demarcada por los ítems anteriores, se puede sumar potencialidad e interés mediante los siguientes agregados. 
+
+9.  analizar spam y contenido apropiado (spam usando p.ej. akismet, temática, adultos, etc, info sensible como números de celular; considerar el uso de IA).
+10. búsquedas "inteligentes". Para ello, puede ser útil utilizar una plataforma de búsqueda como p.ej. Elastic Search o Apache Solr.
+11. sugerir avisos relacionados. Aquí también puede intervenir alguna herramienta que explota IA.
+12. usuarios moderadores.
+13. comunidades (usuarios amigos).
+14. integración con carteleras.
+
 El stakeholder para este proyecto es Miguel Carboni.
 
 
+#### Instrucciones particulares para arrancar
+En este caso no hay restricciones para el stack tecnológico, queda a decisión del grupo de acuerdo a lo que se indica en la página de pautas para la cursada.
+
+
 ### Venta de tickets para eventos
+El product Owner del equipo soclita un producto de venta de tickets para eventos. El objetivo del mismo es poder dar de alta eventos, realizar la búsqueda y las ventas de los tickets, sabiendo que cada lugar puede tener distintas configuraciones y capacidades (por ejemplo, campo parado, campo vip, campo vip numerado, platea sin numerar, etc)
+Se requerirán estadísticas para el administrador.
+El usuario final deberá poder registrarse, loguearse, y consultar sus transacciones, descargar sus tickets y vincular los mismos a personas.
+Se toma por ejemplo sitios como platea net, ticketek y otros.
+
+Se definirán estadísticas mas adelante.
+
+Es posible que se requiera la generación de una fila virtual de ingreso.
+
 El stakeholder para este proyecto es Cristian Schiffino.
+
+
+#### Instrucciones particulares para arrancar
+En este caso no hay restricciones para el stack tecnológico, queda a decisión del grupo de acuerdo a lo que se indica en la página de pautas para la cursada.
 
 
 ### Alquiler de autos
@@ -152,10 +191,69 @@ Estadísticas por auto y por cliente.
 
 ## Grupos
 
-A determinar
+### Grupo 1
+Matías Crisnejo  
+Ignacio Fazah Beiroa  
+Pablo Lopes Ferrao  
+Marcos Macagna  
+Nahuel Monje  
 
+Trabajo asignado: Alquiler de autos
+
+### Grupo 2
+Gabriel Bianglino  
+Enzo Colocho  
+José Luis Farías  
+Aldana Gómez  
+Lucila Portillo Zuccotti  
+
+**Trabajo asignado**:  
+Intercambio de avisos para una comunidad
+
+### Grupo 3
+Marcos Monescao  
+Julieta Noguera  
+Agustín Otero  
+César Augusto Pacheco  
+
+**Trabajo asignado**:  
+Cuaderno de laboratorio orientado a estudiantes
+
+### Grupo 4
+Lucas Bonadeo  
+Hernán Marcelo Coniglio  
+Matías Müller  
+Mauricio Enrique Pintos  
+
+**Trabajo asignado**:  
+Venta de tickets para eventos
+
+### Grupo 5
+Damián Bruque López  
+Javier Morales  
+Patricio Rearte  
+Cristian Vitola  
+
+**Trabajo asignado**:  
+Sistema de sugerencias de cursada y acompañamiento
 
 
 ## Cronograma 
-
-A determinar
+| Fecha | Es presencial | Actividad |
+| --- | --- | --- |
+| 04/04 | No | Presentación / objetivos / armado de equipos / selección de trabajos / Figma. |
+| 11/04 | No | <b>1er Sprint - planning</b> <br/> |
+| 18/04 | No | Metodología agile / Relevamiento / análisis inicial. |
+| 25/04 | No | <b>1er Sprint - review<b><br/><b>2do Sprint - planning<b> |
+| 02/05 | No | React - parte 1. <br/> Seguimiento. |
+| 09/05 | No | Manejo de branches. <br/> Seguimiento. |
+| 16/05 | No | <b>2do Sprint - review<b><br/><b>3er Sprint - planning<b> |
+| 23/05 | No |  React - parte 2. <br/> Seguimiento. |
+| 30/05 | No |  Backend. <br/> Seguimiento. |
+| 06/06 | No | <b>3er Sprint - review</b><br/><b>4to Sprint - planning</b> |
+| 13/06 | <span style="font-weight: bold; color: crimson">Sí</span> | <span style="font-weight: bold; color: crimson">Presentación presencial medio término</span> | 
+| 20/06 | <span style="font-weight: bold; color: #f57c00">----</span> |  <span style="font-weight: bold; color: #f57c00">Feriado</span> |
+| 27/06 | No | <b>4to Sprint - review<b><br/><b>5to Sprint - planning<b> |
+| 04/07 | No | Seguimiento |
+| 11/07 | No | <b>5to Sprint - review<b> |
+| 18/07 | <span style="font-weight: bold; color: crimson">Sí</span> | <span style="font-weight: bold; color: crimson">Presentación final presencial</span> |
