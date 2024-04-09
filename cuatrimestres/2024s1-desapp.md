@@ -198,7 +198,8 @@ Pablo Lopes Ferrao
 Marcos Macagna  
 Nahuel Monje  
 
-Trabajo asignado: Alquiler de autos
+**Trabajo asignado**:  
+Alquiler de autos
 
 ### Grupo 2
 Gabriel Bianglino  
@@ -239,6 +240,7 @@ Sistema de sugerencias de cursada y acompañamiento
 
 
 ## Cronograma 
+
 | Fecha | Es presencial | Actividad |
 | --- | --- | --- |
 | 04/04 | No | Presentación / objetivos / armado de equipos / selección de trabajos / Figma. |
