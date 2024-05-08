@@ -1,0 +1,40 @@
+Siguente temática: opciones para manejar los estilos.
+
+Esto es un mundo, ahora vamos a ver algunas variantes, cuando integremos Material UI vamos a ver algunas más, y hay muchas otras que pueden googlear.
+
+(CSSBasic01)
+Arrancamos donde dejamos (este es una copia del último que vimos).
+Vamos a los dev tools, chusmeamos los estilos de un elemento (aside: oooohh puedo elegir los elementos).
+No hace falta definir todas las clases en un único .css ... pero los nombres no se pueden duplicar, si "piso" un nombre me queda sólo la última que se definió.
+
+
+(CSSBasic02)
+Una alternativa sencilla: los CSS modules. En rigor, esto nos lo da Vite (ver https://vitejs.dev/guide/features#css-modules). 
+Pero se integra súper feliz con React.
+Para usar CSS modules en lugar de "plain CSS", alcanza con hacer tres cosas.
+(1) poner nombre .module.css a tu definición de clases.
+(2) ponerle un nombre al import, ese va a ser un objeto donde cada atributo es el nombre de una clase ...
+(3) ... y por lo tanto, tenés que usarlas como { <nombre_del_import>.<nombre_de_la_clase> }
+
+Revisar el nombre de la clase con CSSBasic01 y con CSSBasic02.
+
+Mandar también un 
+  console.log(localClasses);
+
+
+(CSSBasic03)
+Otra opción es no usar clases. 
+Parecería un alto pecado ... pero en rigor en este esquema, tenemos la libertad de describir los estilos como datos, y por lo tanto podemos aplicar herramientas de programación, por lo que el hecho de que en CSS se definan como estilos en lugar de clases, no implica que andes copiando definiciones.
+
+Se puede definir un objeto con los distintos estilos, para tenerlos organizaditos.
+- cambian los nombres de atributos de separado-con-guion a camelCase, esto es parte de una especificación llamada JSS.
+- obviamente, en lugar de className, se usa style.
+- y listo.
+
+También se puede asignar un estilo definido en el lugar (ejemplo: subrayado en el título).
+- por qué la doble llave.
+
+
+
+
+

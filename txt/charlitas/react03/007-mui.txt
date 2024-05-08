@@ -1,0 +1,41 @@
+(intro)
+Uso de package que da soporte acerca de elementos gráficos y styling.
+
+Hinchadas: package sí vs package no. Creo que es más popular "package sí". 
+
+Las que conozco: Bootstrap y MUI.
+Dato: el estado italiano está switcheando.
+Muy populares (entre las dos se llevan casi la mitad de React).
+
+Resumamos lo que nos da MUI.
+1. Componentes más bonitos, en el ejemplo los botones y el input field.
+2. Una librería de íconos fácil de usar.
+3. Una alternativa para la definición de flexboxes, que evita el uso de un archivo .CSS. En concreto, MUI provee componentes React que se renderizan como un div que ya tiene seteados los atributos CSS de flexbox.
+4. Además de esto, más variantes y herramientas para el manejo del CSS.
+5. En particular, herramientas específicas que apuntan a implementar páginas que sean responsive.
+
+
+(Mui01)
+Empezamos con el elemento (3)
+- Stack
+- sx
+- reemplazo div con Box para aplicar sx en lugar de style.
+
+Qué me gusta: que no tengo que andar mirando el CSS para entender la estructura.
+
+... seguimos con el debate sobre si usar clases CSS o no ...
+
+Hasta ahora seguimos de refactor.
+
+Miremos qué onda cuando achicamos el ancho y ahora ...
+
+
+(Mui02)
+... lo mismo.
+
+Ahora en pantalla grande se ve igual, pero se ajusta a medida que voy achicando.
+O sea, aplicamos (5).
+Veamos cuáles son las herramientas.
+- idea de breakpoint (se puede ir a buscar la docu de MUI).
+- sx muuuy cómodo.
+- media queries.

@@ -1,3 +1,15 @@
+-------------------------------------------------------------------
+vitejs
+-------------------------------------------------------------------
+Distintas formas de crear proyectos.
+Antes se usaba create-react-app, hecha por la misma gente que hizo React. Pero decidieron deprecarlo, y dejar el lugar a herramientas hechas por otros equipos.
+Ahora hay varias opciones. Entre ellas elijo Vite, en particular porque es unopinated, o sea, no te sugiere una estructura o un diseño.
+
+
+
+-------------------------------------------------------------------
+create-react-app - deprecado
+-------------------------------------------------------------------
 Una forma conveniente de montar la estructura inicial de una app basada en React es usar Create React App (https://create-react-app.dev/).
 No es necesario (ni recomendable) instalar CRA, se puede usar mediante npx.
 

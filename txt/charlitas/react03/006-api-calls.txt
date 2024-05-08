@@ -1,0 +1,62 @@
+(ApiCalls01)
+Acá partimos de la versión anterior, y cambiamos lo necesario para que las frases salgan de una llamada API en lugar de estar fijas en el código.
+
+Veámoslo andando, tab de network.
+
+Acá nos vamos a detener un rato porque hay varias cosas para mirar.
+
+(1)
+Comparemos con el anterior (State06), veamos dónde cambió.
+- renderedPhrases nace vacío.
+- apareció un useEffect que hace getAllPhrases y vuelca los datos obtenidos en renderedPhrases. La llamada es async.
+- se contempla la posibilidad de que las renderedPhrases no estén cargadas.
+
+*Muy* importante: salvo lo último, la parte que renderiza no cambió. 
+Por eso es mega-importante separar en la cabeza datos de renderización, que es exactamente lo que hicimos al principio.
+
+(2)
+Qué es un useEffect: código que se ejecuta, por ahora, cuando se carga el componente. Sólo la primera vez. Si de eso surge un cambio de estado, entonces el componente solito se re-renderiza.
+
+O sea: todas las acciones (típicamente, llamadas API) necesarias cuando se renderiza el componente, van en uno (o varios) useEffect, con la lista vacía.
+
+La lista es de dependencias ... tal vez aparezca algún uso.
+
+(3)
+Veamos la llamada API.
+- la pusimos en una carpeta /services.
+- usamos axios, bastante fácil.
+- *obviamente* las llamadas son asincrónicas.
+- la data aparece en .data, cuack.
+
+Veamos el BE funcionando, le pegamos con Insomnia.
+
+(4)
+¿Qué hace el BE cuando recibe un request de GET?
+Respuesta correcta: no tengo idea si no miro el código.
+De hecho, la implementación es trucha.
+¿Qué tengo que cambiar en el FE si cambio la implementación del BE por una que guarda las frases en una BD o en un archivo en la nube? Nada.
+
+(5)
+Es más, trucheemos el getAllPhrases en el FE. ¿Qué cambia en el componente? Nada.
+
+(6)
+Moraleja
+Por eeeeso les recomendamos ir desde el FE hacia la BD.
+
+
+(ApiCalls02)
+Activamos también las llamadas para agregar y borrar.
+Lo *único* que tocamos son los handlers.
+
+Entendamos qué hace el handler de delete, el de add es igual.
+
+Alternativa de toquetear la lista que se renderiza a mano para ahorrarte la llamada ... es sólo para casos muy especiales, esta es la segura y si no hay objeciones graves se va por esta.
+
+
+Moraleja final
+--------------
+Metimos toda la interacción con BE. 
+Viendo la app desde el browser, ¿qué cambió? Nada.
+Flor de refactor.
+
+

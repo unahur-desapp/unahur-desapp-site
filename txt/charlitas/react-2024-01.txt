@@ -1,0 +1,30 @@
+NB: en estas charlas (hoy y el 23 de mayo) quiero pasar por algunos puntos que creo que les pueden servir para organizar el desarrollo de un FE basado en React.
+En la página de recursos van a encontrar el link a un repo que tiene muchos de los ejemplos de los que vamos a hablar en estas charlas, y algunos más. 
+
+001-intro
+
+Creación: se lo damos resuelto, les interesades que miren Vite.
+- atenti - el repo de ejemplo fue creado usando CRA ... ya se actualizará.
+
+002-componentes
+- Definición y uso de componentes.
+- Notación JSX: componentes propios / inyectar JS.
+- Parámetros de un componente: props.
+- map para renderizar cada elemento de una lista - hay que definir key.
+
+003-css
+
+004-state
+- delete
+- add fixed
+
+005-dynamic-styling
+- change color
+- renderización condicional
+- elegancia de código: useCallback / useRef
+
+006-api-calls
+- useEffect
+- tal vez useMemo
+
+

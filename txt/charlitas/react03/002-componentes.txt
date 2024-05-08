@@ -1,0 +1,71 @@
+(carpeta 01-modularization)
+
+(Modularization01)
+Este es el primer ejemplo de app React ... la verdad no parece muy novedoso, es HTML y CSS (las clases CSS están definidas en /index.css).
+- comentario: el <>...</> exterior, a React le gusta tener un solo root.
+- dejo picando: ¿cómo se habrá armado el CSS no? 
+  Quienes no lo conozcan, apréndanse flexbox - es un golazo.
+  Fíjense en la página "Más info" del sitio de la materia, hay algunos links.
+
+
+(Modularization02)
+En el browser se ve clarito que viene primero un título, y después tres bloques, uno por peli. Empecemos por separarlos.
+Conclusiones:
+- definir componentes es trivial, un componente es una función.
+- los componentes se pueden usar en notación seudo-HTML, es lo que se llama JSX.
+
+(variantes - esto hacerlo on-the-fly)
+- Separar el número de versión a una constante -> meter JS dentro de un JSX.
+  Jugar un poquito p.ej. 
+    { version + 1 }, 
+    { doble(version) } 
+    {((n) => n*2)(version)}
+- Pasar número de versión como prop.
+
+Aside: 
+- los archivos con esta notación tienen que tener extensión .jsx en lugar de .js, si no, a Vite (o a CRA) no le gusta.
+- en rigor FilmsAndPhrases también es un componente nombrado, que se usa en App.jsx.
+
+
+(Modularization03)
+Che, los tres bloques tienen la misma-misma estructura.
+Con el truco este de las props podemos definir un solo componente que tiene la estructura, y le pasamos los datos como props.
+Acá paremos, pintemos qué es estructura y qué es dato - react-datos-estructura.jpg
+ 
+Lo hacemos con una, después lo pasamos.
+Creamos FilmBlock, le pasamos título y URL de la imagen.
+
+Aside: destructuring.
+
+
+(Modularization04)
+Frases: pasamos una lista como prop, eso está perfecto.
+Peeero ... tenemos que mostrar un <p> para cada frase.
+
+Y acá dos puntos mega-hiper-importantes, los jugamos con el título y después los aplicamos a las frases.
+(1) 
+un cacho de JSX es una expresión JS válida, puedo hacer cualquier cosa que puedo hacer con un número, en particular asignarlo (crear un const con el h1) o devolverlo como resultado de una función (crear una función con el h1 y ejecutarla en un JS)
+(2)
+lo que va entre llaves tiene que ser *una expresión*, o sea, tiene que tener un resultado y eso es lo que se muestra.
+P.ej. [1,2].forEach(n => <span>{n} </span>) no va. No se rompe ni tira error, simplemente no muestra nada porque devuelve undefined.
+Tengo que usar map.
+(se puede devolver n*2 y ver en la consola de los dev tools).
+
+Y vamos y lo hacemos.
+
+**Atención** - key
+
+
+(Modularization05)
+Así queda el refactor completo.
+
+Aside
+- cantidad de frase: otra expresión JSX.
+- estructura.
+
+
+Resumen
+- Definición y uso de componentes.
+- Notación JSX: componentes propios / inyectar JS.
+- Parámetros de un componente: props.
+- map para renderizar cada elemento de una lista - hay que definir key.

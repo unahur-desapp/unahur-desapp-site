@@ -1,0 +1,63 @@
+(State01)
+Cambiamos de ejemplo - lista de frases.
+
+Aside:
+- ahora para cada frase se renderiza una estructura compleja de HTML (en realidad JSX). El key va en el root.
+- como voy a usar los mismos estilos para varios archivos, separé la definición en un archivo fuente aparte.
+- cómo mergeo dos definiciones de estilo para un elemento (la frase).
+- onClick para el botón.
+
+Objetivo: que anden los botones "eliminar" ...
+
+
+(State02-wrong)
+Si lo que se está mostrando es ALL_PHRASES, se borra la frase y listo.
+- JS sólo permite borrar por índice ...
+- aunque sea const, puedo modificar el contenido (pensar en los punteros).
+
+Qué onda
+- miro en la consola, las frases se borran.
+- pero en la página se ve siempre lo mismo.
+
+Qué está pasando: no se vuelve a renderizar el componente.
+- ver que el console.log aparece solamente al principio.
+
+*El* concepto:
+React vuelve a renderizar cuando cambia un estado que conoce.
+La forma más sencilla de declarar un estado que conoce React: useState.
+
+
+(State2)
+Veamos:
+
+(1)
+Definición del estado usando useState.
+- ver que useState se importa de React.
+  En https://react.dev/reference/react/useState hay varios ejemplos que pueden ayudar a entender.
+- la sintaxis la define React 
+    const [getter, setter] = useState(valor_inicial)
+
+(2)
+- en deletePhrase *tengo* que usar el setter, es la única manera para que React se entere y vuelva a renderizar.
+- como el nuevo valor depende del anterior, el setter se usa con una función.
+
+Ver que ahora vuelve a renderizar después de borrar.
+O sea, el setter le avisa a React que tiene que lanzar una re-renderización ...
+
+... sólo del componente al que le cambión el estado (poner un console.log en el título y en Phrases)
+
+Peeero probemos con un 
+    console.log(renderedPhrases)
+justo después de borrar. 
+Tratar de que se entienda la idea de re-renderizado ...
+... si no fuera así, cómo hace renderedPhrases para cambiar *siendo que es una const*.
+
+Se puede repasar el ejemplo de contador de https://react.dev/reference/react/useState, ese es facilito.
+Cambiar el handle por
+    setCount(current => current + 1);
+
+
+(State3)
+Acá tenemos el botón "agregar", veamos el handler. 
+Para que cambie el número de la frase agregada ... otro estado.
+Qué pasa si invierto los sets en addFixedPhrase ... ¡¡nada!!

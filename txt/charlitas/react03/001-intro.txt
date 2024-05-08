@@ -1,0 +1,32 @@
+------------
+Qué es React
+------------
+Una librería que simplifica la construcción de UI interactivas
+
+
+¿Por qué simplifica, qué nos da?
+--------------------------------
+(1) 
+Notación que combina HTML y código JS/TS muy bien lograda + Componentes que se definen con 0 burocracia y fáciles de reusar.
+(2)
+Se encarga de actualizar la visualización cuando cambia algún dato relevante, en forma eficiente ... si tomamos los recaudos necesarios en nuestro código.
+Como consecuencia, se abre la posibilidad de aplicar lógica de código en el manejo de CSS.
+(3)
+Es la base de un ecosistema de paquetes que soportan varios aspectos presentes en el desarrollo de muchos FE.
+
+
+
+¿Cómo es la curva de aprendizaje?
+---------------------------------
+Dura, en particular llegar a comprender cómo funciona React, lo que es necesario para poder resolver UIs complejas.
+En este curso intentaremos un acercamiento muy paso-a-paso que permita ir adentrándonos paulatinamente en la lógica de React.
+
+
+Entonces, ¿conviene?
+--------------------
+IMHO absolutamente, destaco tres motivos.
+1. Da mucha libertad para diseñar nuestros componentes, se pueden aplicar las prácticas de buena codificación que traemos de otros contextos.
+2. Una vez que una/e/o comprende la lógica detrás de React, se pueden encontrar soluciones a problemáticas no triviales con poco código.
+3. Da trabajo, hay mucha demanda de desarrolladores React, en particular con buen seniority.
+
+

@@ -1,0 +1,55 @@
+(State04)
+Ahora lo que está cambiando es un estilo (el color de frases y botones) ... ¿qué onda?
+
+Alcanza con definir un nuevo estado e inyectarlo en el estilo (y/o switchear entre clases). 
+Al cambiar el estado se va a re-renderizar, el estilo dinámico va a tomar el nuevo valor.
+
+Veamos los cambios en el código.
+
+(1)
+Se agrega el nuevo estado colorForPhrases.
+
+(2)
+Se setea el color en el div de frase y en el botón.
+
+(3)
+Se agregan los botones que invocan al setter. Al cambiar el valor se dispara una re-renderización con el nuevo valor, como frase y botón de eliminar toman el color del estado, van a cambiar de color. 
+
+Asides
+- para colorForPhrases, el nuevo valor no depende del anterior.
+  Cuando es así, no es necesario pasarle una función al setter, se le pasa directamente el nuevo valor.
+- muy banana los botones como un map sobre la lista de nombres de colores. Agreguemos opción para negro ...
+
+
+(State05)
+Acá vemos un botón nuevo "No mostrar". Qué hace ... ver ...
+Vamos al handler: setColorForPhrases(null)
+Nota: según si colorForPhrases es null o no, se ve una cosa u otra.
+=> renderización condicional.
+
+Asides
+- condición booleana. Se podría hacer con ternario, pero creo que queda muy confuso ... gusto personal.
+- ¿cómo haríamos para que cuando cargo la página se vea el mensaje "Elegir un color ..." en lugar de la lista de frases?
+
+
+(State06)
+Antes de pasar a otra temática, hagamos algunas mejoras de eficiencia. Son dos aspectos que quiero comentar.
+
+(1)
+Miremos este handler (en State05)
+  const addFixedPhrase = () => {
+    setRenderedPhrases(current => [`Frase agregada ${indexAddedPhrase}`, ...current]);
+    setIndexAddedPhrase(current => current + 1);
+  }
+acá en principio (porque React optimiza) le estamos pidiendo a React que vuelva a renderizar la página *2 veces*.
+En rigor, lo que debería forzar la re-renderización es el cambio en renderedPhrases, mientras que indexAddedPhrase es una cuestión interna, que no se ve, y que no debería forzar el re-renderizado.
+Para eso -> useRef.
+- atenti, se accede y se modifica usando current.
+
+(acá se puede saltar a State06 y mostrar el useCallback ya usado. Se parte de la pregunta ¿qué es esto del useCallback?)
+(2)
+Cada vez que se re-renderiza el componente, de hecho, se vuelven a generar deletePhrase y addFixedPhrase, eso es costoso en tiempo porque se están generando funciones ... que de hecho nunca cambian, dado que los setters de un useState, y el puntero a un useRef si hicimos la transformación, no cambian.
+Para evitar eso, le tenemos que pedir a React que maneje la generación de estas funciones -> useCallback.
+
+
+
