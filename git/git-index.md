@@ -116,7 +116,7 @@ Una alternativa es usar  `rebase`, es así:
 
 ### Cuando termino una tarea - usando Pull Request
 Esta es en rigor la forma que se usa en el 99.5% (y tal vez me quedo corto) de los laburos.  
-Como la descripción es un poco larga, la muevo a una [página aparte](./git-pr.md).
+Como la descripción es un poco larga, la muevo a una [página aparte](./git-pr.md). 
 
 
 ## OK, pero ¿qué es esto de los branches?
@@ -124,7 +124,16 @@ Dicho en una forma muy simplificada, cada branch es una "versión" del código d
 
 Para qué usamos esto: para que cada integrante pueda estar trabajando en lo suyo, sin afectar el trabajo de los demás.
 
-Pero obviamente, en algún momento  
+Pero obviamente, en algún momento tenemos que juntar lo que hizo cada uno, porque al final el proyecto es uno solo. 
+Por eso tenemos
+- un branch para cada tarea, así podemos trabajar aislados.
+- un branch de integración (que por lo general se llama `dev` o `develop`), donde movemos el código asociado a cada tarea cuando la terminamos.
+
+Es lo que está sugerido arriba
+- cuando empiezo una tarea, creo un nuevo branch a partir del estado de `dev` en ese momento.
+- trabajo sobre el branch de la tarea, hago todos los `commit` y `push` que necesito.
+- al final, vuelco las modificaciones hechas en el branch de la tarea sobre `dev`. Eso es el `merge`, que se puede hacer desde consola (con la variante del `rebase`) o desde la UI mediante un _Pull request_.
+
 
 
 ## Material para leer

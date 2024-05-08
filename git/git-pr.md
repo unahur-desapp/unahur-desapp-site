@@ -14,6 +14,17 @@ Veamos cómo se trabaja.
 ## Para crear un PR
 Después de hacer el último `push` en mi branch, me voy a la interfaz Web de GitHub (o BitBucket o GitLab), y creo un **Pull Request**, desde mi branch hacia `dev`.
 
+> **Probemos nosotros antes del PR**  
+> En rigor, para ser prolijos tenemos que probar **antes, en nuestra compu**, que lo que agregamos no se choca con otras cosas que pueden haber agregado les compañeres y que ya se integraron a `dev`, después que yo haya creado el branch de tarea. Para eso, por consola, hacemos esto
+> - `git checkout dev`
+> - `git pull`
+> - `git checkout <branch-de-tarea>`
+> - `git merge dev`
+> - ... pruebo que todo anda, lo que hice yo y lo que hayan agregado mis compa ...
+> - `git push`
+> 
+> Así sé que el branch de tarea tiene todo lo nuevo de `dev`, más lo que yo haya hecho, y que no rompí nada de lo que está en `dev` hasta ahora.
+
 Para eso alcanza con pararme en el repo, y elegir "Pull requests" en la barra superior
 ![opcion pull requests](../images/pr-opcion-en-barra-superior.png)
 
