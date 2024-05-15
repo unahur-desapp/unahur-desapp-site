@@ -47,7 +47,7 @@ Peeeeero es el mismo usuario del Trello, así que ya tienen .... porque ya se cr
 
 
 ## Sobre Git
-Este material ahora está en una [página aparte](./git/git-index).
+Este material ahora está en una [página aparte](../git/git-index).
 
 
 ## Gestión de proyectos
