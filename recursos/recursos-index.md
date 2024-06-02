@@ -19,7 +19,7 @@ Es [este](https://github.com/unahur-desapp/react-seed-2024).
 Para cada ejemplo, qué hacer
 1. me lo clono
 1. `npm install`
-1. `npm start`
+1. `npm start`, para el de Vite `npm run dev`
 
 ¿Y si quiero experimentar y que quede lo que hago en un repo? Pues me hago un fork sobre un usuario u orga de GitHub, al fork lo puedo pushear y compartir.
 
@@ -27,7 +27,7 @@ Para cada ejemplo, qué hacer
 Por ahora tenemos "cinco y pico".
 > Atención: los ejemplos de React sobre Create React App no funcionan en versiones modernas de Node, seguro en 14 sí, seguro en 18 no, en 16 no sé.
 
-[Ejemplo de React sobre Vite](https://github.com/unahur-desapp/react-ejemplo-vite).  
+[Ejemplo de React sobre Vite](https://github.com/unahur-desapp/react-example-vite).  
 Es una copia parcial del anterior, basado sobre Vite en lugar de Create React App (que está en fase de deprecación). Por ahora le falta la parte de rutas, esa verla en el ejemplo 2 sobre Create React App.    
 Para verlo andando, hay que ejecutar también el nano-backend que se linkea más abajo.
 
