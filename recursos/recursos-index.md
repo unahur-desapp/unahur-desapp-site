@@ -24,18 +24,43 @@ Para cada ejemplo, qué hacer
 ¿Y si quiero experimentar y que quede lo que hago en un repo? Pues me hago un fork sobre un usuario u orga de GitHub, al fork lo puedo pushear y compartir.
 
 ### De la casa
-Por ahora tenemos "dos y pico"  
-[Ejemplo 1 de React con varios componentes, props y estado](https://github.com/unahur-desapp/react-ejemplo-1).
+Por ahora tenemos "cinco y pico".
+> Atención: los ejemplos de React sobre Create React App no funcionan en versiones modernas de Node, seguro en 14 sí, seguro en 18 no, en 16 no sé.
 
-[Ejemplo 2 de React con varios componentes, props, estado, rutas, acceso a backend, distintos casos de flexbox, y bastante uso de MUI](https://github.com/unahur-desapp/react-ejemplo-2).  
-Para verlo andando, hay que ejecutar también el nano-backend que se linkea acá abajo.
+[Ejemplo de React sobre Vite](https://github.com/unahur-desapp/react-ejemplo-vite).  
+Es una copia parcial del anterior, basado sobre Vite en lugar de Create React App (que está en fase de deprecación). Por ahora le falta la parte de rutas, esa verla en el ejemplo 2 sobre Create React App.    
+Para verlo andando, hay que ejecutar también el nano-backend que se linkea más abajo.
+
+[Ejemplo 1 de React sobre Create React App con varios componentes, props y estado](https://github.com/unahur-desapp/react-ejemplo-1).
+
+[Ejemplo 2 de React sobre Create React App](https://github.com/unahur-desapp/react-ejemplo-2).  
+Incluye: props, estado, rutas, acceso a backend, distintos casos de flexbox, y bastante uso de MUI.  
+Para verlo andando, hay que ejecutar también el nano-backend que se linkea más abajo.
+
+[Ejemplo 1 de Backend usando Express y Postgres/Sequelize](https://github.com/unahur-desapp/backend-ejemplo-1).  
+Incluye:
+Uso de query params, path params, body y headers / 
+Endpoints GET y POST / 
+Un endpoint que hace insert en dos tablas.
+
+[Ejemplo de Backend usando Express y MongoDB/Mongoose](https://github.com/unahur-desapp/backend-ejemplo-mongo).  
+Tiene: el código necesario para integrar Mongoose y conectarse a una BD Mongo,  algunos ejemplos de queries usando Mongo/Mongoose, y un poco de uso de query params.  
+Tiene un GET y un POST.  
+Para ver más ejemplos, en particular de uso de distinto tipo de parámetros de request, ver el ejemplo de Postgres/Sequelize.  
+
+> **Atención** - MongoDB con NestJS  
+> La forma de conectarse, crear los esquemas y crear los modelos es bastante distinta. Después los queries a partir de un modelo son exactamente iguales.
+
 
 (este es el "pico")  
-[Un nano-backend que define los endpoints que espera el ejemplo 2 de React - corre en el puerto 3100 por default](https://github.com/unahur-desapp/react-ejemplo-2-companion-be).
+[Un nano-backend que define los endpoints que esperan el ejemplo 2 de React y el de React-Vite - corre en el puerto 3100 por default](https://github.com/unahur-desapp/react-ejemplo-2-companion-be).
 
 > **Atención**  
-> Los repos de ejemplo de React tienen una base más antigua que el repo de base que linkeamos arriba. Estos repos están para demostrar algunas características de React, Material UI y React Router que no están usadas en el repo de base.
+> Los repos de ejemplo de React sobre Create React App tienen una base más antigua que el repo de base que linkeamos arriba. Estos repos están para demostrar algunas características de React, Material UI y React Router que no están usadas en el repo de base.  
+> 
 > Para crear un proyecto nuevo, sugerimos usar como base ... el repo de base, que para eso está.  
+> 
+> El ejemplo sobre Vite sí usa la misma base que el repo de base que proponemos.
 
 
 ### Otras fuentes

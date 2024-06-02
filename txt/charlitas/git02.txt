@@ -1,0 +1,16 @@
+ Focos
+
+Repo local vs repo remoto
+3
+
+Branches
+Primero el script, después el mensaje de (4) ¿entonces, qué es un branch?
+
+Feature branches
+5
+
+Procedimiento -> léanlo, lo detallé bastante, y cualquier cosa preguntas al mail o en los encuentros.
+
+Si hay tiempo:
+- pull requests
+- conflictos

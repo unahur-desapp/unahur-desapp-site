@@ -39,3 +39,30 @@ Veamos cuáles son las herramientas.
 - idea de breakpoint (se puede ir a buscar la docu de MUI).
 - sx muuuy cómodo.
 - media queries.
+
+
+(Mui03)
+Metemos los botones - https://mui.com/components/buttons/ - aplicamos (1)
+- distintas variantes / tamaños
+- ícono atrás - https://mui.com/material-ui/material-icons/#main-content - aplicamos (2)
+  (hay que instalarse un package adicional - @mui/icons-material)
+
+Y también un poco de CSS - aplicamos (4) - theme - https://mui.com/material-ui/customization/theming/
+- typography para definir cómo se ve el texto de los botones
+- palette para definir un "color" nuevo
+
+De paso: factorización - componente ColorButtons.
+
+
+(Mui04)
+Input - https://mui.com/material-ui/react-text-field/
+- controlled
+- error + touched
+- fullWidth
+
+Refactoring 
+- saco el flexbox exterior al componente principal para colgar AddPhrase de ahí.
+- "subo" renderedPhrases y fetchPhrases
+
+Chiche
+- por qué le paso parámetro a doAddPhrase => eficiencia
