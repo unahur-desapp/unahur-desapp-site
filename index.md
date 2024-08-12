@@ -15,7 +15,7 @@ El grupo docente de la materia está formado por
 | --- | --- | --- | --- |
 | Carlos Lombardi | carlombardi@gmail.com | clombardi | @carloslombardi |
 | Cristian Schiffino | cristian.schiffino@unahur.edu.ar | CristianSchiffino | @cristianschiffino1 |
-| Miguel Carboni | miguel.carboni@gmail.com | miguelius | miguel.carboni@gmail.com |
+| Hernán Guzmán | 	hernan.guzman@estudiantes.unahur.edu.ar | heguzman | ...próximamente... |
 
 
 ## Pautas para la cursada

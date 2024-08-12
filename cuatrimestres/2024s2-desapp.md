@@ -151,7 +151,7 @@ Los objetivos para el grupo que siga con este trabajo son:
 - Agregar reportes y filtros de la info que maneja la aplicación.
 - Desplegar el producto en algún servicio público, y acompañar al personal de laboratorio en la realización de pruebas preliminares de uso. Registrar las modificaciones y agregados que se detecten como necesarios para dejar operativo el producto. En la medida de lo posible, implementar estas modificaciones y agregados, y generar versiones sucesivas del producto.
 
-La stakeholder para este proyecto es Florencia Servici.
+Los stakeholders para este proyecto son Paloma Martínez Ponce y Marco Ruiz.
 
 #### Instrucciones particulares para arrancar
 
