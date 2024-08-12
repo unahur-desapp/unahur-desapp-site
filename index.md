@@ -39,10 +39,12 @@ El grupo docente de la materia está formado por
 ## Más info
 [Acá](./mas-info)
 
-## Cursada actual - primer cuatrimestre 2024
-[Desarrollo de Aplicaciones](./cuatrimestres/2024s1-desapp)  
+## Cursada actual - segundo cuatrimestre 2024
+[Desarrollo de Aplicaciones](./cuatrimestres/2024s2-desapp)  
 
 ## Cuatrimestres anteriores
+[Primer cuatrimestre 2024 - Desarrollo de Aplicaciones](./cuatrimestres/2024s1-desapp)  
+
 [Segundo cuatrimestre 2023 - Desarrollo de Aplicaciones](./cuatrimestres/2023s2-desapp)  
 
 [Segundo cuatrimestre 2023 - PPS](./cuatrimestres/2023s2-pps)
