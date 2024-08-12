@@ -88,16 +88,6 @@ Levantar BE y FE (`npm start` en ambos casos), navegar para entender un poco de 
 
 Conversar con los docentes sobre una primera lista de funcionalidades a agregar o modificar.
 
-Los objetivos del grupo que tome este proyecto van a ser:
-- Agregar algunas funcionalidades faltantes, alguna es sencilla, otras tienen lo suyo.
-- Agregar algunos detalles a las funcionalidades existentes.
-- Actualizar el stack tecnológico del frontend, tomando como base el template que se encuentra en este sitio.
-- Configurar un storage en cloud para los archivos adjuntos que tiene que manejar la aplicación.
-- Desplegar el producto en algún servicio público, y acompañar a la Secretaría en la realización de pruebas preliminares de uso. Registrar las modificaciones y agregados que se detecten como necesarios para dejar operativo el producto. En la medida de lo posible, implementar estas modificaciones y agregados, y generar versiones sucesivas del producto.
-- Montar la estructura para implementar tests unitarios, e implementar algunos. Idealmente tanto BE como FE.
-
-En principio, el stakeholder para este proyecto es Fernando Puricelli. Probablemente él delegará el seguimiento a alguna persona del plantel del Instituto de Ingeniería o del área de Informática.
-
 
 #### Un poco más adelante
 Cuando se sientan seguros con la aplicación y el dominio, solicitar una reunión con el stakeholder, mostrarle lo que está hecho, plantearle las funcionalidades planteadas por los docentes de Desarrollo de Aplicaciones, y refinar los pasos a seguir.
@@ -113,7 +103,7 @@ Fernando Puricelli solicitó hace un tiempo, el desarrollo de una aplicación qu
 En el marco de cursadas anteriores, se llegó a implementar las funcionalidades principales pedidas por Fernando.
 
 Los objetivos del grupo que tome este proyecto van a ser:
-- Agregar algunas funcionalidades faltantes, en particular una que describimos abajo.
+- Agregar una funcionalidad faltante, que describimos abajo.
 - Encriptar las claves, que hoy están planas en la BD.
 - Actualizar el stack tecnológico del frontend, tomando como base el template que se encuentra en este sitio.
 - Configurar un storage en cloud para los archivos adjuntos que tiene que manejar la aplicación (ver si esto ya está previsto en el proyecto que van a recibir).
@@ -127,6 +117,8 @@ Unos meses después viene otro estudiante, que aprobó las mismas materias en la
 Lo que se busca con esta funcionalidad es llevar el registro de qué "esquemas de pedidos de equivalencia" ya fueron aceptados.  
 Esta información tiene que estar disponible para el directivo que esté evaluando la solicitud.  
 También se desea que elx estudiante que está cargando una solicitud, pueda consultar a partir de las materias que trae aprobadas de otras Universidades, cuáles materias podría pedir y que (en principio) le van a ser reconocidas.
+
+En principio, el stakeholder para este proyecto es Fernando Puricelli. Probablemente él delegará el seguimiento a alguna persona del plantel del Instituto de Ingeniería o del área de Informática.
 
 
 #### Instrucciones particulares para arrancar
