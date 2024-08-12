@@ -306,8 +306,8 @@ En este caso también, vale absolutamente arrancar con el FE para ir dándole fo
 | --- | --- | --- |
 | 15/08 | No | Presentación / objetivos / armado de equipos / selección de trabajos / Figma. |
 | 22/08 | No | <b>1er Sprint - planning</b> <br/> |
-| 29/08 | No | React parte 1. |
-| 05/09 | No | React - parte 1. <br/>  |
+| 29/08 | No | React - parte 1. |
+| 05/09 | No | Seguimiento. |
 | 12/09 | No | <b>1er Sprint - review<b><br/><b>2do Sprint - planning<b> |
 | 19/09 | No | Metodología agile / Relevamiento / análisis inicial. |
 | 26/09 | No | Seguimiento. |
@@ -315,7 +315,7 @@ En este caso también, vale absolutamente arrancar con el FE para ir dándole fo
 | 10/10 | No |  Backend. |
 | 17/10 | No | Seguimiento. |
 | 24/10 | No | <b>3er Sprint - review</b><br/><b>4to Sprint - planning</b> |
-| 31/10 | No | React parte 1. |
+| 31/10 | No | React parte 2. |
 | 07/11 | <span style="font-weight: bold; color: crimson">Sí</span> | <span style="font-weight: bold; color: crimson">Presentación presencial medio término</span> | 
 | 14/11 | No | <b>4to Sprint - review<b><br/><b>5to Sprint - planning<b> |
 | 21/11 | No | Manejo de branches. <br/> |
