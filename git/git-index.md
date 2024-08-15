@@ -94,8 +94,13 @@ No le cambio el código a nadie a nadie porque pusheo en mi branch.
 Además, si por cualquier razón se rompe mi repo local, siempre está el respaldo en el repo remoto.
 
 
+### Cuando termino una tarea - usando Pull Request
+Esta es en rigor la forma que se usa en el 99.5% (y tal vez me quedo corto) de los laburos.  
+Como la descripción es un poco larga, la muevo a una [página aparte](./git-pr.md). 
+
+
 ### Cuando termino una tarea - desde la consola
-Lo más habitual es usar `merge`. Para esto la secuencia es:
+En principio, conviene usar `merge`. Para esto la secuencia es:
 - `git checkout dev`
 - `git pull`
 - `git merge <branch-de-mi-tarea>`
@@ -112,11 +117,6 @@ Una alternativa es usar  `rebase`, es así:
 - `git checkout dev`
 - `git merge <branch-de-mi-tarea>`
 - `git push`
-
-
-### Cuando termino una tarea - usando Pull Request
-Esta es en rigor la forma que se usa en el 99.5% (y tal vez me quedo corto) de los laburos.  
-Como la descripción es un poco larga, la muevo a una [página aparte](./git-pr.md). 
 
 
 ## OK, pero ¿qué es esto de los branches?
