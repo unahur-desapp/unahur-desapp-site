@@ -24,8 +24,10 @@ El grupo docente de la materia está formado por
 ## Pautas para la carpeta
 [Acá](./pautas-para-la-carpeta)
 
-## Tareas iniciales
-[Acá](./tareas-iniciales)
+## Tareas 
+[Iniciales](./tareas-iniciales)
+
+[Creación de repos de código](./creacion-repos-de-codigo)
 
 ## Recursos
 [Acá](./recursos/recursos-index)

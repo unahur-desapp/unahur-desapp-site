@@ -127,12 +127,7 @@ Acá menciona cómo manejarse con distintos tableros, que es lo que sugerimos a 
 
 Definan **un equipo**, donde estén les integrantes del equipo ... y el/les docente/s. 
 
-Les sugerimos que trabajen con **tres tableros**.
-- Uno para el sprint actual.
-- Uno para que quede registro de lo que se fue cerrando en cada sprint anterior.
-- Uno para las tareas a futuro.
-
-Con un poquito de ingenio, no es difícil mover tareas de un tablero a otro. Por eso no es problema tener varios tableros.
+Les sugerimos que trabajen con un tablero, definiendo listas separadas para lo que se hizo en cada sprint.
 
 Qué listas incluir en cada tablero, cómo ir moviendo las tareas entre las listas: ver la [página con detalles del uso sugerido de Trello](./trello).
 

@@ -36,7 +36,7 @@ Para esto le vamos a pedir a cada grupo que entregue un ranking de los seis proy
 
 
 Después, toca arrancar con el desarrollo. Para esto:
-1. Antes que nada, hacer lo que se indica en la página de [tareas iniciales](../tareas-iniciales.md). <br/> **Atención** acá: la organización GitHub la tienen que crear _solamente_ los grupos que tomen proyectos que arrancan en esta cursada, o sea planillas de evaluación para enfermería y gestión de convocatorias de investigación. Para los otros proyectos (o sea sistema de sugerencias, pedidos de materiales,  gestión de equivalencias y control de gastos de subsidios), el grupo docente les va a dar acceso a los repositorios donde está el código sobre el que van a tener que aplicar los agregados y mejoras.
+1. Antes que nada, hacer lo que se indica en la página de [tareas iniciales](../tareas-iniciales.md). 
 2. Después, seguir las instrucciones que corresponden al proyecto que hayan elegido.
 
 
