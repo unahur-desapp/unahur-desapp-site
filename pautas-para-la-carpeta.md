@@ -8,6 +8,22 @@ Como una referencia inicial para la confección de las carpetas para PPS, dejamo
 
 Se separan por cuatrimestres de cursada de Desarrollo de Aplicaciones y PPS.
 
+
+## Segundo cuatrimestre 2023 / Primer cuatrimestre 2024
+
+Pedidos de materiales de laboratorio.
+[Carpeta](./adjuntos/pedidos-de-materiales-2024s1.pdf){:target="_blank"}.
+
+
+## Primer y segundo cuatrimestres 2023
+
+Gestión pedidos de equivalencias.
+[Carpeta](./adjuntos/equivalencias-2023s2.pdf){:target="_blank"}.
+
+Gestión subsidios de investigación.  
+[Carpeta](./adjuntos/gastos-de-subsidios-2023s2.pdf){:target="_blank"}.
+
+
 ## Primer y segundo cuatrimestres 2022
 
 Soporte de evaluaciones Diseño industrial.  

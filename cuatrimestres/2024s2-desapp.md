@@ -63,7 +63,8 @@ Para asignar estos fondos, se organizan convocatorias en las cuales grupos de do
 Con los fondos que se le asignan mediante un subsidio, cada grupo de docentes/investigadores compra bienes, contrata servicios, financia viajes de intercambio o presentación de resultados, y paga los gastos de inscripción a congresos y publicación de artículos.
 La Universidad debe aprobar cada gastos, y después tiene que llevar un control, recibiendo copia de la factura correspondiente.
 
-La Secretaría de Investigación propuso implementar una aplicación que informatice la gestión de los gastos de subsidios. En el marco de cursadas anteriores, se llegó a implementar las funcionalidades principales pedidas por la Secretaría, con un buen grado de avance.
+La Secretaría de Investigación propuso implementar una aplicación que informatice la gestión de los gastos de subsidios. En el marco de cursadas anteriores, se llegó a implementar las funcionalidades principales pedidas por la Secretaría, con un buen grado de avance.  
+Esta es la [carpeta](../adjuntos/gastos-de-subsidios-2023s2.pdf){:target="_blank"} presentada por el grupo que trabajó sobre este proyecto en 2023.
 
 Los objetivos del grupo que tome este proyecto van a ser:
 - Agregar algunas funcionalidades faltantes, alguna es sencilla, otras tienen lo suyo.
@@ -100,7 +101,8 @@ Un aspecto que le genera mucho trabajo administrativo a la Universidad es la ges
 ¿Qué es una solicitud de equivalencia? Un pedido que puede hacer unx estudiante que aprobó materias en otra Universidad, de que se las reconozcan como equivalentes en contenidos con materias del plan de estudios de la carrera que está haciendo en la UNAHUR. Si el pedido es aceptado, entonces al/a la estudiante se le dan por aprobadas las materias UNAHUR que se aceptan como "equivalentes" a las que el/la solicitante aprobó en otro lado.
 
 Fernando Puricelli solicitó hace un tiempo, el desarrollo de una aplicación que permita organizar la información de los trámites de equivalencia. 
-En el marco de cursadas anteriores, se llegó a implementar las funcionalidades principales pedidas por Fernando.
+En el marco de cursadas anteriores, se llegó a implementar las funcionalidades principales pedidas por Fernando.  
+Esta es la [carpeta](../adjuntos/equivalencias-2023s2.pdf){:target="_blank"} presentada por el grupo que trabajó sobre este proyecto en 2023.
 
 Los objetivos del grupo que tome este proyecto van a ser:
 - Agregar una funcionalidad faltante, que describimos abajo.
@@ -139,7 +141,8 @@ Los docentes realizan pedidos de reserva de laboratorio, en los que indican qué
 
 El equpo que gestiona los laboratorios solicitó hace ya un tiempo, una aplicación que permita gestionar estos pedidos de materiales, en lugar de las idas y vueltas de mails con los docentes más anotaciones en algún Excel u hoja para registrar las reservas.
 
-En cursadas anteriores se avanzó mucho con este proyecto, interactuando activamente con personal de laboratorio, y llegando a una versión que tal vez esté bastante cerca de quedar operativa.
+En cursadas anteriores se avanzó mucho con este proyecto, interactuando activamente con personal de laboratorio, y llegando a una versión que tal vez esté bastante cerca de quedar operativa.  
+Esta es la [carpeta](../adjuntos/pedidos-de-materiales-2024s1.pdf){:target="_blank"} presentada por el grupo que trabajó sobre este proyecto en el segundo cuatrimestre de 2023 y primero de 2024.
 
 Los objetivos para el grupo que siga con este trabajo son:
 - Documentar y mejorar la implementación de algunos aspectos en los que la implementación es bastante difícil de seguir.
