@@ -68,14 +68,17 @@ Imagen de los edificios, esto es la edición de un pedido (perfil laboratorio).
 ## Instrucciones particulares para arrancar
 
 ### Entender el dominio
-Leer la carpeta del equipo que trabajó en este proyecto en 2023, que está linkeada arriba en esta página. Entender el dominio y las funcionalidades implementadas.
+Leer la carpeta del equipo que trabajó en este proyecto en 2023/2024, que está linkeada arriba en esta página. Entender el dominio y las funcionalidades implementadas.
 
 ### Inicializar los repos de código remoto y local
-Hacer los fork (ver instrucciones [en esta página](../../creacion-repos-de-codigo.md)) de los repositorios con el código existente. Los repositorios base que deben forkear son estos:
+Hacer los fork (ver instrucciones [en esta página](../../creacion-repos-de-codigo.md)) de los repositorios con el código existente, en la organización de GitHub correspondiente al grupo. Los repositorios base que deben forkear son estos:
 - Backend: https://github.com/unahur-desapp/pedidos-materiales-de-laboratorio-backend 
 - Frontend: https://github.com/unahur-desapp/pedidos-materiales-de-laboratorio-frontend
 
-Una vez creados los fork, clonarlos en los equipos de cada integrante, y ejecutar `npm install` en ambos, para cargar las librerías.
+Una vez creados los fork, en el equipo de cada integrante:
+- Clonar los dos repos apenas creados (o sea los forks).
+- **Importante** <br/> Para los dos repositorios, moverse al branch `inicio-c2-2024`.
+- En ambos repos, ejecutar `npm install` para cargar las librerías.
 
 ### Configurar la BD
 Instalarse MongoDB, o usar Atlas (el servicio cloud gratuito de Mongo). Configurar el acceso a la BD desde el proyecto de backend, seteando la variable de ambiente `URI_MONGO` en el archivo `.env` en el proyecto de backend.
