@@ -64,34 +64,8 @@ Con los fondos que se le asignan mediante un subsidio, cada grupo de docentes/in
 La Universidad debe aprobar cada gastos, y después tiene que llevar un control, recibiendo copia de la factura correspondiente.
 
 La Secretaría de Investigación propuso implementar una aplicación que informatice la gestión de los gastos de subsidios. En el marco de cursadas anteriores, se llegó a implementar las funcionalidades principales pedidas por la Secretaría, con un buen grado de avance.  
-Esta es la [carpeta](../adjuntos/gastos-de-subsidios-2023s2.pdf){:target="_blank"} presentada por el grupo que trabajó sobre este proyecto en 2023.
 
-Los objetivos del grupo que tome este proyecto van a ser:
-- Agregar algunas funcionalidades faltantes, alguna es sencilla, otras tienen lo suyo.
-- Agregar algunos detalles a las funcionalidades existentes.
-- Actualizar el stack tecnológico del frontend, tomando como base el template que se encuentra en este sitio.
-- Configurar un storage en cloud para los archivos adjuntos que tiene que manejar la aplicación.
-- Desplegar el producto en algún servicio público, y acompañar a la Secretaría en la realización de pruebas preliminares de uso. Registrar las modificaciones y agregados que se detecten como necesarios para dejar operativo el producto. En la medida de lo posible, implementar estas modificaciones y agregados, y generar versiones sucesivas del producto.
-- Montar la estructura para implementar tests unitarios, e implementar algunos. Idealmente tanto BE como FE.
-
-En principio, el stakeholder para este proyecto es Juan Pedrosa, el secretario de Investigación. Probablemente él delegará el seguimiento a alguna persona del plantel de la Secretaría.
-
-
-#### Instrucciones particulares para arrancar
-
-Leer la carpeta del equipo que trabajó en este proyecto en 2023 (que próximamente va a estar disponible en este sitio). Entender el dominio y las funcionalidades implementadas.
-
-Clonarse los repos con el código existente, darles `npm install`.
-
-Instalarse PostgreSQL. Crear una BD para el proyecto y configurarla desde el archivo `.env.development` del BE. Ejecutar las tareas `npm run db:init` y `npm run db:seed` en el proyecto de BE, para definir la base y cargar algunos datos iniciales.
-
-Levantar BE y FE (`npm start` en ambos casos), navegar para entender un poco de qué se trata, relacionar con lo que se leyó en la carpeta.
-
-Conversar con los docentes sobre una primera lista de funcionalidades a agregar o modificar.
-
-
-#### Un poco más adelante
-Cuando se sientan seguros con la aplicación y el dominio, solicitar una reunión con el stakeholder, mostrarle lo que está hecho, plantearle las funcionalidades planteadas por los docentes de Desarrollo de Aplicaciones, y refinar los pasos a seguir.
+Ver detalles en [la página dedicada a este proyecto](./2024s2/control-de-subsidios.md).
 
 
 ### 2. Solicitudes de equivalencia
@@ -141,63 +115,9 @@ Los docentes realizan pedidos de reserva de laboratorio, en los que indican qué
 
 El equpo que gestiona los laboratorios solicitó hace ya un tiempo, una aplicación que permita gestionar estos pedidos de materiales, en lugar de las idas y vueltas de mails con los docentes más anotaciones en algún Excel u hoja para registrar las reservas.
 
-En cursadas anteriores se avanzó mucho con este proyecto, interactuando activamente con personal de laboratorio, y llegando a una versión que tal vez esté bastante cerca de quedar operativa.  
-Esta es la [carpeta](../adjuntos/pedidos-de-materiales-2024s1.pdf){:target="_blank"} presentada por el grupo que trabajó sobre este proyecto en el segundo cuatrimestre de 2023 y primero de 2024.
+En cursadas anteriores se avanzó mucho con este proyecto, interactuando activamente con personal de laboratorio, y llegando a una versión con las funcionalidades principales implementadas.  
 
-Los objetivos para el grupo que siga con este trabajo son:
-- Documentar y mejorar la implementación de algunos aspectos en los que la implementación es bastante difícil de seguir.
-- Migrar el frontend de react-scripts a vite, tomando como base el template que se encuentra en este sitio.
-- Hacer algunos refactors que mejoren la legibilidad del código.
-- Agregar opciones de configuración.
-- Arreglar algunos bugs.
-- Revisar el circuito de un pedido, y agregar lo que haga falta para que sea realmente usable.
-- Agregar reportes y filtros de la info que maneja la aplicación.
-- Desplegar el producto en algún servicio público, y acompañar al personal de laboratorio en la realización de pruebas preliminares de uso. Registrar las modificaciones y agregados que se detecten como necesarios para dejar operativo el producto. En la medida de lo posible, implementar estas modificaciones y agregados, y generar versiones sucesivas del producto.
-
-Los stakeholders para este proyecto son Paloma Martínez Ponce y Marco Ruiz.
-
-#### Instrucciones particulares para arrancar
-
-Leer la carpeta del equipo que trabajó en este proyecto en 2023 (que próximamente va a estar disponible en este sitio). Entender el dominio y las funcionalidades implementadas.
-
-Clonarse los repos con el código existente, darles `npm install`.
-
-Instalarse MongoDB, o usar Atlas (el servicio cloud gratuito de Mongo). Configurar el acceso a la BD desde el proyecto de backend, seteando la variable de ambiente `URI_MONGO` en el archivo `.env` en el proyecto de backend.
-
-Agregar un documento en la colección de usuarios, con estas características (salvo `contrasenia`, `admin`, `editor`, `rol` y `__v`, en los otros atributos pueden poner el valor que quieran. Incluso no es necesario que el id de usuario sea `admin`, aunque esto se recomienda).  
-**¡¡Atención!!** - fíjense que dni y matricula son _números_, eso tiene que ser así.
-```
-{
-    _id: ObjectId("66b4fd973c67f8681c1b01fe"),
-    usuario: 'admin',
-    contrasenia: '$2b$10$TrsBSx5JPJx8U9gQazlrF.4JMKEQ6dglANaWIUU3U8Wq2mkP6xdG6',
-    nombre: 'Aymará',
-    apellido: 'Rocamora',
-    dni: 88778877,
-    matricula: 333444,
-    admin: true,
-    email: 'aymara.rocamora@notamail.com',
-    editor: false,
-    __v: 0,
-    rol: 'lab'
-}
-```
-La clave de este usuario es 123123. Esto está contado en la carpeta del equipo que trabajó en este proyecto en 2023.
-
-Levantar BE y FE. Para el BE, simplemente `npm start`.
-Para el FE, setear las variables de instancia `REACT_APP_API_URL` con la URL donde levantó el BE (que por defecto es `http://localhost:3001`) y `REACT_APP_USER` con un nombre cualquiera, pero tiene que estar. Después, `npm start`.
-
-Una vez BE y FE levantados, navegar el FE para entender un poco de qué se trata, relacionar con lo que se leyó en la carpeta. 
-Se recomienda hacer lo siguiente:
-- Entrando como el admin que crearon, cargar al menos: una usuario de perfil laboratorio, un usuario de perfil docente, un equipo, un material y un reactivo.
-- Entrar con el usuario de perfil docente, cargar un pedido.
-- Entrar con el usuario de perfil laboratorio, ver el pedido.
-
-Conversar con los docentes de Desarrollo de Aplicaciones sobre una primera lista de funcionalidades a agregar o modificar.
-
-
-#### Un poco más adelante
-Cuando se sientan seguros con la aplicación y el dominio, solicitar una reunión con la stakeholder (o quien ella designe), mostrarle lo que está hecho, plantearle las funcionalidades planteadas por los docentes, y refinar los pasos a seguir.
+Ver detalles en [la página dedicada a este proyecto](./2024s2/pedidos-de-materiales.md).
 
 
 ### 4. Sistema de sugerencias de cursada y acompañamiento académico
