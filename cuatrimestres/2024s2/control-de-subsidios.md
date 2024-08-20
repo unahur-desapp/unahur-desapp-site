@@ -14,7 +14,7 @@ En principio, el stakeholder para este proyecto es Juan Pedrosa, el secretario d
 
 ## Estado del proyecto
 En el marco de cursadas anteriores, se llegó a implementar las funcionalidades principales pedidas por la Secretaría, con un buen grado de avance.  
-Esta es la [carpeta](../adjuntos/gastos-de-subsidios-2023s2.pdf){:target="_blank"} presentada por el grupo que trabajó sobre este proyecto en 2023.
+Esta es la [carpeta](../../adjuntos/gastos-de-subsidios-2023s2.pdf){:target="_blank"} presentada por el grupo que trabajó sobre este proyecto en 2023.
 
 ## Objetivos preliminares para segundo cuatrimestre 2024 y primer cuatrimestre 2025
 
