@@ -119,7 +119,6 @@ En cursadas anteriores se avanzó mucho con este proyecto, interactuando activam
 
 Ver detalles en [la página dedicada a este proyecto](./2024s2/pedidos-de-materiales.md).
 
-
 ### 4. Sistema de sugerencias de cursada y acompañamiento académico
 Desde la comunidad de Informática se desarrolló una aplicación que genera y envía en forma masiva mails con sugerencias de cursada y otras acciones, donde el contenido está personalizado para cada estudiante a partir de los datos de su trayectoria académica.
 
@@ -128,35 +127,8 @@ El objetivo en el cual se inscribe este proyecto es realizar una nueva implement
 - Para el BE: Express o Nest.js, y Mongoose. 
 - BD: Mongo.
 
-En el primer cuatrimestre de 2024, un grupo de Desarrollo de Aplicaciones comenzó con el desarrollo, implementando exitosamente la edición de varios elementos de configuración. Para el BE, este grupo eligió Express y JavaScript como lenguaje de programación.
-
-La propuesta para el grupo que tome este proyecto es 
-- Completar la edición de la configuración, lo que implica: 
-  - agregar una pantalla, 
-  - completar otra que tiene una implementación parcial faltando una parte bastante compleja, 
-  - agregar características que falta integrar en algunas pantallas ya implementadas.
-- Desplegar el producto en algún servicio público para que el stakeholder lo pueda usar sin levantarlo desde su compu, y mostrárselo a otros actores de la Universidad.
-- Montar la estructura para implementar tests unitarios del backend, e implementar algunos.
-
-El grupo puede, si así lo elige, migrar el BE a Nest.js sobre TypeScript; sería una buena oportunidad para aprender un lenguaje nuevo.
-
-El stakeholder para este proyecto es Carlos Lombardi.
-
-**Importante**  
-Como este proyecto consiste en la migración de una aplicación que está funcionando, debemos respetar la estructura de la BD, que está en Mongo. 
-
-
-#### Instrucciones particulares para arrancar
-
-Clonarse los repos con el código existente, darles `npm install`.
-
-Instalarse MongoDB, o usar Atlas (el servicio cloud gratuito de Mongo). Configurar el acceso a la BD desde el proyecto de backend, y cargar los datos iniciales (los detalles se los va a dar el stakeholder).
-
-Levantar BE (`npm start`) y FE (`npm run dev`), navegar para entender un poco de qué se trata.
-
-Estudiar las funcionalidades de configuración, que van a ser las primeras en migrarse. Para esto el stakeholder les puede hacer una demostración y después enviarles screenshots.
-
-Conversar con el stakeholder sobre las funcionalidades y características a agregar.
+En el primer cuatrimestre de 2024, un grupo de Desarrollo de Aplicaciones comenzó con el desarrollo, implementando exitosamente la edición de varios elementos de configuración. 
+Ver detalles en [la página dedicada a este proyecto](./2024s2/sugerencias-de-cursada.md).
 
 
 ### 5. Registro de evaluaciones de enfermería
