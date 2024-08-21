@@ -117,8 +117,7 @@ El equpo que gestiona los laboratorios solicitó hace ya un tiempo, una aplicaci
 
 En cursadas anteriores se avanzó mucho con este proyecto, interactuando activamente con personal de laboratorio, y llegando a una versión con las funcionalidades principales implementadas.  
 
-Ver detalles en [la página dedicada a este proyecto](./2024s2/sugerencias-de-cursada.md).
-
+Ver detalles en [la página dedicada a este proyecto](./2024s2/pedidos-de-materiales.md).
 
 ### 4. Sistema de sugerencias de cursada y acompañamiento académico
 Desde la comunidad de Informática se desarrolló una aplicación que genera y envía en forma masiva mails con sugerencias de cursada y otras acciones, donde el contenido está personalizado para cada estudiante a partir de los datos de su trayectoria académica.
@@ -128,7 +127,8 @@ El objetivo en el cual se inscribe este proyecto es realizar una nueva implement
 - Para el BE: Express o Nest.js, y Mongoose. 
 - BD: Mongo.
 
-En el primer cuatrimestre de 2024, un grupo de Desarrollo de Aplicaciones comenzó con el desarrollo, implementando exitosamente la edición de varios elementos de configuración. Ver detalles en [la página dedicada a este proyecto](./2024s2/pedidos-de-materiales.md).
+En el primer cuatrimestre de 2024, un grupo de Desarrollo de Aplicaciones comenzó con el desarrollo, implementando exitosamente la edición de varios elementos de configuración. 
+Ver detalles en [la página dedicada a este proyecto](./2024s2/sugerencias-de-cursada.md).
 
 
 ### 5. Registro de evaluaciones de enfermería
