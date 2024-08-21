@@ -1,4 +1,4 @@
-# Pedidos de materiales
+# Pedidos de equivalencias
 
 ## Contexto y objetivos
 Como sabemos bien, las carreras de Informática tienen una enorme popularidad. Además de una gran alegría, esto trae el desafío de gestionar la gran masa de estudiantes.
