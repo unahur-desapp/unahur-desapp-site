@@ -74,35 +74,7 @@ Como sabemos bien, las carreras de Informática tienen una enorme popularidad. A
 Un aspecto que le genera mucho trabajo administrativo a la Universidad es la gestión de las solicitudes de equivalencia.  
 ¿Qué es una solicitud de equivalencia? Un pedido que puede hacer unx estudiante que aprobó materias en otra Universidad, de que se las reconozcan como equivalentes en contenidos con materias del plan de estudios de la carrera que está haciendo en la UNAHUR. Si el pedido es aceptado, entonces al/a la estudiante se le dan por aprobadas las materias UNAHUR que se aceptan como "equivalentes" a las que el/la solicitante aprobó en otro lado.
 
-Fernando Puricelli solicitó hace un tiempo, el desarrollo de una aplicación que permita organizar la información de los trámites de equivalencia. 
-En el marco de cursadas anteriores, se llegó a implementar las funcionalidades principales pedidas por Fernando.  
-Esta es la [carpeta](../adjuntos/equivalencias-2023s2.pdf){:target="_blank"} presentada por el grupo que trabajó sobre este proyecto en 2023.
-
-Los objetivos del grupo que tome este proyecto van a ser:
-- Agregar una funcionalidad faltante, que describimos abajo.
-- Encriptar las claves, que hoy están planas en la BD.
-- Actualizar el stack tecnológico del frontend, tomando como base el template que se encuentra en este sitio.
-- Configurar un storage en cloud para los archivos adjuntos que tiene que manejar la aplicación (ver si esto ya está previsto en el proyecto que van a recibir).
-- Desplegar el producto en algún servicio público, y acompañar a Fernando en la realización de pruebas preliminares de uso. Registrar las modificaciones y agregados que se detecten como necesarios para dejar operativo el producto. En la medida de lo posible, implementar estas modificaciones y agregados, y generar versiones sucesivas del producto.
-- Montar la estructura para implementar tests unitarios, e implementar algunos. Idealmente tanto BE como FE.
-
-La principal funcionalidad nueva es que se pueda mantener un status de materias con equivalencias que, al menos en principio, la UNAHUR va a aceptar. Esto surge de los trámites ya estudiados y definidos.  
-Pongamos un ejemplo inventado. Supongamos que una estudiante pide que se le reconozcan Organización de Computadoras y Redes de Computadoras, porque aprobó Arquitectura de Computadoras 1, 2 y 3 en la Universidad de la Gran Montaña, y la UNAHUR, después de analizar el pedido, decide aceptarlo.
-Unos meses después viene otro estudiante, que aprobó las mismas materias en la Universidad de la Gran Montaña, y también solicita que le reconozcan Organización de Computadoras y Redes de Computadoras. La UNAHUR no va a volver a hacer la evaluación que ya hizo, en principio se puede suponer que la solicitud se va a aceptar.  
-
-Lo que se busca con esta funcionalidad es llevar el registro de qué "esquemas de pedidos de equivalencia" ya fueron aceptados.  
-Esta información tiene que estar disponible para el directivo que esté evaluando la solicitud.  
-También se desea que elx estudiante que está cargando una solicitud, pueda consultar a partir de las materias que trae aprobadas de otras Universidades, cuáles materias podría pedir y que (en principio) le van a ser reconocidas.
-
-En principio, el stakeholder para este proyecto es Fernando Puricelli. Probablemente él delegará el seguimiento a alguna persona del plantel del Instituto de Ingeniería o del área de Informática.
-
-
-#### Instrucciones particulares para arrancar
-
-Leer la carpeta del equipo que trabajó en este proyecto en 2023 (que próximamente va a estar disponible en este sitio). Entender el dominio y las funcionalidades implementadas.
-
-... más información en breve ...
-
+Ver detalles en [la página dedicada a este proyecto](./2024s2/pedido-de-equivalencias.md).
 
 ### 3. Pedidos de materiales al laboratorio
 En varias materias de las carreras del instituto de Biotecnología (y tal vez también Salud) se hacen clases prácticas en laboratorios, en las cuales lxs estudiantes tienen hacer experimentos. 
