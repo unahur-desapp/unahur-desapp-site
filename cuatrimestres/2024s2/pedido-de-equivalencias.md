@@ -11,7 +11,7 @@ El stakeholder para este proyecto es Fernando Puricelli.
 
 ## Estado del proyecto
  En el marco de cursadas anteriores, se llegó a implementar las funcionalidades principales pedidas por Fernando.  
-Esta es la [carpeta](../adjuntos/equivalencias-2023s2.pdf){:target="_blank"} presentada por el grupo que trabajó sobre este proyecto en el segundo cuatrimestre de 2023 y primero de 2024.
+Esta es la [carpeta](../../adjuntos/equivalencias-2023s2.pdf){:target="_blank"} presentada por el grupo que trabajó sobre este proyecto en el segundo cuatrimestre de 2023 y primero de 2024.
 
 ## Objetivos preliminares para segundo cuatrimestre 2024 y primer cuatrimestre 2025
 
