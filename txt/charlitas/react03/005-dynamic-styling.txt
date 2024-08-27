@@ -44,7 +44,8 @@ Miremos este handler (en State05)
 acá en principio (porque React optimiza) le estamos pidiendo a React que vuelva a renderizar la página *2 veces*.
 En rigor, lo que debería forzar la re-renderización es el cambio en renderedPhrases, mientras que indexAddedPhrase es una cuestión interna, que no se ve, y que no debería forzar el re-renderizado.
 Para eso -> useRef.
-- atenti, se accede y se modifica usando current.
+- atenti 1, se accede y se modifica usando current.
+- atenti 2, ahora sí importa el orden porque el cambio en el useRef es de efecto inmediato.
 
 (acá se puede saltar a State06 y mostrar el useCallback ya usado. Se parte de la pregunta ¿qué es esto del useCallback?)
 (2)

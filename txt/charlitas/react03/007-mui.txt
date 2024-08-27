@@ -20,6 +20,7 @@ Empezamos con el elemento (3)
 - Stack
 - sx
 - reemplazo div con Box para aplicar sx en lugar de style.
+(acá garpa ponerlos uno al lado del otro, Mui01-flex vs ApiCalls02-delete-add)
 
 Qué me gusta: que no tengo que andar mirando el CSS para entender la estructura.
 
@@ -49,9 +50,9 @@ Metemos los botones - https://mui.com/components/buttons/ - aplicamos (1)
 
 Y también un poco de CSS - aplicamos (4) - theme - https://mui.com/material-ui/customization/theming/
 - typography para definir cómo se ve el texto de los botones
-- palette para definir un "color" nuevo
+- palette para definir un "color" nuevo (es el color de fondo de los botones)
 
-De paso: factorización - componente ColorButtons.
+De paso: factorización - componente ColorButtons ... y miren el efecto de ponerlos en flexboxes con diferente direction.
 
 
 (Mui04)
@@ -59,6 +60,9 @@ Input - https://mui.com/material-ui/react-text-field/
 - controlled
 - error + touched
 - fullWidth
+- button disabled sobre el mismo mensaje de error + touched
+
+... esto es un mundo, posta que estamos rascando la superficie y no más que eso ...
 
 Refactoring 
 - saco el flexbox exterior al componente principal para colgar AddPhrase de ahí.
