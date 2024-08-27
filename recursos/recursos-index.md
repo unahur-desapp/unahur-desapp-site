@@ -28,7 +28,7 @@ Por ahora tenemos "cinco y pico".
 > Atención: los ejemplos de React sobre Create React App no funcionan en versiones modernas de Node, seguro en 14 sí, seguro en 18 no, en 16 no sé.
 
 [Ejemplo de React sobre Vite](https://github.com/unahur-desapp/react-example-vite).  
-Es una copia parcial del anterior, basado sobre Vite en lugar de Create React App (que está en fase de deprecación). Por ahora le falta la parte de rutas, esa verla en el ejemplo 2 sobre Create React App.    
+Es una copia parcial del ejemplo 2 de React (ver acá abajo), basado sobre Vite en lugar de Create React App (que está en fase de deprecación).     
 Para verlo andando, hay que ejecutar también el nano-backend que se linkea más abajo.
 
 [Ejemplo 1 de React sobre Create React App con varios componentes, props y estado](https://github.com/unahur-desapp/react-ejemplo-1).

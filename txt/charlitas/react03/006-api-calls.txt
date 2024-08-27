@@ -12,7 +12,7 @@ Comparemos con el anterior (State06), veamos dónde cambió.
 - se contempla la posibilidad de que las renderedPhrases no estén cargadas.
 
 *Muy* importante: salvo lo último, la parte que renderiza no cambió. 
-Por eso es mega-importante separar en la cabeza datos de renderización, que es exactamente lo que hicimos al principio.
+Por eso es mega-importante separar en la cabeza datos de renderización, que es exactamente lo que hicimos al principio de todo.
 
 (2)
 Qué es un useEffect: código que se ejecuta, por ahora, cuando se carga el componente. Sólo la primera vez. Si de eso surge un cambio de estado, entonces el componente solito se re-renderiza.

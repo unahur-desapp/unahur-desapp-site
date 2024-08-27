@@ -1,0 +1,27 @@
+(intro)
+Hasta ahora, la app con la que estamos experimentando tiene una única pantalla.
+Nuestra app podría tener varias opciones. P.ej. la de alquiler de autos, tiene una página para ver los autos y cargar un alquiler, una para ver la lista de alquileres, otra para estadísticas, otra para datos de clientes.
+
+En un sitio Web estático, podemos definir rutas, para cada ruta un archivo HTML, y links que permiten acceder a una página mediante su ruta. Eso es exactamente HTML.
+En una app Web dinámica, podemos simular este comportamiento. En React, definimos un router, y para cada ruta un componente.
+Adicionalmente, el router puede no ocupar toda la pantalla, esto permite tener una alternativa mucho más liviana a los (viejos y ya no recomendados) frames de HTML.
+
+Hay varios paquetes que permiten definir routers, en particular uno que viene ganando momento es Next.js.
+Acá vamos a contar un poco de React Router, una opción clásica y todavía muy popular (de hecho, si le creo a npmjs, más que Next.js).
+
+
+(ComplexApp)
+Acá vemos los dos conceptos principales: links (arriba) y router (abajo).
+
+¡Atenti! El BrowserRouter está definido en main.jsx - repasar idea de wrapper component, acá tenemos un segundo.
+
+También uso de useLocation para saber cuál es la ruta actual.
+
+De paso: Card de MUI en LanguagesPage.
+
+(para seguir)
+- hacer más bonita LanguagesPage
+- ruta con parámetro
+- Redux
+- WebSockets
+- subir archivos

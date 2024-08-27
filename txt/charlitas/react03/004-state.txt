@@ -44,7 +44,7 @@ Definición del estado usando useState.
 Ver que ahora vuelve a renderizar después de borrar.
 O sea, el setter le avisa a React que tiene que lanzar una re-renderización ...
 
-... sólo del componente al que le cambión el estado (poner un console.log en el título y en Phrases)
+... sólo del componente al que le cambió el estado (poner un console.log en el título y en Phrases)
 
 Peeero probemos con un 
     console.log(renderedPhrases)
