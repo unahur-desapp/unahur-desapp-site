@@ -71,6 +71,10 @@ Hay varios repos de esa materia que se pueden ver [en este link](https://bitbuck
 Peeeeero es el mismo usuario del Trello, así que ya tienen .... porque ya se crearon un usuario de Trello, obviamente. Por las dudas, mírense la sección de Trello más abajo en esta misma página.
 
 
+## Sobre backend
+Este material está en una [página aparte](./backend-notas.md).
+
+
 ## Sobre Git
 Este material ahora está en una [página aparte](../git/git-index).
 
