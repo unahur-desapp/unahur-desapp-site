@@ -37,6 +37,8 @@ Creamos FilmBlock, le pasamos título y URL de la imagen.
 
 Aside: destructuring.
 
+decir "diccionario" en lugar de "registro"
+
 
 (Modularization04)
 Frases: pasamos una lista como prop, eso está perfecto.

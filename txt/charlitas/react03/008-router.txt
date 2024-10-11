@@ -17,10 +17,14 @@ Acá vemos los dos conceptos principales: links (arriba) y router (abajo).
 
 También uso de useLocation para saber cuál es la ruta actual.
 
-De paso: Card de MUI en LanguagesPage.
+De paso: Card de MUI en LanguagesPage con varios elementos.
+- Card, componente para mostrar info (uno de varios que ofrece MUI).
+- Paleta de colores Material (título blue[800], fondo de la card  blueGrey[50]).
+- Grid (otra herramienta para responsiveness).
+- Selección de elemento de acuerdo a viewpoint.
+- Composición de componentes (LanguagesPage / LanguageCard / CodeSnippet).
 
 (para seguir)
-- hacer más bonita LanguagesPage
 - ruta con parámetro
 - Redux
 - WebSockets

@@ -21,6 +21,8 @@ Revisar el nombre de la clase con CSSBasic01 y con CSSBasic02.
 Mandar también un 
   console.log(localClasses);
 
+Atenti: también anda para ids.
+
 
 (CSSBasic03)
 Otra opción es no usar clases. 

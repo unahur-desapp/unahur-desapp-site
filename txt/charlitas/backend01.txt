@@ -30,19 +30,49 @@ Router - define endpoints
 ... nos lo provee express, para eso está ...
 ver cómo quedan definidas las rutas, esto en /routes/index.js.
 
-ejemplo de la ruta de comidas, router y controller.
-- ¿cómo probamos, es necesario tener un FE andando?
-  Nop, existen los maravillosos clientes onda Insomnia o Postman.
-- ¿cuál es la diferencia con una ruta que es resuelta por una BD?
+primer ejemplo: /saludo
+estamos definiendo un endpoint GET /saludo.
+Para cada endpoint que definimos, asociamos una función que se va a activar cada vez que el server reciba un pedido para el método y path asociados al endpoint. Esta función es el *controller* del endpoint.
+El controller (que puede ser async, esto lo vamos a necesitar para interactuar con una BD) recibe 
+dos objetos, a estos objetos los arma Express.
+Request y response.
+Lo que vamos a hacer casi siempre: res.json.
+
+¿Cómo probamos, es necesario tener un FE andando?
+Nop, existen los maravillosos clientes onda Insomnia o Postman.
+
+segundo ejemplo: /respuesta
+acá vemos para qué se usa el objeto request.
+
+-------------------------------------
+Estos dos endpoints los definimos en conjunto con la definición de la ruta para 
+tener un ejemplo que se vea completo.
+
+Por lo general, los controllers se definen en archivos aparte.
+
+En la semilla que les dejamos, tienen las carpetas /routes y /controllers.
+
+(abrir routes/comidas.js al lado, controllers/comida_controller.js abajo)
+
+A su vez, las rutas se suelen definir en (al menos) dos niveles.
+- router.use, se engancha otro router (es un composite de Obj2), todos los endpoints que define este segundo router se definen con el prefijo de path que se indica.
+- router.get / .post / etc., se pasa un controller, .
+
+
+ejemplo de comidas, router y controller.
+- ¿cuál es la diferencia con una ruta que es resuelta por una consulta a BD?
+- ver los endpoints que hay, en particular /carnes/:gramos, acá vemos params.
+  Ya vimos query y params, después vamos a ver body.
 - creemos una ruta en comidas.
   - de paso cañazo, hot reload gracias a nodemon. Revisemos package.json.
-- creemos un nuevo router, digamos ciudades.
-  - vamos por una persistencia trucha.
+- vemos router y controllers de ciudades.
+  - usamos una persistencia trucha.
   - empecemos por el get
     - filtro por país
     - filtro por rango de población
-  - get de una ciudad x nombre como path param
-  - mandar un header de idioma para i18n (esto es un mega-invento mío)
+  - get de una ciudad x id como path param
+  - header de idioma para i18n (esto es un mega-invento mío)
+- agregamos otro router, de escritores y libros.  
 
 Atenti importante API REST, conviene seguirlas
 Ver en https://clombardi.github.io/bdsol-capacitacion-desarrollo/etapa-1-index la parte de API REST.
