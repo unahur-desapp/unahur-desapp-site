@@ -1,0 +1,8 @@
+# Gitfame
+
+Para qué sirve: para discriminar la actividad en un repo GitHub por commiter.
+
+Referencia: https://github.com/casperdcl/git-fame
+
+El machete (una vez que te lo instalaste)
+python -m gitfame --loc=ins,del --since=2024-08-24 --branch=origin/feature/X
