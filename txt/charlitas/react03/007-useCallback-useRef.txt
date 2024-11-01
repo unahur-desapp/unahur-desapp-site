@@ -1,0 +1,25 @@
+Comparando State05 con State06
+
+Nota: es un refactor, el usuario no ve absolutamente nada.
+
+Problema de las funciones adentro del componente.
+Solución: useCallback -> vamos con deletePhrase.
+
+Vamos con addFixedPhrase.
+- recordemos primero qué valor de indexAddedPhrase toma.
+- reflexionemos acerca de los re-renderings. 
+  En rigor, re-renderizar a raíz de la modificación del indexAddedPhrase no tiene sentido, es un dato que no se ve. Sirve para calcular un dato que ese sí se ve.
+- mandémosle useCallback, qué pasa: "Frase agregada undefined". 
+  Pero el state se actualiza -> eso verlo en el dev tools de components React.
+- solución (no la única, en este contexto la mejor): transformar el state en ref.
+  El ref es una variable como la esperamos: se actualiza al toque, no genera un re-render.
+  Ahora sí importa si la actualizo arriba o abajo del setRenderedPlaces.
+
+Repasemos los cuatro hooks que aparecieron hasta ahora.
+- los número 1: useState / useEffect.
+- un poquito más atrás: useCallback / useRef / useMemo (este mírenlo uds). 
+  Ver lo que dice el amigo ChatGPT.
+
+  
+
+

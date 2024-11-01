@@ -22,6 +22,9 @@ Empezamos con el elemento (3)
 - reemplazo div con Box para aplicar sx en lugar de style.
 (acá garpa ponerlos uno al lado del otro, Mui01-flex vs ApiCalls02-delete-add)
 
+Nota del 2024s2: lo puse al lado de State06-use-callback-use-ref, notar también la diferencia de que se toman las frases con una llamada API. Ver network. Esto es repaso, lo vimos en la primera charla.
+También puse el phrases-custom-styles.js en el medio. Creo que garpa.
+
 Qué me gusta: que no tengo que andar mirando el CSS para entender la estructura.
 
 ... seguimos con el debate sobre si usar clases CSS o no ...
@@ -39,7 +42,9 @@ O sea, aplicamos (5).
 Veamos cuáles son las herramientas.
 - idea de breakpoint (se puede ir a buscar la docu de MUI).
 - sx muuuy cómodo.
-- media queries.
+  - márgenes del recuadro.
+  - px de la barra de botones. 
+- media queries, definición de isVeryNarrowViewpoint y también en title.
 
 
 (Mui03)

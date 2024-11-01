@@ -19,21 +19,22 @@ Es [este](https://github.com/unahur-desapp/react-seed-2024).
 Para cada ejemplo, qué hacer
 1. me lo clono
 1. `npm install`
-1. `npm start`, para el de Vite `npm run dev`
+1. `npm start`, para el de Vite `npm run dev`.
 
 ¿Y si quiero experimentar y que quede lo que hago en un repo? Pues me hago un fork sobre un usuario u orga de GitHub, al fork lo puedo pushear y compartir.
 
 ### De la casa
 Por ahora tenemos "cinco y pico".
-> Atención: los ejemplos de React sobre Create React App no funcionan en versiones modernas de Node, seguro en 14 sí, seguro en 18 no, en 16 no sé.
+> _Atención_: los ejemplos de React sobre Create React App no funcionan en versiones modernas de Node, seguro en 14 sí, seguro en 18 no, en 16 no sé.
 
 [Ejemplo de React sobre Vite](https://github.com/unahur-desapp/react-example-vite).  
-Es una copia parcial del ejemplo 2 de React (ver acá abajo), basado sobre Vite en lugar de Create React App (que está en fase de deprecación).     
+Incluye: props, estado, rutas, acceso a backend, distintos casos de flexbox, bastante uso de MUI (Stack, tema, Button, Card, herramientas para responsiveness), y Redux.  
 Para verlo andando, hay que ejecutar también el nano-backend que se linkea más abajo.
 
 [Ejemplo 1 de React sobre Create React App con varios componentes, props y estado](https://github.com/unahur-desapp/react-ejemplo-1).
 
 [Ejemplo 2 de React sobre Create React App](https://github.com/unahur-desapp/react-ejemplo-2).  
+**Está discontinuado**, el que estamos manteniendo es el de Vite que linkeamos arriba.  
 Incluye: props, estado, rutas, acceso a backend, distintos casos de flexbox, y bastante uso de MUI.  
 Para verlo andando, hay que ejecutar también el nano-backend que se linkea más abajo.
 
@@ -53,7 +54,7 @@ Para ver más ejemplos, en particular de uso de distinto tipo de parámetros de 
 
 
 (este es el "pico")  
-[Un nano-backend que define los endpoints que esperan el ejemplo 2 de React y el de React-Vite - corre en el puerto 3100 por default](https://github.com/unahur-desapp/react-ejemplo-2-companion-be).
+[Un nano-backend que define los endpoints que esperan el ejemplo de React-Vite y el ejemplo 2 de React - corre en el puerto 3100 por default](https://github.com/unahur-desapp/react-ejemplo-2-companion-be).
 
 > **Atención**  
 > Los repos de ejemplo de React sobre Create React App tienen una base más antigua que el repo de base que linkeamos arriba. Estos repos están para demostrar algunas características de React, Material UI y React Router que no están usadas en el repo de base.  
