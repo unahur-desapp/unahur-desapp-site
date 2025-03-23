@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Propuesta 3: Sistema de Gestión de Tarifas de Costos para Logística
 
 ## Contexto
