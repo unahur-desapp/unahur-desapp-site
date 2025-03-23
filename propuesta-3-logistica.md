@@ -44,9 +44,9 @@ Cabe destacar que un adicional puede estar disponible en una tarifa y no en otra
 #### Adicionales disponibles para esta tarifa:
 | ID | Adicional | Costo|
 |-------------|-------------|-------------|
-| A1   | Ayudante   | $9,500   |
-| A5   | Estadía   | $18,000   |
-| A6   | Peajes   | $7,500   |
+| A1          | Ayudante    | $9,500      |
+| A5          | Estadía     | $18,000     |
+| A6          | Peajes      | $7,500      |
 
 ### Tarifa Base: "Buenos Aires - Rosario - Camión Grande"
 #### Datos básicos:
