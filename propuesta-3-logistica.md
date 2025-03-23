@@ -42,11 +42,7 @@ Cabe destacar que un adicional puede estar disponible en una tarifa y no en otra
 - **Valor base**: $45,000
 
 #### Adicionales disponibles para esta tarifa:
-| ID | Adicional | Costo|
-|-------------|-------------|-------------|
-| A1          | Ayudante    | $9,500      |
-| A5          | Estadía     | $18,000     |
-| A6          | Peajes      | $7,500      |
+![adicionesl tarifa compra](./images/adicionales-tc-2.png)
 
 ### Tarifa Base: "Buenos Aires - Rosario - Camión Grande"
 #### Datos básicos:
@@ -59,11 +55,7 @@ Cabe destacar que un adicional puede estar disponible en una tarifa y no en otra
 - **Valor base**: $95,000
 
 #### Adicionales disponibles para esta tarifa:
-| ID | Adicional | Costo|
-|-------------|-------------|-------------|
-| A1   | Ayudante   | $8,500   |
-| A2   | Carga peligrosa  | $18,000   |
-| A3   | Horario nocturno  | $12000   |
+![adicionesl tarifa compra](./images/adicionales-tc-1.png)
 
 ## Funcionalidades del Sistema
 
