@@ -17,10 +17,11 @@ Para organizar la información relacionada con el costo de los viajes, se define
 Las tarifas de costo varían según los siguientes factores:
 
 - **Tipo de vehículo**: El costo varía dependiendo si se utiliza una camioneta, un camión u otro tipo de vehículo para realizar las entregas.
-- **Tipo de carga/viaje**: Existen diferentes categorías:
-  - Transportes regulares (rutas habituales entre un origen y destino)
-  - Transportes particulares o para cargas especiales
+- **Tipo de carga/viaje**: Existen diferentes categorías, entre ellas mencionamos:
+  - Transportes regulares (rutas habituales entre un origen y destino).
+  - Transportes particulares o para cargas especiales.
 - **Zona de viaje**: Las zonas pueden ser AMBA, BsAs-Rosario, entre otras, afectando el costo base del servicio.
+- **Transportista**: Cuál de las empresas que tienen convenios con Logística ACME ofrece esta tarifa de costo.
 
 #### Información de Carga
 
@@ -31,14 +32,14 @@ Las tarifas de costo varían según los siguientes factores:
 
 ## Adicionales
 
-Cada tarifa puede incluir adicionales que se contratan según las necesidades específicas de cada viaje:
+Cada tarifa puede incluir adicionales que se contratan según las necesidades específicas de cada viaje, entre ellos mencionamos:
 
 - **Cargas peligrosas**: Transportes que requieren condiciones especiales de seguridad.
 - **Ayudantes**: Personal adicional para la carga/descarga de mercancías.
 - **Estadía**: Costos de alojamiento para el chofer en viajes de larga distancia.
 - **Otros**: El sistema debe permitir agregar otros adicionales según las necesidades.
 
-Cabe destacar que un adicional puede estar disponible en una tarifa y no en otra, dependiendo de las características del servicio.
+Cabe destacar que un adicional puede integrarse en una tarifa y no en otra, dependiendo de las características del servicio.
 
 ## Ejemplo: Estructura de una Tarifa de Costo
 
@@ -50,11 +51,10 @@ Cabe destacar que un adicional puede estar disponible en una tarifa y no en otra
 - **Tipo de vehículo**: Camión mediano (5 toneladas)
 - **Zona**: AMBA (Área Metropolitana de Buenos Aires)
 - **Tipo de carga**: Regular (no especial)
-- **Transportista**: Transportes Rápidos SRL
-- **Vigencia**: 01/03/2025 al 31/05/2025
+- **Transportista**: Logística del Litoral SA
 - **Valor base**: $45,000
 
-#### Adicionales disponibles para esta tarifa:
+#### Adicionales que se integran en esta tarifa:
 
 ![adicionesl tarifa compra](./images/adicionales-tc-2.png)
 
@@ -66,15 +66,18 @@ Cabe destacar que un adicional puede estar disponible en una tarifa y no en otra
 - **Tipo de vehículo**: Camión grande (12 toneladas)
 - **Zona**: Buenos Aires - Rosario
 - **Tipo de carga**: Regular
-- **Transportista**: Logística del Litoral SA
-- **Vigencia**: 01/02/2025 al 30/04/2025
+- **Transportista**: Transportes Rápidos SRL
 - **Valor base**: $95,000
 
-#### Adicionales disponibles para esta tarifa:
+#### Adicionales que se integran en esta tarifa:
 
 ![adicionesl tarifa compra](./images/adicionales-tc-1.png)
 
 ## Funcionalidades del Sistema
+
+### Gestión de datos básicos
+
+Alta, baja, modificación y consulta de: adicionales (cada uno con un costo default), tipos de vehículo, tipos de carga, zonas de viaje, transportistas.
 
 ### Registro de Tarifas de Costo
 
@@ -103,25 +106,9 @@ El sistema permitirá filtrar las tarifas según:
 - Tipo de carga/viaje
 - Zona de viaje
 - Rango de fechas de vigencia
-
-## Consultas y Reportes
-
-El sistema ofrecerá un motor de búsqueda y filtrado:
-
-### Listado General de Remitos con capacidad de filtrado por:
-
-- Tipo de vehículo
-- Tipo de carga/viaje
-- Zona de viaje
-- Rango de fechas de vigencia
+- Ordenamiento personalizable por diferentes criterios
 
 ### Reportes Operativos
-
-#### Listado General de Tarifas Vigentes
-
-- Todas las tarifas activas con detalles de costo base, adicionales y total
-- Filtros por tipo de vehículo, zona, tipo de carga y transportista
-- Ordenamiento personalizable por diferentes criterios
 
 #### Detalle de Tarifas por Zona
 
@@ -170,10 +157,10 @@ El sistema ofrecerá un motor de búsqueda y filtrado:
 
 Durante el presente cuatrimestre, el desarrollo se enfocará en:
 
-- Diseño completo del modelo de datos para clientes, destinos y remitos
-- Interfaces de usuario para registro y consulta de remitos
-- Sistema de validaciones básicas y control de estados
-- Motor de búsqueda con todos los filtros especificados
+- Diseño completo del modelo de datos para datos básicos.
+- Interfaces de usuario para registro y consulta de tarifas de costos, excepto el período de vigencia.
+- Motor de búsqueda con todos los filtros especificados salvo el período de vigencia.
+- Reportes de adicionales disponibles.
 
 ## Funcionalidades Extras
 
@@ -190,6 +177,10 @@ Durante el presente cuatrimestre, el desarrollo se enfocará en:
   - Importe absoluto ($)
   - Porcentaje relativo (%)
 - Visualización gráfica de tendencias de aumento por tipo de tarifa.
+
+### 3. Registro de viajes
+
+Registro de cada viaje que organiza Logística Acme, sólo a efectos estadísticos. Se ingresan: fecha del viaje, cliente (de una lista configurable), tarifa de costos utilizada, precio facturado al cliente.
 
 ### 4. Estadísticas de Uso de Tarifas
 
@@ -214,7 +205,8 @@ Registro completo de transportistas con:
 
 Listado detallado por cliente que incluye:
 
-- Costo total de los servicios
+- Costo total de los servicios.
+- Margen de ganancia.
 
 ### 7. Estadísticas de Adicionales
 
