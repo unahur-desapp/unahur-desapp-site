@@ -31,6 +31,8 @@ Dentro de este dominio, preparamos tres propuestas:
 
 Como stakeholders vamos a estar nosotros docentes. Probablemente cada uno de nosotros se "especialice" en una de las tres propuestas, eso se los vamos a comunicar cuando sea el momento.
 
+Dentro de cada propuesta, los objetivos que son específicos para Desarrollo de Aplicaciones están detallados en una sección que se llama "Alcance del Desarrollo para el Cuatrimestre". Por favor, entiendan bien esta parte y logren distinguirla de los otros requerimientos, para encarar el desarrollo en forma conveniente.
+
 ### Instrucciones para arrancar.
 
 En los tres casos, se trata de proyectos que arrancan de cero. Por lo tanto, se empieza por ... entender el dominio, armar una primer serie de prototipos gráficos en Figma, pingponearla primero con los docentes. Si quieren, en paralelo se pueden ir armando los repos de FE y BE, el de FE a partir del template que está en este sitio (a menos que elijan ir por un camino distinto del que le proponemos), el de BE dependiendo de la opción que definan.  
