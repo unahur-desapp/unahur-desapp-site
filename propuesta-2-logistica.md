@@ -69,9 +69,8 @@ El sistema permitirá el ingreso y seguimiento de remitos con la siguiente infor
 
 #### Información Adicional
 
-- Campo de observaciones (texto libre para especificaciones particulares)
-- Documentación adjunta (posibilidad de vincular imágenes o archivos PDF)
-- Usuario que registró el remito en el sistema (trazabilidad)
+- Campo de observaciones (texto libre para especificaciones particulares).
+- Documentación adjunta (posibilidad de vincular imágenes o archivos PDF).
 
 ### Flujo de Trabajo y Validaciones
 

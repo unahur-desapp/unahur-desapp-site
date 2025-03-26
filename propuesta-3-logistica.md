@@ -148,7 +148,7 @@ El sistema permitirá filtrar las tarifas según:
 
 ### Seguridad y Auditoría
 
-- Registro detallado de modificaciones en tarifas con identificación de usuario
+- Registro detallado de modificaciones en tarifas.
 - Control de acceso basado en roles para gestión de información sensible de costos
 - Mecanismos de protección para evitar modificaciones no autorizadas en tarifas históricas
 - Validaciones para garantizar la integridad de los datos históricos y cálculos derivados
@@ -167,7 +167,7 @@ Durante el presente cuatrimestre, el desarrollo se enfocará en:
 ### 1. Histórico de Tarifas
 
 - Registro automático de cada modificación realizada a una tarifa de costo.
-- Almacenamiento de versiones anteriores con fecha, usuario que realizó el cambio y detalle de modificaciones.
+- Almacenamiento de versiones anteriores con fecha y detalle de modificaciones.
 - Consulta de la evolución histórica de cada tarifa mediante visualización cronológica.
 
 ### 2. Análisis Comparativo de Tarifas

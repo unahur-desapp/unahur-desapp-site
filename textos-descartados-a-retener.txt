@@ -1,0 +1,13 @@
+> <hr/> 
+> 
+> ### ¿Proyecto empezado? ¡Es la vida misma!
+> 
+> En cuatro de los seis proyectos, el grupo va a estar agregando, y también modificando/corrigiendo, código que hicieron otros grupos en el pasado.
+>
+> Esto es _muy_ distinto a lo que vienen haciendo en los trabajos para las distintas materias, en las que siempre cada trabajo empieza de cero.
+>
+> Por otro lado, es _el escenario habitual_ en contextos laborales, sobre todo para quienes se insertan en la industria en posiciones de trainee o junior. Es muy improbable que te toque empezar un proyecto de cero, casi siempre hay que agarrar un proyecto hecho por otros, entender tanto el dominio como el código (y la infraestructura), y agregar/modificar/corregir.
+>
+> Quienes elijan estos proyectos, van a estar ejercitándose en contextos que seguramente se van a repetir en su trayectoria profesional.
+> 
+> <hr/>
