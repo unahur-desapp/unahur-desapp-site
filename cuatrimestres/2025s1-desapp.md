@@ -40,8 +40,122 @@ Vale absolutamente (de hecho recomendamos) arrancar con el FE para ir dándole f
 
 ## Grupos
 
-... a designar ...
+### Grupo 1
+
+Patricia Albornoz  
+Alexis Chebeste  
+Maximiliano Gómez  
+Ariel Paz  
+Sara Sánchez
+
+**Trabajo y docente asignados**:  
+Propuesta 1 - Sistema de gestión de viajes - Carlos
+
+### Grupo 2
+
+Martín Bercaitz  
+Franco Marinozzi  
+Mauro Saavedra  
+Rodrigo Sebok  
+Franco Trautweiler
+
+**Trabajo y docente asignados**:  
+Propuesta 3 - Sistema de gestión de tarifas de costos - Hernán
+
+### Grupo 3
+
+Gian Luca Bellone  
+Nicolás Benoit  
+Gonzalo Diaspro  
+Thiago García  
+Patricio Peralta
+
+**Trabajo y docente asignados**:  
+Propuesta 2 - Sistema de gestión de remitos - Cristian
+
+### Grupo 4
+
+Luis Hereñú  
+Erika Lois  
+Brian Nicolaus  
+Paula Ricci  
+Marcelo Torres
+
+**Trabajo y docente asignados**:  
+Propuesta 1 - Sistema de gestión de viajes - Carlos
+
+### Grupo 5
+
+Gastón Arévalo  
+Lautaro Gómez  
+Martina Leguizamón  
+Giovanni Martini  
+Gerardo Velázquez
+
+**Trabajo y docente asignados**:  
+Propuesta 1 - Sistema de gestión de viajes - Carlos
+
+### Grupo 6
+
+Stephani Bidegain  
+Gonzalo de Rito  
+Patricio Dubuis  
+César Gerace  
+Branko Muruaga
+
+**Trabajo y docente asignados**:  
+Propuesta 3 - Sistema de gestión de tarifas de costos - Hernán
+
+### Grupo 7
+
+Nicolás Arcamone  
+Carla Escalante  
+Lucas Herrera Nieto  
+Juan Manuel Llánez  
+Leandro Rodríguez
+
+**Trabajo y docente asignados**:  
+Propuesta 3 - Sistema de gestión de tarifas de costos - Hernán
+
+### Grupo 8
+
+Damián Bruque  
+Alejo Hutmacher  
+Jonathan Lenis  
+Lautaro Martínez
+
+**Trabajo y docente asignados**:  
+Propuesta 2 - Sistema de gestión de remitos - Cristian
+
+### Grupo 9
+
+Sebastían Castro  
+Aurelio Gareca  
+Diego Martucho  
+Martín Meier Amadei  
+Lautaro Uriona
+
+**Trabajo y docente asignados**:  
+Propuesta 2 - Sistema de gestión de remitos - Cristian
 
 ## Cronograma
 
-... coming soon ...
+| Fecha | Es presencial                                               | Actividad                                                                                                          |
+| ----- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| 27/03 | No                                                          | Presentación / objetivos / armado de equipos / selección de trabajos / Figma.                                      |
+| 03/04 | No                                                          | <b>1er Sprint - planning</b> <br/>                                                                                 |
+| 10/04 | No                                                          | Metodología agile / Relevamiento / análisis inicial.                                                               |
+| 17/04 | <span style="font-weight: bold; color: #f57c00">----</span> | <span style="font-weight: bold; color: #f57c00">Feriado</span>                                                     |
+| 24/04 | No                                                          | <b>1er Sprint - review<b><br/><b>2do Sprint - planning<b>                                                          |
+| 01/05 | <span style="font-weight: bold; color: #f57c00">----</span> | <span style="font-weight: bold; color: #f57c00">Feriado</span>                                                     |
+| 08/05 | No                                                          | React - parte 1.                                                                                                   |
+| 15/05 | No                                                          | (de 18 a 19)<br/>consultas branches<br/>(de 19 a 21)<br/><b>2do Sprint - review<b><br/><b>3er Sprint - planning<b> |
+| 22/05 | No                                                          | Seguimiento.                                                                                                       |
+| 29/05 | No                                                          | Backend.                                                                                                           |
+| 05/06 | No                                                          | <b>3er Sprint - review</b><br/><b>4to Sprint - planning</b>                                                        |
+| 12/06 | <span style="font-weight: bold; color: crimson">Sí</span>   | <span style="font-weight: bold; color: crimson">Presentación presencial medio término</span>                       |
+| 19/06 | No                                                          | React parte 2 - Seguimiento                                                                                        |
+| 26/06 | No                                                          | <b>4to Sprint - review<b><br/><b>5to Sprint - planning<b>                                                          |
+| 03/07 | No                                                          | Seguimiento.                                                                                                       |
+| 10/07 | No                                                          | <b>5to Sprint - review<b>                                                                                          |
+| 17/07 | <span style="font-weight: bold; color: crimson">Sí</span>   | <span style="font-weight: bold; color: crimson">Presentación final presencial</span>                               |
