@@ -98,9 +98,13 @@ recordemos lo básico de Sequelize
 
 /lib/models/index.js - levanta todos los modelos, es una inicialización necesaria.
 
-Vamos con el get de productos, ponele por proveedor.
+Vamos con el get de productos, ponele por proveedor. Por ahora no miremos la relación con compras.
+Filtro en BE vs filtro en DB ... el FE no se entera ...
+Por qué toJSON.
 
-Y vamos por el post de productos.
+Vemos el get por ID.
+
+Vamos por el post de productos.
 
 
 Ahora agregamos compras.
@@ -115,9 +119,17 @@ Relaciones
 Para qué: permite generar queries con joins.
 
 Miramos el ejemplo: relación bidireccional. 
+- Arranquemos con el enganche con compras en la query de productos.
 - Pensemos cómo se modelaría en la BD.
-- Bueno, Sequelize hace exactamente eso. Y parece que le mete la FK, aunque tengo un comentario que no entiendo.
+- Bueno, Sequelize hace exactamente eso. Y parece que le mete la FK.
+  Veamos el archivo que hay que agregar para especificar la relación.
 
+Volvamos al GET de todos los productos, veamos con y sin compras.
+
+Ahora metamos una compra, le tengo que pasar ProductoId. Medio primitivo, pero funciona.
+
+
+(de acá para abajo no sé qué es)
 Cómo manejarlo respecto de la inicialización. Esto lo inventé yo, tal vez no es lo mejor, pero funciona.
 
 Para qué me sirve: veamos los endpoints sobre productos.
