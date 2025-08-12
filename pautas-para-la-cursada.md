@@ -15,14 +15,32 @@ Las condiciones grupales son
 - entregar en tiempo y forma las fichas de inicio y fin de sprint para cada sprint.
 - realizar las reuniones de cierre de sprint para cada sprint, en las fechas indicadas en el cronograma que se publica en este mismo sitio para cada cuatrimestre. <br/> A partir del sprint 2 para Desarrollo de Aplicaciones, y en todos los sprints en PPS, estas reuniones incluyen la presentación de los avances sobre la aplicación corriendo.
 - mantener el Trello actualizado durante la cursada.
-- realizar la presentación final presencial basada en una demo de la aplicación en vivo, y estar organizada a partir de un PPT o similar.
-- para PPS se suman: un resumen que debe ser aprobado por el Consejo Directivo del Instituto de Ingeniería, una carpeta que se presenta al jurado, y una PPT o similar que debe ser parte de la presentación final. Para los trabajos de PPS se arma un jurado que evalúa carpeta y presentación, y a partir de estos elementos se define la nota entre el jurado y los profesores. <br/> Van a encontrar ejemplos de carpeta en [esta página](./pautas-para-la-carpeta).
+- para Desarrollo de Aplicaciones se suman: llegar a los objetivos de cada uno de los sprints (ver abajo), y realizar la presentación final _remota_ basada en una demo de la aplicación en vivo.
+- para PPS se suman: un resumen que debe ser aprobado por el Consejo Directivo del Instituto de Ingeniería, una carpeta que se presenta al jurado, y una presentación final _presencial_ que incluye una descripción organizada a partir de un PPT o similar y una demo. Para los trabajos de PPS se arma un jurado que evalúa carpeta y presentación, y a partir de estos elementos se define la nota entre el jurado y los profesores. <br/> Van a encontrar ejemplos de carpeta en [esta página](./pautas-para-la-carpeta).
 
 Las condiciones individuales son
 
 - asistencia a todos los cierres de sprint y participación (o sea, en los cierres de sprint todos tienen que hablar), salvo ausencia muy (pero muy) justificada. Esta asistencia puede ser virtual. Quien no tiene una participación activa en una actividad, es como si no hubiera asistido.
 - asistencia a la presentación final, **ojo** esta es presencial para los alumnos (puede ser virtual para profes y/o jurado). En la presentación final también tienen que hablar todos.
 - **muy importante** <br> participación efectiva en el desarrollo, que se va a evaluar por cantidad y relevancia de los commits hechos por cada integrante en los repositorios de frontend y backend. O sea, quienes no tengan commits o tengan poquitos y/o poco relevantes, no van a aprobar la materia. <br/> Si trabajan en grupo (lo cual está perfecto), por favor roten quién hace los commits (un día uno, otro día otro). A este respecto es válido, si un commit lo hicieron entre varios, que en el comentario pongan "hecho en conjunto con X, Y y Z", aparte del que registra el commit claro.
+
+## Objetivos de cada sprint
+Para Desarrollo de Aplicaciones, se establecen los siguientes objetivos para cada sprint.
+
+| Número de sprint | Objetivo |
+| ------ | ----------| 
+| Sprint 1 | Diseño de interfaces en Figma o similar, que cubra el 80% de las funcionalidades descriptas en el enunciado, más la selección de (al menos) dos pantallas para arrancar el desarrollo. | 
+| Sprint 2 | Tener andando el frontend (con datos o BE fake) de al menos dos pantallas. | 
+| Sprint 3 | Tener andando al menos el 60% del frontend, y una conexión frontend-backend implementada. | 
+| Sprint 4 | Tener andando al menos el 60% de la funcionalidad, integrando frontend y backend. | 
+
+La evaluación de estos objetivos se hace en forma grupal.   
+
+Si un grupo no llega a los objetivos:
+- para un sprint: se baja un punto la nota de todos los integrantes.
+- para dos sprints: se baja dos puntos la nota de todos los integrantes.
+- para tres sprints: se pierde la cursada. En este caso, el grupo puede pedir una instancia de recuperación.
+
 
 ## Dinámica de la cursada
 

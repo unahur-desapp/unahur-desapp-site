@@ -43,6 +43,12 @@ Es más, trucheemos el getAllPhrases en el FE. ¿Qué cambia en el componente? N
 Moraleja
 Por eeeeso les recomendamos ir desde el FE hacia la BD.
 
+-------------  agregados en el 1er cuatri de 2025 - metimos filtro y phraseCount  ------------------
+- filtro en back o en front.
+- detalle: por qué el useEffect que recalcula phraseCount es sobre renderedPhrases y no sobre startFilter.
+- distintas partes de la renderización que dependen de colorForPhrases
+  - por qué la cantidad de frases es un ternario
+
 
 (ApiCalls02)
 Activamos también las llamadas para agregar y borrar.
