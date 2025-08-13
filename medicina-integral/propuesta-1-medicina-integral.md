@@ -1,4 +1,4 @@
-# Aplicación 1 - administración de Medicina Integral
+# Aplicación 1 - administración de _Medicina Integral_
 El propósito de esta aplicación es manejar la información relacionada con:
 - Afiliados, incluyendo el grupo familiar de cada uno.
 - Prestadores, incluyendo la configuración de turnos médicos disponibles para cada prestador. 

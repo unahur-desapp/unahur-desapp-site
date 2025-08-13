@@ -25,9 +25,9 @@ Como dijimos arriba, todos los grupos van a trabajar sobre el mismo _dominio_, q
 
 Dentro de este dominio, preparamos tres propuestas:
 
-- Propuesta 1: [Gestión de viajes](../medicina-integral/propuesta-1-medicina-integral.md).
-- Propuesta 2: [Gestión de remitos](../medicina-integral/propuesta-2-medicina-integral.md).
-- Propuesta 3: [Gestión de tarifas de costos](../medicina-integral/propuesta-3-medicina-integral.md).
+- Propuesta 1: [Administración](../medicina-integral/propuesta-1-medicina-integral.md).
+- Propuesta 2: [Afiliados](../medicina-integral/propuesta-2-medicina-integral.md).
+- Propuesta 3: [Prestadores](../medicina-integral/propuesta-3-medicina-integral.md).
 
 Como stakeholders vamos a estar nosotros docentes. Probablemente cada uno de nosotros se "especialice" en una de las tres propuestas, eso se los vamos a comunicar cuando sea el momento.
 
