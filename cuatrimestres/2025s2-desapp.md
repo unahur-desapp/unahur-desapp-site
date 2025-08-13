@@ -64,7 +64,7 @@ Este cuatrimestre todas las clases son remotas
 | 23/10 |  Backend |
 | 30/10 |  Seguimiento.                                                                                                       |
 | 06/11 |  <b>4to Sprint - review<b><br/><b>5to Sprint - planning<b>                                                          |
-| 13/11 |  Seguimiento.  |
+| 13/11 |  Ensayo de presentación final.  |
 | 20/11 |  Seguimiento.                                                                                                       |
 | 27/11 |  <b>5to Sprint - review<b>                                                                                          |
 | 04/12 |  <span style="font-weight: bold; color: crimson">Presentación final remota</span>                               |
