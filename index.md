@@ -13,7 +13,7 @@ El grupo docente de la materia está formado por
 
 | Nombre             | Mail                                    | Github            | Trello              |
 | ------------------ | --------------------------------------- | ----------------- | ------------------- |
-| Carlos Lombardi    | carlombardi@gmail.com                   | clombardi         | @carloslombardi     |
+| Carlos Lombardi    | carlos.lombardi@unahur.edu.ar | clombardi | @carloslombardi     |
 | Cristian Schiffino | cristian.schiffino@unahur.edu.ar        | CristianSchiffino | @cristianschiffino1 |
 | Hernán Guzmán      | hernan.guzman@estudiantes.unahur.edu.ar | hguzmanUNAHUR     | @hernanguzman8      |
 
@@ -47,11 +47,13 @@ El grupo docente de la materia está formado por
 
 [Acá](./mas-info)
 
-## Cursada actual - primer cuatrimestre 2025
+## Cursada actual - segundo cuatrimestre 2025
 
-[Desarrollo de Aplicaciones](./cuatrimestres/2025s1-desapp)
+[Desarrollo de Aplicaciones](./cuatrimestres/2025s2-desapp)
 
 ## Cuatrimestres anteriores
+
+[Primer cuatrimestre 2025 - Desarrollo de Aplicaciones](./cuatrimestres/2025s1-desapp)
 
 [Segundo cuatrimestre 2024 - Desarrollo de Aplicaciones](./cuatrimestres/2024s2-desapp)
 
