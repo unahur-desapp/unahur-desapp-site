@@ -20,7 +20,7 @@ Las condiciones grupales son
 
 Las condiciones individuales son
 
-- asistencia a todos los cierres de sprint y participación (o sea, en los cierres de sprint todos tienen que hablar), salvo ausencia muy (pero muy) justificada. Esta asistencia puede ser virtual. Quien no tiene una participación activa en una actividad, es como si no hubiera asistido.
+- asistencia a todos los cierres de sprint _con cámara prendida_ (nos tenemos que poder ver las caras) y participación (o sea, en los cierres de sprint todos tienen que hablar), salvo ausencia muy (pero muy) justificada. Esta asistencia puede ser virtual. Quien no tiene una participación activa en una actividad, es como si no hubiera asistido. <br/> Lo de la cámara es importante, verifiquen con tiempo que tienen una cámara que funcione.
 - asistencia a la presentación final, **ojo** esta es presencial para los alumnos (puede ser virtual para profes y/o jurado). En la presentación final también tienen que hablar todos.
 - **muy importante** <br> participación efectiva en el desarrollo, que se va a evaluar por cantidad y relevancia de los commits hechos por cada integrante en los repositorios de frontend y backend. O sea, quienes no tengan commits o tengan poquitos y/o poco relevantes, no van a aprobar la materia. <br/> Si trabajan en grupo (lo cual está perfecto), por favor roten quién hace los commits (un día uno, otro día otro). A este respecto es válido, si un commit lo hicieron entre varios, que en el comentario pongan "hecho en conjunto con X, Y y Z", aparte del que registra el commit claro.
 
@@ -45,7 +45,7 @@ Si un grupo no llega a los objetivos:
 ## Dinámica de la cursada
 
 El desarrollo se **tiene** que organizar en sprints, esto no es optativo.
-En principio, un sprint dura tres semanas. Si algún grupo necesita, se pueden acelerar los sprints, o sea hacerlos de menos de tres semanas; nunca de más de tres semanas.
+La mayor parte de los sprints dura tres semanas, probablemente alguno dure dos. Las fechas de inicio de cada sprint están en el cronograma del cuatrimestre. Dentro del sprint, se deben cumplir los objetivos propuestos por el equipo al iniciar el mismo.
 
 - Al _principio_ de cada sprint se establecen los objetivos, qué se espera que esté hecho o avanzado o definido o lo que sea al final del sprint.
 - Al _final_ de cada sprint se hace una evaluación de qué se logró y qué no, se trata de entender por qué no se llegó a lo que no se llegó, y a partir de estos elementos, se planifica el siguiente.
@@ -66,7 +66,7 @@ Los grupos **no** se pueden separar una vez comenzada la cursada. Se puede inten
 
 ## Qué es lo que hay que construir
 
-Una aplicación Web, que idealmente que tenga una salida a celular, o al menos cuidar un poco que la UI sea [responsive](https://www.w3schools.com/css/css_rwd_intro.asp).
+Una aplicación Web, que prevea que pueda utilizarse (al menos parcialmente) desde celular. O sea, hay que cuidar que la UI sea [responsive](https://www.w3schools.com/css/css_rwd_intro.asp).
 
 ## Cómo documentar los requerimientos
 
