@@ -13,6 +13,8 @@ Es **muy** importante que cada grupo decida _en conjunto_ si va a seguir con PPS
 
 Como ustedes cada vez son más y nosotros siempre los mismos, nos vimos forzados a simplificar la propuesta. En concreto, todos los grupos van a trabajar sobre el mismo dominio.
 
+Dado el gran número de alumnos y para mantener un control adecuado en cada cierre de sprint, se considerarán únicamente las tareas completadas hasta las 23:59 del día anterior. Esta medida es necesaria ya que los docentes debemos revisar cada repositorio y verificar las tareas realizadas por cada grupo, y debido a la cantidad de estudiantes, resulta imposible llevar a cabo esta evaluación el mismo día por la tarde.
+
 ## Cómo arrancar
 
 Obviamente, lo primero es organizarse en grupos. Inmediatamente después, hay que definir de qué proyecto se encarga cada grupo; esto lo vamos a hablar durante la primera clase.
