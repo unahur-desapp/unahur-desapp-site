@@ -56,10 +56,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 
 ### Grupos por Proyecto
 
-<details>
-<summary style="cursor: pointer; font-weight: bold; color: #fafafa; padding: 8px; background-color: #159957; border-radius: 6px;">
-👨‍ Administración (Profesor: Carlos)
-</summary>
+#### 👨‍ Administración (Profesor: Carlos)
 
 **Grupo 1**
 
@@ -122,12 +119,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | MONTES DE OCA, NICOLÁS EZEQUIEL | nicolasezequiel.montesdeoca@estudiantes.unahur.edu.ar |
 | VALDEZ, MARCELO                 | marcelojavier.valdez@estudiantes.unahur.edu.ar        |
 
-</details>
-
-<details>
-<summary style="cursor: pointer; font-weight: bold; color: #159957; padding: 8px; background-color: #fafafa; border-radius: 6px;">
-👥 Afilaidos (Profesor: Cristian)
-</summary>
+#### 👥 Afiliados (Profesor: Cristian)
 
 **Grupo 8**
 
@@ -169,13 +161,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | GUTIERREZ, GABRIEL FACUNDO  | facuguti305@gmail.com        |
 | PRIMERA SILVA, DIEGO ANDRÉS | diegoprimera16@gmail.com     |
 
-</details>
-
-
-<details>
-<summary style="cursor: pointer; font-weight: bold; color: #fafafa; padding: 8px; background-color: #159957; border-radius: 6px;">
-🏥 Prestadores (Profesor: Hernán)
-</summary>
+#### 🏥 Prestadores (Profesor: Hernán)
 
 **Grupo 5**
 
