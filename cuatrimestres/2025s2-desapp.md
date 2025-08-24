@@ -175,6 +175,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | ESCOBAR, EZEQUIEL RAMON     | ezerock053@gmail.com         |
 | GUTIERREZ, GABRIEL FACUNDO  | facuguti305@gmail.com        |
 | PRIMERA SILVA, DIEGO ANDRÉS | diegoprimera16@gmail.com     |
+
 </details>
 
 
@@ -246,6 +247,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | DEPAULO, FEDERICO NICOLÁS         | federicodepaulo@gmail.com                                |
 | GARCIA, NICOLAS                   | httpsn1k0@gmail.com                                      |
 | MUSILLARIO AGUILAR, MARCO SANTINO | marcosantino.musillarioaguilar@estudiantes.unahur.edu.ar |
+
 </details>
 
 
