@@ -45,7 +45,209 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 
 ## Grupos
 
-... a determinar ...
+### Resumen
+- **Total de Alumnos**: 81
+- **Alumnos con Grupo**: 80
+- **Total de Grupos**: 16
+  - **Administración**: 6 grupos
+  - **Afiliados**: 4 grupos
+  - **Prestadores**: 6 grupos
+
+
+### Grupos por Proyecto
+
+<details>
+<summary style="cursor: pointer; font-weight: bold; color: #fafafa; padding: 8px; background-color: #159957; border-radius: 6px;">
+👨‍ Administración (Profesor: Carlos)
+</summary>
+
+**Grupo 1**
+
+| Nombre                  | Email                                   |
+| ----------------------- | --------------------------------------- |
+| CECIO, OCTAVIO          | octaviocecio@gmail.com                  |
+| MENDOZA, MATIAS         | mendoza.matias.ezequiel.01@gmail.com    |
+| MOGNO, JOAQUIN          | joaquin.mogno@estudiantes.unahur.edu.ar |
+| PFAHLER, FRANCO NICOLAS | pfahlerfranco@gmail.com                 |
+| TEJERO, JESSICA ELIANA  | jessy.tejero@hotmail.com                |
+| TRIAS, NICOLAS          | nicotrias1@gmail.com                    |
+
+
+**Grupo 2**
+
+| Nombre                         | Email                                |
+| ------------------------------ | ------------------------------------ |
+| BRUQUE LOPEZ, DAMIAN ALEJANDRO | daamiale.recoil@gmail.com            |
+| GARCIA, OSCAR OSVALDO          | oscarogarciajr@gmail.com             |
+| HUTMACHER, ALEJO AGUSTIN       | hutmacheralejo@gmail.com             |
+| LENIS, JONATHAN                | jonathanlenis988@gmail.com           |
+| MARTINEZ, LAUTARO AGUSTÍN      | lautaroagustinmartinez2003@gmail.com |
+
+
+**Grupo 3**
+
+| Nombre                      | Email                      |
+| --------------------------- | -------------------------- |
+| ALVAREZ, MELINA MILAGROS    | melialvarez506@gmail.com   |
+| GONZALEZ, CRISTIAN EMMANUEL | cristianarg_87@hotmail.com |
+| LEDEZMA, GABRIEL AGUSTIN    | gabrielledezma@outlook.com |
+| MARQUEZ, ALINA              | alinamarquez505@gmail.com  |
+| PISONI, AILEN               | ailenpisoni@gmail.com      |
+
+
+**Grupo 4**
+
+| Nombre                       | Email                                               |
+| ---------------------------- | --------------------------------------------------- |
+| ARIAS LAVIA, LUANA SOFÍA     | luanaariaaas@gmail.com                              |
+| BRAVO, MARIO ALVARO FABRICIO | marioalvarofabricio.bravo@estudiantes.unahur.edu.ar |
+| GIORDA, ALEXIS DARÍO         | giorda789@gmail.com                                 |
+| LERA CENTURION, BRENDA TANIA | brendalera17@gmail.com                              |
+| PAGLIARULO, ROCIO YASMIN     | rociopagliarulo@gmail.com                           |
+
+
+**Grupo 6**
+
+| Nombre                   | Email                        |
+| ------------------------ | ---------------------------- |
+| BRITEZ, JUAN MANUEL      | juanma123juanma123@gmail.com |
+| MAIDANA, LUCAS AGUSTÍN   | lucasmaidana420@gmail.com    |
+| PALLERO, KEVIN ALEJANDRO | kevinpallero@hotmail.com     |
+| RODRÍGUEZ, FACUNDO       | fran_penaldo@outlook.com     |
+| VALLÉS, FRANCO DAVID     | vallesfrancodavid@gmail.com  |
+
+
+**Grupo 7**
+
+| Nombre                          | Email                                                 |
+| ------------------------------- | ----------------------------------------------------- |
+| BENÍTEZ, MARICEL                | maricel.benitez@estudiantes.unahur.edu.ar             |
+| BRAVO, NICOLÁS                  | nicolasalejandro.bravo@estudiantes.unahur.edu.ar      |
+| MAI, MELANIE DENISE             | melchmai@gmail.com                                    |
+| MONTES DE OCA, NICOLÁS EZEQUIEL | nicolasezequiel.montesdeoca@estudiantes.unahur.edu.ar |
+| VALDEZ, MARCELO                 | marcelojavier.valdez@estudiantes.unahur.edu.ar        |
+
+</details>
+
+<details>
+<summary style="cursor: pointer; font-weight: bold; color: #159957; padding: 8px; background-color: #fafafa; border-radius: 6px;">
+👥 Afilaidos (Profesor: Cristian)
+</summary>
+
+**Grupo 8**
+
+| Nombre                  | Email                                            |
+| ----------------------- | ------------------------------------------------ |
+| PALMIER, IGNACIO        | ignacionicolas.palmier@estudiantes.unahur.edu.ar |
+| SOLARI, SANTIAGO IVAN   | santiagosolariivan@gmail.com                     |
+| TESAR MOLINA, JULIETA   | molinatjulieta@gmail.com                         |
+| TRONCOSO, TOMAS PABLO   | troncosotomas2004@gmail.com                      |
+| VARELA, VALENTÍN ADRIEL | valentinv741@gmail.com                           |
+
+
+**Grupo 9**
+
+| Nombre                          | Email                                                  |
+| ------------------------------- | ------------------------------------------------------ |
+| ALVAREZ, SILVINA LAURA          | silvinaalvarez2811@gmail.com                           |
+| Alvarez Coelho, VALENTINA       | valentiki15@gmail.com                                  |
+| Contti, Elizabeth               | elicontti@gmail.com                                    |
+| GARECA GAVILÁN, AURELIO         | aurelio.gareca.94@hotmail.com                          |
+| GONZALVEZ CHARA, VICTOR RICARDO | victorricardo.gonzalvezchara@estudiantes.unahur.edu.ar |
+
+**Grupo 10**
+
+| Nombre                 | Email                        |
+| ---------------------- | ---------------------------- |
+| ALVAREZ, JULIAN        | alvarezjuli30@gmail.com      |
+| ARANGO, MAURICIO       | mauri080305@gmail.com        |
+| DILEO, AYMARA          | aymaradileo@gmail.com        |
+| GOMEZ, CRISTIAN DANIEL | cristiangomez.mail@gmail.com |
+| SEBASTIAN, PAULLUK     | sebastianpaulluk@gmail.com   |
+
+
+**Grupo 12**
+
+| Nombre                      | Email                        |
+| --------------------------- | ---------------------------- |
+| CALDERON, LUANA             | calderonluana6@gmail.com     |
+| CANTERO, FRANCO LUIS        | francocantero12345@gmail.com |
+| ESCOBAR, EZEQUIEL RAMON     | ezerock053@gmail.com         |
+| GUTIERREZ, GABRIEL FACUNDO  | facuguti305@gmail.com        |
+| PRIMERA SILVA, DIEGO ANDRÉS | diegoprimera16@gmail.com     |
+</details>
+
+
+<details>
+<summary style="cursor: pointer; font-weight: bold; color: #fafafa; padding: 8px; background-color: #159957; border-radius: 6px;">
+🏥 Prestadores (Profesor: Hernán)
+</summary>
+
+**Grupo 5**
+
+| Nombre                      | Email                                      |
+| --------------------------- | ------------------------------------------ |
+| CARABAJAL, MATÍAS           | matias.carabajal@estudiantes.unahur.edu.ar |
+| NOGUERA, SOL                | noguerasol22@gmail.com                     |
+| ORELLANA, Montserrat Magalí | magaliorellana01@gmail.com                 |
+| ROJAS, IVAN EMILIANO        | poucasla.99@gmail.com                      |
+| VILTEZ, HERNAN JAVIER       | hjviltez@gmail.com                         |
+
+
+**Grupo 11**
+
+| Nombre                     | Email                                           |
+| -------------------------- | ----------------------------------------------- |
+| CAMARGO, JUAN IGNACIO      | juaninachocamargo@hotmail.com                   |
+| CAMPOS VERA, ERIKA ROCIO   | erikarocio.camposvera@estudiantes.unahur.edu.ar |
+| DI TUCCI, SEBASTIÁN        | sebastiandit240@gmail.com                       |
+| LABRIOLA, FEDERICO LEANDRO | fede.lean.lab@gmail.com                         |
+| SEOANE, MAGALI ELIZABETH   | magalielizabethseoane@gmail.com                 |
+
+
+**Grupo 13**
+
+| Nombre                        | Email                                            |
+| ----------------------------- | ------------------------------------------------ |
+| ANDERSON ROJAS, FRANCO LEONEL | francoandersonbj@gmail.com                       |
+| BRITOS FRANCO, ALEXIS         | alexisfranco6783@gmail.com                       |
+| DENHOFF, LORENA SOLEDAD       | lorenadenhoff@gmail.com                          |
+| LUNA, CRISTIAN SEBASTIAN      | cristiansebastian.luna@estudiantes.unahur.edu.ar |
+| PAZ, FACUNDO LEONEL           | facundoleonel.paz@estudiantes.unahur.edu.ar      |
+
+
+**Grupo 14**
+
+| Nombre                    | Email                        |
+| ------------------------- | ---------------------------- |
+| CASTRO, SEBASTIAN         | sebastiancastro141@gmail.com |
+| DROEGE, LUCAS MATIAS      | lucasdroege@live.com         |
+| HERRERA, ERIC RAUL LEONEL | herrik18@gmail.com           |
+| NUÑEZ, ARIEL MARTÍN       | arielmartinn02@gmail.com     |
+| TABAKA, LUCA URIEL        | lucatabaka@gmail.com         |
+
+
+**Grupo 15**
+
+| Nombre                             | Email                       |
+| ---------------------------------- | --------------------------- |
+| ABOGADO, MARTÍN EZEQUIEL           | mabogado.unahur@gmail.com   |
+| COLUCCIO, NICOLÁS                  | ncoluccio.unahur@gmail.com  |
+| GILARDONI MAIDANA, NICOLÁS AGUSTIN | agustinm22@outlook.com      |
+| RODRIGUEZ MEDINA, Carolina         | rodriguezc.medina@gmail.com |
+
+
+**Grupo 16**
+
+| Nombre                            | Email                                                    |
+| --------------------------------- | -------------------------------------------------------- |
+| BRAVETTI, JONATHAN NICOLAS        | bravettij@gmail.com                                      |
+| CRAVERO, MARCOS ARIEL             | marcoscravero11@gmail.com                                |
+| DEPAULO, FEDERICO NICOLÁS         | federicodepaulo@gmail.com                                |
+| GARCIA, NICOLAS                   | httpsn1k0@gmail.com                                      |
+| MUSILLARIO AGUILAR, MARCO SANTINO | marcosantino.musillarioaguilar@estudiantes.unahur.edu.ar |
+</details>
+
 
 
 ## Cronograma
