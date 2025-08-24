@@ -222,10 +222,6 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | GARCIA, NICOLAS                   | httpsn1k0@gmail.com                                      |
 | MUSILLARIO AGUILAR, MARCO SANTINO | marcosantino.musillarioaguilar@estudiantes.unahur.edu.ar |
 
-</details>
-
-
-
 ## Cronograma
 
 Este cuatrimestre todas las clases son remotas
