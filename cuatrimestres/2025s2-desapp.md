@@ -45,68 +45,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 
 ## Grupos
 
-### Resumen
-- **Total de Alumnos**: 80
-- **Total de Grupos**: 16
-  - **Administración**: 6 grupos
-  - **Afiliados**: 4 grupos
-  - **Prestadores**: 6 grupos
-
-
-### Grupos por Proyecto
-
-
-#### 👨‍ Administración (Profesor: Carlos)
-
-
-##### Grupo 1
-| Nombre                  | Email                                   |
-| ----------------------- | --------------------------------------- |
-| CECIO, OCTAVIO          | octaviocecio@gmail.com                  |
-| MENDOZA, MATÍAS         | mendoza.matias.ezequiel.01@gmail.com    |
-| MOGNO, JOAQUÍN          | joaquin.mogno@estudiantes.unahur.edu.ar |
-| PFAHLER, FRANCO NICOLÁS | pfahlerfranco@gmail.com                 |
-| TEJERO, JESSICA ELIANA  | jessy.tejero@hotmail.com                |
-| TRIAS, NICOLÁS          | nicotrias1@gmail.com                    |
-
-##### Grupo 2
-| Nombre                         | Email                                |
-| ------------------------------ | ------------------------------------ |
-| BRUQUE LÓPEZ, DAMIÁN ALEJANDRO | daamiale.recoll@gmail.com            |
-| GARCÍA, OSCAR OSVALDO          | oscargarciajr@gmail.com              |
-| HUTMACHER, ALEJO AGUSTÍN       | hutmacheralejo@gmail.com             |
-| LENIS, JONATHAN                | jonathanlenis988@gmail.com           |
-| MARTINEZ, LAUTARO AGUSTÍN      | lautaroagustinmartinez2003@gmail.com |
-
-##### Grupo 3
-| Nombre                      | Email                      |
-| --------------------------- | -------------------------- |
-| ALVAREZ, MELINA MILAGROS    | melialvarez506@gmail.com   |
-| GONZALEZ, CRISTIAN EMMANUEL | cristianarg_87@hotmail.com |
-| LEDEZMA, GABRIEL AGUSTÍN    | gabrielledezma@outlook.com |
-| MARQUEZ, ALINA              | alinamarquez505@gmail.com  |
-| PISONI, AILÉN               | ailenpisoni@gmail.com      |
-
-##### Grupo 4
-| Nombre                       | Email                                               |
-| ---------------------------- | --------------------------------------------------- |
-| ARIAS LAVIA, LUANA SOFÍA     | luanaariasas@gmail.com                              |
-| BRAVO, MARIO ALVARO FABRICIO | marioalvarofabricio.bravo@estudiantes.unahur.edu.ar |
-| GIORDA, ALEXIS DARÍO         | giorda789@gmail.com                                 |
-| LERA CENTURION, BRENDA TANIA | brendalera17@gmail.com                              |
-| PAGLIARULO, ROCÍO YASMÍN     | rociopagliarulo@gmail.com                           |
-
-##### Grupo 6
-| Nombre                   | Email                        |
-| ------------------------ | ---------------------------- |
-| BRITEZ, JUAN MANUEL      | juanma123juanma123@gmail.com |
-| MAIDANA, LUCAS AGUSTÍN   | lucasmaidana420@gmail.com    |
-| PALLERO, KEVIN ALEJANDRO | kevinpallero@hotmail.com     |
-| RODRÍGUEZ, FACUNDO       | fran_penaldo@outlook.com     |
-| VALLÉS, FRANCO DAVID     | vallesfrancodavid@gmail.com  |
-
-
-#### 👥 Afiliados (Profesor: Cristian)
+... a determinar ...
 
 ##### Grupo 8
 | Nombre                  | Email                                            |
