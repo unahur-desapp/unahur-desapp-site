@@ -55,12 +55,11 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 
 ### Grupos por Proyecto
 
-<details>
-<summary style="cursor: pointer; font-weight: bold; color: #fafafa; padding: 8px; background-color: #159957; border-radius: 6px;">
-👨‍ Administración (Profesor: Carlos)
-</summary>
 
-#### Grupo 1
+#### 👨‍ Administración (Profesor: Carlos)
+
+
+##### Grupo 1
 | Nombre                  | Email                                   |
 | ----------------------- | --------------------------------------- |
 | CECIO, OCTAVIO          | octaviocecio@gmail.com                  |
@@ -70,7 +69,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | TEJERO, JESSICA ELIANA  | jessy.tejero@hotmail.com                |
 | TRIAS, NICOLÁS          | nicotrias1@gmail.com                    |
 
-#### Grupo 2
+##### Grupo 2
 | Nombre                         | Email                                |
 | ------------------------------ | ------------------------------------ |
 | BRUQUE LÓPEZ, DAMIÁN ALEJANDRO | daamiale.recoll@gmail.com            |
@@ -79,7 +78,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | LENIS, JONATHAN                | jonathanlenis988@gmail.com           |
 | MARTINEZ, LAUTARO AGUSTÍN      | lautaroagustinmartinez2003@gmail.com |
 
-#### Grupo 3
+##### Grupo 3
 | Nombre                      | Email                      |
 | --------------------------- | -------------------------- |
 | ALVAREZ, MELINA MILAGROS    | melialvarez506@gmail.com   |
@@ -88,7 +87,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | MARQUEZ, ALINA              | alinamarquez505@gmail.com  |
 | PISONI, AILÉN               | ailenpisoni@gmail.com      |
 
-#### Grupo 4
+##### Grupo 4
 | Nombre                       | Email                                               |
 | ---------------------------- | --------------------------------------------------- |
 | ARIAS LAVIA, LUANA SOFÍA     | luanaariasas@gmail.com                              |
@@ -97,7 +96,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | LERA CENTURION, BRENDA TANIA | brendalera17@gmail.com                              |
 | PAGLIARULO, ROCÍO YASMÍN     | rociopagliarulo@gmail.com                           |
 
-#### Grupo 6
+##### Grupo 6
 | Nombre                   | Email                        |
 | ------------------------ | ---------------------------- |
 | BRITEZ, JUAN MANUEL      | juanma123juanma123@gmail.com |
@@ -105,14 +104,11 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | PALLERO, KEVIN ALEJANDRO | kevinpallero@hotmail.com     |
 | RODRÍGUEZ, FACUNDO       | fran_penaldo@outlook.com     |
 | VALLÉS, FRANCO DAVID     | vallesfrancodavid@gmail.com  |
-</details>
 
-<details>
-<summary style="cursor: pointer; font-weight: bold; color: #159957; padding: 8px; background-color: #fafafa; border-radius: 6px;">
-👥 Afiliados (Profesor: Cristian)
-</summary>
 
-#### Grupo 8
+#### 👥 Afiliados (Profesor: Cristian)
+
+##### Grupo 8
 | Nombre                  | Email                                            |
 | ----------------------- | ------------------------------------------------ |
 | PALMIER, IGNACIO        | ignacionicolas.palmier@estudiantes.unahur.edu.ar |
@@ -121,7 +117,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | TRONCOSO, TOMÁS PABLO   | troncosotomas2004@gmail.com                      |
 | VARELA, VALENTÍN ADRIEL | valentinv741@gmail.com                           |
 
-#### Grupo 9
+##### Grupo 9
 | Nombre                          | Email                                                  |
 | ------------------------------- | ------------------------------------------------------ |
 | ALVAREZ, SILVINA LAURA          | silvinaalvarez2811@gmail.com                           |
@@ -130,7 +126,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | GARECA GAVILÁN, AURELIO         | aurelio.gareca.94@hotmail.com                          |
 | GONZÁLVEZ CHARA, VÍCTOR RICARDO | victorricardo.gonzalvezchara@estudiantes.unahur.edu.ar |
 
-#### Grupo 10
+##### Grupo 10
 | Nombre                 | Email                        |
 | ---------------------- | ---------------------------- |
 | ALVAREZ, JULIAN        | alvarezjuli30@gmail.com      |
@@ -139,7 +135,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | GOMEZ, CRISTIAN DANIEL | cristiangomez.mail@gmail.com |
 | SEBASTIAN, PAULLUK     | sebastianpaulluk@gmail.com   |
 
-#### Grupo 12
+##### Grupo 12
 | Nombre                      | Email                        |
 | --------------------------- | ---------------------------- |
 | CALDERON, LUANA             | calderonluana6@gmail.com     |
@@ -147,15 +143,13 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | ESCOBAR, EZEQUIEL RAMON     | ezerock053@gmail.com         |
 | GUTIERREZ, GABRIEL FACUNDO  | facuguti305@gmail.com        |
 | PRIMERA SILVA, DIEGO ANDRÉS | diegoprimera16@gmail.com     |
-</details>
 
 
-<details>
-<summary style="cursor: pointer; font-weight: bold; color: #fafafa; padding: 8px; background-color: #159957; border-radius: 6px;">
-🏥 Prestadores (Profesor: Hernán)
-</summary>
 
-#### Grupo 5
+####🏥 Prestadores (Profesor: Hernán)
+
+
+##### Grupo 5
 | Nombre                      | Email                                      |
 | --------------------------- | ------------------------------------------ |
 | CARABAJAL, MATÍAS           | matias.carabajal@estudiantes.unahur.edu.ar |
@@ -163,7 +157,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | ORELLANA, Montserrat Magalí | magaliorellana01@gmail.com                 |
 | ROJAS, IVÁN EMILIANO        | poucasla.99@gmail.com                      |
 
-#### Grupo 7
+##### Grupo 7
 | Nombre                          | Email                                                 |
 | ------------------------------- | ----------------------------------------------------- |
 | BENÍTEZ, MARICEL                | maricel.benitez@estudiantes.unahur.edu.ar             |
@@ -172,7 +166,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | MONTES DE OCA, NICOLÁS EZEQUIEL | nicolasezequiel.montesdeoca@estudiantes.unahur.edu.ar |
 | VALDEZ, MARCELO                 | marcelojaviervaldez@estudiantes.unahur.edu.ar         |
 
-#### Grupo 11
+##### Grupo 11
 | Nombre                     | Email                                           |
 | -------------------------- | ----------------------------------------------- |
 | CAMARGO, JUAN IGNACIO      | juaninachocamargo@hotmail.com                   |
@@ -181,7 +175,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | LABRIOLA, FEDERICO LEANDRO | fede.lean.lab@gmail.com                         |
 | SEOANE, MAGALI ELIZABETH   | magalielizabethseoane@gmail.com                 |
 
-#### Grupo 13
+##### Grupo 13
 | Nombre                        | Email                                            |
 | ----------------------------- | ------------------------------------------------ |
 | ANDERSON ROJAS, FRANCO LEONEL | francoandersonbj@gmail.com                       |
@@ -190,7 +184,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | LUNA, CRISTIAN SEBASTIAN      | cristiansebastian.luna@estudiantes.unahur.edu.ar |
 | PAZ, FACUNDO LEONEL           | facundoleonel.paz@estudiantes.unahur.edu.ar      |
 
-#### Grupo 14
+##### Grupo 14
 | Nombre                    | Email                        |
 | ------------------------- | ---------------------------- |
 | CASTRO, SEBASTIAN         | sebastiancastro141@gmail.com |
@@ -199,7 +193,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | NUÑEZ, ARIEL MARTÍN       | arielmartinn02@gmail.com     |
 | TABAKA, LUCA URIEL        | lucatabaka@gmail.com         |
 
-#### Grupo 15
+##### Grupo 15
 | Nombre                             | Email                       |
 | ---------------------------------- | --------------------------- |
 | ABOGADO, MARTÍN EZEQUIEL           | mabogado.unahur@gmail.com   |
@@ -207,7 +201,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | GILARDONI MAIDANA, NICOLÁS AGUSTIN | agustinm22@outlook.com      |
 | RODRIGUEZ MEDINA, Carolina         | rodriguezc.medina@gmail.com |
 
-#### Grupo 16
+##### Grupo 16
 | Nombre                            | Email                                                    |
 | --------------------------------- | -------------------------------------------------------- |
 | BRAVETTI, JONATHAN NICOLAS        | bravettij@gmail.com                                      |
@@ -215,7 +209,6 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | DEPAULO, FEDERICO NICOLÁS         | federicodepaulo@gmail.com                                |
 | GARCIA, NICOLAS                   | httpsn1k0@gmail.com                                      |
 | MUSILLARIO AGUILAR, MARCO SANTINO | marcosantino.musillarioaguilar@estudiantes.unahur.edu.ar |
-</details>
 
 
 ## Cronograma
