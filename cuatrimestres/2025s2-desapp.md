@@ -72,7 +72,6 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | TEJERO, JESSICA ELIANA  | jessy.tejero@hotmail.com                |
 | TRIAS, NICOLAS          | nicotrias1@gmail.com                    |
 
-
 **Grupo 2**
 
 | Nombre                         | Email                                |
@@ -82,7 +81,6 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | HUTMACHER, ALEJO AGUSTIN       | hutmacheralejo@gmail.com             |
 | LENIS, JONATHAN                | jonathanlenis988@gmail.com           |
 | MARTINEZ, LAUTARO AGUSTÍN      | lautaroagustinmartinez2003@gmail.com |
-
 
 **Grupo 3**
 
@@ -94,7 +92,6 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | MARQUEZ, ALINA              | alinamarquez505@gmail.com  |
 | PISONI, AILEN               | ailenpisoni@gmail.com      |
 
-
 **Grupo 4**
 
 | Nombre                       | Email                                               |
@@ -105,7 +102,6 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | LERA CENTURION, BRENDA TANIA | brendalera17@gmail.com                              |
 | PAGLIARULO, ROCIO YASMIN     | rociopagliarulo@gmail.com                           |
 
-
 **Grupo 6**
 
 | Nombre                   | Email                        |
@@ -115,7 +111,6 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | PALLERO, KEVIN ALEJANDRO | kevinpallero@hotmail.com     |
 | RODRÍGUEZ, FACUNDO       | fran_penaldo@outlook.com     |
 | VALLÉS, FRANCO DAVID     | vallesfrancodavid@gmail.com  |
-
 
 **Grupo 7**
 
@@ -144,7 +139,6 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | TRONCOSO, TOMAS PABLO   | troncosotomas2004@gmail.com                      |
 | VARELA, VALENTÍN ADRIEL | valentinv741@gmail.com                           |
 
-
 **Grupo 9**
 
 | Nombre                          | Email                                                  |
@@ -164,7 +158,6 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | DILEO, AYMARA          | aymaradileo@gmail.com        |
 | GOMEZ, CRISTIAN DANIEL | cristiangomez.mail@gmail.com |
 | SEBASTIAN, PAULLUK     | sebastianpaulluk@gmail.com   |
-
 
 **Grupo 12**
 
@@ -194,7 +187,6 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | ROJAS, IVAN EMILIANO        | poucasla.99@gmail.com                      |
 | VILTEZ, HERNAN JAVIER       | hjviltez@gmail.com                         |
 
-
 **Grupo 11**
 
 | Nombre                     | Email                                           |
@@ -204,7 +196,6 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | DI TUCCI, SEBASTIÁN        | sebastiandit240@gmail.com                       |
 | LABRIOLA, FEDERICO LEANDRO | fede.lean.lab@gmail.com                         |
 | SEOANE, MAGALI ELIZABETH   | magalielizabethseoane@gmail.com                 |
-
 
 **Grupo 13**
 
@@ -216,7 +207,6 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | LUNA, CRISTIAN SEBASTIAN      | cristiansebastian.luna@estudiantes.unahur.edu.ar |
 | PAZ, FACUNDO LEONEL           | facundoleonel.paz@estudiantes.unahur.edu.ar      |
 
-
 **Grupo 14**
 
 | Nombre                    | Email                        |
@@ -227,7 +217,6 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | NUÑEZ, ARIEL MARTÍN       | arielmartinn02@gmail.com     |
 | TABAKA, LUCA URIEL        | lucatabaka@gmail.com         |
 
-
 **Grupo 15**
 
 | Nombre                             | Email                       |
@@ -236,7 +225,6 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 | COLUCCIO, NICOLÁS                  | ncoluccio.unahur@gmail.com  |
 | GILARDONI MAIDANA, NICOLÁS AGUSTIN | agustinm22@outlook.com      |
 | RODRIGUEZ MEDINA, Carolina         | rodriguezc.medina@gmail.com |
-
 
 **Grupo 16**
 
