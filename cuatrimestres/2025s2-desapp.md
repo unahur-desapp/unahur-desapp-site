@@ -48,6 +48,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 ... a determinar ...
 
 ##### Grupo 8
+
 | Nombre                  | Email                                            |
 | ----------------------- | ------------------------------------------------ |
 | PALMIER, IGNACIO        | ignacionicolas.palmier@estudiantes.unahur.edu.ar |
