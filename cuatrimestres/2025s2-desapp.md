@@ -46,7 +46,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 ## Grupos
 
 ### Resumen
-- **Total de Alumnos**: 79
+- **Total de Alumnos**: 80
 - **Total de Grupos**: 16
   - **Administración**: 6 grupos
   - **Afiliados**: 4 grupos
@@ -109,7 +109,7 @@ Las tres aplicaciones están muy relacionadas, más allá de la que se elija, ha
 
 <details>
 <summary style="cursor: pointer; font-weight: bold; color: #159957; padding: 8px; background-color: #fafafa; border-radius: 6px;">
-👥 Afilaidos (Profesor: Cristian)
+👥 Afiliados (Profesor: Cristian)
 </summary>
 
 #### Grupo 8
