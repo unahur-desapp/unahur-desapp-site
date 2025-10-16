@@ -17,6 +17,8 @@ El grupo docente de la materia está formado por
 | Cristian Schiffino | cristian.schiffino@unahur.edu.ar        | CristianSchiffino | @cristianschiffino1 |
 | Hernán Guzmán      | hernan.guzman@estudiantes.unahur.edu.ar | hguzmanUNAHUR     | @hernanguzman8      |
 | Nicolas de la Fuente      | ni.delafuente@gmail.com | nicolasdelafuente     | @nicolas_delafuente      |
+| Guillermo Caratti  | guillermo.caratti@gmail.com    | GuillermoCaratti      | @guillermojaviercaratti  |
+
 
 ## Pautas para la cursada
 
