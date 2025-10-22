@@ -54,6 +54,15 @@ El corte de un sprint a otro coincide con el día y hora del encuentro semanal. 
 
 La definición y evaluación de cada sprint forma parte de la evaluación de la materia.
 
+El código a presentar se considerará **terminado** únicamente cuando se haya integrado (mergeado) en la branch de develop (o la rama correspondiente) y esté completamente funcional al momento del cierre del sprint.
+
+No se aceptarán:
+* Problemas de compilación.
+* Conflictos de integración (merge).
+* Cambios o commits posteriores a la fecha de cierre del sprint.
+* La entrega de una branch particular de un integrante del equipo (solo se acepta la branch de desarrollo principal).
+
+
 > **Nota**  
 > En la página de [recursos](./recursos/recursos-index), están las fichas de principio y fin de sprint que hay que llenar, junto con ejemplos.  
 > En los [detalles sobre uso del Trello](./recursos/trello), se detalla cómo proceder al principio y al final de cada sprint respecto de las tareas definidas.
