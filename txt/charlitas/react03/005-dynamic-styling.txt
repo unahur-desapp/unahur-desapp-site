@@ -52,5 +52,6 @@ Para eso -> useRef.
 Cada vez que se re-renderiza el componente, de hecho, se vuelven a generar deletePhrase y addFixedPhrase, eso es costoso en tiempo porque se están generando funciones ... que de hecho nunca cambian, dado que los setters de un useState, y el puntero a un useRef si hicimos la transformación, no cambian.
 Para evitar eso, le tenemos que pedir a React que maneje la generación de estas funciones -> useCallback.
 
+(esto está más extenso en 006-useCallback-useRef)
 
 

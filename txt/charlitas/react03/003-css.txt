@@ -1,10 +1,13 @@
 Siguente temática: opciones para manejar los estilos.
 
 Esto es un mundo, ahora vamos a ver algunas variantes, cuando integremos Material UI vamos a ver algunas más, y hay muchas otras que pueden googlear.
+En particular, una librería muy-muy usada es Tailwind, no llegué a armar un ejemplo, pero mírensela.
+
 
 (CSSBasic01)
 Arrancamos donde dejamos (este es una copia del último que vimos).
 Vamos a los dev tools, chusmeamos los estilos de un elemento (aside: oooohh puedo elegir los elementos).
+De dónde está sacando las clases: indes.css incluido en main.jsx.
 No hace falta definir todas las clases en un único .css ... pero los nombres no se pueden duplicar, si "piso" un nombre me queda sólo la última que se definió.
 
 

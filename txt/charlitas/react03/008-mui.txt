@@ -7,12 +7,14 @@ Las que conozco: Bootstrap y MUI.
 Dato: el estado italiano está switcheando.
 Muy populares (entre las dos se llevan casi la mitad de React).
 
-Resumamos lo que nos da MUI.
+Resumamos lo que nos da MUI - mirando Mui04.
 1. Componentes más bonitos, en el ejemplo los botones y el input field.
 2. Una librería de íconos fácil de usar.
 3. Una alternativa para la definición de flexboxes, que evita el uso de un archivo .CSS. En concreto, MUI provee componentes React que se renderizan como un div que ya tiene seteados los atributos CSS de flexbox.
 4. Además de esto, más variantes y herramientas para el manejo del CSS.
 5. En particular, herramientas específicas que apuntan a implementar páginas que sean responsive.
+
+**Atenti** si usan en template, o bien le actualizan la versión de mui (yo probaría y vería si se rompe algo, tal vez no), o bien van en la doc a la versión 5.
 
 
 (Mui01)
@@ -21,6 +23,8 @@ Empezamos con el elemento (3)
 - sx
 - reemplazo div con Box para aplicar sx en lugar de style.
 (acá garpa ponerlos uno al lado del otro, Mui01-flex vs ApiCalls02-delete-add)
+
+Ya que estamos con layout, mencionar la existencia de CSS Grid (https://css-tricks.com/snippets/css/complete-guide-grid/), que puede servir para casos más complejos. Yo lo usé con mucha felicidad. Aunque MUI no le da soporte (ver https://mui.com/material-ui/react-grid/)
 
 Nota del 2024s2: lo puse al lado de State06-use-callback-use-ref, notar también la diferencia de que se toman las frases con una llamada API. Ver network. Esto es repaso, lo vimos en la primera charla.
 También puse el phrases-custom-styles.js en el medio. Creo que garpa.
@@ -48,6 +52,7 @@ Veamos cuáles son las herramientas.
 
 
 (Mui03)
+(... este se puede saltar ...)
 Metemos los botones - https://mui.com/components/buttons/ - aplicamos (1)
 - distintas variantes / tamaños
 - ícono atrás - https://mui.com/material-ui/material-icons/#main-content - aplicamos (2)

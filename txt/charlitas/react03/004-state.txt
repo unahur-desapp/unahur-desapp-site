@@ -59,5 +59,10 @@ Cambiar el handle por
 
 (State3)
 Acá tenemos el botón "agregar", veamos el handler. 
+... ¿y por qué no hacer directamente
+    renderedPhrases.unshift(`Frase agregada ${indexAddedPhrase}`)
+    ?
 Para que cambie el número de la frase agregada ... otro estado.
 Qué pasa si invierto los sets en addFixedPhrase ... ¡¡nada!!
+
+
