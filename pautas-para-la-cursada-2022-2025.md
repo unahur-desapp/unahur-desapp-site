@@ -21,7 +21,7 @@ Las condiciones grupales son
 Las condiciones individuales son
 
 - asistencia a todos los cierres de sprint _con cámara prendida_ (nos tenemos que poder ver las caras) y participación (o sea, en los cierres de sprint todos tienen que hablar), salvo ausencia muy (pero muy) justificada. Esta asistencia puede ser virtual. Quien no tiene una participación activa en una actividad, es como si no hubiera asistido. <br/> Lo de la cámara es importante, verifiquen con tiempo que tienen una cámara que funcione.
-- asistencia a la presentación final, donde también tienen que hablar todos.
+- asistencia a la presentación final, **ojo** esta es presencial para los alumnos (puede ser virtual para profes y/o jurado). En la presentación final también tienen que hablar todos.
 - **muy importante** <br> participación efectiva en el desarrollo, que se va a evaluar por cantidad y relevancia de los commits hechos por cada integrante en los repositorios de frontend y backend. O sea, quienes no tengan commits o tengan poquitos y/o poco relevantes, no van a aprobar la materia. <br/> Si trabajan en grupo (lo cual está perfecto), por favor roten quién hace los commits (un día uno, otro día otro). A este respecto es válido, si un commit lo hicieron entre varios, que en el comentario pongan "hecho en conjunto con X, Y y Z", aparte del que registra el commit claro.
 
 ## Objetivos de cada sprint
@@ -29,11 +29,10 @@ Para Desarrollo de Aplicaciones, se establecen los siguientes objetivos para cad
 
 | Número de sprint | Objetivo |
 | ------ | ----------| 
-| Sprint 1 | Implementación preliminar que cubra todos los puntos obligatorios, cubriendo cada uno al menos en un 50%. | 
-| Sprint 2 | Mejoras en la experiencia de usuario, validaciones, datos de prueba. | 
-| Sprint 3 | Implementación al 70% incluyendo agregados que se puedan proponer en las reuniones anteriores, documentación de tests funcionales. | 
-| Sprint 4 | Implementación al 90% incluyendo agregados que se puedan proponer en las reuniones anteriores, responsiveness. | 
-| Sprint 5 | Implementación al 100% incluyendo agregados que se puedan proponer en las reuniones anteriores, documentación de API, presentación. | 
+| Sprint 1 | Diseño de interfaces en Figma o similar, que cubra el 80% de las funcionalidades descriptas en el enunciado, más la selección de (al menos) dos pantallas para arrancar el desarrollo. | 
+| Sprint 2 | Tener andando el frontend (con datos o BE fake) de al menos dos pantallas. | 
+| Sprint 3 | Tener andando al menos el 60% del frontend, y una conexión frontend-backend implementada. | 
+| Sprint 4 | Tener andando al menos el 60% de la funcionalidad, integrando frontend y backend. | 
 
 La evaluación de estos objetivos se hace en forma grupal.   
 
@@ -48,7 +47,7 @@ Si un grupo no llega a los objetivos:
 El desarrollo se **tiene** que organizar en sprints, esto no es optativo.
 La mayor parte de los sprints dura tres semanas, probablemente alguno dure dos. Las fechas de inicio de cada sprint están en el cronograma del cuatrimestre. Dentro del sprint, se deben cumplir los objetivos propuestos por el equipo al iniciar el mismo.
 
-- Al _principio_ de cada sprint se establecen los objetivos, qué se espera que esté hecho o avanzado o definido o lo que sea al final del sprint. Debe cumplirse con el objetivo mínimo de cada sprint descripto más arriba. 
+- Al _principio_ de cada sprint se establecen los objetivos, qué se espera que esté hecho o avanzado o definido o lo que sea al final del sprint.
 - Al _final_ de cada sprint se hace una evaluación de qué se logró y qué no, se trata de entender por qué no se llegó a lo que no se llegó, y a partir de estos elementos, se planifica el siguiente.
 
 El corte de un sprint a otro coincide con el día y hora del encuentro semanal. En el encuentro de esa semana se hace el análisis de fin-de-sprint, y se habla del alcance del siguiente, que después el grupo tiene que plasmar en la ficha de inicio.
@@ -56,8 +55,6 @@ El corte de un sprint a otro coincide con el día y hora del encuentro semanal. 
 La definición y evaluación de cada sprint forma parte de la evaluación de la materia.
 
 El código a presentar se considerará **terminado** únicamente cuando se haya integrado (mergeado) en la branch de develop (o la rama correspondiente) y esté completamente funcional al momento del cierre del sprint.
-
-Los repositorios deben incluir los archivos de contexto que se suministran al LLM, y archivos de texto con el texto de los prompts principales utilizados para el desarrollo.
 
 No se aceptarán:
 * Problemas de compilación.
@@ -82,9 +79,11 @@ Una aplicación Web, que prevea que pueda utilizarse (al menos parcialmente) des
 
 ## Cómo documentar los requerimientos
 
-Se recomienda fuertemente que los acuerdos que se establezcan con les stakeholders / usuaries se basen en pantallas y flujos de navegación. En la dinámica de implementación con herramientas basadas en IA, se pueden presentar o bien mockups en HTML/CSS, o bien implementaciones preliminares del FE.
+Se recomienda fuertemente que los acuerdos que se establezcan con les stakeholders / usuaries se basen en pantallas y flujos de navegación. Eso es, creo, lo que mejor sitúa a gente que no es del gremio en qué puede esperar de una app.
 
-Para el sprint 3 se solicita documentar tests funcionales, que son escenarios de uso de la aplicación, indicando la operación que realiza un usuario, y el resultado esperado. Para la redacción de estos tests funcionales también se pueden utilizar herramientas basadas en IA.
+Se pueden armar user stories ... en forma gráfica, mostrando la sucesión de pantallas que van a ir apareciendo.
+
+En la primer reunión que tuvimos se mencionó (creo) una descripción general (no me acuerdo cómo la llamaron) ... OK si no ocupa más de media carilla / 2K de texto.
 
 Un documento viejo, pero que puede servir, es la lista de requerimientos, una lista de bullets con lo que se espera de la aplicación, donde cada bullet no lleva más de un renglón o dos.
 
@@ -101,7 +100,7 @@ Otra alternativa es [JIRA](https://www.atlassian.com/es/software/jira) ... pero 
 
 Ponerle foco a la funcionalidad, a lo que le interesa a les usuaries, más que a las cuestiones técnicas.
 
-En el desarrollo soportado por herramientas basadas en IA, resulta factible avanzar con FE y BE en paralelo. Si por la dinámica de grupo o por complejidades en el diseño de la BD resultara complicado contar con las funcionalidades de BE requeridas para implementar una parte del FE, se puede utilizar un mock de BE, que responda a los endpoints que se definan, pero con datos fijos o en memoria.
+Se recomienda ir del front hacia el back, se puede empezar con un back fake (que devuelva valores fijos o con una variación mínima) que ayude a establecer la API.
 
 Las cuestiones no ligadas a la funcionalidad específica, como autenticación/autorización, **no** se encaran al principio.  
 Si quieren manejar desde el principio interfaces diferenciadas por roles, pueden: definir un atributo `rol` en la UI, y URLs separadas para cada rol, que definan el valor del atributo y ruteen, p.ej. `/admin`, `/docente`, `/alumno`.
@@ -124,11 +123,12 @@ Para el **backend**, se pueden elegir dos cosas.
 
 Esto nos da cuatro combinaciones: SQL/JS, SQL/TS, Mongo/JS, Mongo/TS.
 
-En el entorno soportado por herramientas que utilizan IA, se recomienda que los proyectos se generen dentro de la interacción con estas herramientas.  
-Señalamos los repositorios base generados para cursadas anteriores, para ser usados a modo de consulta de ser necesario.
-- Para la combinación SQL/JS, incluimos un repositorio que pueden usar de base en la página de [recursos](./recursos).
-- Para experimentar con TS, se propone usar el framework [NestJS](https://nestjs.com/). En la página de [First steps](https://docs.nestjs.com/first-steps) se explica cómo instalarlo.  
+Para la combinación SQL/JS, incluimos un repositorio que pueden usar de base en la página de [recursos](./recursos).
+
+Para experimentar con TS, se propone usar el framework [NestJS](https://nestjs.com/). En la página de [First steps](https://docs.nestjs.com/first-steps) se explica cómo instalarlo.  
 Nest resuelve en forma sencilla la integración, tanto con [Mongoose](https://docs.nestjs.com/techniques/mongodb) como con [TypeORM](https://docs.nestjs.com/techniques/database), un ORM que es (creo) más feliz que Sequelize, y que se lleva muy bien con TS.
+
+Si quieren usar la combinación Mongo/JS ... hablemos sobre cómo hacer.
 
 Se pueden proponer otras opciones ... pero se pierde el soporte docente.
 
