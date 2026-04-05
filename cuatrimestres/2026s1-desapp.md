@@ -42,20 +42,20 @@ Este cuatrimestre todas las clases son remotas
 
 | Fecha | Actividad                                                                                                          |
 | ----- | ------------------------------------------------------------------------------------------------------------------ |
-| 14/08 | Presentación / objetivos / armado de equipos / selección de trabajos / Figma.                                      |
-| 21/08 |  <b>1er Sprint - planning</b> <br/>                                                                                 |
-| 28/08 |  React - parte 1.                                                               |
-| 04/09 |  Seguimiento.                                                                                                       |
-| 11/09 |  <b>1er Sprint - review<b><br/><b>2do Sprint - planning<b>                                                          |
-| 18/09 |  React - parte 2.                                                               |
-| 25/09 |  Seguimiento.                                                                                                       |
-| 02/10 |  <b>2do Sprint - review<b><br/><b>3er Sprint - planning<b> |
-| 09/10 |  Seguimiento.                                                                                                       |
-| 16/10 |  <b>3er Sprint - review</b><br/><b>4to Sprint - planning</b>                                                        |
-| 23/10 |  Backend |
-| 30/10 |  Seguimiento.                                                                                                       |
-| 06/11 |  <b>4to Sprint - review<b><br/><b>5to Sprint - planning<b>                                                          |
-| 13/11 |  Ensayo de presentación final.  |
-| 20/11 |  Seguimiento.                                                                                                       |
-| 27/11 |  <b>5to Sprint - review<b>                                                                                          |
-| 04/12 |  <span style="font-weight: bold; color: crimson">Presentación final remota</span>                               |
+| 02/04 |  <span style="font-weight: bold; color: #f57c00">Feriado</span> |
+| 09/04 | Presentación / objetivos / armado de equipos / selección de trabajos / Herramientas basadas en IA.                                      |
+| 16/04 |  <b>1er Sprint - planning</b>    |
+| 23/04 |  React y BE - trabajo con herramientas basadas en IA - 1 <br/> Seguimiento |
+| 30/04 | Seguimiento.  |
+| 07/05 |  <b>1er Sprint - review</b><br/><b>2do Sprint - planning</b> |
+| 14/05 |  React y BE - trabajo con herramientas basadas en IA - 1 <br/> Seguimiento |
+| 21/05 |  <b>2do Sprint - review</b><br/><b>3er Sprint - planning</b> |
+| 28/05 | Seguimiento. |
+| 04/06 |  <b>3er Sprint - review</b><br/><b>4to Sprint - planning</b> |
+| 11/06 |  <span style="font-weight: bold; color: crimson">Presentación medio término</span> |
+| 18/06 |  Seguimiento.  |
+| 25/06 |  <b>4to Sprint - review</b><br/><b>5to Sprint - planning</b> |
+| 02/07 |  Seguimiento  |
+| 09/07 |  <span style="font-weight: bold; color: #f57c00">Feriado</span> |
+| 16/07 |  <b>5to Sprint - review</b> |
+| 23/07 |  <span style="font-weight: bold; color: crimson">Presentación final</span> |
