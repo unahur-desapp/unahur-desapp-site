@@ -38,8 +38,6 @@ A organizar.
 
 ## Cronograma
 
-Este cuatrimestre todas las clases son remotas
-
 | Fecha | Actividad                                                                                                          |
 | ----- | ------------------------------------------------------------------------------------------------------------------ |
 | 02/04 |  <span style="font-weight: bold; color: #f57c00">Feriado</span> |
