@@ -18,12 +18,16 @@ Obviamente, lo primero es organizarse en grupos. Inmediatamente después, hay qu
 
 Después, toca arrancar con el desarrollo. Para esto, hacer lo que se indica en la página de [tareas iniciales](../tareas-iniciales.md).
 
-## Proyecto
+## Proyectos
 
-Se trata de una aplicación para acompañamiento de estudiantes universitarios, que incluye la generación de proyecciones de cursada y aspectos de red social (sesiones de estudio, materiales compartidos).  
+Vamos a trabajar sobre dos proyectos, cada grupo va a tener asignado uno de los dos.
+
+Uno de los proyectos es una aplicación para acompañamiento de estudiantes universitarios, que incluye la generación de proyecciones de cursada y aspectos de red social (sesiones de estudio, materiales compartidos).  
 El enunciado es este: [app de acompañamiento de estudiantes](../enunciados-tp/acompanamiento-estudiantil.md).
 
-Como stakeholders vamos a estar nosotros docentes. 
+El otro es una aplicación para la gestión de laboratorios de docencia, el enunciado es este: [app de gestión de laboratorios](../enunciados-tp/gestion-laboratorios-2026.md).
+
+En ambos casos, como stakeholders vamos a estar nosotros docentes. 
 
 El alcance de la propuesta debe ser implementado completamente dentro de Desarrollo de Aplicaciones.
 
