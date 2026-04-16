@@ -54,6 +54,7 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 📋 [Trello](https://trello.com/w/desapp2026c2grupo1)
 📁 [Drive](https://drive.google.com/drive/u/1/folders/1sZagdTfPF36h28JmFQDtryCESmZeIl1P)
 
+
 #### Grupo 2
 
 **Tema:** App de gestión de laboratorios
@@ -70,6 +71,7 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 📋 [Trello](https://trello.com/w/desapp2026c1grupo2)
 📁 [Drive](https://drive.google.com/drive/u/1/folders/1qGVkQ-xpbBdU3NIHsQoPfFpTDTlIQv7x)
 
+
 ### Grupo 3
 
 **Tema:** App de acompañamiento de estudiantes
@@ -83,8 +85,9 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 | CARIA, KEVIN              | [kevindcaria@gmail.com](mailto:kevindcaria@gmail.com)               |
 
 🔗 [GitHub](https://github.com/DesApp-2026c1-Grupo-3)
-📋 [Trello](X No enviado)
+📋 [Trello](❌ No enviado)
 📁 [Drive](https://drive.google.com/drive/u/1/folders/1yZXQhY2-0qanUhhP1cafAU3j0uAQMvjp)
+
 
 ### Grupo 4
 
@@ -102,6 +105,7 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 📋 [Trello](https://trello.com/w/desapp2026c1grupo4)
 📁 [Drive](https://drive.google.com/drive/u/1/folders/1YiPjXEnVVPBOzhFrZNj464zkrmFb3maY)
 
+
 ### Grupo 5
 
 **Tema:** App de acompañamiento de estudiantes
@@ -117,6 +121,7 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 🔗 [GitHub](https://github.com/DesApp-2026c1-Grupo-5)
 📋 [Trello](https://trello.com/w/desapp2026c1grupo5)
 📁 [Drive](https://drive.google.com/drive/u/1/folders/14EyCSdrFX0bRPp1Y8lHhL5bk9D-i7Lyx)
+
 
 ### Grupo 6
 
@@ -181,9 +186,24 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 | VILLALBA, FRANCISCO JOSÉ           | [fj.villalba@yahoo.com.ar](mailto:fj.villalba@yahoo.com.ar)             |
 
 🔗 [GitHub](https://github.com/DesApp-2026c1-Grupo-9)
-📋 [Trello](X No enviado)
+📋 [Trello](❌ No enviado)
 📁 [Drive](https://drive.google.com/drive/u/1/folders/1XIpILCjcUAde8_JsvUCePLmHSNfZPHoG)
 
+
+### Grupo 10
+
+**Tema:** App de gestión de laboratorios
+
+| Nombre                   | Email                                                               |
+| ------------------------ | ------------------------------------------------------------------- |
+| PALLERO, KEVIN ALEJANDRO | [kevinpallero@hotmail.com](mailto:kevinpallero@hotmail.com)         |
+| PREZIOSO, FRANCO         | [preziosofranco1999@gmail.com](mailto:preziosofranco1999@gmail.com) |
+| MAIDANA, LUCAS AGUSTÍN   | [lucasmaidana420@gmail.com](mailto:lucasmaidana420@gmail.com)       |
+| NEGRETI CARBALLO, NAHUEL | [nahuelnegretic@gmail.com](mailto:nahuelnegretic@gmail.com)         |
+
+🔗 [GitHub](❌ No enviado)
+📋 [Trello](❌ No enviado)
+📁 [Drive](❌ No enviado)
 
 
 
