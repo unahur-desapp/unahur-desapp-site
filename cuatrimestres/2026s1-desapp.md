@@ -200,6 +200,7 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 | PREZIOSO, FRANCO         | [preziosofranco1999@gmail.com](mailto:preziosofranco1999@gmail.com) |
 | MAIDANA, LUCAS AGUSTÍN   | [lucasmaidana420@gmail.com](mailto:lucasmaidana420@gmail.com)       |
 | NEGRETI CARBALLO, NAHUEL | [nahuelnegretic@gmail.com](mailto:nahuelnegretic@gmail.com)         |
+| RODRIGUEZ, FACUNDO       | [fran_penaldo@outlook.com](mailto:fran_penaldo@outlook.com)         |
 
 🔗 [GitHub](❌ No enviado)
 📋 [Trello](❌ No enviado)
