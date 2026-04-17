@@ -9,7 +9,7 @@ layout: default
 Pasos a seguir
 - Crearse un usuario en Trello, creo que en realidad se crea un usuario Atlassian, que incluye Trello, Jira, BitBucket y otros.
 - Armar un espacio de trabajo en Trello en la que estén todos los integrantes del equipo y los docentes. Los usuarios de Trello de los docentes están en la [página inicial](./index.md).
-- Crear tres proyectos, a partir de los templates linkeados en la [página sobre uso de Trello](./recursos/trello).
+- Crear un tablero, de acuerdo a lo que se sugiere en la [página sobre uso de Trello](./recursos/trello).
 
 El espacio de trabajo **debe llamarse** "DesApp \<cuatrimestre> - Grupo X", ver la página del cuatrimestre para ver el número de grupo. El cuatri en formato 2022c1 (ejemplo para 1er cuatri de 2022).   
 <u>Ejemplo</u>: si somos el grupo 2 del 2do cuatrimestre de 2022, el espacio de trabajo se tiene que llamar así:

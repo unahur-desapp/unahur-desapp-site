@@ -1,0 +1,13 @@
+FE
+Partir de fe_inicial
+- refactor de App: componentes
+- PlayerForm: modal, useState con estructura / handleChange, useEffect
+- corrijamos InputLabelProps que está deprecado, enseñémosle a Opencode a no usarlo más.
+- validaciones y hook (ver transcript de sesión).
+- metamos un menú -> React Router
+
+BE
+- Prisma, ver cómo queda la BD
+- Nest
+- Foco sobre PrismaService
+
