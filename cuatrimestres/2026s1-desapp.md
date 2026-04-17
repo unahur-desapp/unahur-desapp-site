@@ -215,10 +215,10 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 | 02/04 |  <span style="font-weight: bold; color: #f57c00">Feriado</span> |
 | 09/04 | Presentación / objetivos / armado de equipos / selección de trabajos / Herramientas basadas en IA.                                      |
 | 16/04 |  <b>1er Sprint - planning</b>    |
-| 23/04 |  React y BE - trabajo con herramientas basadas en IA - 1 <br/> Seguimiento. |
+| 23/04 |  React y BE - trabajo con herramientas basadas en IA - 1. <br/> Seguimiento. |
 | 30/04 | Seguimiento.  |
 | 07/05 |  <b>1er Sprint - review</b><br/><b>2do Sprint - planning</b> |
-| 14/05 |  React y BE - trabajo con herramientas basadas en IA - 2 <br/> Seguimiento. |
+| 14/05 |  React y BE - trabajo con herramientas basadas en IA - 2. <br/> Seguimiento. |
 | 21/05 |  <b>2do Sprint - review</b><br/><b>3er Sprint - planning</b> |
 | 28/05 | Seguimiento. |
 | 04/06 |  <b>3er Sprint - review</b><br/><b>4to Sprint - planning</b> |
