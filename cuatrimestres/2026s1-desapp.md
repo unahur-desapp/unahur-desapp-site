@@ -85,7 +85,7 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 | CARIA, KEVIN              | [kevindcaria@gmail.com](mailto:kevindcaria@gmail.com)               |
 
 🔗 [GitHub](https://github.com/DesApp-2026c1-Grupo-3)
-📋 [Trello](❌ No enviado)
+📋 [Trello](https://trello.com/w/espaciodetrabajodeuser10277601)
 📁 [Drive](https://drive.google.com/drive/u/1/folders/1yZXQhY2-0qanUhhP1cafAU3j0uAQMvjp)
 
 
