@@ -41,6 +41,7 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 #### Grupo 1
 
 **Tema:** App de acompañamiento de estudiantes
+**Docente:** Nicolás de la Fuente
 
 | Nombre                       | Email                                                                           |
 | ---------------------------- | ------------------------------------------------------------------------------- |
@@ -58,6 +59,7 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 #### Grupo 2
 
 **Tema:** App de gestión de laboratorios
+**Docente:** Cristian Schiffino
 
 | Nombre                        | Email                                                                                                               |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------- |
@@ -75,6 +77,7 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 ### Grupo 3
 
 **Tema:** App de acompañamiento de estudiantes
+**Docente:** Nicolás de la Fuente
 
 | Nombre                    | Email                                                               |
 | ------------------------- | ------------------------------------------------------------------- |
@@ -92,6 +95,7 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 ### Grupo 4
 
 **Tema:** App de gestión de laboratorios
+**Docente:** Cristian Schiffino
 
 | Nombre                     | Email                                                                                                     |
 | -------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -109,6 +113,7 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 ### Grupo 5
 
 **Tema:** App de acompañamiento de estudiantes
+**Docente:** Nicolás de la Fuente
 
 | Nombre                      | Email                                                                 |
 | --------------------------- | --------------------------------------------------------------------- |
@@ -126,6 +131,7 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 ### Grupo 6
 
 **Tema:** App de gestión de laboratorios
+**Docente:** Cristian Schiffino
 
 | Nombre                   | Email                                                             |
 | ------------------------ | ----------------------------------------------------------------- |
@@ -143,6 +149,7 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 ### Grupo 7
 
 **Tema:** App de acompañamiento de estudiantes
+**Docente:** Carlos Lombardi
 
 | Nombre                 | Email                                                                 |
 | ---------------------- | --------------------------------------------------------------------- |
@@ -159,6 +166,7 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 ### Grupo 8
 
 **Tema:** App de gestión de laboratorios
+**Docente:** Carlos Lombardi
 
 | Nombre                  | Email                                                             |
 | ----------------------- | ----------------------------------------------------------------- |
@@ -176,6 +184,7 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 ### Grupo 9
 
 **Tema:** App de acompañamiento de estudiantes
+**Docente:** Carlos Lombardi
 
 | Nombre                             | Email                                                                   |
 | ---------------------------------- | ----------------------------------------------------------------------- |
@@ -193,6 +202,7 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 ### Grupo 10
 
 **Tema:** App de gestión de laboratorios
+**Docente:** Carlos Lombardi
 
 | Nombre                   | Email                                                               |
 | ------------------------ | ------------------------------------------------------------------- |
