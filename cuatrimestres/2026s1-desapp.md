@@ -38,7 +38,195 @@ Para todas las tareas, partiendo desde la generación de los planes iniciales, l
 
 ## Grupos
 
-A organizar.
+#### Grupo 1
+
+**Tema:** App de acompañamiento de estudiantes
+
+**Docente:** Nicolás de la Fuente
+
+| Nombre                       | Email                                                                           |
+| ---------------------------- | ------------------------------------------------------------------------------- |
+| ALONSO, MAXIMILIANO ADRIAN   | [maximiliano.aloalo@gmail.com](mailto:maximiliano.aloalo@gmail.com)             |
+| BALSAMO, MARTÍN NEHUEN       | [martinnb95@hotmail.com](mailto:martinnb95@hotmail.com)                         |
+| BIANCHI, JUAN PABLO          | [juanpablobianchi93@gmail.com](mailto:juanpablobianchi93@gmail.com)             |
+| CASTRO BEILICKE, LUCIA ABRIL | [luciaabrilcastrobeilicke@gmail.com](mailto:luciaabrilcastrobeilicke@gmail.com) |
+| DE BIASE, LEONARDO EZEQUIEL  | [leodb611@gmail.com](mailto:leodb611@gmail.com)                                 |
+
+🔗 <a href="https://github.com/DesApp-2026c1-Grupo-X" target="_blank" rel="noopener noreferrer">GitHub</a>
+📋 <a href="https://trello.com/w/desapp2026c2grupo1" target="_blank" rel="noopener noreferrer">Trello</a>
+📁 <a href="https://drive.google.com/drive/u/1/folders/1sZagdTfPF36h28JmFQDtryCESmZeIl1P" target="_blank" rel="noopener noreferrer">Drive</a>
+
+
+#### Grupo 2
+
+**Tema:** App de gestión de laboratorios<br>
+
+**Docente:** Cristian Schiffino
+
+| Nombre                        | Email                                                                                                               |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| CEJAS OLSON, VANINA ELIZABETH | [vaninaelizabeth.cejasolson@estudiantes.unahur.edu.ar](mailto:vaninaelizabeth.cejasolson@estudiantes.unahur.edu.ar) |
+| PISANI, LEONEL                | [leonel49pisani@gmail.com](mailto:leonel49pisani@gmail.com)                                                         |
+| ZARATE, MARIA ETHNEA          | [ethne.zarate@gmail.com](mailto:ethne.zarate@gmail.com)                                                             |
+| BRITEZ, JUAN MANUEL           | [juanma123juanma123@gmail.com](mailto:juanma123juanma123@gmail.com)                                                 |
+| CERANTONIO, FRANCO URIEL      | [francocerantonio@gmail.com](mailto:francocerantonio@gmail.com)                                                     |
+
+🔗 <a href="https://github.com/DesApp-2026c1-Grupo-2" target="_blank" rel="noopener noreferrer">GitHub</a>
+📋 <a href="https://trello.com/w/desapp2026c1grupo2" target="_blank" rel="noopener noreferrer">Trello</a>
+📁 <a href="https://drive.google.com/drive/u/1/folders/1qGVkQ-xpbBdU3NIHsQoPfFpTDTlIQv7x" target="_blank" rel="noopener noreferrer">Drive</a>
+
+
+### Grupo 3
+
+**Tema:** App de acompañamiento de estudiantes
+
+**Docente:** Nicolás de la Fuente
+
+| Nombre                    | Email                                                               |
+| ------------------------- | ------------------------------------------------------------------- |
+| LUBRIS VADELL, MARTÍN     | [martin.lubris@gmail.com](mailto:martin.lubris@gmail.com)           |
+| OLIVERA, LAUTARO          | [lautarobolivera098@gmail.com](mailto:lautarobolivera098@gmail.com) |
+| ORTIZ, EDUARDO EZEQUIEL   | [ortizezequiel24@outlook.es](mailto:ortizezequiel24@outlook.es)     |
+| CANTERO, LEANDRO FEDERICO | [lcantero18@gmail.com](mailto:lcantero18@gmail.com)                 |
+| CARIA, KEVIN              | [kevindcaria@gmail.com](mailto:kevindcaria@gmail.com)               |
+
+🔗 <a href="https://github.com/DesApp-2026c1-Grupo-3" target="_blank" rel="noopener noreferrer">GitHub</a>
+📋 <a href="https://trello.com/w/espaciodetrabajodeuser10277601" target="_blank" rel="noopener noreferrer">Trello</a>
+📁 <a href="https://drive.google.com/drive/u/1/folders/1yZXQhY2-0qanUhhP1cafAU3j0uAQMvjp" target="_blank" rel="noopener noreferrer">Drive</a>
+
+
+### Grupo 4
+
+**Tema:** App de gestión de laboratorios
+
+**Docente:** Cristian Schiffino
+
+| Nombre                     | Email                                                                                                     |
+| -------------------------- | --------------------------------------------------------------------------------------------------------- |
+| SANTANA, LUCAS NAHUEL      | [lucassantana@live.com.ar](mailto:lucassantana@live.com.ar)                                               |
+| JIMENEZ, NAHUEL LAUTARO    | [nahuellautaro.jimenez@estudiantes.unahur.edu.ar](mailto:nahuellautaro.jimenez@estudiantes.unahur.edu.ar) |
+| DUMIT, MAGALÍ ABIGAIL      | [magaliabigail.dumit@estudiantes.unahur.edu.ar](mailto:magaliabigail.dumit@estudiantes.unahur.edu.ar)     |
+| LABRIOLA, FEDERICO LEANDRO | [fede.lean.lab@gmail.com](mailto:fede.lean.lab@gmail.com)                                                 |
+| SIMOES, CAROLINA BRENDA    | [carolinabrendasimoes@gmail.com](mailto:carolinabrendasimoes@gmail.com)                                   |
+
+🔗 <a href="https://github.com/DesApp-2026c1-Grupo-4" target="_blank" rel="noopener noreferrer">GitHub</a>
+📋 <a href="https://trello.com/w/desapp2026c1grupo4" target="_blank" rel="noopener noreferrer">Trello</a>
+📁 <a href="https://drive.google.com/drive/u/1/folders/1YiPjXEnVVPBOzhFrZNj464zkrmFb3maY" target="_blank" rel="noopener noreferrer">Drive</a>
+
+
+### Grupo 5
+
+**Tema:** App de acompañamiento de estudiantes
+
+**Docente:** Nicolás de la Fuente
+
+| Nombre                      | Email                                                                 |
+| --------------------------- | --------------------------------------------------------------------- |
+| BREME, FEDERICO JOSE        | [fedebremecasla@outlook.com](mailto:fedebremecasla@outlook.com)       |
+| FOLCHER, FERNANDO ROBERTO   | [ferfolcher@gmail.com](mailto:ferfolcher@gmail.com)                   |
+| IANNONE, FRANCO NAHUEL      | [francoiannone2@gmail.com](mailto:francoiannone2@gmail.com)           |
+| TORRES, FACUNDO NICOLÁS     | [facujaritor@gmail.com](mailto:facujaritor@gmail.com)                 |
+| VALENZUELA, ARIEL SEBASTIÁN | [ariel.svalenzuela@hotmail.com](mailto:ariel.svalenzuela@hotmail.com) |
+
+🔗 <a href="https://github.com/DesApp-2026c1-Grupo-5" target="_blank" rel="noopener noreferrer">GitHub</a>
+📋 <a href="https://trello.com/w/desapp2026c1grupo5" target="_blank" rel="noopener noreferrer">Trello</a>
+📁 <a href="https://drive.google.com/drive/u/1/folders/14EyCSdrFX0bRPp1Y8lHhL5bk9D-i7Lyx" target="_blank" rel="noopener noreferrer">Drive</a>
+
+
+### Grupo 6
+
+**Tema:** App de gestión de laboratorios
+
+**Docente:** Cristian Schiffino
+
+| Nombre                   | Email                                                             |
+| ------------------------ | ----------------------------------------------------------------- |
+| ABOGADO, MARTÍN EZEQUIEL | [mezequielabogado@gmail.com](mailto:mezequielabogado@gmail.com)   |
+| CALDERON, CARLOS ARIEL   | [calderon.ca93@gmail.com](mailto:calderon.ca93@gmail.com)         |
+| COLQUE, ALEJANDRO JAVIER | [ale-colque@hotmail.com](mailto:ale-colque@hotmail.com)           |
+| COLUCCIO, NICOLÁS        | [ncoluccio.unahur@gmail.com](mailto:ncoluccio.unahur@gmail.com)   |
+| VALLÉS, FRANCO DAVID     | [vallesfrancodavid@gmail.com](mailto:vallesfrancodavid@gmail.com) |
+
+🔗 <a href="https://github.com/DesApp-2026c1-Grupo6" target="_blank" rel="noopener noreferrer">GitHub</a>
+📋 <a href="https://trello.com/b/ap0peVbl/desapp-2026c1-grupo-6" target="_blank" rel="noopener noreferrer">Trello</a>
+📁 <a href="https://drive.google.com/drive/u/1/folders/1cyf61RzHoS0BA0lmDgYFw9A6CA7wgt7q" target="_blank" rel="noopener noreferrer">Drive</a>
+
+
+### Grupo 7
+
+**Tema:** App de acompañamiento de estudiantes
+
+**Docente:** Carlos Lombardi
+
+| Nombre                 | Email                                                                 |
+| ---------------------- | --------------------------------------------------------------------- |
+| BEJARANO, MARCOS       | [marcos.bejarano01@hotmail.com](mailto:marcos.bejarano01@hotmail.com) |
+| CASCO, THOMAS SANTIAGO | [thomas.s.casco@gmail.com](mailto:thomas.s.casco@gmail.com)           |
+| GALDIN, SANTINO NAHUEL | [santugaldin8@gmail.com](mailto:santugaldin8@gmail.com)               |
+| LOPEZ, MATIAS DAVID    | [matiaslopez1345@gmail.com](mailto:matiaslopez1345@gmail.com)         |
+
+🔗 <a href="https://github.com/DesApp-2026c1-Grupo-7" target="_blank" rel="noopener noreferrer">GitHub</a>
+📋 <a href="https://trello.com/w/desarrollodeaplicaciones" target="_blank" rel="noopener noreferrer">Trello</a>
+📁 <a href="https://drive.google.com/drive/u/1/folders/1-EN6jRdC3gjH8k5csh_NFTcZ5WVzdYND" target="_blank" rel="noopener noreferrer">Drive</a>
+
+
+### Grupo 8
+
+**Tema:** App de gestión de laboratorios
+
+**Docente:** Carlos Lombardi
+
+| Nombre                  | Email                                                             |
+| ----------------------- | ----------------------------------------------------------------- |
+| ACCAINO, FACUNDO        | [facundoaccaino1@outlook.com](mailto:facundoaccaino1@outlook.com) |
+| BIANCO, GERMAN IGNACIO  | [german.bc98@gmail.com](mailto:german.bc98@gmail.com)             |
+| CARDONA, LUCAS EZEQUIEL | [lucascardona107@gmail.com](mailto:lucascardona107@gmail.com)     |
+| FOA ROSTIROLLA, ALAN    | [alan.fr2008@hotmail.com](mailto:alan.fr2008@hotmail.com)         |
+| TOMAS, JOAQUIN          | [joakotomas17@gmail.com](mailto:joakotomas17@gmail.com)           |
+
+🔗 <a href="https://github.com/DesApp2026c1-Grupo-8" target="_blank" rel="noopener noreferrer">GitHub</a>
+📋 <a href="https://trello.com/w/desapp2026c1grupo8" target="_blank" rel="noopener noreferrer">Trello</a>
+📁 <a href="https://drive.google.com/drive/u/1/folders/1DA73GSgP96IlqW2kkPZ4-j1S29UldJ8Y" target="_blank" rel="noopener noreferrer">Drive</a>
+
+
+### Grupo 9
+
+**Tema:** App de acompañamiento de estudiantes
+
+**Docente:** Carlos Lombardi
+
+| Nombre                             | Email                                                                   |
+| ---------------------------------- | ----------------------------------------------------------------------- |
+| ACUÑA ARAMAYO, MARCOS SEBASTIAN    | [marcos241098@gmail.com](mailto:marcos241098@gmail.com)                 |
+| GILARDONI MAIDANA, NICOLÁS AGUSTIN | [agustinm22@outlook.com](mailto:agustinm22@outlook.com)                 |
+| RODRIGUEZ MEDINA, CAROLINA         | [rodriguezc.medina@gmail.com](mailto:rodriguezc.medina@gmail.com)       |
+| PAJÓN MUTUVERRÍA, THIAGO EXEQUIEL  | [thiago.mutuverria.24@gmail.com](mailto:thiago.mutuverria.24@gmail.com) |
+| VILLALBA, FRANCISCO JOSÉ           | [fj.villalba@yahoo.com.ar](mailto:fj.villalba@yahoo.com.ar)             |
+
+🔗 <a href="https://github.com/DesApp-2026c1-Grupo-9" target="_blank" rel="noopener noreferrer">GitHub</a>
+📋 ❌ No enviado
+📁 <a href="https://drive.google.com/drive/u/1/folders/1XIpILCjcUAde8_JsvUCePLmHSNfZPHoG" target="_blank" rel="noopener noreferrer">Drive</a>
+
+
+### Grupo 10
+
+**Tema:** App de gestión de laboratorios
+
+**Docente:** Carlos Lombardi
+
+| Nombre                   | Email                                                               |
+| ------------------------ | ------------------------------------------------------------------- |
+| PALLERO, KEVIN ALEJANDRO | [kevinpallero@hotmail.com](mailto:kevinpallero@hotmail.com)         |
+| PREZIOSO, FRANCO         | [preziosofranco1999@gmail.com](mailto:preziosofranco1999@gmail.com) |
+| MAIDANA, LUCAS AGUSTÍN   | [lucasmaidana420@gmail.com](mailto:lucasmaidana420@gmail.com)       |
+| NEGRETI CARBALLO, NAHUEL | [nahuelnegretic@gmail.com](mailto:nahuelnegretic@gmail.com)         |
+| RODRIGUEZ, FACUNDO       | [fran_penaldo@outlook.com](mailto:fran_penaldo@outlook.com)         |
+
+🔗 ❌ No enviado
+📋 ❌ No enviado
+📁 ❌ No enviado
+
+
 
 ## Cronograma
 
