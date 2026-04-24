@@ -1,13 +1,47 @@
+Discurso inicial
+El uso de herramientas basadas en IA hace que sea más relevante nuestra habilidad de leer y entender código.
+- para entender eventuales problemas.
+- porque nos van a preguntar qué hace.
+- para cuando la IA se queda corta (sí, pasa) y hay que aydarla con indicaciones.
+
 FE
 Partir de fe_inicial
-- refactor de App: componentes
 - PlayerForm: modal, useState con estructura / handleChange, useEffect
+- llamadas al BE: playersApi.
+
+Primeras tareas
+- refactor de App: componentes
 - corrijamos InputLabelProps que está deprecado, enseñémosle a Opencode a no usarlo más.
 - validaciones y hook (ver transcript de sesión).
-- metamos un menú -> React Router
 
-BE
-- Prisma, ver cómo queda la BD
-- Nest
-- Foco sobre PrismaService
+Interludio BE
+- Necesitamos popular categorías: pues pidámosle que genere un POST /seed/categories, y también un GET /categories.
+- Acá conviene darle una primera mirada al BE basado en Nest (es lo que mandó el modelo de una, pero justo es uno que conozco).
+  - Modules / controllers / services.
+  - Cómo integra Figma: en los services te da un PrismaService en el constructor.
+  - Comentario de cierre: puede que cueste un rato agarrarle la mano, pero después viene natural. Obviamente be my guest en indicarle a la IA qué tecnologías quieren usar en su proyecto.
+- Veamos ENDPOINTS.md, probemos desde Insomnia.
+- Definamos los dos nuevos endpoints que queremos.
+- Vemos en la DB: ya está la tabla ¿cómo es? Modelo.
+- Prompt. Veamos el plan, entendamos qué nos está sugiriendo agregar.
+- Me gusta, vamos, probamos.
+- Ya que estamos, miramos los logs iniciales de Nest.js, ahí dice qué rutas publica.
+
+Vamos con una nueva funcionalidad: torneos.
+- BE: rápido, dado que teníamos el plan inicial, que la verdad que sirvió.
+- Antes de seguir, ajustamos la validación de documentos que está demasiado estricta. Le di directamente sin darme cuenta, lo hizo perfecto.
+- Repasamos regex.
+
+Metamos un menú -> React Router
+- en el plan puso algo que no entiendo -> le pregunto. 
+  Para lograr que me lo mostrara, le tuve que pedir que escribiera la explicación en un archivo.
+  Así se puede ir aprendiendo sobre las tecnologías que vamos integrando.
+
+Siguiente funcionalidad: inscripciones.
+- Alternativas de UI, hagan este ejercicio, ahora lo que tardabas una hora en Figma el LLM te lo da en 2 minutos, alienta a pensar y evolucionar alternativas.
+- Me doy cuenta que quiero corregir los botones en la tabla de torneos.
+- Comentario: ir haciéndolo de a poco les da la ventaja de poder ir ajustando a medida que van entendiendo más en profundidad el dominio.
+- Mensajes en consola, útiles.
+- Ver en network las llamadas API, acción de abrir inscripciones, get de torneos, get de jugadores, post/patch de jugadores.
+- Moraleja del prompt 17: más que por FE / BE, conviene separarse por funcionalidad, las cosas chiquitas se pueden ir implementando en paralelo.
 
