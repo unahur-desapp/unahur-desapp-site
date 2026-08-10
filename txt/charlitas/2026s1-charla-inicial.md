@@ -12,7 +12,7 @@ posta piensen bien si de verdad este es el oficio que eligen, y en todo caso, no
 Antes que cada grupo genere (o intente generar) aplicaciones construidas con herramientas IA-powered, decidimos adelantarnos y proponer esta modalidad desde el grupo docente.  
 O sea, vamos por una estrategia "full-IA".  
 
-Hoy les vamos a mostrar un entorno 100% gratuito que les alentamos a usar. En algunas pruebas que fuimos haciendo, parece funcionar correctamente. Si les queda corto, sepan que tienen la alternativa de Claude Code, asumiendo un costo de 180 lucas aprox por 5 meses. Es lo que usamos Hernán y yo, y es un caño garantizado.
+Hoy les vamos a mostrar un entorno 100% gratuito que les alentamos a usar. En algunas pruebas que fuimos haciendo, parece funcionar correctamente. Si les queda corto, sepan que tienen la alternativa de Claude Code, asumiendo un costo de 180 lucas aprox por 5 meses. Es lo que uso en el laburo, y es un caño garantizado.
 
 Tomamos este giro convencidos de que les va a ayudar a posicionarse respecto de las habilidades que se están popularizando en estos meses, y van a ser cada vez más solicitadas/relevantes.  
 Dicho de otra forma, la apuesta es a darles herramientas que los ayuden a ponerse adelante de lo que pide el mercado.
@@ -41,11 +41,15 @@ Cinco sprints, reunión de cierre de sprint de 50 minutos, a la que tienen que l
 
 A su vez, les vamos a dar consignas para el trabajo en el siguiente sprint, que incluye la documentación que esperamos que produzcan.
 
-Los dominios son *grandes*, no se duerman, si lo van llevando y le toman el ritmo al trabajo con IA (que es el objetivo principal de esta cursada) van a llegar bien, pero nooooo seeeeee confíen.
+El dominio es *grande*, no se duerman, si lo van llevando y le toman el ritmo al trabajo con IA (que es el objetivo principal de esta cursada) van a llegar bien, pero nooooo seeeeee confíen.
 
-Contar un poco de qué se tratan los proyectos.
+Contar un poco de qué se trata el proyecto.
+
+Atenti: tómense la costumbre de guardarse los prompts y los planes.
+
 
 
 # Interactuando con OpenCode - un poco de hands-on
-Cómo se fue refinando el plan.
+Atenti - los modelos evolucionan rápido, el que usamos el cuatri pasado (MiniMax M2.5) no está disponible, y sus sucesores (auch) son pagos.
+Cómo se fue refinando un plan inicial, para eso ir al proyecto en GitHub (que lo pueden acceder).
 Probar que ejecute el plan refinado, podríamos arrancar de etapa_1.1 y darle a los prompts 8 y 9.
