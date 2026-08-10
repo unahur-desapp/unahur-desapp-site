@@ -24,15 +24,20 @@ Las condiciones individuales son
 - asistencia a la presentación final, donde también tienen que hablar todos.
 - **muy importante** <br> participación efectiva en el desarrollo, que se va a evaluar por cantidad y relevancia de los commits hechos por cada integrante en los repositorios de frontend y backend. O sea, quienes no tengan commits o tengan poquitos y/o poco relevantes, no van a aprobar la materia. <br/> Si trabajan en grupo (lo cual está perfecto), por favor roten quién hace los commits (un día uno, otro día otro). A este respecto es válido, si un commit lo hicieron entre varios, que en el comentario pongan "hecho en conjunto con X, Y y Z", aparte del que registra el commit claro.
 
+Sobre la participación en el desarrollo, les pedimos que tengan en cuenta:
+- Cada integrante tiene que meter sus commits con una única cuenta GitHub y un único email, para que podamos entender quién metió cada commit.
+- El cierre para evaluar contribuciones es 24 horas antes del cierre de sprint 5, lo que se haga después de ese momento no cuenta.
+- Al final de cada sprint tienen que indicar cuál es la rama, o cuáles son las ramas del repositorio, sobre la/s que tenemos que evaluar la contribución de cada uno.
+
 ## Objetivos de cada sprint
 Para Desarrollo de Aplicaciones, se establecen los siguientes objetivos para cada sprint.
 
 | Número de sprint | Objetivo |
 | ------ | ----------| 
-| Sprint 1 | Implementación preliminar que cubra todos los puntos obligatorios, cubriendo cada uno al menos en un 50%. | 
+| Sprint 1 | Implementación preliminar que cubra todos los puntos obligatorios salvo a lo sumo dos, cubriendo cada uno al menos en un 40%. | 
 | Sprint 2 | Mejoras en la experiencia de usuario, validaciones, datos de prueba. | 
-| Sprint 3 | Implementación al 70% incluyendo agregados que se puedan proponer en las reuniones anteriores, documentación de tests funcionales. | 
-| Sprint 4 | Implementación al 90% incluyendo agregados que se puedan proponer en las reuniones anteriores, responsiveness. | 
+| Sprint 3 | Implementación al 60% incluyendo agregados que se puedan proponer en las reuniones anteriores, documentación de tests funcionales. | 
+| Sprint 4 | Implementación al 80% incluyendo agregados que se puedan proponer en las reuniones anteriores, responsiveness. | 
 | Sprint 5 | Implementación al 100% incluyendo agregados que se puedan proponer en las reuniones anteriores, documentación de API, presentación. | 
 
 La evaluación de estos objetivos se hace en forma grupal.   
@@ -52,6 +57,8 @@ La mayor parte de los sprints dura tres semanas, probablemente alguno dure dos. 
 - Al _final_ de cada sprint se hace una evaluación de qué se logró y qué no, se trata de entender por qué no se llegó a lo que no se llegó, y a partir de estos elementos, se planifica el siguiente.
 
 El corte de un sprint a otro coincide con el día y hora del encuentro semanal. En el encuentro de esa semana se hace el análisis de fin-de-sprint, y se habla del alcance del siguiente, que después el grupo tiene que plasmar en la ficha de inicio.
+
+En estas reuniones también podremos preguntar sobre el código generado por la IA, está perfecto que lo genere, pero ustedes lo tienen que revisar.
 
 La definición y evaluación de cada sprint forma parte de la evaluación de la materia.
 

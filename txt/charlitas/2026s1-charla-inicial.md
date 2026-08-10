@@ -34,6 +34,8 @@ En un ratito vamos a los detalles operativos. Quiero antes mencionar algunos con
 
 
 # Un poco de contrato de cursada
+Antes que nada, para la/s presencacion/es presencial/es, ¿alguien tiene problemas de movilidad? Digo para saber si tenemos que pedir planta baja (dado que no se puede confiar en los ascensores de la UNaHur).
+
 Cinco sprints, reunión de cierre de sprint de 50 minutos, a la que tienen que llegar afilados. Tienen que
 - hacer show de avance.
 - responder preguntas que le vamos a hacer para que nos demuestren que un poco miraron el código que genera.
