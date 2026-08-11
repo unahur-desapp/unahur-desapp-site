@@ -22,9 +22,11 @@ El grupo docente de la materia está formado por
 
 [Acá](./pautas-para-la-cursada)
 
+<!--
 ## Pautas para la carpeta
 
 [Acá](./pautas-para-la-carpeta)
+-->
 
 ## Tareas
 
@@ -48,11 +50,13 @@ El grupo docente de la materia está formado por
 
 [Acá](./mas-info)
 
-## Cursada actual - primer cuatrimestre 2026
+## Cursada actual - segundo cuatrimestre 2026
 
-[Desarrollo de Aplicaciones](./cuatrimestres/2026s1-desapp)
+[Desarrollo de Aplicaciones](./cuatrimestres/2026s2-desapp)
 
 ## Cuatrimestres anteriores
+
+[Primer cuatrimestre 2026 - Desarrollo de Aplicaciones](./cuatrimestres/2026s1-desapp)
 
 [Segundo cuatrimestre 2025 - Desarrollo de Aplicaciones](./cuatrimestres/2025s2-desapp)
 
