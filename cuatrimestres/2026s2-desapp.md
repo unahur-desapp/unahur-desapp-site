@@ -22,7 +22,7 @@ Después, toca arrancar con el desarrollo. Para esto, hacer lo que se indica en 
 
 Vamos a trabajar sobre un proyecto: la gestión de los pedidos de una casa de comidas rápidas. El proyecto implica el desarrollo de dos (o tres de acuerdo a la elección de cada grupo) aplicaciones: una para la administración, una para los clientes, y eventualmente una para los repartidores.
 
-El enunciado es este: [casa de comidas rápidas](../enunciados-tp/acompanamiento-estudiantil.md).
+El enunciado es este: [casa de comidas rápidas](../enunciados-tp/casa-de-comidas-rapidas.md).
 
 Como stakeholders vamos a estar nosotros docentes. 
 
