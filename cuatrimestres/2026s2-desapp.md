@@ -6,7 +6,7 @@ layout: default
 
 ## Características generales
 
-Esta cursada va a incluir 8 grupos. Vamos a proponer un enunciado único para todos los grupos, con variantes en parte del alcance.
+Esta cursada va a incluir 6 grupos. Vamos a proponer un enunciado único para todos los grupos, con variantes en parte del alcance.
 
 **Importante**  
 Para mantener un control adecuado en cada cierre de sprint, se considerarán únicamente _las tareas completadas hasta las 23:59 del día anterior_.  
@@ -49,7 +49,113 @@ Una carpeta con esta organización:
 
 ## Grupos
 
-... a definir ...
+#### Grupo 1
+
+**Tema:** Casa de comidas rápidas
+
+**Docente:**
+
+| Nombre                        | Email                                                                       |
+| ----------------------------- | --------------------------------------------------------------------------- |
+| BARENGHI, THOMAS GUSTAVO      | [thomasbarenghi@gmail.com](mailto:thomasbarenghi@gmail.com)                 |
+| GERACE MANRIQUEZ, CESAR BOSCO | [boscocesar@gmail.com](mailto:boscocesar@gmail.com)                         |
+| SANCHEZ SA, MATEO AGUSTÍN     | [mateoasanchezsa@gmail.com](mailto:mateoasanchezsa@gmail.com)               |
+| SOLIS DIAZ, JUAN MANUEL       | [manuhead98@gmail.com](mailto:manuhead98@gmail.com)                         |
+
+🔗 <a href="" target="_blank" rel="noopener noreferrer">GitHub</a>
+📋 <a href="" target="_blank" rel="noopener noreferrer">Trello</a>
+📁 <a href="" target="_blank" rel="noopener noreferrer">Drive</a>
+
+
+#### Grupo 2
+
+**Tema:** Casa de comidas rápidas
+
+**Docente:**
+
+| Nombre                           | Email                                                                                                           |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| FERNANDEZ MANSILLA, MALENA CELESTE | [celestefernandezmansilla@gmail.com](mailto:celestefernandezmansilla@gmail.com)                              |
+| BARBERI SALCEDO, RAFAEL ALBERTO  | [rafaelbarberis@gmail.com](mailto:rafaelbarberis@gmail.com)                                                     |
+| PEREZ, CARLA ANDREA              | [carlaprz@gmail.com](mailto:carlaprz@gmail.com)                                                                 |
+| CARLINO ISLA, LUCA MANUEL        | [lucamanuel.carlinoisla@estudiantes.unahur.edu.ar](mailto:lucamanuel.carlinoisla@estudiantes.unahur.edu.ar)     |
+
+🔗 <a href="" target="_blank" rel="noopener noreferrer">GitHub</a>
+📋 <a href="" target="_blank" rel="noopener noreferrer">Trello</a>
+📁 <a href="" target="_blank" rel="noopener noreferrer">Drive</a>
+
+
+#### Grupo 3
+
+**Tema:** Casa de comidas rápidas
+
+**Docente:**
+
+| Nombre                   | Email                                                                           |
+| ------------------------ | ------------------------------------------------------------------------------- |
+| CAO, NICOLAS             | [nicolas.cao94@gmail.com](mailto:nicolas.cao94@gmail.com)                       |
+| MONZON, CRISTIAN IVAN    | [cristianmonzon91@gmail.com](mailto:cristianmonzon91@gmail.com)                 |
+| MOVIA, MARTINA           | [moviamartina@hotmail.com](mailto:moviamartina@hotmail.com)                     |
+| PAJELLO, FRANCO AGUSTIN  | [francoagustinpajello@gmail.com](mailto:francoagustinpajello@gmail.com)         |
+
+🔗 <a href="" target="_blank" rel="noopener noreferrer">GitHub</a>
+📋 <a href="" target="_blank" rel="noopener noreferrer">Trello</a>
+📁 <a href="" target="_blank" rel="noopener noreferrer">Drive</a>
+
+
+#### Grupo 4
+
+**Tema:** Casa de comidas rápidas
+
+**Docente:**
+
+| Nombre                      | Email                                                                                                 |
+| --------------------------- | ----------------------------------------------------------------------------------------------------- |
+| BARBOSA, GONZALO NICOLÁS    | [gonzalonicolasbarbosa@gmail.com](mailto:gonzalonicolasbarbosa@gmail.com)                             |
+| PERALTA, MELANIE AILÉN      | [ailenperalta20@gmail.com](mailto:ailenperalta20@gmail.com)                                           |
+| RODRIGUEZ, ANA PAULA        | [anapaula.rodriguez@estudiantes.unahur.edu.ar](mailto:anapaula.rodriguez@estudiantes.unahur.edu.ar)   |
+| NONIS, GABRIEL              | [gabrielnonis2653@gmail.com](mailto:gabrielnonis2653@gmail.com)                                       |
+
+🔗 <a href="" target="_blank" rel="noopener noreferrer">GitHub</a>
+📋 <a href="" target="_blank" rel="noopener noreferrer">Trello</a>
+📁 <a href="" target="_blank" rel="noopener noreferrer">Drive</a>
+
+
+#### Grupo 5
+
+**Tema:** Casa de comidas rápidas
+
+**Docente:**
+
+| Nombre                     | Email                                                               |
+| -------------------------- | ------------------------------------------------------------------- |
+| ARIAS, FACUNDO ROBERTO     | [facundoarias5000@gmail.com](mailto:facundoarias5000@gmail.com)     |
+| AVALOS, MÁXIMO ALEXANDER   | [maxiavalos07@gmail.com](mailto:maxiavalos07@gmail.com)             |
+| BRUNO, MARTIN FERNANDO     | [martinbruno1975@gmail.com](mailto:martinbruno1975@gmail.com)       |
+| CANTERO, FERNANDO          | [fernandocantero2665@gmail.com](mailto:fernandocantero2665@gmail.com) |
+
+🔗 <a href="" target="_blank" rel="noopener noreferrer">GitHub</a>
+📋 <a href="" target="_blank" rel="noopener noreferrer">Trello</a>
+📁 <a href="" target="_blank" rel="noopener noreferrer">Drive</a>
+
+
+#### Grupo 6
+
+**Tema:** Casa de comidas rápidas
+
+**Docente:**
+
+| Nombre                       | Email                                                                   |
+| ---------------------------- | ----------------------------------------------------------------------- |
+| ALARCON, RODRIGO LEONEL      | [rodricsxd@gmail.com](mailto:rodricsxd@gmail.com)                       |
+| MAZZA, JUAN HORACIO          | [juancho88806@gmail.com](mailto:juancho88806@gmail.com)                 |
+| MURANO, LEONARDO             | [leomellimurano@gmail.com](mailto:leomellimurano@gmail.com)             |
+| ROSALES, TOMAS DANIEL        | [tomiirosales2005@gmail.com](mailto:tomiirosales2005@gmail.com)         |
+| de la ROSA, MATIAS EZEQUIEL  | [delarosamatias@hotmail.com.ar](mailto:delarosamatias@hotmail.com.ar)   |
+
+🔗 <a href="" target="_blank" rel="noopener noreferrer">GitHub</a>
+📋 <a href="" target="_blank" rel="noopener noreferrer">Trello</a>
+📁 <a href="" target="_blank" rel="noopener noreferrer">Drive</a>
 
 
 ## Cronograma
