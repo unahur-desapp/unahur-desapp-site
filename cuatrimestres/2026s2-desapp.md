@@ -91,12 +91,13 @@ Una carpeta con esta organización:
 
 **Docente:**
 
-| Nombre                   | Email                                                                           |
-| ------------------------ | ------------------------------------------------------------------------------- |
-| CAO, NICOLAS             | [nicolas.cao94@gmail.com](mailto:nicolas.cao94@gmail.com)                       |
-| MONZON, CRISTIAN IVAN    | [cristianmonzon91@gmail.com](mailto:cristianmonzon91@gmail.com)                 |
-| MOVIA, MARTINA           | [moviamartina@hotmail.com](mailto:moviamartina@hotmail.com)                     |
-| PAJELLO, FRANCO AGUSTIN  | [francoagustinpajello@gmail.com](mailto:francoagustinpajello@gmail.com)         |
+| Nombre                       | Email                                                                   |
+| ---------------------------- | ----------------------------------------------------------------------- |
+| CAO, NICOLAS                 | [nicolas.cao94@gmail.com](mailto:nicolas.cao94@gmail.com)               |
+| MONZON, CRISTIAN IVAN        | [cristianmonzon91@gmail.com](mailto:cristianmonzon91@gmail.com)         |
+| MOVIA, MARTINA               | [moviamartina@hotmail.com](mailto:moviamartina@hotmail.com)             |
+| PAJELLO, FRANCO AGUSTIN      | [francoagustinpajello@gmail.com](mailto:francoagustinpajello@gmail.com) |
+| LABRIOLA, FEDERICO LEANDRO   | [fede.lean.lab@gmail.com](mailto:fede.lean.lab@gmail.com)               |
 
 🔗 <a href="" target="_blank" rel="noopener noreferrer">GitHub</a>
 📋 <a href="" target="_blank" rel="noopener noreferrer">Trello</a>
