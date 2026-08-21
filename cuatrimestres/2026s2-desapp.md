@@ -53,7 +53,7 @@ Una carpeta con esta organización:
 
 **Tema:** Casa de comidas rápidas
 
-**Docente:**
+**Docente:** Carlos Lombardi
 
 | Nombre                        | Email                                                                       |
 | ----------------------------- | --------------------------------------------------------------------------- |
@@ -71,14 +71,15 @@ Una carpeta con esta organización:
 
 **Tema:** Casa de comidas rápidas
 
-**Docente:**
+**Docente:** Carlos Lombardi
 
-| Nombre                           | Email                                                                                                           |
-| -------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| FERNANDEZ MANSILLA, MALENA CELESTE | [celestefernandezmansilla@gmail.com](mailto:celestefernandezmansilla@gmail.com)                              |
-| BARBERI SALCEDO, RAFAEL ALBERTO  | [rafaelbarberis@gmail.com](mailto:rafaelbarberis@gmail.com)                                                     |
-| PEREZ, CARLA ANDREA              | [carlaprz@gmail.com](mailto:carlaprz@gmail.com)                                                                 |
-| CARLINO ISLA, LUCA MANUEL        | [lucamanuel.carlinoisla@estudiantes.unahur.edu.ar](mailto:lucamanuel.carlinoisla@estudiantes.unahur.edu.ar)     |
+| Nombre                             | Email                                                                                                       |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| FERNANDEZ MANSILLA, MALENA CELESTE | [celestefernandezmansilla@gmail.com](mailto:celestefernandezmansilla@gmail.com)                             |
+| BARBERI SALCEDO, RAFAEL ALBERTO    | [rafaelbarberis@gmail.com](mailto:rafaelbarberis@gmail.com)                                                 |
+| PEREZ, CARLA ANDREA                | [carlaprz@gmail.com](mailto:carlaprz@gmail.com)                                                             |
+| CARLINO ISLA, LUCA MANUEL          | [lucamanuel.carlinoisla@estudiantes.unahur.edu.ar](mailto:lucamanuel.carlinoisla@estudiantes.unahur.edu.ar) |
+| GATTI, NICOLÁS MATÍAS ANDRÉ        | [nicogatt1@hotmail.com](mailto:nicogatt1@hotmail.com)                                                       |
 
 🔗 <a href="" target="_blank" rel="noopener noreferrer">GitHub</a>
 📋 <a href="" target="_blank" rel="noopener noreferrer">Trello</a>
@@ -89,7 +90,7 @@ Una carpeta con esta organización:
 
 **Tema:** Casa de comidas rápidas
 
-**Docente:**
+**Docente:** Cristian Schiffino
 
 | Nombre                       | Email                                                                   |
 | ---------------------------- | ----------------------------------------------------------------------- |
@@ -108,7 +109,7 @@ Una carpeta con esta organización:
 
 **Tema:** Casa de comidas rápidas
 
-**Docente:**
+**Docente:** Cristian Schiffino
 
 | Nombre                      | Email                                                                                                 |
 | --------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -126,7 +127,7 @@ Una carpeta con esta organización:
 
 **Tema:** Casa de comidas rápidas
 
-**Docente:**
+**Docente:** Nicolás de la Fuente
 
 | Nombre                     | Email                                                               |
 | -------------------------- | ------------------------------------------------------------------- |
@@ -144,7 +145,7 @@ Una carpeta con esta organización:
 
 **Tema:** Casa de comidas rápidas
 
-**Docente:**
+**Docente:** Nicolás de la Fuente
 
 | Nombre                       | Email                                                                   |
 | ---------------------------- | ----------------------------------------------------------------------- |
