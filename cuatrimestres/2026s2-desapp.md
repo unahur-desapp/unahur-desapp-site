@@ -179,4 +179,4 @@ Una carpeta con esta organización:
 | 05/11 |  Seguimiento.  |
 | 12/11 |  <span style="font-weight: bold; color: royalblue">Entrega final carpetas</span>  |
 | 19/11 |  <b>5to Sprint - review</b> |
-| 27/11 |  <span style="font-weight: bold; color: crimson">Presentación final</span> | <span style="font-weight: bold; color: crimson">Seguro</span> |
+| 26/11 |  <span style="font-weight: bold; color: crimson">Presentación final</span> | <span style="font-weight: bold; color: crimson">Seguro</span> |
